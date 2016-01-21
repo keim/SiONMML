@@ -1,0 +1,129 @@
+#TITLE{DragonQuestIV-Battle};
+
+#REV;
+#FPS  600;
+#QUANT  16;
+#EFFECT0{reverb70,40,80,20};
+
+#TABLE  1 { (64,32)200, | (32,48)70,(48,32)70};
+#TABLE  9 { (32,127)112|127 };
+#TABLE 11 { (8)8,       | 8};
+#TABLE 12 { (12)8,       | 12};
+#TABLE 13 { (16)8,       | 16};
+#TABLE 14 { (20)8,       | 20};
+#TABLE 15 { (24)8,       | 24};
+
+#TABLE 21 {       | 1};
+#TABLE 22 {       | 2};
+#TABLE 23 {       | 3};
+#TABLE 24 {       | 4};
+#TABLE 31 {(4)10  | 3};
+#TABLE 32 {       | 2};
+#TABLE 33 {       | 3};
+#TABLE 34 {       | 4};
+
+
+#A=
+   @q0 v16 x128
+%1 @4 na1 _na11 @@255 _@@23 s0
+q8 o7l16 d<afa> kt-1 d<afa> kt-2 d<afa> kt-3 d<afa> kt-4 d<afa> kt-5 d<afa kt0 aeec# c#<aae
+
+$
+//A
+%1 @3 na1 _na255 @@255 _@@255 s32 
+q8 o5l8 d2&dfa>c q8c#2.&c#er4
+
+%1 @4 na1 _na11 @@31 _@@21 s0
+q8 o7l16 v8d<afa> v10c#<g#eg#> v12c<ge-g v14_na12bf#df# v16_na13b-fdf _na14aeec# _na15c#<aae
+
+%1 @3 na1 _na255 @@255 _@@255 s32 
+q8 o5 l8 d2&dfa>c q8e2.&egr4
+
+%1 @4 na1 _na11 @@31 _@@21 s0
+q8 o7l16 v8d<afa> v10c#<g#eg#> v12c<ge-g v14_na12bf#df# v16_na13b-fdf _na14aeec# _na15c#<aae
+
+%1 @4 na1 _na11 @@31 _@@21 s0
+q14 o5 l16 d1&d2 q8v7dv8fv9av10b-> v11dv12fv13av15b->v16d4
+q8 o5l16 v3dafd kt1 v4dafd kt2 v5dafd kt3 v6dafd kt4 v7dafd kt5 v8dafd kt6 v9dafd kt7 
+         v10dafd kt8 v11dafd kt9 v12dafd kt10 v13dafd kt11 v14dafd kt12 v15dafd kt13 v16dafd kt14 dafd kt0
+q8o7l16 ccl8c<<<<rv12q16arara l16q16v8>[eg]5>v16d-g>cd-eg
+q8o7l16 ccl8c<<<<rv12q16arara l16q16v8>[eg]5>>q8v16gcc<ggd-
+
+//B
+%1 @3 na1 _na255 @@255 _@@255 s32 
+o5
+l4q16 s32 dcdef8gafef8dcdel8fedc4 d2&d4.&d2>>l16q8s40gdd<b-b-g
+l4q16 s32 dcdef8gafef8dcdel8fedc4 d2&d4.&d2<l16q8s40gb-b->ddg
+
+%1 @4 na1 _na11 @@31 _@@21 s0
+o7l16q8
+d<afa> kt-1 d<afa> kt-2 d<afa> kt-3 d<afa> kt-4
+d<afa> kt-5 d<afa> kt-6 d<afa> kt-7 d<afa> kt-8
+d<afa> kt-9 d<afa> kt-10 d<afa> kt-11 d<afa> kt-12
+d<afa> kt-13 d<afa> kt-14 d<afa> kt-15 d<afa> kt0
+o5[b-fdf]4 [aec#e]4
+;
+
+#B=
+   @q0 v16 x128
+%1 @4 na1 _na11 @@255 _@@23 s0
+q8 o6l16 afdf kt-1 afdf kt-2 afdf kt-3 afdf kt-4 afdf kt-5 afdf kt0 ec#c#<a aeec#<
+
+$
+%1 @4 na1 _na11 @@31 _@@21 s0
+o3q8 l16v8>[fa]8> [fd<a>d]4 q8[afdf]v10[c#e] v12ge-ce- v14_na12f#d<b>d v16_na13fd<b->d< _na14a>c#c#e　_na15ec#<a>c#
+
+%1 @4 na1 _na11 @@31 _@@21 s0
+o3q8 l16v8>[fa]8> [fd<a>d]4 q8[afdf]v10[c#e] v12ge-ce- v14_na12f#d<b>d v16_na13fd<b->d< _na14a>c#c#e　_na15ec#<a>c#
+
+o3q8 l16v8>[fa]8 [fb-]6 v12fv13b-v14fv15b- v16q8frv6dd v7drdd v8drdd v9drdd v10drdd v11drdd v13drdd v12drdd
+q8 o5l16 v9caec kt1 v10caec kt2 v11caec kt3 v12caec kt4 v13caec kt5 v14caec kt6 v15caec kt7 v16caec kt0
+q8o6l16 ggl8g<<rv12q16arara l16q16v8>[c#e]5v16g>c#egc#e
+q8o6l16 ggl8g<<rv12q16arara l16q16v8>[c#e]5v16>q8c#ec#ec#<g 
+
+%1 @4 na1 _na255 @@255 _@@255 s24 
+o4l8q4 
+s30df<a>edf<a> gd<b>g<b->fe- g<a>gddf<a> edf<a>gd< s22a4a4>
+s30df<b->f<e->gg df<b->f<e->gg
+s30d>f<<a>>e<d>f<<a>> g<db>g<b->fe g<a>g<d>df<a> d<d>f<<a>>g<d s22a4a4>
+s30df<b->f<e->gg< d>f<<b->>f<e-b-b-
+
+%1 @4 na1 _na11 @@31 _@@21 s0
+o5l4q2
+rd->c<eb-fa->b-
+r<<a->f<b-e>>a-e->d
+<<<q16b-2.l16q8>>dfb->d
+<<<q16a2l16q8>>cd-ega>cd-e
+;
+
+#C=
+   %1 v16 x128 @q0 na255 _na255 @@255 _@255 s60 @8
+   r1r1
+$
+   o4l16q8 
+[
+[drdd]8<
+[b-rb-b-]6[araa]2>
+]
+[drdd]8
+r1r1
+[drdd]8>>
+l16q12 c#c#c# r8.<<< q8l4aaaaaa>>>r8
+l16q12 c#c#c# r8.<<< q8l4aaaaaar8
+
+o4l8q6
+rargrar>c<ar>drdrd-rc<arargrar>c<agfq12eq2 rq6rararb-b-rararb-b->
+rargrar>c<ar>drdrd-rc<arargrar>c<agfq12eq2 rq6rararb-b-rararb-b->
+
+o4l16q8
+[drdd]24
+;
+
+
+t152
+A;
+B;
+C;
+
+#END;
+

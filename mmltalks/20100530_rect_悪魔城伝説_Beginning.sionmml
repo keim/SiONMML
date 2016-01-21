@@ -1,0 +1,114 @@
+#TITLE{悪魔城伝説 / Beginning};
+#REV;t129;
+
+#TABLE00{13,11};
+#TABLE01{3,5};
+#TABLE05{9,13,11,9,6}*8;
+#TABLE06{11,14,11,8,6}*8;
+#TABLE07{10,10,10,8,8,8,6,6,6,4,4,2,2}*8;
+
+#M=[r4 v15d8.c8&c*<c64r..>c8.<b8&b*<b64r..>b8.a+8 | a+aga+a>c+e] <a>ce @2 @@>gec+<a+gec+<a+gec+a+agfe
+@lfo10 mp0,48,24,0 ma0,20,24,0 na06 l16 @@00
+[o6 fed<a4.a>defedag+8(6g+)6e8(6e)6g+8g8(6g)6d+8(6d+)6g8fed<a4.a>defedag+8(6g+)6 | e8(6e)6>d8c+de<a4r] d8(6d)6f8c+8(6c+)6e8(6e)6a8
+fffd8d<a+8(6a+)6>d8(6d)6f8g8f8(6f)6d8(6d)6<a8(6a)6a>d<a>fd<af>
+fffd8d<g+8(6g+)6b>d<b>fd<b>dc+8(2c+)2d8(2d)2d+8(2d+)2e8(2e)2g8a8
+%8@3 @@ q8
+f8(4f)4d8(4d)4<a8g+8(4g+)4>e8(4e)4d8c+2d2<g8(4g)4a+8(4a+)4>d8f8(4f)4e8(4e)4d8 @@00 na06 [o6aa+aa+]a2
+[dfa>d4^16<][dfa>d8.<]eg>ce<[fa>df4^16<][fa>df8.] efgg+
+[aa+aa+]4[a32a+32a32a+32]4 l32agfe(2dc+<a+(2agfe(2dc+<a+(2ae
+;
+
+r2 l16 @v120 $%8@@01 @fps60 na05 mp0 ma0 o6 q7 M;
+r2r8. l16 @v50 $%8@@01 @fps60 na05 mp0 o6 q7 k-6 M;
+
+#TABLE20{15,15,15,15,14,13,12,11,10,9}*8;
+%4@0 %5@2 na20 s29 o3 l16 @v110 v15
+r2 $q1[[d]5>d<dd8 [o4d<dd|>d<ddd8]3 | o3e>e<a>a] o3erq6a2..q1
+[drd>dr8d<drd>dr8<d>d<der>e8r8e<d+rd+>d+r8<d+>d+<d+ [o3d8d>dr8<d] o4d<der>e8r8e | o3eee>e<eaa>a<a]
+o3aaa>a<a8a>a<a a+a+a+>a+8<a+>a+8.a+8f8d8<a+aaa>a8<a>a8a<a>d<a>fdaf<g+g+g+>g+8<g+>g+8g+dfg+bg+fg+
+q6s28[o4a32&a32*<aa]4[o4a32&a32*<a] d4^16ddde2<a4.a8g+2g4.ggg+4^16g+g+g+a2r24 q1 na20 s29 >a24a24aa[o2a>a]
+[o3d8d8>d8<dcrcrc>c8<c>c<<b8b8 | o3b8<ba+8a+>a+<a+>cc>c<c] o3b8.<a+8a+>a+8<a+>a+<a+8
+[o2arar>a|o3ar<arara>arar] o2arar>agfedc+<a
+;
+
+r2 $%1@2 @fps60 na05 mp0 o5 q8 @v95 l16 k2
+r4v10a8.g8&g*d64r..g8.g8&g*d64r..g8.g32..&g*d128 gf+ggga
+>c+8&c+*<e64r..a8.g8&g*d64r..g8.g8&g*d64r..g8.g32..&g*d128ga>c+e&e*<a64r..(4agec+<agea+agfe)4
+%1@1 na06 @lfo10 mp2,36,24,0 q7
+[[o5a8af4^16.r32a8.>d8f8 | o6e8.<b8.>e8d+8.<a+8.>d+8] | o6e8.d8.g+8ag+gc+4^]
+o6e8.g+8.b8a8.>c+8.e8<d8.<a+8.f8.a+8.>d8d8d8.<a8.f4a8>d8d8d8.<b8.f8.g+bg+>d<bg+ea8.b8.>c8.c+8.e8e8 %8 @2 l64
+>gf+fed+dc+c(<ba+ag+gf+fed+dc+c<ba+(ag+gf+fed+d(c+c<ba+ag+gf+fe(d+dc+c(<ba+ag+(gf+fed+d(c+c<ba+(ag+gf+fe)8
+na07 l16
+>>>a8.a8egaf8.d8.<a8g8.g8a+>df<g+8.g+8>dfg+d4.edc+2
+%1@3 na06 [o4dfa>d4^] [o4dfa>d8.]
+o4eg>ce [o5dfa>d4^] [o5dfa>d8.] o6c+ded
+(6c+)d)c+)d)c+)d)c+d [o6c+d]4 l32 [o6c+d]8 o6c+<agfec+<agfec+<agfec+
+;
+
+r2 $%1@3 o5 na05 q7 @v95 l16 k-1
+r4v10f8.e8&e*<a64r..>e8.d8&d*<a64r..>d8.d32..&d*<a128>dc+ddde
+g&g8*<a64r..>f8.e8&e*<a64 r..>e8.d8&d*<a64r..>d8.d32..&d*<a128>deg a&a*c+64r..r(4agec+<agea+agf)4
+v11o4 @1 q6
+[d&(6d )6 f32&(6f32 )6a&(6a )6f32&(6f32)6d.&(6d.)6f.&(6f.)6a&(6a)6f&(6f)6e.&(6e.)6g+.&(6g+.)6>d&(6d)6<d+.&(6d+.
+)6g.&(6g.)6>c+&(6c+)6<d&(6d)6f32&(6f32)6a&(6a)6f32&(6f32)6d.&(6d.)6f.&(6f.)6a&(6a)6f&(6f | )6o4e.&(6e.)6g+.&(6g+.)6>d&(6d)3ac+ag+gf+fe)3]
+@v110 v11 o5 l64 q2 s40
+e&(2e(2e(2e)6f+&(2f+(2e&(2e)6g+&(2g+(2f+&(2f+)6a&(2a(2g+&(2g+)6b&(2b(2a&(2a)6>c+&(2c+(2<b&(2b)6>d&(2d(2c+&(2c+ )6<b&(2b(2>c+&(2c+)6a&(2a(2<b&(2b)6>g&(2g(2a&(2a)6f&(2f(2g&(2g)6e&(2e(2f&(2f)6d&(2d(2e&(2e)6c+&(2c+(2d&(2d)6<a+&(2a+(2>c+&(2c+)6<a&(2a(2a+&(2a+
+@v90 v10 l32
+<a+&(4a+)4>d&(4d)4f&(4f)4d&(4d)4a+&(4a+)4f&(4f)4>d&(4d)4<a+&(4
+a+)4f&(4f)4a+&(4a+)4>d&(4d)4f&(4f)4a+&(4a+)4f&(4f)4d&(4d)4<a+&(4a+)4<a&(4a)4>d&(4d)4f&(4f)4d&(4d)4a&(4a)4f&(4f)4>d&(4d)4<f&(4f)4d&(4d)4f&(4f)4a&(4a)4f&(4f)4>f&(4f)4d&(4d)4<a&(4a)4<a&(4a)4g+&(4g+)4>d&(4d)4f&(4f)4g+&(4g+)4b&(4b)4f&(4f)4g+&(4g+)4b&(4b)4>d&(4d)4<g+&(4g+)4b&(4b)4>d&(4d)4g+&(4g+)4d&(4d)4<b&(4b)4g+&(4g+
+[o5)4a&(4a)4<e&(4e)4e&(4e]4 [o5)4a&(4a)4<e&(4e]
+v6 o6 s28 na06 @3 q8 d8.<a8.f8 d2 g8.a8.g8 f8.e8.d8 d8.g8.a+8b2 r32>d4.e16d16c+4...
+v9 o5 na s38 @1 q2 l16 [dafa] [cafa] [o4b>afa] o4a+>fdfcgegdfa>d8<adacfa>d8<ada<b>fa>d8<ada>dfafdfa>d
+[o6c+>c+] o5 c+c+>c+c+ [o7c+<c+] [o5c+>c+] o6 na q8 (3c+4d4^16)5a32>c32e32a32r8<a32>c+32e32a.
+;
+
+#TABLE10{11,31,13,9,6}*8;
+#TABLE11{2,14,2,1}*2;
+#TABLE12{2,12,4,1}*2;
+#K=%6@100 o1 q5 v17 na10 nt11 @v110;
+#S=%6@101 o1 v19 na10 nt12 @v125;
+#T=%6@102 o4 v20 s30 q3 @v70;
+l16 Tc+32c+32c+c+<[g+]3[d]
+$[Kc]4 Sc [Kc]2 r8
+[ScKccScKc|Kcc8]3 SccKccccSc16Kccc8
+ScKccScKccc8 ScKc32c32c ScKccc8
+ScKccScKcScc r4
+Kc32Sc32[c16]7
+[Kc8ccSc8r8Kc8ccScKcccc8ccSc8r8 | Kc8ScKcSccc8]4 Kc32c.ScKcSccc8
+[KcccScrKcScr8KcScr8KcScc]3 ScKc32c32c [ScKcc]3 [Sc]4
+[Kc8rc8|rccSc8r4.]4 KcScKcrSc32c32[c]6
+[Kc8Sc8Kc8ScKc8cScKcc8Sc8]4
+[Kc8c8Scc8Kc8|c8cSc8c8] Sc32c32[c]6
+;
+
+#TABLE08{18,9,6,2}*4;
+v14 %1@9 o0 l16 mp0 @v90
+(4s36 q2 e32e32[e]7 s32 na08 q8)4
+$[[e]5 e8cr8.[e]3 [e8[c]4|[c]3] | e8.] ce8e8e8e8r4.
+[[crccrccc]crccrrccrcrrrrrc]4 [ccrccrrcrcrrrrrc]3 r1
+[e4c4|r4c4]4 e2 [e4c4]8 c8c8ccre8crce8e8e8e8ce8e2^16
+;
+
+#OPM@100{
+5,  5;
+31, 22, 10,  7, 10, 10, 0, 0, 0, 3, 0;
+31, 15, 10,  1, 10,  0, 0, 0, 2, 2, 0;
+31,  8, 10,  1,  8,  8, 0, 0, 0, 1, 0;
+31, 15,  9,  1, 10, 10, 0, 0, 0, 0, 0;
+} @lfo13 mp255,127,0;
+
+#OPM@101{
+4,  7;
+31,  4,  0,  5,  0,  0,  0,  7,  0,  3,  1;
+31, 16, 25, 10,  5,  6,  0,  0,  2,  2,  0;
+31, 29,  0,  5, 15,  3,  0,  4,  0,  7,  2;
+31, 16, 15, 10,  0,  0,  0,  2,  0,  0,  0;
+}@lfo13 mp255,127,0;
+
+#OPM@102{
+2,  7;
+31, 18, 15, 15,  0, 37,  1,  1,  0,  2,  0;
+31,  5,  5,  6, 10,  5,  0,  2,  0,  0,  0;
+31, 23, 15,  6, 10, 20,  1,  2,  0,  0,  0;
+31,  5,  5,  6, 10,  8,  0,  1,  0,  1,  0;
+}

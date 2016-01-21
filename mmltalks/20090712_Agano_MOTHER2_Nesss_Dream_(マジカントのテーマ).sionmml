@@ -1,0 +1,40 @@
+#TITLE{MOTHER2 / Ness's Dream (マジカントのテーマ)};
+
+t111;
+
+o5 l4 v11 l4
+[ rdga
+brb<d> arab grrr rgba grb<d c+rc+d d>rrr rrrb
+grrb ar<dr e>rrb8a8 g8r8rre grrb argf+ grrr  ]4 rrrr;
+
+o5 l4 v3
+rrrr [
+gb<dr cef+>r gb<dg b>rrr egbr a<c+er> df+a<d f+>rrr
+gb<d>r df+ar egd+g dgc+g cegr drrr gb<d>b grrr ];
+
+o5 l4 v1 rrrr l1
+[ r r r r ]4<[ d& d& d& d& ]10 d& d& d& d r r r r;
+
+o5 l4 v1 rrrr l1
+[ r r r r ]4 [ b& b& b& b& ]10 b& b& b& b r r r r;
+
+o4 l4 v4 p3 rrrr l1
+[ r r r r ]8 l4
+b2b2 <e2f+2 d2d2 d2d2 d2d2 e2e2 d2d2 c2>a2<
+d2d2 d2d2 e2d+2 d2c+2 e2e2 d2d2 d2c2 >b2ee
+b2b2 <e2f+2 d2d2 d2d2 d2d2 e2e2 d2d2 c2>a2<
+d2d2 d2d2 e2d+2 d2c+2 e2e2 d2r2 v2d2r2 v1>b2ee;
+
+o4 l4 v4 p5 rrrr l1
+[ r r r r ]8 l4
+g2g2 <c2d2> b2<c2> b2b2 b2b2 <c+2c+2> a2a2 a2f+2
+b2b2 b2b2 b2b2 b2b2 <c2c2> a2a2 b2a2 g2<cc>
+g2g2 <c2d2> b2<c2> b2b2 b2b2 <c+2c+2> a2a2 a2f+2
+b2b2 b2b2 b2b2 b2b2 <c2c2> a2r2 v2b2r2 v1g2<cc>;
+
+o4 l4 v3 rrrr l1
+[ r r r r ]8 l4
+d2>g2< c2d2 >g2<r2 g2f+2 e2d2 c+>ba2< d2c2 >b2a2
+g<dg2 b2>b2< ebd+2 dbc+2 eg<e2> da<f+2> d2c2 >bbaa<
+d2>g2< c2d2 >g2<r2 g2f+2 e2d2 c+>ba2< d2c2 >b2a2
+g<dg2 b2>b2< ebd+2 dbc+2 eg<e2> da<f+2> v2d2c2 v1>bbaa<;

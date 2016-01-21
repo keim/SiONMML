@@ -1,0 +1,22 @@
+#TITLE{BreakOut (NEMESISII)};
+#EFFECT0{speaker30};#TABLE0{(128)26(32)800};
+#WAVB0{4040dfdf7f7fefef8f8f8f8fdfdfefef2020202020205050606070707070dfdf};
+t150;#S=v13o3q1s32c;#H=v4o4q1s36g;
+%2l16![rrrrSrrrrHcrSrrr!|rrrrSrrrrHccSrrr!]rScrrcrcrrcccccc
+$[[6rrrrcrrr]rccrrccc][2rrrrcrrr]rccccrcc[![15rrrrSrrr!]rccccrcc];
+v16%3@0o4l8q1s16,-192$crrr;
+#A=v15c16r16v4c4;
+%1l1rrrr$na0,0@lfo16mp0,8,24o6q3s30[r4@4A(6)A(8)A(4)A(6)A(2)A(4)A(1)v14d16r16v12l16@2|<af+d>af+d>af+]
+>a<c+ea<ea<c+e>q4s22@4dc+d>b^4<<dc+d>b^4q3s30@2<ec+>aec+>aec+
+na0,1[l16v15q8s22@4ba+b<f+2^8d+ef+ed+>b8^2rb<d+ec+>ae<a2^8rg+ef+2>@2|l12b<d+f+d+f+b]@2l16<f+)d+>)b)f+)d+>)b)f+d+<
+[%5@1l16v15q8s22f+2.d>a<df+l4b.a.g+|f+.e.>bl16v14%1@2q4s26>rg+a+b(<e>b<f+g+(bf+g+b(g+b<(eb]
+l4a.g+.eq2s30%1@2l12bd+f+bd+ba+f+d+>b<f+g+;
+#B=f+f+<f+>f+<ef+>f+<e>abef+<ef+>abf+f+<f+>f+<ef+>f+<e>ab<ef+>ee<e>e;
+v16%1@1o3l16q1s30BB$na0,0@lfo16mp0,8,24o6q3s30[p4r4@4A(2)A(4)A(1)A(2)>A(11)<A(1)>A(9)v14b16r16<v12l16@2|p0<d>af+d>p8af+d>a]
+l16p0<c+ea<c+p8a<c+ea>>q4s22@4f+ef+d^4<f+ef+d^4q3s30@2<aec+>aec+>ae
+na0,1[p4l16v15q8s22@4f+ef+<d+2^8>b<c+d+v12ba+f+8^2r>v14f+a+bg+ec+<e2^8rec+d+2>@2|l12q8s63p0f+b<d+>p8b<d+f+]
+@2l16q8s63p8<d+>)b)f+)d+>)p0b)f+)d+>)b<<
+[p4@4l16v15q8s22d2.>af+a<dl4f+.f+.d|>b.b.el16v11@2q3s20>>p0rb<ee(g+eb<ep8(e>b<ee(ee(b<e]l4d.>b.bq2s30%1@2l12f+>b<c+f+>b<f+f+c+>a+f+b<d+;
+#C=bb<b>b<b>b<ab>;#D=b<f+b>b<b>b<ab>;
+v14%4@0o2l16q1s34BB$v14o2l16q2s32[[C]5DC]gg<g>g<f+gdg>gg<g>g<f+g>g<g>aa<a>a<gaea>
+[[CD]aa<a>a<a>a<g+a>a<ea>a<a>a<g+a>CD][<[dag+ad<d>d<d>][da<d>da<d>dd][ebebeg+b<e>]|[ebebeg+bg+]]>[f+f+<f+>f+<f+>f+<ef+>];

@@ -1,0 +1,108 @@
+/*
+   [FC] DRAGON QUEST II - 果てしなき世界 - (C)ENIX 1987
+   original MDX by GRA
+   SiON MML     by LinearDrive
+   date:2011-02-25
+   JASRAC:056-1911-4
+*/
+
+#TITLE{[FC] DRAGON QUEST II - 果てしなき世界 - (C)ENIX 1987};
+#REV;
+#TMODE{unit=100};
+#FPS  600;
+#QUANT  8;
+
+//table for amplitude envelope & tremolo
+#TABLE  1 { (32,80)20,(80,64)20,(64)80 | (64,48)40,(48,80)80,(80,64)40 };
+#TABLE  2 { (64,48)40,          (48)80 | (48,32)20,(32,64)40,(64,48)20 };
+#TABLE  8 {        | 0 };
+#TABLE  9 { (8)180 | 0 };
+
+//table for tone-change
+#TABLE 11 {       | 4 };
+#TABLE 12 { (4)40 | 2 };
+#TABLE 19 {       | 1 };
+
+
+/* 矩形波１ */
+#A=
+   %1 @4,63,0,0,63,0 q8 @q0 v16 x128 s0 na1 _na9 @@11 _@@19 
+   o5
+   $
+   [ 
+     a16a+16a16a+16>c4&c16.r32c8d16r16c16r16<b4>g2.<
+     g16a16g16a16a+2
+     a+12>c12<a+12
+     | 
+     a4>f2.< 
+   ]2  
+   a16g16r16f16&f4r8>f16r8d+8. 
+
+   [ 
+     d16<f16a16a+16>d4.a8 q3 g8 q5 f8 q8 e16 q4 f8 q8 e8 c16<a8&a2>
+     | 
+     r8d16r16<f2g8f8a8.a+16.r16.>c8&c2 
+   ]2 
+   d8r8<d2f4f1
+;
+
+
+/* 矩形波２ */
+#B=
+   %1 @4,63,0,0,63,0 q8 @q0 v16 x128 s0 na2 _na9 @@12 _@@19 
+   o5 
+   $ 
+   [ 
+     [ q3 c8  q8 f8 < q3 a8  > q8 f8 ]2 
+     [ q3 d8  q8 g8 < q3 b8  > q8 g8 ]2  
+     [ q3 c+8 q8 g8 < q3 a+8 > q8 g8 ]2  
+     | 
+     [ q3 c8  q8 f8 < q3 a8  > q8 f8 ]2 
+   ]2 
+   q3 c8 q8 c8< q3 a8> q4 c4 q8 a16r8 a8. 
+   [ 
+     [ r8f8r8a8 ]2 
+     [ r8e8r8g8 ]2  
+     | 
+     r8a+8 
+     [ r8d8 ]3 
+     e16c16e16f16d16f16g4g8 q4 e8 c8 q8 
+   ]2 
+   q4 a+4 < q8 a+2 q6 a+4.> q8 d16 q3 c8 q8 <a+16>c8&c2
+;
+
+
+/* 三角波 */
+#C=
+   %1 @8,63,0,0,63,0 v16 q8 @q1
+   o4
+   $ 
+   [ 
+     [ q3 f8 q8 a8 < q3 f8 > q8 a8 ]2 
+     [ q3 f8 q8 b8 < q3 f8 > q8 b8 ]2  
+     [ q3 f8 q8 a+8< q3 f8 > q8 a+8 ]2 
+     | 
+     [ q3 f8 q8 a8 < q3 f8 > q8 a8 ]2 
+   ]2 
+   q3 f8 q8 a8 < q3 f8 > q8 a8 <q4 f8>> f8 q8 c16f16<f8 
+
+   [ 
+     [ q4 a+8 > q8 d8 << q4 a+8 >> q8 f8< ]2 
+     [ q4 a8  > q8 c8 << q4 a8  >> q8 e8< ]2 
+     | 
+     q4 g8 > q8 f8 << q4 g8 > q8 a+8 
+     [ q4 c8 q8 a+8 ]2 < 
+     f8.g8.a4>>e8c16r16<a16r16 
+   ]2 
+   g8r8f4c2<f8>a+16a16r16g16a4<f16r16f16r16>c16r16
+;
+
+
+/* 再生 */
+t10633
+A;
+B;
+C;
+
+
+#END;

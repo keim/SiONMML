@@ -1,0 +1,22 @@
+#TITLE{怒闘 / 魔界塔士Sa・Ga};
+#EFFECT0{speaker};
+#TABLE1{48};
+#WAV0{4,-2,-8,-1,-7,-7,-2,-1,2,2,2,5,6,7,7,-2}2*16;
+
+t175;
+#A=[e<e>];#B=c8<cr>;#C=>gcg<;#D=>beb<;
+#E=[c<c>]3;#F=>gf+g<;#G=>bab<;
+%4@0o3l8q8s63[AA(1)A(2)A(3)]g+2.<e4b2.>g+4$l16
+[[ararrr<ga>]8[B(7)]4[B(5)]4[B(11)]4B(16)B(14)B(12)B(11)]<
+[[crcrrrcr]4cg<cCcCdCeCdCcCc>gc<c>d<d>
+ [ererrrer]4eb<eDeDf+DgDf+DeDe>be<e>d<d>];
+%1@2l24o6v15[E(7)E(6)E(5)E(4)E(3)E(2)E(1)E]
+l16q8s63[>b<c)]14v15l32>ef+g+ab<cde>$l4
+[[a<gf+8ec8gf+8ec8d8e8]dd>b<dc2>a<c>bf+<dc>b^6<d24d+24e2]
+[e2f+gf+er2<@1ref+gf+er2>@4g2abagr2<@1r4g4a4b4a4g4r2>@2];
+%1@2l4o5[<ed+dc+c>bb-a]l16[q8s63ef)]14v15r4$
+[_na1s0q4[l8[ce][df+][eg][f+a]]_nas63q8
+bgdgd>b<gdafcfc>a<fcd+ed+ed+ef+ag+l16gg+a8g+ab-8ab-bg+ed]
+[<cFcFdFeFdFcF>egdgcgdg<<@1r4c4d4e4d4c4r2>@2
+eGeGf+GgGf+GeG>gbf+bebf+b<<@1r4e4f+4g4f+4e4r2>@2];
+

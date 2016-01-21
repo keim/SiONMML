@@ -1,0 +1,59 @@
+/*
+    ファイナルファンタジー３ - 古代人の村
+    1990 スクウェア
+    [FC][SQUARE][ファイナルファンタジー]
+*/
+
+#TITLE{ファイナルファンタジー３ - 古代人の村};
+#REV;
+#FPS  600;
+#QUANT  16;
+//#EFFECT0{reverb70,40,80,20};
+
+// table env
+#TABLE  0 { (128,100)60(100,10)700| 10 };
+#TABLE  1 { 32,64)30(64,128)300(128,32)1200 | 32 };
+
+//     00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff
+#WAVB0{7f7f7f7f7f7f7f7f010101010101010101010101010101010101010101010101};
+#WAVB1{7f7f7f0101010101010101010101010101010101010101010101010101010101};
+
+
+#A=
+%4 @0 na0 s26 x128 @q1 q16
+@lfo12,2 mp0,12,220,220
+$
+na0 o6 l8 q16 [ c#4.<ae4f#g# a>c#f#d#l4e<b> | d.l8<ag#e>dc l2c#<b> ] d4.l16edl8c#<f#g#b l2b a64&a32&a
+na1 l4 [ a.g#8ab> c#2..r8< ] >c#.c8c#d#l2e<b >l8q4e2&eq16dc#<b l2aq14g#128&g#64&g#32&g#
+;
+
+#B=
+%4 na0 s26 x128 @q1 q16
+@lfo12,2 mp0,12,220,220
+$
+@0 na0 o5 l8 q16 [ e4dc#<b4>d4 c#f#abg#f#e4 | f#edc#<b4>g#d e4a4g#4d4] fagfe4d4 f4ed c#64&c#32&c#2
+@1 na1 > [q14 f2. q16g4q4a2&aq16g#f#e ] q15 a2. q16 ba q14 g#1 q4g2&gq16f#ed e2&q14e128&e64&e32&e2
+;
+
+#C=
+x128
+%1 @8,60,0,0,60
+$
+o4 l2 q15 [ a&g#&f#&e& | dd&a&e& ] b&e&> d4&l8c#&<b& l4a64&a&<a32&a&
+o4 l8 d&f&a&>d&f&d&<a&f& <a&>e&a&>c#&e&c#&<a&e& <b&>f&b&>d&f&d&<b&f& <a&>e&a&>c#&e&c#&<a&e&
+f#&a&>c#&f#&a&f#&d#&<b& e&g#&b&>e&g#&e&<b&g#& g&b&>d&g&b4&g4& <e&b&>d&e&g#&e&e128&<b&b64&&e&e32&
+;
+
+t78
+@v100 v13 @p-16 A;
+@v100 v10 @p 16 B;
+@v100 v16 C;
+@v100 v4 r12 k4 @p-107 A;
+@v100 v4 r12 k4 @p 107 B;
+@v100 v5 r12 C;
+@v100 v2 r6 k-4 @p-127 A;
+@v100 v2 r6 k-4 @p 127 B;
+@v100 v2 r6 C;
+
+#END;
+

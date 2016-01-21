@@ -1,0 +1,95 @@
+/*----------------------------------------------------------------------------------
+   管弦楽組曲第3番二長調 BWV1068 第２楽章 "G線上のアリア"
+   J.S.Bach
+   2011.06.01 初版 Hautbois.
+----------------------------------------------------------------------------------*/
+
+#TITLE{管弦楽組曲第3番二長調 BWV1068 第２楽章 "G線上のアリア"};
+#REV;
+#FPS  600;
+#QUANT  8;
+#EFFECT0{delay180,28,0,100reverb70,40,80,20};
+
+#WAVB00{7f80};
+
+#TABLE  0 {128|128};
+#TABLE  1 {(40,128)3600(128,100)3600|100};
+#TABLE  2 {(60,128)180(128,100)3000|100};
+#TABLE  3 {(60,128)120(128,100)300(100,0)1000|0};
+#TABLE  4 {(60,128)400(128,100)800(100,30)1500|30};
+#TABLE 10 {(40,128)10(128,60)30(60,0)600|0};
+
+#A=%t0 x128 %4 @0 q8 @q1 s20 v16 @v60 @p-40
+o6 @lfo11,2
+ [ mp0,7,100,3600 v16na1 f#1& f#8l16 na2 bgl32f#el16dc#d mp0,6,100,300 c#4<bna3q6a8.q8
+   mp0,6,100,1800 na1>a2&ana2f#c<b>v14ev12d#v10av8g v16na1g2&gna2e<ba>dc#gf#
+   f#4.g#ad8l32del16f#&f#eed c#<bl32b>c#l16v14d&d8v12c#<v10bv14na4a2 ]
+ [ mp0,6,100,300 na2 v16 l32 >c#4&c#16dc#<b>c#<a16>a4.l8c <b>b&l16bagf# f#8g8&l32gf#edl16c#<b
+   a#b>c#8&c#de8&ef#g8&g8f#8 edc#<b>c#l32ded8c#16<b4..
+   >d4&l16df#edb4.ag# l32f#ea16<a8
+b32&>v14c#64&l128<v12b&>v10c#&< v8b&>c#&<b&>c#& <b&>c#&<b&>c#& <b&>c#&<b&>c#& <b&>c#&<b>c# 
+   v16l32c#dc#8.<l16bba8.
+   >d4.f#ee4.gf# f#4.agg2
+   <a4&a>c#eggef#8f#8.l32ga l16d4&df#a>cc8<b4d8
+   c#eg4<b8a8>l32ef#l16g&gf#8e l32dc#<b8>l16c# d8l128c#64&v14 d&v12c#&d&c#& d&c#v16d16d2 ]
+;
+
+#B=%t0 x128 %4 @0 q8 @q1 s20 v16 @v50 @k1 @p-20
+o6 @lfo12,2
+ [ mp0,5,100,3600 v16na1 d1& l4d< na2 mp0,5,100,300 ba2& a8> l16c<b>c8ac< na3 b2
+   na2 v10b8>v11ev12dv13ev14f#v15gv16e< na3 a2 na1a2&a8na2g#al8bg# av14a&av12g#na4e2 ]
+ [ mp0,5,100,3600 v16na1 a2& l16 na2 mp0,5,100,300 ab>c8&c<bag f#4.>d#8e2& 
+   e2&edc#<ba#b>l8c# <bbba#f#2
+   l4ef#<b8l16>ef#g#al8b& ba4g#a2&
+   al16b>c<b>c#d8&d8c#<b>c#d#e8& e8d#c#d#ef#8&f#d#e<be4&
+   ec#ea>l8c#<a&a>l16c#d<d4& l8def#4g2&
+   l8gb>e4&l16edc#<bl8ab a4 l128g64&v14a&v12g&a&g&a&gv16f#16g8f#2 ] 
+;
+
+#C=%t0 x128 %4 @0 q8 @q1 s20 v16 @v50 @k2 @p0
+o5 @lfo13,2
+ [ mp0,4,100,800 v16na1 l2a na2v12b mp0,4,100,200 v16<l4b>ee2& l8ed#&d#e na3 f#2
+   na2 v10e<v12b&b>v16e na3 e2 na2 d4.ef#d<b>e& ev15f#<v14b>v13ena4c#2 ]
+ [ mp0,4,100,800 v16na1 e2&el16 na2 mp0,4,100,20 d#ef#4& f#gaf#l8d#bl4b<b
+   >l16c#def#gf#gef#8edl8c#f# f#l16edg8f#ed2
+   <l8b>bl16ag#l8ag#.f#16e4& eef#ee.l16dc#dec#
+   <a8>l4d<b>ec# f#d#8<b&l16b>bge
+   l8agf#el4da& l8aga4d2
+   l16e<b>egbagf#l8ea4g f#4e<aa2 ]
+;
+
+#D=%t0 x128 %4 @0 q8 @q1 s20 v16 @v30 @p20 @k-1
+o4l8
+ [ na3 q4 v9d>v10dv11c#<v12c# <v13b>v14bv15a<v16a g>gg#<g# a>ag<g
+   f#>f#e<e d#>d#<b>b <e>ed<d c#>c#<a>a
+   d>dc#<c# <b>bg#e ade<e | na0 l16v8av9b>v10c#v11dv12ev9gv6f#v3e ] <v14na4a2
+ [ na3 q4 v14 l8 a>ag<g f#>f#e<e d#>d#f#<b >e>ed<d
+   c#>c#<b<b a#b>c#<a# b>gef# <b>ba<a
+   g#>g#f#<f# e>ed<d c#>c#de <a>ag<g
+   f#>f#g<g g#>g#a<a a#>a#b<b >e>ed<d
+   c#>c#<a>c# d<dc>c <b<ba>a g<gf#>f#
+   e<ed>d c#<a>dg aga<a na2q8d2 ]
+;
+
+#E=%t0 x128 %4 @0 q8 @q1 s20 v16 @v40 @p40 @k-2
+o3l8
+ [ na10 v9d>v10dv11c#<v12c# <v13b>v14bv15a<v16a g>gg#<g# a>ag<g
+   f#>f#e<e d#>d#<b>b <e>ed<d c#>c#<a>a
+   d>dc#<c# <b>bg#e ade<e | na0 l16v8av9b>v10c#v11dv12ev9gv6f#v3e ] <v14na4a2
+ [ na10 v16 l8 a>ag<g f#>f#e<e d#>d#f#<b >e>ed<d
+   c#>c#<b<b a#b>c#<a# b>gef# <b>ba<a
+   g#>g#f#<f# e>ed<d c#>c#de <a>ag<g
+   f#>f#g<g g#>g#a<a a#>a#b<b >e>ed<d
+   c#>c#<a>c# d<dc>c <b<ba>a g<gf#>f#
+   e<ed>d c#<a>dg aga<a na2d2 ]
+;
+
+t30
+A;
+B;
+C;
+D;
+E;
+
+#END;
+

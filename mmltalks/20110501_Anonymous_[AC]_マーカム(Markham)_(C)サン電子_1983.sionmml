@@ -1,0 +1,111 @@
+/*
+  マーカム - Main BGM - (C)サン電子 1983
+  Markham (Sun Electronics 1983)
+*/
+#TITLE{[AC] マーカム(Markham) (C)サン電子 1983};
+#QUANT16;
+t226;
+
+l8q0s28
+o5 [4f#b][4c#f#][f#b][c#f#][f#b][c#f#]
+o6 [12br] o5s26 r4g4f#4r4
+
+$s28
+o6 [rf#b<c#edc#>b] reab<dc#>ba reab<dc#ec#
+o6 bf#f#f#&f#f#4f# f#f#f#f#&f#f#4f#
+o6 f#<f#f#f#&f#f#4f# f#f#f#f#&f#f#f#r
+
+o6 rf#br<c#dre f#rgf#ragr f#gref#rde rc#dr>b<c#r>a
+o6 brf#br<c#dr ef#rgf#rag rf#gref#rd erc#d>b<c#>a
+
+o6 [s26b&b4r4s28b<c#>a] s26b&b4r4s28<dc#es26>b b4ra#&a#4r4
+
+o7 d1&ddc#dedc#d d4c#>b&b4<ra aggf#f#eef#
+o7 [f#4>b<d&dded] f#1&eaabb<c#c#r
+
+o8 d4c#>b&bb<c#d d2&d>b<c#d d#4d>s26b&b4r4 s28e4d#>b&bb<c>b
+o7 d#ed#b>rb<c#d# ed#re&ed#>b s26b&b1&b4r4 s28a<c#>r4
+
+o6 b2&b&f# s26f#1&f#4&f#4s28 r4rf#ge
+o6 f#2&f#e s26d&d4r4r e2&e4 r4rs28aaa
+o6 [b4rbbb]<[c#4rc#c#c#] [d4rddd][e4reee]
+
+o7 [f#4&f#4r4 r^16>f#^16b^16<d^16]
+o7 f#2&f#&e d8^16&d4r4^16 s26c#2&c#4s28 r4rc#de
+
+o7 f#2&f#&>f# s26b4r<s28c#de d2&d&c# >s26b4s28r<c#de
+o7 s26f#1&f#4r4 s28 eeerrr ef#f#rrr;
+
+l8q0s26
+o5 d4rdd4rr >a#4ra#a#4rr
+o5 d4rs28drrr>a# s26 <d4rd>a#4ra#
+o6 s28 [12f#r] o4s26 rrb4<c#4rr
+
+$s28
+o6 [rf#4f#<c#>bf#f#] re4ebaee re4ebaba
+o6 f#ddd&dd4d dddd&dd4d
+o6 d<ddd&dd4d dddd&dddr
+
+o6 rddrabr<c# dredrf#er derc#dr>b<c# r>abrgarf#
+o6 grddrabr <c#dredrf#e rderc#dr>b <c#r>abgaf#
+
+o6 [s26g&g4r4s28gaf#] s26g&g4r4g#4rs28a# s26f#4rf#&f#4r4
+
+o6 f#1&f#f#ef#gf#ef# f#4ed&d4r<c# c#>bbaagga
+o6 a4df#&f#f#gf# a4df#&f#f#gf# b1&g<c#c#ddeer
+
+o7 f#4ed#&d#d#ef# f#2&f#d#ef# s26g#4rg#&g#4>r4 g4rs28g#&g#g#4g#
+o6 b4bbrg#4g# g#g#rg#&g#4d# d#&d#1&d2&c#er4
+
+o6 d2&d&d s26d1&d4&d4s28 r4rd4r
+o6 d2&d&c# s26>b&b4r4r <c#2&c#4 r4rs28c#>ee
+o6 [4d4rddd] [f#4rf#f#f#][g4rggg]
+
+o7 [d4&d4r4 r^16>d^16f#^16b^16<]
+o7 d2&d&c# >b8^16&b4r4^16 s26a2&a4s28 r4ra4r
+
+o6 a2&a&d s26d4rf#4r f#2&f#&f# [f#4r]
+o6 s26g1&g4r4 s28 f#f#f#rrr aaarrr;
+
+l8q0s26
+o4 b4rbb4rr f#4rf#f#4rr
+o4 [b4rbf#4rf#]
+o6 s28 [12d>b<] o4s26 rrg4<f#4rr
+
+$s28
+o4 [4bb<bb>][4aa<aa>]
+o6 d>bba#&a#a#4a# aaaa#&a#a#4a#
+o5 b<bba#&a#a#4a# aaaa#&a#a#a#r
+
+o4 [8bb<bb>]
+o4 [8aa<bb>]
+
+o4 [gg<gg>][f#f#<f#f#>]ee<ee>ff<ff>[f#f#<f#f#>]
+
+o4 [bb<bb>][aa<aa>][gg<gg>][aa<aa>]
+o4 [bb<bb>][aa<aa>][gg<gg>][aa<aa>]
+
+o4 [bb<bb>][a#a#<a#a#>][g#g#<g#g#>]gg#<gg#>g#g#<g#g#>
+o4 f#f#<f#f#>g#g#<g#g#> ee<ee>f#f#<f#f#> bb<bb>ar<aa#> gg#<gg#>aa#<aa#>
+
+o4 [b4r<bbb>][a4r<aaa>][g4r<ggg>] o6 [f#4r>aaa<]
+o4 [b4r<bbb>][a4r<aaa>][g4r<ggg>][a4r<aaa>]
+
+o4 [b4r<bbb>][a4r<aaa>][g4r<ggg>][a4r<aaa>]
+o4 [b4r<bbb>][a4r<aaa>][g4r<ggg>][f#f#f#rrr];
+
+l8q0
+o7 s26b&b4r s28r4ba# s26f#&f#4r s28r4f#d
+o6 [b4ba#f#4f#a#]
+o4 b4r4<c#4r>g#< c#4>b4r<f4f# e4d4c#>brr o6s26 r4f#ef#4r4;
+
+l8q0
+o7 s26f#&f#4r s28r4f#f# s26c#&c#4r s28r4c#>b
+o6 [f#4f#f#c#4c#f#]
+o4 f#4r4f#4rf# f#4f#4rb4b b4b4c#>brr o6s26 r4d4c#4r4;
+
+l8q0
+o7 s26d&d4r s28r4dc# o6 s26a#&a#4r s28r4a#f#
+o6 [d4dc#>a#4a#<c#]
+o3 b4r4<c#4rd c#4>b4r<f4f# e4d4c#>brr o5s26 r4a4a#4r4;
+

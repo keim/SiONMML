@@ -1,0 +1,88 @@
+#TITLE{Theme of Chun-Li / StreetFighter2};
+#EFFECT0{delay100,,,15};
+t140;
+
+// bass --------------------------------------------------
+#OPM@1{1 6
+31 19 16 07 04 25 0 07 3 0 0
+31 09 02 07 03 50 0 00 3 0 0
+31 10 02 07 02 20 0 00 3 0 0
+31 07 01 06 01 06 0 00 3 0 0};
+#B=[ddddd8a8dddddec8|ddddd8a4dddec8]dddddg8ad8dddaeg;
+%6@1v10q5l16r^1.[drcc>ac8B
+[aaaaa8<e8>aaaaa<c>g8|aaaaa8<e4>aaa<c>g8]aaaaa<d8e>a8aaa<ecd>
+ddddd8a8dddddec8aaaaa8<e8>aaaaa<c>g8d8dddag<c>a<c>agdec8
+d4d4dgagcgg8d1aa<ccdcdfagdcdc>a
+dddddd8a8dddddec8ddddd8a4cdgdcd
+eeeee8b8eeeeegd8eeeeee8beeeeege8
+fffff8<c8>fffffgd8eeeee8b4degbg<c>
+fffff8<c8>fffffafaeeeeee8eeeeeegc8
+ddddd8a8ddddded8ccccc8g4cccgc8>
+a+a+a+a+a+8<f8>a+a+a+a+a+a<c8>
+aaaaa8<e4>aaa<edcddddd8a8dddddec8
+ddddd8a4dddec8|ddddd8a8dddddec8ddddd8a8.]
+$B(1)B(2)B(3)B(4);
+
+// melody --------------------------------------------------
+#OPM@0{4 7
+17 28 00 04 05 23 0 08 2 0 0
+17 15 00 07 10 04 0 02 2 0 0
+17 00 00 04 00 30 0 04 6 0 0
+17 15 00 07 01 04 0 02 6 0 0};
+#A=[r1^2.l16gag8a4.<c8>a4l8gfdrdcdrfgal16aga8agl8a<cdedl16rdl8dcdrl4d
+e.g8el8dc>a4<c>ga4<cdel16ede8edl8edc>ga4gel4ac
+l8drfga4<cde.g16edc>ageq6l4dgaq8<cl16dedc>a<c>agagedcdecl1dr
+l16a<c>agagecddccdrfga<cdcdegeagdcdrcdegeded>baeeddergab<dedegagbaeder
+defafefedc>gagagagdegededcdega<cdedc>aageaageaaagaaaab<c>bal8ge
+l24a<cdcdededc>a<c>l8a4.<c>a4gfq6l4egaq8<cd.l8ed.e16dc>a4geara4&l1ar];
+%6@0q8v10k0A;
+%6@0q8v5k4r16.A;
+
+// seq --------------------------------------------------
+#OPM@2{6 7
+25 15 03 07 10 34 0 04 3 0 0
+25 05 03 03 10 06 0 02 0 0 0
+31 15 05 10 15 28 0 02 7 0 0
+28 10 05 06 15 06 0 01 0 0 0};
+#M=%6q8@2q8;
+#B=[ddccdrfrddccdag|r]f;
+#A=[l16[B]3[[aaggar<cr>aagga|<cer>]<edc>]
+ddccdrfrddccdfgraaggar<cr>aagga<ce8dagfgedc>aga<cl32>aga<c>a<cdfr1
+l16ddcc>aaggddcc>aaggaa<ccdcdfagdgaga8aagga4<aaggarar>aagga4<agdc>agdcbbaab4
+<bbaabrbr>bbaab4<baed>baed<cc>bb<c4<cc>bb<crcr
+o5bbaab4<baed>baed<cc>bb<c4cc>bb<c<c>b8>bbaab4bbaab
+<agfddccd4ddccdag8cc>aa<c4cc>aa<cedc>a+a+aaa+4a+a+aaa+<dc8>
+aagga4aagga<edc>B]$[B(1)][B(2)][B(3)][B(4)];
+Mv7k3A;
+Mv6k-3A(-5);
+Mv3k6r16.A;
+
+// organ --------------------------------------------------
+#OPM@3{4 7
+31 12 00 06 02 29 0 02 5 0 0
+25 10 00 06 00 03 0 02 5 0 0
+31 11 00 06 02 29 0 02 2 0 0
+25 10 00 07 00 03 0 04 2 0 0};
+#M=%6@3q8v5k5r1^1l1;
+M[[d<d>][e<e>]d<e>ddd^d<d>e<e>[f<e>]dc>a+a<d<d|>d<d]$[>d+<d+][>e<e][>f<f][>f+<f+];
+M[[>a<a][>a<a]>a<a>aaa^a<a>b<b[cb] >ag f e a<a|>a<a]$[>a+<a+][>b<b][c<c>][c+<c+>];
+
+// drum --------------------------------------------------
+#@4{1 0 0 // BD
+00 63 0 0 36 00 00 00 00 01 00 00 00 00 00
+19 63 0 0 44 00 20 00 00 01 00 00 00 00 00
+}@v96v24q0s,-128;
+#@5{1 3 0 // SD
+00 36 32 12 12 04 04 00 00 01 00 00 00 00 00
+17 48 32 24 24 06 00 00 00 01 00 00 -1 00 47
+}@f72,1@v64v12q8;
+#@6{4 6 0 // Tambourine
+32 32 28 16 04 02 10 0 0 10 0 0 2 0 0
+45 56 28 48 44 05 00 0 0 05 0 0 2 0 0
+40 32 28 20 08 02 00 0 0 10 0 0 2 0 0
+40 52 28 48 28 06 00 0 0 15 0 0 2 0 0
+}%f1@f112,2;
+#A=c8.cr8c8c8r4.c8.cr8c8r8ccr4;#B=c8.cr8c8c8r4.c8.cr8c8r8ccr8c8;
+%6@4l4o3[rcrc]2[l16[A|B]3c8.cr8c8r8ccr4c8.cr8c8c4c4l4ccccr2l16rv20<ggrrcr>gv24[AB]4]$AB;
+%6@5l16o5r1.rcrcrccrl4[[rcrc]10rcrc8c8rcl16rcrcrccrr1.rccrrcrcl4[rcrc]16]$rcrc;
+%6@6q8v4l8o5[ra]8[[ra]40r1.l16(rararaar)r1l8[ra]4[ra]64]$rararara;

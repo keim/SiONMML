@@ -1,0 +1,120 @@
+/*
+   [FC] FAMILY COMPUTER ROBOT <Gyro> - GAME A - (C)Nintendo 1985 by LinearDrive
+   date:2011-05-12
+   JASRAC:094-5770-4
+*/
+
+
+#TITLE{[FC] FAMILY COMPUTER ROBOT <Gyro> - GAME A - (C)Nintendo 1985};
+#REV;
+#FPS  600;
+#QUANT 16;
+
+
+//amplitude envelope
+#TABLE 11 { (128,0)43 |0   };
+#TABLE 21 { (128,0)43 |0   };
+#TABLE 31 {           |128 };
+#TABLE 41 {  (48,0)37 |0   };
+#TABLE 42 {  (48,0)120|0   };
+
+//pitch bend for drums
+#TABLE 80 { (0,-1920)80|-1920 };
+
+
+/* シーケンサ初期設定用 */
+#M= %v0,4 %x0 v0 x128 q16 @q0 o5 kt0 k0 v16;
+
+
+/* RP2A03 SQUARE-A */
+#A=
+   %1 @4,63,0,0,63,0 M l16 o4 v16 na11 np80
+   $
+   [ a4>g4<a4>g4<   ]3  a4>g4<a8>g8g8g8<
+   [ a4>e4<a4>e4<   ]7  a4>g4 g8g8<a8>g8<
+   [ a4>g4<a4>g4<   ]23 a4>g4 e8<aa>g4<
+   [ a4>g4<a4>g8<a8 ]2
+   [ a4>e4<a4>e4<   ]8
+;
+
+
+/* RP2A03 SQUARE-B */
+#B=
+   %1 @4,63,0,0,63,0 M l16 o5 v16 na21
+   $
+   [
+     g>c<g>c< g>c<g>c< a>c<a>c< a>c<a>c<
+     afaf >c<a>c<a >e<b>e<b >d<a>d<a
+   ]2
+   [
+     r8e8 r8e8 r8e8 r8e8
+     r8e8 r8e8 <ab>c8 <b>cd8
+   ]2
+   r1 r1 r1 r1
+   >
+   [
+     r8e8 gga8 r8>c8< r8gg
+     a+8<a+8 r8a+8 r8a+8 r8a+8>
+     r8a8 aa>c8< r8a8 r8g8
+     <r8g8 r8g8 r8g8 r8g8>
+   ]4
+   [
+     r8ee g8aa&a8>c8< r8c8
+     bb<e8> g8>c8 <<r8c8 r8c8
+     r8f8 r8>dd f8a8 r8<f8>
+     gg<g8> e8<g8> c8<g8 r8g8>
+   ]2
+   <
+   r1 r1
+   [
+     r8e8 r8e8 r8e8 r8e8
+     r8e8 r8e8 <ab>c8 <b>cd8
+   ]2
+   r1 r1 r1 r1
+;
+
+
+/* RP2A03 TRIANGLE */
+#C=
+   %1 @8,63,0,0,63,0 M l16 o6 v16 na31 q10
+   $
+   [ c<ergr>cr<g> c<frar>cr<a> c<drfrarf gabrb>cdr ]2
+   <<
+   [ crgr<gr>gr crgr<gr>gr crgr<gr>gr <fgargabr> ]4
+   [
+     cr>er<<gr>>er< cc>er<<gr>>er<
+     d+r>gr<<a+r>>gr< d+r>gr<<a+r>>gr<
+     fr>ar<cr>ar< ff>ar<cr>ar<
+     cr>er<<gr>>er< cr>er<<gr>>er<
+   ]4
+   [
+     <ff>>ar<cr>ar<< fr>>ar<cr>ar<
+     <er>>gr<cr>gr<< aa>>er<er>er<
+     dr>ar<<ar>>ar<  dr>ar<<ar>>ar<
+     cc>er<<gr>>er<  cc>er<<gr>>er<
+   ]2
+   r1 r1
+   [ crgr<gr>gr crgr<gr>gr crgr<gr>gr <fgargabr> ]4
+   >>
+;
+
+
+/* RP2A03 NOISE */
+#D=
+   %1 @9,63,0,0,63,0 @ph-1 M l16 o0 v16 na41 kt1
+   $
+   [ r8c8 c8c8 r8c8 c8c8 ]36
+   [ c8c8c8c8c8 na42 c4 na41 c8 ]2
+   [ r8c8 c8c8 r8c8 c8c8 ]8
+;
+
+
+/* 再生 */
+t150
+@v43 A;
+@v43 B;
+@v64 C;
+@v43 D;
+
+
+#END;

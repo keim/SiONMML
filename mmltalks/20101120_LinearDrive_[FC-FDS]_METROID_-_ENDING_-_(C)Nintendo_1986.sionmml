@@ -1,0 +1,122 @@
+/*
+   [FC-FDS] METROID - ENDING - (C)Nintendo 1986 by LinearDrive
+   date:2010-11-21初版
+   JASRAC:086-2289-2
+*/
+
+
+#TITLE{[FC-FDS] METROID - ENDING - (C)Nintendo 1986};
+#REV;
+#FPS 600;
+
+
+//envelope for tone
+#TABLE  1 { (104,40)30        | 40 };
+#TABLE  2 {  (16,64)120,64,48 | 48 };
+#TABLE  3 {  (16,64)210,64,48 | 48 };
+#TABLE  5 {  (16,88)60        | 88 };
+
+//envelope for noise
+#TABLE 15 { (48,0)33 |0 };
+#TABLE 16 { (48,0)100|0 };
+#TABLE 17 { (80,0)37 |0 };
+
+
+/* 矩形波１ */
+#A=
+   %1 @6,63,0,0,63,0 v16 x128 o3 l16 q8 @q0 na1
+   [ aaarrraaaraaaaar ]10 >
+   [ a4>f+4e4c+4<f+a>df+a4f+4d4<b4.>d8<ef+gaa4b4.>d8<g4>g4< ]2 <
+   g4g4f+4f+4>c4c4<b4b4a+4a+4a4a4g+4g+4a4a4 >
+   [ aaarrraaaraaaaar ]2 >
+   [ dddrrrdddrdddddr ]2 < 
+   [ f+2g2g2g2 ]4 >>>
+   [ a4g4f+4e4g4f+4d4e4 ]6 <<<
+   [ d8d8d8d8r8<f+8f+8f+8e8e8e8e8a8a8a8a8r8f+8f+8f+8f+8f+8f+8r8 g6d6e6 a+6a6g6> ]2 >
+   [ f+gf+gabab>dedeef+ef+< ]8 <
+   [ dddrrrdddrdddddr<a+a+a+rrra+a+>crcccccr ]3
+   [ dddrrrdddrdddddr ]2 < 
+   d1r4drddd4&d16
+;
+
+
+/* 矩形波２ */
+#B=
+   %1 @6,63,0,0,47,0 v16 x128 o4 l16 q8 @q1
+   na2
+   [ e1a1g+1g1 ]2 e1e1 >
+   [ df+a>df+4e4d4<a2f+2b2d4>d8<af+e2b2 ]2
+   [ e2f+4d4d4c4e4d4a+4e4d4a4f8g+8b4g4g4 ]2
+   [ d4a4>d4<a4 ]8 >
+   [ d1e2g2f+1g2a+2 ]2 d1e2g2f+1g2a+2
+   [ a8<a8>g8<a8>f+8<a8>e8<a8>g8<g8>f+8<g8>d8<g8>e8<g8> ]8 <
+   na3
+   [ aaarrraaaraaaaarfffrrrffgrgggggr ]3
+   [ aaarrraaaraaaaar ]2 <
+   a1r4araaa4&a16
+;
+
+
+/* 三角波 */
+#C=
+   %1 @8,63,0,0,63,0 v16 o3 l16 q8 @q1
+   [ aaarrraaaraaaaar ]10 >
+   q4 [ d4d4c+4c+4<b4b4a4a4g4g4f+4f+4e4e4a4a4> ]2 <
+   [ g4g4f+4f+4>c4c4<b4b4a+4a+4a4a4g+4g+4a4a4 ]2
+   q8 [ dddrrrdddrdddddr ]8 >>>
+   q3 [ ddaa>dd<aa ]24 <<
+   [
+     q8 d8d8d8d8r8<f+8f+8f+8e8e8e8e8a8a8a8a8r8f+8f+8f+8f+8f+8f+8f+8
+     q7 g6d6e6 a+6a6g6 > 
+   ]4 q8 <
+   [ dddrrrdddrdddddr<a+a+a+rrra+a+>crcccccr ]3
+   [ dddrrrdddrdddddr ]2
+   d8r8r2.r4drddd8r8r16
+;
+
+
+/* ノイズ */
+#X= c+16;
+#Y= na16 c+8 na15;
+#Z= na17 a16 na15;
+#D=
+   %1 @9,63,0,0,47,0 @ph-1 v16 x128 o0 l16 q8 @q0
+   na15
+   [ XXX rrr XXX r XXXXX r ]10
+   [ X rrr Y rr ]32
+   [ X r XX X r XX X r XX Y XX ]8
+   [ X rrr ]16
+   [ X r ]64
+   [ XXY ZXY ]32
+   [ XXX rrr XXX r XXXXX r ]8
+   Yrr r1 Y XX Y rr r
+;
+
+
+/* 拡張音源 */
+#E=
+   %5 @2,63,0,0,47,0 v16 x128 o4 l16 q8 @q1 na5 @f104
+   [ a1>c1<b1a+1 ]2 a1a1 > 
+   [ f+a>df+a4g4f+4d1<ef+ga>d4<a4>gf+d<ag2>d2< ]2 >
+   [ c+2d4<a4>f+4e4g4f+4e8d8<a+8g8f+4>d4<g+8b8>e4d4e4 ]2 <<
+   [ a2>c2<b2a+2 ]4 d1 r1r1r1
+   >d4.<a8d2.r4g4.f+8< d6a6>d6 f+6a6>d6 e4.<a+8g2
+   a2a4.r8 g6f+6d6 e6d6e6 d1 g6a+6>d6 g6a+6>d6 <
+   [ f+af+aabab>dedeef+ef+< ]8 <
+   [ a1>d2c+4.<b8 a1 d2g4.f+8 ]2
+   a1 c6g6>c6<d6g6>c6 d1 f6c6<g6>g6e6c6 d1 <d4a4g4>c4
+   [ eeerrreeereeeeer ]2
+   e1r4<drdd<d4&d16
+;
+
+
+/* 再生 */
+t130
+@v48 A;
+@v48 B;
+@v64 C;
+@v48 D;
+@v64 E;
+
+
+#END;

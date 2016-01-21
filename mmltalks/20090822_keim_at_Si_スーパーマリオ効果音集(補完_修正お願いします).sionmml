@@ -1,0 +1,32 @@
+#TITLE{スーパーマリオ効果音集(補完/修正お願いします)};
+#TABLE0{(0,128)8};#TABLE1{(0,384)8};      // fumi na,np
+#TABLE2{(128,0)12,0};#TABLE3{(90,934)12}; // jump na,np
+#TABLE4{(0,-1280)4};                      // dom np
+#TABLE5{(0,-1280)6};#TABLE6{(0,-2560)6};  // firework np
+#TABLE7{(0,36)36};                        // goal np
+#TABLE8{14,0,13,0,13,0,12,0,12,0,11,0,9,0,9,0,8,0,8,0,7,0,6,0,6,0,5,0,5}*8+31;
+#TABLE9{12,6,13,8,13,3,9,10,15,12,6,11,13,14}; // block na,nt
+t200;
+#A=cggg+g+c+;
+%1@4s63q8l64o5A(0)A(1)A(2)A(3) r1
+%1@4s63q8l64o5A(0)A(1)A(2)A(3)A(4)A(5)A(6)A(7) r1
+%1@2s63q8l32o6c>g<ceg<c>g>g+<cd+g+d+g+b+<d+g+d+>>a+<dfa+fa+<dfa+f64 r1
+%1@4s63q8o5a32@2na2,2np3,2g2 r1
+%1@4s63q8o5d32@2na2,2np3,2c2 r1
+%1@4s63l128o5b-<cr16f64 r1
+%1@4s63q8l10na0np1o5a<gnanp r1
+%1@9s63q8o0na8,1nt9,2c4.^32nantx128 r1
+%1@4s63q8l64np4,2o4a-16npc+&d+&f&f+ r1
+%1@4s63q8l64o4g<g<g<g<g r1
+%1@4s63q8l16q0s22o6b<e r1
+%1@4s63q0s24l9o7eg<ecdq8s63g r1
+%1@4s63q8l64o7[e>ad<e>ad>gc>f>a+r16]3 r1
+%1@4s63q8o4nt7,2b-1 r1
+%1@4s63q7l64o6[b]80 r1
+%1@4s63q8l64np5,2o4c+8<np6,2c+6np r1;
+#END;
+Reference from http://dic.nicovideo.jp/mml_id/1868 (Special thanks to OffGao)
+
+
+
+

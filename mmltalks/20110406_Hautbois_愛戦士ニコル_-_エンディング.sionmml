@@ -1,0 +1,112 @@
+/*
+    愛戦士ニコル - エンディング
+    1987 KONAMI
+    [FC][FDS][KONAMI][愛戦士ニコル]
+*/
+
+#TITLE{愛戦士ニコル - エンディング};
+#REV;
+#FPS  600;
+#QUANT  16;
+#EFFECT0{reverb70,40,80,10};
+
+/* AL,FB,FBC
+   WS AR DR SR RR SL TL KR KL ML D1 D2 AM PH FIX */
+#@0{
+    6, 7, 0
+    0,63, 0, 0, 0, 0,26, 0, 0, 8, 0, 0, 0, 0, 0,
+    0,63,23, 0,28, 4,12, 0, 0, 4, 0, 0, 0, 0, 0,
+    4,63,23, 0,28, 4, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+    1,63,23, 0,28, 4,40, 0, 0, 0, 0, 0, 0, 0, 0,
+};
+#@1{
+    0, 7, 0
+    0,63, 0, 0, 0, 0,28, 0, 0, 3, 0, 0, 0, 0, 0,
+    0,63,23,20,28, 5, 8, 0, 0, 1, 0, 0, 0, 0, 0,
+};
+
+// table env
+#TABLE  0 { (128,64)180| 64 };
+#TABLE  1 { (128,64)30 | 64 };
+#TABLE  2 { (128,110)30| 110 };
+
+//     00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff
+#WAVB0{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101010101010101};
+#WAVB1{7f7f7f7f7f7f7f7f010101010101010101010101010101010101010101010101};
+
+#A=
+v16 x128
+%6 @0 o6 s60
+o7 l16 q16 c<b> c8<g8 q12 a4 q16 gfegfd q12 c8.q16ed32e32d8cq10c1 r4
+@1 o7 l4 q15 [c<g>]4
+$
+@0 s23 o6l16 q12 e4.q16ef l8gfeq12d4<q16g>g<g> fl16ede8c<g 
+a8b>c<g8b>c<f8b>cfedcq12c4.q16dcc8<q16 b8r4>
+q12a4l32q16abl16aga q12b4l32q16b>c<l16bab> 
+l8c<gal16gfl8egl16fedc<
+q12a4>l16q16fedcq12c4<q16b8ab>
+l8c<gl16agf8q16 s22e4r4
+l4q12dgg.l16q16ab>q12c2&c4l16q16dc<ba
+l4q12dgg.l16q16ab>q12c2.&c4<
+l4q12ggbl16q16>c<bab>
+l4q12cg>c<l16q16defd
+q12c2.&c4<
+b2&b8&b4l16q16ab>
+;
+
+#B=
+%4 @0 na0 s60 v8 x74 k2
+o7 l16 q16 c<b>c8<g8 c<b>c <cedc8f8 gcegl8fd q10 na1 c1 r4
+x74 na0 o5 l8q16[<c>[c]7]
+$
+k0 na0 x96 l8q16<c>[c]7<
+g>ggg< c>cc<g>
+l16 f8ga e8fg d8fg c8el8g.ggga s23gr4s60>
+@1 k2 x74 ffff gggg gefl16edl8cel16dc<ba<l8
+f>fff <g>ggg g>l16c<gfed8 na1 c2
+na0 l8 gggg gggg @0 na2 g4 >g4..l16<g>fedc<
+@1 na0 l8 gggg ffff eeee eeee 
+@0 na2 l16 [gd<b>d]4
+g4>c4..l16<cfgaf
+g8>c<b>c8 <gfg8 edl8ec<
+g>>l16gfg8 dc#d8 <bal8bg
+;
+
+#C=
+%4 @0 na0 s60 v8 x74 k8
+o7 l16 q16 c<b>l8c<ga4 l16 gfegfdc8.ed32e32d8c&q10 na1c1 r4
+k-4 x74 na0 o5 l8 q16 [<c>[c]7]
+$
+na0 x96 o6l16 q12 k8 e4.q16ef l8gfe q12 d4<q16g>g<g> fl16ede8c<g 
+a8b>c<g8b>c<f8b>cfedcq12c4. q16dcc8< s23b8r4s60
+@1 k-4 o6 l8 q16 x74 ffff gggg gefl16edc8e8dc<ba
+<l8f>fff <g>ggg gl16>c<gfed8 na1 c2
+na0 l8 gggg gggg na2 @0 g4>g4..l16<g>fedc<
+@1 na0 l8 gggg ffff eeee eeee 
+@0 na2 l16 [gd<b>d]4
+g4>c4..l16<cfgaf
+g8>c<b>c8 <gfg8 edl8ec<
+g>>l16gfg8 dc#d8 <bal8bg
+;
+
+#D=
+v16 x128 k-2
+%1 @8,60,0,0,60
+o6 l16 q16 c&<b&>l8c&<c&fr l16 e&d&l8e&f&gr gl16rf&q10 e1 r4
+l1q16cc
+$
+c&l2<g&>c&l4f&e&d&c& <f2 l8q8gg&g4 l8q12ffffgggg>
+l4c&<b&a&q15g& ff&gg&>c <l16f&e&d8&c2
+l8q8 gggg ffff eeee ccff gggg ffff cccc ccl16c&d&e&f&
+l8gggg ffff cccc ffff
+g>>l16q15e&d&erc&<b&>cr <g&f&gr cr< gr>>d&c&dr<b&a&brg&f#&gr <dr
+;
+
+t100
+A;
+B;
+C;
+D;
+
+#END;
+

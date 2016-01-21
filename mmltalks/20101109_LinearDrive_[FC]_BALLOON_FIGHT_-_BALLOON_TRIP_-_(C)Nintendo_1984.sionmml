@@ -1,0 +1,81 @@
+/*
+   [FC] BALLOON FIGHT - BALLOON TRIP - (C)Nintendo 1984 by LinearDrive
+   date:2010-11-09初版
+   JASRAC:068-8102-5
+*/
+
+
+#TITLE{[FC] BALLOON FIGHT - BALLOON TRIP - (C)Nintendo 1984};
+#REV;
+#FPS 600;
+
+
+//envelope for drums
+#TABLE 10 { (128,0)39 |0 };
+
+//envelope for noise
+#TABLE 15 {  (48,0)33 |0 };
+#TABLE 16 {  (80,0)160|0 };
+
+//pitch bend for drums
+#TABLE 20 { (0,-1920)80|-1920 };
+
+
+/* 矩形波１ */
+#A=
+   %1 @4,63,0,0,63,0 v8 x128 o5 l8 q8 @q0
+   $
+   q8 brr @q2 >c+e<brr @q4 a6a6a6 @q0 a6b6a6
+   [ e32 g+32 e32 g+32 ]8
+   [ d32 a32 d32 a32 ]8
+   q4 [ f+rr g+b err | rf+>c+<f+rebe ]4
+   q8 >e12e-12d12c+12<b12b-12 a12a-12g12g-12f12e12
+   r1r1r1r1r1r1r1r1
+   q4 [ f+rr g+b errrf+>c+<f+rebe ]4
+   [ r ]32
+;
+
+
+/* 矩形波２ */
+#B=
+   %1 @4,63,0,0,63,0 v16 x128 na10 np20 o4 l8 q8 @q0
+   $
+   [ rrar    rraa    ]3         [ a6 ]6
+   [ c+rc+r >g+r<c+r ]7         [ a6 ]6
+   [ erer   >br<e>g+16g+16< ]4  [ erer >bb<e>g+< ]3 >>e16e16<<eee>b16b16<eer
+   [ c+rc+r >g+r<c+r  ]8
+   [ e>b16b16<er >b<re>g+< ]2 > [ >ee<b16b16b16r16 g+16g+16g+16r16er ]2
+;
+
+
+/* 三角波 */
+#C=
+   %1 @8,63,0,0,63,0 v16 x128 o5 l8 q8 @q0
+   $
+   q8 g+rr @q2 g+bg+rr @q4f+6f+6f+6 @q0f+6g+6f+6 q7 <<errg+brrg+ >f+6e6d6<a6g6f+6
+   [ errg+rrrbrac+c+ddrd+r q6 e16e16r q7 >errg+e e6c+6<a6c+6d6d+6 ]6
+   [ r ]32
+;
+
+
+/* ノイズ */
+#D=
+   %1 @9,63,0,0,63,0 @ph-1 v16 x128 o0 l8 q8 @q0 na15
+   $
+   kt1
+   [ c ]24                 c6c6c6c6c6c6
+   [ ccc16c16ccc16c16cc ]7 c6c6c6c6c6c6
+   [ c ]64
+   na16 kt6 c4 na15 kt1 [ c ]62 [ c ]32
+;
+
+
+/* 再生 */
+t152
+@v48 A;
+@v48 B;
+@v64 C;
+@v48 D;
+
+
+#END;

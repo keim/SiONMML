@@ -1,0 +1,103 @@
+/*
+   メトロイド - オープニング
+   [FC][FDS][メトロイド]
+   2011.5.10 修正 hautbois 
+   2011.5.21 波形修正 hautbois 
+*/
+
+#TITLE{メトロイド - オープニング};
+
+#REV;
+#FPS  600;
+#QUANT  16;
+//#EFFECT0{reverb70,40,70,20};
+
+// table env
+#TABLE  0 { (64,128)160          | 128 };
+#TABLE  1 { (128,0)400(60,00)400 | 0 };
+#TABLE  2 { (64,128)60(128,90)60 | 90 };
+#TABLE  3 { (128,20)20(20,0)20   | 0 };
+#TABLE  4 { (128,70)50(70,0)160  | 0 };
+
+//     00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff
+//#WAVB0{EE153C5466707D4C12EEC9BFE10508CCB9D4EEFB030A123F512AF6AFA29DBFF3};
+#WAVB0{00101C262E3640484E52564E443C36303A48586062605A5652504E4C4A484644424032221624322446405E686E747C7E7C7468605A4E463C362C261E16100800};
+#WAVB1{7f80};
+ 
+#A= @v128
+v16 x128
+%4
+@0 na0 s40
+o3l1q12[16d]16
+l1 rrrr rrrr
+//@lfo11,2 mp0,12,400,300
+o4l4q16 f#gab> def#g a2.l8gf# g2.f#e
+d2.a4> d1 <l2b-a gf#
+l4e2.f# a2.>d <e2.f#4 d1<
+l2ab >de d.<b-4 g1
+t160
+o5l2q16 ef#a>d<df>c<a e-g>d<b- ae<b>e a-e<b>e
+//テンポがもどりません(・_・;)
+t120
+o3l1q12[16d]16
+;
+
+#B= @v20 @k2 @p10
+v10 x128
+%4 @1 na1 s40
+o7l1q16 [db-fr d>c<b-r]
+[o7l4q16 a<a>g<g>f#<f#>e<e> g<g>f#<f#>e<e>d<d]6
+o6l6q16 
+a3<a>g3<a>f#3<a>e3<a>
+a3<a>g3<a>f3<a>e3<a>
+a3<a>g3<a>e3<a>g3<a>
+[ae<b>]4
+[g#e<b>]4
+;
+
+#C= @v20 @k-2 @p-10
+v7 x128 k2
+%4 @1 na1 s40
+o7l1q16 r6 [db-fr d>c<b-r]
+[o7l4q16 a<a>g<g>f#<f#>e<e> g<g>f#<f#>e<e>d<d]5
+o7l4q16 a<a>g<g>f#<f#>e<e> g<g>f#<f#>e<e>d<d12
+o6l6q16r4
+a3<a>g3<a>f#3<a>e3<a>
+a3<a>g3<a>f3<a>e3<a>
+a3<a>g3<a>e3<a>g3<a>
+[ae<b>]4
+[g#e<b>]4
+;
+
+#D= @v80
+v16 x128
+%1 @8,60,0,0,60
+o3l1q13 [a]16
+o5l1q16 d&>c&<b&b-& f#&>c&<b-&g
+o4l1q16 [ d&>c&<b&b-& f#&>c&<b-&g ]
+o4l2q16 [d3&a6&>d&<]< [b-3&>f6&>c&<<]
+[e-3&b-6&>e-&<] [3e3&b6&>e&<] e3&b6&>e
+t120
+o3l1q13 [a]16
+;
+
+#E= @v50
+v7 x128
+%1 @9 
+o0q16
+[ na3 c1 ]16
+[ na3 l4cc na4 d. na3 l16ccc2.l8cc ]4
+[ na3 l4cc na4 d. na3 l16ccc2.l8cc ]8
+[ na3 l6ccc na4 d na3 cc ]10
+[ na3 c1 ]16
+;
+
+t120
+A;
+B;
+C;
+D;
+E;
+
+#END;
+

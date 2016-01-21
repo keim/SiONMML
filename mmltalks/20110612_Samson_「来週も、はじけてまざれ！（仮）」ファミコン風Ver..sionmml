@@ -1,0 +1,165 @@
+/*
+「来週も、はじけてまざれ！（仮）」ファミコン風Ver.
+*/
+
+#TITLE{「来週も、はじけてまざれ！（仮）」ファミコン風Ver.};
+
+
+// Bass
+t152 %1 kt1
+
+// Intro
+@8,63,0,0,63 o4 l8 q8 @q11 v18
+r1 r1 r1 r1 ccr2. rcrc&c4.r
+<<v14d4c4>a-f4g& g>>v18gb<dgrr4
+// >f1 rgb<dgrr4
+
+// A
+o4ccr2rc rcrc4.r4
+@q6>f<<))@q11faf((>>@q6f<<))@q11faf((>>
+@q6 f<<))@q11fa-f((>>@q6f<<))@q11fa-f((>
+ccr2rc rcrc4.r4
+@q6>f<<))@q11faf((>>@q6f<<))@q11faf((>>
+@q6a<<))@q11a<d>a((>>@q6a<<((@q11a<d->a))>
+@q6d<<))@q11dd((>>d@q6d<<))@q11dd((>>d
+@q6>g<<))@q11gg((>>g@q6g<<))@q11gg((>>g<
+@q6c<<))@q11cc((>>c@q6c<<))@q11cc((>>c
+@q6>a<<))@q11aa((>>a@q6a<<))@q11aa((>>a<
+@q6d<<))@q11dd((>>d@q6d<<))@q11dd((>>d
+@q6>g<<))@q11gg((>>g@q6g<<))@q11gg((>>g<
+@q6c<<))@q11cc((>>c@q6c<<))@q11cc((>>c
+@q6c<<))@q11cc((>>c@q6c<<))@q11c((>>>@q6b<<))@q11b((
+
+// B
+o3 v18
+[@q11aar<<<))@q0a4r((>>>@q11re a<ega4ge4>
+ ggr<<<))@q0g4r((>>>@q11rg g<dfg4fd4]
+o3[@q6f<<))@q11ff((>>f@q6f<<))@q11ff((>>f]
+@q6e<<))@q11ee((>>e@q6e<<))@q11ee((>>e
+@q6a<<))@q11aa((>>a@q6a<<))@q11aa((>>a
+@q6f<<))@q11ff((>>f@q6f<<))@q11ff((>>f
+@q6f+<<))@q11f+f+((>>f+@q6f+<<))@q11f+f+((>>f+
+@q6g<<))@q11gg((>>g@q6g<<))@q11gg((>>g
+grrgg4po6@q8<g&>g
+
+// C
+@8,63,0,0,63o4l8@q11v20
+[[c<c]4>>[b<b]4>[a<a]4>[g<g]4>
+[f<f]4[c<c]4>[d<d]4>>[g<g]4]>
+[f<f]4>[g<g]4>[e<e]4>[a<a]4
+[d<d]3>dg& gggrr4po6@q8g&>g@q11
+[f<f]8>[c<c]4 @q6>c4&c16r16<c16c16@q0c4r4;
+
+// Melo
+t152 %1 kt1
+
+// Intro
+@7,60,40,0,28 o7 l8 q5 v12
+c>eg<c>begb    b-ega4ab<c
+d>fa<dd->fa<d- c>f<c>b4gab<
+c>eg<c>begb    b-ega4ab<c
+d4c4>a-f4g&    g q4gb<dg4 r4
+
+// A
+@4,50,40,0,34o6l8q6v12 @lfo12,1 mp0,10,12,30
+r4eeecde& ededefgg g-32*g16.f4.r2 r1
+r4eeecde& ededefgg g-32*g16.f4.r2 r2.de
+ffr2ef   g-32*g..fg4rgf e4ree-4ee16*f16& fe4.r2
+r4ddcd4r e-32*e16.dcd4rd>b <d4cc&c2& c4r2.
+
+// B
+@4,60,40,0,32o5v11
+[r4ab<cdre& e4f4ec4. rdd>b<ccde-32*e16.& ed&d2r4]
+r4e4dc4. r4dcdf4. reeeee-eb-16*b16& ba&a2r4
+r4frga4. r4aabrag& g1
+@1,60,40,0,28 o5 l16 q5 v8
+gab<dgab<d g4
+@4,63,63,0,32o6l8q6v14@lfo10,1 mp0,12,12,30 ee
+
+// C
+[d4cd4ce-16*e.&e2&eree d4cd4ge-16*e.&e2&eref
+g4ff4.df16r16 fe4.refg g4rge32*f16r32fed&d2&dr|ee]ed
+ccrc>bb<ce-32*e16.& ed16r16d4.rgf
+e4reg+4bb-16*b16& ba&a2r4
+r4fga<c&c @1,60,40,0,28 o5 q4 v7d& dddr
+@4,63,63,0,34o6l8q6v14
+bbab <d-16*d.cc&c2& 
+c4&)c&)c&)c&))c&))c&))c
+@1,60,40,0,28l16q2o4v8cdeg<cdeg<cdeg<cdeg< q8c4
+o5 q4 v10 r8ccq8c4r4;
+
+// Sub
+t152 %1 kt1
+
+// Intro
+@4,26,0,0,28 o6 l8 q6 v6 k-8
+c2>b2 b-4.a&a2 <d2d-2c4.>b&b2<
+c2>b2 b-4.a&a2
+l32v5o7@4,63,0,0,63q8
+c<c>>b<b>b-<b->a<a>a-<a->g<g>g-<g->f<f>
+e<e>e-<e->d<d>d-<d->c<c>>b<b>b-<b->a<a>   
+l8o5@7,63,0,0,28v8rq3>gb<dg4 r4
+
+// A
+@4,63,0,0,63 o5 l8 q4 v5 k0
+r1 r1
+ra<c>ara<c>a ra-<c>a-ra-<c>a-
+r1 r1
+ra<c>ara<c>a rdedrd-ed-
+rffrrffr rbbrrbbr reerreer rccrrccr
+rffrrffr rbbrrbbr reerreer reerrerd
+
+
+// B
+@5,63,0,0,63 o5 q8 l16
+[v3 r4.b4r8r4 v2ab<ce v3>ab<ce v4>ab<ce v5>ab<ce>
+ v3 r4.a4r8r4 v2gab<d v3>gab<d v4>gab<d v5>gab<d>]
+l8 o5 q4 @4,63,0,0,63 v5
+raarraar ra-a-rra-a-r rggrrggr <rccrrccr>
+raarraar raarraar     <rccrrccr
+@2,63,0,0,28o4l32q6v8
+g)))g(((a)))a(((b)))b(((<d)))d(((g)))g(((a)))a(((b)))b(((<d)))d(((q8g4r4
+
+// C
+@2,63,0,0,28o5l16q1v7k-2
+[[cdeg<c>ged][eg+b<ded>bg+]>
+[ab<ceaec>b]<[cegb-<c>b-ge]
+[fga<cfc>ag][cdeg<c>ged]
+[defa<d>afe]>gb<dfgfd>bgb<dfgb<dg]>
+[fga<cfc>ag][gb<dfgfd>b]
+[eg+b<ded>bg+][ab<ceaec>b]
+[defa<d>a|fe]<v10c8& c8c8>b8r8r2 v7
+[fga<cfc>ag][fga-<cfc>a-g]
+o3cdeg<cdeg<cdeg<cdeg< q8c4>v10r8q4ccq8c4r4;
+
+// Noise
+t152 %1@9,63,0,0,63@ph-1o0l16q8v8
+
+// Intro
+kt0@q9[[crcrv5d.r32v8cr]2]7 r2r8kt15@q8crkt8drkt15cr
+
+
+// A
+// [[kt0@q9crcrv5d.r32v8cr]4[kt0@q9drcrkt8@q8drkt0@q9cr]4]
+// [kt0@q9drcrkt8@q8drkt0@q9cr]15
+kt0@q9[[v8crcrv5d.r32v8cr]4[v8drcrv5d.r32v8cr]4]
+[v8drcrv5d.r32v8cr]15
+crkt8@q8drdrdr
+
+
+// B
+kt0@q9v8
+[crcrrrv5d8r8v8|crcrcr]8 kt8@q8drdrdr
+kt0@q9
+[v8drcrv5d.r32v8cr]14
+kt15@q8crr8crr8crcckt0@q9d8kt15@q8cr
+
+
+// C
+v8[kt15@q8crkt0@q9dckt8@q8drkt0@q9|dc]16v5d8
+v8[kt15@q8crkt0@q9dckt8@q8drkt0@q9|dc]16kt8@q8dr
+[kt15@q8crkt0@q9dckt8@q8drkt0@q9|dc]10 d8
+kt15@q8crkt8@q8drdrr8r4drdd
+[kt15@q8crkt0@q9dckt8@q8drkt0@q9dc]6
+kt15@q8crr4kt8dd kt0@q9v5d4&d16;
+

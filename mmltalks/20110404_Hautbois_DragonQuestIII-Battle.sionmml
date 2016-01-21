@@ -1,0 +1,187 @@
+/*
+   ドラゴンクエスト３バトル
+*/
+
+#TITLE{DragonQuestIII-Battle};
+
+#REV;
+#FPS  600;
+#QUANT  16;
+#EFFECT0{reverb70,40,80,20};
+
+#TABLE  0 { (128) };
+#TABLE  1 { (60,128)70            | 128 };
+#TABLE  2 { (128,80)120           | (80,100)54,(100,80)54 };
+#TABLE  3 { (128,50)120           | 50 };
+#TABLE  4 { (60,128)70(128,100)200| (100,128)74(128,100)74 };
+#TABLE  9 { (32,127)112           | 127 };
+#TABLE 11 { (20)10,               | 20 };
+#TABLE 12 { (70,8)200,            | 8 };
+#TABLE 13 { (80)10,               | 80 };
+#TABLE 14 { (128,70)20(70,0)240   | 0 };
+#TABLE 15 { (128,20)20(20,0)20    | 0 };
+
+#TABLE 21 {       | 1};
+#TABLE 22 {       | 2};
+#TABLE 23 {       | 3};
+#TABLE 24 {       | 4};
+#TABLE 31 {(4)10  | 1};
+#TABLE 32 {(4)10  | 2};
+#TABLE 33 {(1)10  | 2};
+#TABLE 34 {(2)10  | 4};
+
+// --------------------------------------------------
+#A=
+v7 x132
+%1 @1 na4 _na11 @@24 _@@21 s0
+l24q16o7fed#dc#c<ba#ag#gf#fed#dc#c<ba#ag#gf#
+$
+q14f1&f1>
+
+l2q15f>c<b2. g8l16g#a a#1&a#1
+l2q15f>c<b2. g8l16g#a a#1&a#2. l16q16<b->d-g-b->
+
+na0
+l16q8[[[c]4cr]r4]
+
+<<
+na4
+[q15f4>c8l4q8<bgq15b-2.l16q16ff#l8q8ge]
+>
+na0
+l16q8[fffffreeeeere-e-e-e- e-rrr r2.]
+
+na4
+l24q16
+<ff#gg#aa#b>cc#dd#ef
+f#gg#aa#b>cc#dd#efed#
+dc#c<ba#ag#gf#fed#d
+c#c<ba#ag#gf#
+
+;
+
+// --------------------------------------------------
+#B=
+v7 x132
+%1 @1 na4 _na11 @@24 _@@21 s0
+l24q16o6ag#gf#fed#dc#c<ba#ag#gf#fed#dc#c<ba#
+$
+l8q8[ab]8>
+
+l16q15
+[g#>c<]8
+[g>d<b>d<]4>>
+
+l24
+g<f>c#<c#a#g>
+f<c#a#<g>g<f>>
+c#<<g>f<f>a#g
+a#<g>c#fga#>
+f#<c#a#<f#>c#a#>
+c#<<f#>c#a#<c#f#>>
+c#<<f#>a#c#<c#f#>
+c#f#a#>c#<a#<f#
+
+l16q15
+[g#>c<]8
+[g>d<b>d<]4>>
+
+l24
+g<f>c#<c#a#g>
+f<c#a#<g>g<f>>
+c#<<g>f<f>a#g
+a#<g>c#fga#>
+f#<c#a#<f#>c#a#>
+c#<<f#>c#a#<c#f#>>
+c#<<f#>a#c#<c#f#
+l16f#a#>c#f#
+
+l16[na0q8[[e]4er]<q15na4c<f#ec>>]
+
+<<
+l16q15
+[
+[g#>c<]8
+[a#>c#<]8
+]>
+
+l16q8[na0g#>ccccr cccccr cccccr <na4cc[crcc]3]<
+
+l24q16
+aa#b>c
+c#dd#eff#gg#aa#b>cc#d
+d#eff#gg#ag#gf#fed#d
+c#c<ba#ag#gf#fed#dc#c
+<ba#
+
+;
+
+// --------------------------------------------------
+#C=
+v16 x128
+%1 @8,60,0,0,60
+r1
+$
+l8q8o4[f#g#]8
+
+l16q8[frff]8
+
+l24q16
+f&>>c#&<g&f&>g&c#&>
+c#&<<f&>g&<c#&>c#&<<a#&
+f&a#&>>c#&<c#&>g&<f&>
+g&<<a#&>f&>c#&<<a#&>>g&<<
+f&a#&>>c#&<<a#&>f#&>f#&
+a#&<<a#&>f#&>f#&<<a#&>c#&<
+f&a#&>>f#&<f#&<a#&>c#&<
+f&a#&>>f#&a#&f#&<<a#&
+
+l16q8[frff]8
+
+l24q16
+f&>>c#&<g&f&>g&c#&>
+c#&<<f&>g&<c#&>c#&<<a#&
+f&a#&>>c#&<c#&>g&<f&>
+g&<<a#&>f&>c#&<<a#&>>g&<<
+f&a#&>>c#&<<a#&>f#&>f#&
+a#&<<a#&>f#&>f#&<<a#&>c#&<
+f&a#&>>f#&<f#&<a#&>c#<
+r4
+
+l16[[q8[c#]4q10c#r]r4]
+l16q8[frff]16
+[f>[g#]4r [g#]5r [g#]5r <cc [crcc]3]
+
+e-8r2..r1
+
+;
+
+// --------------------------------------------------
+#D=
+v10 x128
+%1 @9 s14 q15
+r1
+$
+na15l4[o1c#o0e]4
+
+na15l4[o1c#o0e]16
+
+[l16o0 [na14e8na15eeer]2eeee]
+
+na15l4[o1c#o0e]8
+
+[l16o0 [na14e8na15eeer]3r2..]
+
+na15l4o1c#8r2..r1
+
+;
+
+// --------------------------------------------------
+t145
+A;
+B;
+C;
+D;
+
+#END;
+

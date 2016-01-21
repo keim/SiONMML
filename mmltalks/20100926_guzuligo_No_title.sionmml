@@ -1,0 +1,26 @@
+#Title{guzu test 1};
+#A=ar<ar>ar<ar>ar<arbr>;
+#B=ar<ar>ar<arargrfr>;
+;
+
+#EFFECT1{delay350,30};
+#EFFECT2{delay150,50autopan};
+
+$ l16o2
+[a^rr]4 [g^rr]4 [f^rr]4 [e^rr]4
+
+;
+#OPN@37{0 7 // Synth PSG 2
+17 01 03 08 15 32 0 08 3 0
+19 01 06 08 15 35 0 04 3 0
+22 01 03 08 15 20 0 02 3 0
+31 11 00 08 02 00 0 01 3 0};
+
+$l16o6q0 //%6@37 
+[ara*e]3 <crc*e>
+[grg*d]3 brb*a
+[frf*c]3 ara*g
+erfff*eddcc>bbb*ag#g#;
+$l16o4  
+@v64,24
+A<<er>>A(-2)<<er>>A(-4)<<er>>B(-5)br;

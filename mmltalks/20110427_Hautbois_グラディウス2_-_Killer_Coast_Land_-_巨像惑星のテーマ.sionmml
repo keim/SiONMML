@@ -1,0 +1,139 @@
+/*
+  グラディウス2 - Killer Coast Land - 巨像惑星のテーマ
+  (C) KONAMI 1987 コナミ矩形波倶楽部
+  2011.4.27 MML - Hautbois. 
+*/
+
+#TITLE{グラディウス2 - Killer Coast Land - 巨像惑星のテーマ};
+#REV;
+#FPS  600;
+#QUANT  8;
+//#EFFECT0{chorus1,20,0.4,30,reverb70,40,70,30};
+
+//SCC-WAVES
+#WAVB00{0000008000707070000000800000008080808000800000000080808000808080};
+#WAVB01{00F8F0E8E0D8D0C8C0B8B0A8A098908880787068605850484038302820181008};
+#WAVB02{001931475A6A757D7F7D756A5A4731198090A0B0C0D0E0F00010203040506070};
+#WAVB03{001931475A6A757D7F7D756A5A47311980A0C0E00020406080A0C0E000204060};
+#WAVB08{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101010101010101};
+
+//table env
+#TABLE  0 { 128 | 128 };
+#TABLE  1 { (128,90)10(90,30)50 | 30 };
+#TABLE  2 { (128,100)60(100,0)1400 | 0 };
+#TABLE  3 { (128,90)10(90,64)50 | 64 };
+#TABLE  4 { (128,80)80 | 80 };
+
+///BD
+#TABLE 20 {(128,60)12(10,0)10|0};
+#TABLE 21 {(0)12|1};
+#TABLE 22 {(0,-24)12|17};
+//SD
+#TABLE 30 {(70,30)10(30,0)40|0};
+#TABLE 31 {(0)8|1};
+#TABLE 32 {(0)8|4};
+//HH-C
+#TABLE 40 {(20,3)10 (3,0)5 | 0 };
+#TABLE 41 {(1)};
+#TABLE 42 {(0)|0};
+//HH-O
+#TABLE 50 {(24,8)10 (8,7)100 (7,0)120 | 0 };
+#TABLE 51 {(1)};
+#TABLE 52 {(0)|0};
+//TOM
+#TABLE 60 {(50,20)10(20,0)40|0};
+#TABLE 61 {(0)8|1};
+#TABLE 62 {(0)8|-10};
+#TABLE 63 {(0)8|-5};
+#TABLE 63 {(0)8|0};
+#TABLE 70 {(50,0)28|0};
+#TABLE 71 {(1)4|0};
+#TABLE 72 {(0,-12)28|-12};
+
+#Z= %0 @1 o3 na20 @@21 nt22 c;
+#S= %0 @1 o4 na30 @@31 nt32 c;
+#H= %0 @1 o5 na40 @@41 nt42 b;
+#O= %0 @1 o5 na50 @@51 nt52 b;
+#J= %0 @1 o5 na60 @@61 nt62 d;
+#K= %0 @1 o4 na60 @@61 nt63 a;
+#L= %0 @1 o4 na60 @@61 nt64 e;
+#M= %0 @1 o4 na70 @@71 nt72 b;
+
+#F=x128 @v127 v15 s63 q8
+$
+l16 [ ZM ]12 [ ZrZOHH ]4
+    [ ZM ]12 [ ZrZOHH ]3 ZrZZZZ
+    [ HrHO8. ]32
+    [ ZrZOZZ ]15 Zrl32MMl16MMM
+;
+
+#A=x128 @v50 v15 %4 na1 s31 q8 @p10
+$
+@0 @q1
+o2 l16 [ [ a>a<a>g<a>a< ]4
+o2 l16   [ f>f<f>c<f>f< ] 
+         [ g>g<g>d<g>g< ] ]
+o3 l16 [ [ a8 aaaa ]8 [ f#8 f#f#f#f# ]
+         [ f8 ffff ]  [ e8 eeee ]4 ]
+o3 l16 [ [ a8a>a<aa ] [ f8f>f<ff ] [ g8g>g<gg ] [ e8e>e<ee ] ]
+;
+
+#B=x128 @v70 v15 %4 na2 s30 q8 @p10
+$
+@1
+o6 l2.[ @1 @v60 @q0 na2 dc#< @2 @q10 na3 @v80 c4.l8.fa l16@q0 brg@q10g&g2> ]
+o4 l4.[ @v90 na3 @q8 a8.>e4. l16@q0dc#<a @q8b8.>f#16&f#2<
+       a8.>e4. l16@q0 dc#<a @q8 b8.>b16&b2
+       d8.a16&a2f4.c8.f8. |
+       l16@q0s39 er< s30b>@q10e&e16&e4 a8.g#2.]
+       l16@q0s39 er< s30b>@q10e&e4. l16@q0 ab> @q10e2.
+o5 [ @q10 a2&a8 l16@q0 ab>@q10 c4.<l8.a>c< | l4. bgl8.ag#f#g# ] b2.>e4.l8.f#g#
+;
+
+#C=x128 @v50 v15 %4 na2 s32 q8 @p-10
+$
+@1
+o5l2. [ @v50 @k0 s30 @q0 na2 aa @q10 @k8 na3 @v70 c4.l8.fa l16@q0s36 br s30g@q10g&g2> ]
+o4 l4.[ @v50 na3 @q10 a8.>e4. l16@q0 dc#<a @q10b8.>f#4 @q0def#ed<
+       @q10 e8.a4. l16@q0 bae @q10g8.>g16&g2<
+       a8.>d4< @q0a>dad<a> @q10c4.<a8.>c8.<
+       l16@q0s39br s30e @q10b&b16&b4 l8.>ded<be]
+@3 o4 l16
+       @q8 a4 @q0>ce @q8a4. <a4> @q0cf @q8a4.<
+       @q8 g4 @q0b>d @q8g4. l8.ag#f#g# l16
+       @q8 a4 @q0>ce @q8a4. <a4> @q0cf @q8a4.<
+       @q8 g4 @q0b>d @q8g4. l16@q0 [e<be>]f#d<a>g#e<b        
+;
+
+#D=x128 @v50 v15 %4 na3 s38 q8
+$
+@1
+o5 [ @v50 @k0 na2 l2.@q0 ee >> @k4 na3 l16@q0 @v40[fc<afa>c][gd<bgb>d]<< ]
+o5l16@q1@v50 [ [ araaea ] grggdgf#rggdg [ araaea ] [ grggdg ]
+           [ ada ]4 [ afa ]4 [ beg# ] 8]
+@3 o5 l16 s32 [@q1[ereeee] [frffff] [grgggg] <@q10e4.>d8.e8.]
+;
+
+#I=v15@q8;
+#J=v8@q24;
+
+#E=x128 @v100 v15 %4 @8 na1 s34 q8
+$
+o3 l16 [[Ia> Ja< Ia> Jg <Ia> Ja< ]4
+o3 l16  [If> Jf< If> v10@q32c <If> Jf< ] 
+        [Ig> Jg< Ig> v10@q32d <Ig> Jg< ]]
+o4 l16[[@q12a8 @q6aaaa ]8 [@q12f#8 @q6f#f#f#f# ]
+       [@q12f8 @q6ffff ]  [@q12e8 @q6eeee ]4 ]
+o3 l16 @q6 [[aaa>a<aa ] [fff>f<ff] [ggg>g<gg] [eee>e<ee] ]
+;
+
+t115;
+A;
+B;
+C;
+D;
+E;
+F;
+
+#END;
+

@@ -1,0 +1,16 @@
+#TITLE{some experiment on this application};
+
+#EFFECT1{lf3000delay360,64,1};
+
+%
+a4b4<c4d8fe8d8cd8c8>b8
+a4b4<c4d8fe8d8cd8c8>b8<
+a4b4<c4d8fe8d8cd8c8>b8
+a4b4<c4d8fe8d8cd8c8>b8;
+
+%
+>r8a4b4<c4d8>f8f8r8<ed8c8>b8
+r8a4b4<c4d8>f8f8r8<ed8c8>b8
+r8a4b4<c4d8>f8f8r8<ed8c8>b8
+r8a4b4<c4d8>f8f8r8<ed8c8>b8;
+

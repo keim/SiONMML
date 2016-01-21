@@ -1,0 +1,19 @@
+#TITLE{In the wind (GRADIUSIII)};
+#A=<d>bg<c+>ae;#B=ab<deaf+gef+dec+d>b<c+>a;#C=q4s32[15rAA<d>bg]q6s26Bq4s32[8rAA<d>bg];
+#M=[rc+da^1^1rg4.f+rerd4.|rdef+>a^1^1^1<r2]rderf+^1^1^1r1;
+#N=[[d4.c+rdr|>a^2rgrf+^2rdef+e4re4f+ga<]>a2<d4.e4|f+gf+drf+re^1]l4g.f+.a^1;
+#O=[[b4.arbr|f+^2rerd^2r>a<c+dc+4rc+4def+]f+2a4.b4|<ddd>ar<drc+^1>]l4g.f+.a^1;
+#P=[[g4.ergr|d^2rc+r>b^2rgaba4ra4b<c+d]d2f+4.g4|aaaf+rara^1]l4b.a.<c+^1;
+#D=b4.a^2g4.a^2;#E=Drb4.s18arars16g4.a^2;#S=v14o4s34c;#H=v7o6s36c;
+t200;
+$%1@lfo8mp0,20,20o6v14@2[l8r1]15r2M%1v14@3N;
+$%1@lfo16mp0,20,20o6l8rv9p8@4[r1]15r2MN;
+%1v7@2$q0s16o6[8l8d4.c+^2>b4.<c+^2|rd4.s18c+rc+r>s16b4.<c+^2]l4c+.d.e.f+.l8grarq4s18>O<;
+%1v7@2$q0s16l8EEE(7)E(7)EEE(7)D(7)<l4e.f+.g.a.l8br<c+r>q4s18>P<;
+%1v4p0@3o6l8$C;
+%1v6@2$q0s16l8E(-5)E(-5)EEE(-5)E(-5)EDl4a.b.b.<c+.l8ererq4s18<N>;
+%1v3p8@3o6l8r4$C;
+%1v10@3o2$q2s20[7[[l8g<g>gg4|g<g4>]|gg<a>]<ae>a][b<b>bb4bb4]b4bb4bb4bb4b<brbr>
+[[aa4arar|a4aa4a<a>rb4bbrbbbba4ra4a<aa>]aa4al4a.ag.|l8grgra4.a4aa<a>a]l4g.q6s28a^1;
+%3v16q1s24,-192o4$l8crrrccrr;
+%2q1$[2[7l8HcSHccSH]|HcSHcScc]rS16c16cccccc;

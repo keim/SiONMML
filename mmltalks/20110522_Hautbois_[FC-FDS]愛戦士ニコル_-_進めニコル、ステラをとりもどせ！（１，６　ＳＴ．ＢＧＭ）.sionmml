@@ -1,0 +1,108 @@
+/*----------------------------------------------------------------------------------
+   [FC-FDS]愛戦士ニコル - 進めニコル、ステラをとりもどせ！（１，６　ＳＴ．ＢＧＭ）
+   JASRAC 003-5756-1
+   1987.04.24 KONAMI コナミ矩形波倶楽部
+   2011.05.23 初版 Hautbois.
+   2011.05.24 20:32 na用テーブル修正 last update Hautbois.
+----------------------------------------------------------------------------------*/
+
+#TITLE{[FC-FDS]愛戦士ニコル - 進めニコル、ステラをとりもどせ！（１，６　ＳＴ．ＢＧＭ）};
+#REV;
+#FPS 600;
+#QUANT 8;
+//#EFFECT0{reverb70,40,80,30};
+
+#WAVB03{7f808080};
+#WAVB04{7f80};
+
+#WAVB10{000000000C7E7E7E7E38000000006C7E7E7E7E00000000027E7E7E7E50000000000000000C7E7E7E7E38000000006C7E7E7E7E00000000027E7E7E7E50000000};
+//#WAVB11{00124C7A6A5A52463A38322A2C26262424242426282C2A2E303438363A3C3E464A4C4E5054585E56565A5A5A5A56565E5854524C4A443C36342E262018100804};
+#WAVB11{FC07171F252F3235373736302F2B281F19150D0904F7F0E9DED9D4C7C0BEBDBBBAB8B8BABCBABBBDC5CBD1E0E9F406101A313D48616C766E4615DDD5D2DEE7F0030E151D292E3236373734312F29252116130E0601FAEBE5E0D6D0CAC2BEBEBCB9B8B8BBBCBABCC0C4D0D5DDF1FB0417222D45515E69797257FAE1D6D4DBE5F6};
+#WAVB12{007E7E7E7E7E7E7E7A00020404040402006E6E6E6E6E6E686400020404040402005E5E5E5E5E5E585400020404040402004A4A4A4A4A4A464400020404040402};
+
+#TABLE  0 { (128)       | 128 };
+#TABLE  1 { (128,30)120 |  30 };
+//#TABLE  2 { ( 30,128)30(120,50)30 | 50 };　//謎の壁30の前のスペースが？
+#TABLE  2 { (30,128)30(120,50)30 | 50 };
+#TABLE  3 { (128,50)50  |  50 };
+#TABLE  4 { (128,30)50  |  30 };
+#TABLE  5 { (128,0)100  |   0 };
+#TABLE  6 { (128,0)140  |   0 };
+
+#TABLE 10 { (100)12     |   0 };
+#TABLE 11 { (128)12(128,0)20 |   0 };
+#TABLE 20 { (0,-2)20 | -2 };
+
+//FDS
+#A=%x0 x128 %4 @4 @v128 na1 s38 @q0 q8 @f102
+$
+v10@10na1o4l12q8
+   [frf>f<ff]8
+v16@11na2o4l4
+   q5fgal12q8b-ab- arf>q6c2q8crf f4&q3fq8e-d<q6b-2 l4q5b->cd-e-<
+   q5fgal12q8b-ab- arf>q6c2q8crf f4&q3fq8e-d<q6b-4q8b->cd q6c2&c2
+v14@12na1o5l4
+   l4q6d2q7ef q8f6c12q6c2. q8c4l12<a->ce-d4<b->df fec>q6c2.<
+   l4q7d-e-fl12q8gfg a-6e-q6e-2q8a-ga- q7b-6q8ff2b-fb- >c4<cccc6ccde
+;
+
+//2a03-square-1
+#B=x128 %4 @v25 na3 s38 @q0 q8 @k6
+$
+@3o5l12na3q6v16
+   [c6cccc]8
+na4q7
+   [frf>f<ff]frc<b-ab-a6fa6>c
+   [e-re->e-<e-e-]drd>d<dda-fa-b-gb-
+   q6l4ccfl12gfg frca2ar>c
+   q3c4&cq6c<b-f4fb->d <q2g4&gq6fg>q6c2
+@4na5v10q8
+   [b-rb-b-b-b-][araaaa]
+   a-ra-a-a-a-b-rb-b-b-b- dc<g>g4fefec<g
+v14na6l4
+   a->cd-e-
+na4l12
+   e-r<a-a-2>e-e-e-q6f6dd4<b-6f>fcf
+   e6<ggggg6gggg
+;
+
+//2a03-square-2
+#C=x128 %4 @4 v12 @v60 na1 _na2 s0 @q0 q8
+;
+
+//2a03-triangle
+#D=x128 %1 @8,58,0,0,58 v16 @v70 @ph255 q8 @q0 
+$
+o4l12q4
+   [[frffff]e-re-e-e-e-drd<b-b-b->]
+l4q4
+   [f]8[e-]4ddl4q8d-e-
+l4q4
+   [f]8e-e-<b-b->cccq8>c<<
+l12q5
+   [b-b-b->b-<b-b-][fff>c<ff]
+   a-a-a->c<a-a-b-b-b->d<b-b->[ccc>c<cc][d-d-d->d-<d-d-]
+   <[a-a-a->a-<a-a-][b-b-b->b-<b-b-]>cccl4q8>c<b-g
+;
+
+#H=na10nto0d;
+#S=na11nt20o0f#;
+//noise
+#E=x128 v10 @v30 %1 @9 @ph-1
+$
+   l12[[HrHHHH]3SrSSSS]
+   l4[HS]7l12[S]6
+   l4[HS]7l12Sr6SSS
+   [HrHSHH]8
+   [HHHSHH]7HHHSSS
+;
+
+t172
+A;
+B;
+C;
+D;
+E;
+
+
+#END;

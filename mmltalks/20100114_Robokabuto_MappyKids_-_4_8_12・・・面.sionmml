@@ -1,0 +1,53 @@
+#TITLE {MappyKids - 4/8/12・・・面};
+#REV;t150;
+#WAV1{(127,127),2,(64,64),2,(0,0),2,(-64,-64),2,(-127,-127),2,(-64,-64),2,(0,0),2,(64,64),2,
+	  (127,127),2,(64,64),2,(0,0),2,(-64,-64),2,(-127,-127),2,(-64,-64),2,(0,0),2,(64,64),2};
+#WAV2{(127,-43),3,(-43,-128),5,(-128,-43),5,(-43,127),3,(127,-43),8,(-43,127),8};
+#WAV3{17,17,54,54,90,90,127,127,17,17,-56,-56,-92,-92,-92,-92,-128,-128,-92,-92,-92,-92,-56,-56,17,17,127,127,54,54,17,17};
+
+#A=
+l16	c<gecag-e-c c<gecag-e-c c<gecag-e-c c<gecag-e-c 
+l16	e-g-a>ce-g-a>ce-g-a>ce-g-a>c< ga-ga-gagagb-gb-gbgb
+	$ r1r1r1r2.<
+l16	cdef g4.>c8r<b8>cd8<b8>c8r2r<ga8f8 efg8cde8def8gab8>c8r8r2< kt0
+l16	cdef g4.>c8r<b8>cd8<b8>c8r2r<ga8f8 efg8cde8def8gab8>c8r8r2 kt-3r4
+l16	r2.dc8<b g4.e8r8g8ab8. g8.fr4 d8b-8.a8g e2.ab>cd
+l8	edc<b>c<b>cdr<gr>g<b>c<b>cr<bab>c<b>cde-1f4.g4.^4r1;
+%4@1 v10 o7 q8 kt-3    A;
+%4@1 v3  o7 s255 q8 kt-3 r8 A;
+
+%4@3,63,30,10,63,1 v16  o3  q8 kt-3
+r1r1r1r1 $
+l16	[c4>c4<rf8fg4]3>ccc8r2.<
+l16	[c4>c4<rf8f|g4]4 kt0 g4
+l16	[c4>c4<rf8f g4]4 kt-3
+	c4>c4<rc8c>c4<< b4>b4<rb8b>b4<b-4>b-4<rb-8b->b-4< a4>a4<ra8a>a4
+l8	f4r4fcfe r2e<b>ed^4.e4.f4 g-2r4.g- gg<ggrrr>r16g16gg<ggrr>g4
+;
+
+%1@1,63,63,28,63,0  v12  o6 @s1,1,0,22 s255 q8 kt-3
+r1r1r1r1 $
+l16	[r8c8r8c8rc8c <b8ab>]3ccc8r2.
+l16	[r8c8r8c8rc8c|<b8ab>]4 kt0 <g8fg>
+l16	[r8c8r8c8rc8c <b8ab>]4 kt-3
+l8	rcrcrcrc<rbrbrbrb>rdrdrdrdrcrcrcrc
+l8	cccccccc<bbbbbbbb> cccccccc<
+l16	e-g-a>ce-g-a>ce-g-a>c<<<e-g-a>c<
+l16	afafbfbf>c<f>c<f>d<f>d<f> gfgfa-fa-fafafbfbf
+;
+%1@1,63,63,28,63,0 v12  o5 @s1,1,0,22 s255 q8 kt-3
+r1r1r1r1 $
+l16	[r8e8r8e8rf8f g8fg]3eee8r2.
+l16	[r8e8r8e8rf8f|g8fg]4 kt0 <b8>d<b>
+l16	[r8e8r8e8rf8f g8fg]4 kt-3
+l8	rererere rererere rfrfrfrfrererere
+l8	aaaaaaaaggggggggaaaaaaaa r1r1r1
+;
+
+#B=@10o1 q4 v12  k0 c ;#C=@9 o0 q4 v3  k0  c;
+#D=@9 o0 q5 v07  k0 g-;#E=@9 o0 q5 v3  k0  c;
+%1 v7 q4 s255
+r1r1r1r1 $
+l16 [BCCCDCCBCBCBDCCC]3 DDDCr2 [6E24]
+l16 [BCCCDCCBCBCBDCCC]8
+l16	[BrCrDrCrCCBrDrCC]9 BrCCDCBrCrDCDCDC

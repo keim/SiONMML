@@ -1,0 +1,90 @@
+/*
+   [FC] WRECKING CREW - BONUS STAGE - (C)Nintendo 1985 by LinearDrive
+   date:2010-11-10初版
+   JASRAC:094-7292-4
+*/
+
+
+#TITLE{[FC] WRECKING CREW - BONUS STAGE - (C)Nintendo 1985};
+#REV;
+#FPS 600;
+
+
+//envelope for melody
+#TABLE  1 { (128,0)43 |0   };
+
+//envelope for drums
+#TABLE 10 { (128,0)43 |0   };
+
+//envelope for noise
+#TABLE 15 {  (48,0)35 |0   };
+#TABLE 16 {  (48,0)105|0   };
+#TABLE 17 {  (80,0)35 |0   };
+
+//pitch bend for drums
+#TABLE 20 { (0,-1920)80|-1920 };
+
+
+/* 矩形波１ */
+#A=
+   %1 @4,63,0,0,48,0 v16 x128 o6 l16 q8 @q0 na1
+   [ q4 ecr<gr4>d<arfr4bgr>er4 q3 f12f12f12f12e12d12 ]2 <
+   [ q4 grbr>e<brgrgr>cgr<grgrbr>e<brarar>cgrcr< ]6
+   $
+   o7 q4 gr<<b>>g<e<brgrgr>c> q3 f12e12f12 
+      q4 er<<b>>c<e<brarar>c> q3 d12c12d12
+      q4 er<<b>>g<e<brgrgr>cgr<gr>b>g<<br>e<bra>a>fr<cgrcr
+;
+
+
+/* 矩形波２ */
+#B=
+   %1 @4,63,0,0,63,0 v16 x128 na10 np20 o4 l16 q8 @q0
+   [ r4ar8. ]8
+   [ ar8.ar8. | ar8.arar ]4 >>dd<bb gg ee<
+   [ r4ar8. ]8
+   [ ar8.ar8. 　ar8.arar ]4
+   $
+   [ ar8.ar8.   ar8.arar ]4
+;
+
+
+/* 三角波 */
+#C=
+   %1 @8,63,0,0,63,0 v16 o3 l16 q8 @q0
+   q5 [ >>ccrer8gr ffrar8>cr<  ggrbr8>dr< ffrar8>cr<<< ]2
+      [ q7 c8.e8.g8 q5 ffr q7 a8.>c8<  g8. q5 b>d< q7 b8. q5 ffr q7 a8.>c8< ]2
+   q5 [ >ccrer8gr ffrar8>cr<  gr8br8>dr< ffrar8>cr<< ]2
+      [ q7 c8.e8.g8 q5 ffr q7 a8.>c8<  g8. q5 b>d< q7 b8. f8.a8.>c8< ]2
+   $
+      [ q7 c8.e8.g8 q5 ffr q7 a8.>c8<  g8. q5 b>d< q7 b8. f8.a8.>c8< ]2
+;
+
+
+/* ノイズ */
+#X= c+16;
+#Y= na16 c+8 na15;
+#Z= na17 a+16 na15;
+#D=
+   %1 @9,63,0,0,48,0 @ph-1 v16 o0 l16 q8 @q0
+   @f128
+   na15
+   [ XX Y ]16
+   Z r XX r8 XX r8 XX r8 XX
+   [ r8 XX r8 XX r ZXX Z r XX ]3
+   ZXXX [ XX Y ]15
+   [ rZXX ZrXX ZrXX ZXXX ]4
+   $
+   [ ZrXX ZrXX rZXX ZrXX ]4
+;
+
+
+/* 再生 */
+t150
+@v48 A;
+@v48 B;
+@v64 C;
+@v48 D;
+
+
+#END;

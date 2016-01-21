@@ -1,0 +1,138 @@
+/*
+  グラディウス2 - A Journey To The Start - 空中戦闘のテーマ
+  (C) KONAMI 1987 コナミ矩形波倶楽部
+  2011.4.27 MML - Hautbois. 
+*/
+
+#TITLE{グラディウス2 - A Journey To The Start - 空中戦闘のテーマ};
+#REV;
+#FPS  600;
+#QUANT  8;
+//#EFFECT0{reverb70,40,70,30};
+
+//SCC-WAVES
+#WAVB00{00407F4001C081C001407F4001C0014001E0012001F0011001FFFFFFFF404040};
+#WAVB01{305050300000104060706030F0E0E000202010C0A090A0C00000D0B0B0D00000};
+#WAVB02{00F0E0D0C0B0A090808080808080808080808080808080807F70605040302010};
+#WAVB03{003050607060503000D0B0A090A0B0D000406070604000C0A090A0C000700090};
+#WAVB08{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101010101010101};
+
+//table env
+#TABLE  0 { 128 | 128 };
+#TABLE  1 { (128,70)60 | 70 };
+#TABLE  2 { (128,64)30 | 64 };
+#TABLE  3 { (128,52)60 | 52 };
+
+//table drums
+#TABLE  5 { (14,3)10 (3,0)5 | 0 };
+#TABLE  6 { (14,8)10 (8,7)100 (7,0)80 | 0 };
+#TABLE  7 { (90) | 60 };
+#TABLE  8 { (40,30)10 (30,0)20 | 0 };
+#TABLE  9 { (100) | 60 };
+#TABLE 10 { (80,40)10 (40,0)50 | 0 };
+#TABLE 11 { (128) | 90 };
+#TABLE 12 { (10,5)2 (5,0)2 | 0 };
+
+//drums
+//BD L32
+#Z=%5 @264 na11 o3 c192 @19 na12 o7 b96&b;
+//SD
+#S=%5 @264 na9 o4 c192 @19 na10 o4 e96&e;
+//HH-c
+#H=%5 @19 na5 o7 b;
+//HH-o
+#O=%5 @19 na6 o7 b;
+//TOM L32
+#J=%5 @264 na7 o5 d128 @19 na8 o7 a64.&a;
+#K=%5 @264 na7 o4 a128 @19 na8 o7 a64.&a;
+#L=%5 @264 na7 o4 d128 @19 na8 o7 a64.&a;
+
+#F=x128 @v127 v15 s63 q8
+$
+l24 [ Z16..HHH S16..H8 Z16..Z16.. S16..H8 Z16..H8S16..H8 Z16..Z16.. S16..O8 ]8
+[[ S16..Z16..H8Z16.. ]3 S16..S16..H8Z16.. ]3
+[ S16..Z16..H8Z16.. ]3 J16.S16..S16..S16..
+[[ S16..Z16..H8Z16.. ]3 S16..S16..H8Z16.. ]3
+O2J16.H16H16S16..S16..O2 [S16..]4
+;
+
+#A=x128 @v60 v15 %4 na s31 q8 @p10
+$
+@0 
+@v50
+o3 [ l8 @q18 er>er<l8ee>e<ere>e<eee>e<e ]4
+o3 fr>fr<ff>f<frf>f<fff>f<f
+o3 f#r>f#r<f#f#>f#<f#rf#>f#<f#f#f#>f#<f#
+o3 gr>gr<gg>g<grg>g<ggg>g<g
+o3 f#r>f#r<f#f#>f#<f#rbl16bbl8bf#<bbb
+@v60
+o3 l8 @0 na @q18 eb>e<e @1 na1 @q22 o5 a4.b&b1 l4 aaa.b8&b1
+o4 l8 @0 na @q18 c<ge>c @1 na1 @q22 o6 d4.e&e2 <l16ef#gg#ab>cc# l4ddd.e8&e1
+o3 l8 @0 na @q18 eb>e<e @1 na1 @q22 o5 a4.b&b1 l4 aaa.b8&b1
+o4 l8 @0 na @q18 c<ge>c @1 na1 @q22 o6 d4.e&e1 l8 @q8 aec#<aea>c# l4 @q16 ec#<aec#8
+;
+
+#B=x128 @v60 v15 %4 na3 s32 q8 @p-10
+$
+@1 @v60
+o6 [ @q12c#1l8@q2[c#]4r@q12c#4. d1 @q2ddrdr@q12d4. ]
+@2
+r6 o6 l8 @v20 [ @q0 v15e<a>c<a>e<a>c@q16e4<v14a>v13c<v12a>v11av10ev9c<v8a> ]
+o6 @q0 v15e<g>c<g>e<g>c@q16e4<v14g>v13c<v12g>v11gv10ev9c<v8g> v15 @k8 ec#<a>aec#<a12> @v40 @k0 e4.d#&d#2
+r2 r8 o5 l8 @1 @k6 na1 @q22 o5 a4.b&b1 l4 aaa.b8&b1
+r2 o6 l8 d4.e&e2 <l16ef#gg#ab>cc# l4ddd.e8&e1
+r2 o5 l8 a4.b&b1 l4 aaa.b8&b1
+r2 o6 l8 d4.e1 l8 @q8 @k0 @v60 ec#<aec#ea l4 @q16 >c#<aec#<a8
+;
+
+#C=x128 @v50 v15 %4 na3 s32 q8 @p20
+@3
+$
+@v40
+o5 [ @q12a#1l8@q2[a#]4r@q12a#4. b1 @q2bbrbr@q12b4. ]
+@2 @k4 @v30
+o6 l8 [ @q0 v15e<a>c<a>e<a>c@q16e4<v14a>v13c<v12a>v11av10ev9c<v8a> ]
+o6 @q0 v15e<g>c<g>e<g>c@q16e4<v14g>v13c<v12g>v11gv10ev9c<v8g>  v15 @v40 @k0 ec#<a>aec#<a>c# c#4.c#&c#2
+@v50
+o5 [r2 a4.b8&b1 | l4aaa.b8&b1]4
+@3 o6 l8 @q8 @v40 [c#]6rc#rc#rc#r[c#]3
+;
+
+#D=x128 @v40 v15 %4 na3 s32 q8 @p-20
+@3
+$
+@v40
+o5 [ @q12f#1l8@q2[f#]4r@q12f#4. g1 @q2ggrgr@q12g4. ]
+@2 @k-4 @v30
+o6 l8 [ @q0 v15e<a>c<a>e<a>c@q16e4<v14a>v13c<v12a>v11av10ev9c<v8a> ]
+o6 @q0 v15e<g>c<g>e<g>c@q16e4<v14g>v13c<v12g>v11gv10ev9c<v8g>  v15 @v40 @k0 c#<ae>ec#<aea a4.a&a2
+@v50
+o5 [r2 f#4.g8&g1 | l4f#f#f#.g8&g1]4
+@3 o5 l8 @q8 @v40 [a]6rararar[a]3
+;
+
+#E=x128 @v80 v15 %4 @8 na2 s33 q8
+$
+@v70
+o3 [ l4 @q30e>e<@q20l8ee>e<e4e>e<eee>e<e ]4
+o3 l4 @q30f>f<@q20l8ff>f<f4f>f<fff>f<f
+o3 l4 @q30f#>f#<@q20l8f#f#>f#<f#4f#>f#<f#f#f#>f#<f#
+o3 l4 @q30g>g<@q20l8gg>g<g4g>g<ggg>g<g
+o3 l4 @q30f#>f#<@q20l8f#f#>f#<f#4bl16bbl8bf#<bbb
+@v90
+o3 l8 @q14 [ eb>e<e[deee]3eb>e<e[deee]2degb
+o4 l8 c<ge>c [<b>ccc]6 <b>c<gd
+o3 l8 eb>e<e[deee]3eb>e<e[deee]2degb
+o4 l8 c<ge>c [<b>ccc]2 <b>cc<g f#1 b2abbb
+;
+
+t225;
+A;
+B;
+C;
+D;
+E;
+F;
+
+#END;
+

@@ -1,0 +1,149 @@
+#TITLE{水没都市/DRAGON SAVER (stage1)};
+#EFFECT1{delay};#EFFECT2{chorus};t100[r1]7t156;
+
+// BASS
+//----------------------------------------
+#OPM@0{4 7
+31 00 00 03 00 31 0 01 3 0 0
+23 15 07 05 01 06 0 02 3 0 0
+21 21 00 11 01 16 0 01 7 0 0
+31 15 07 07 01 06 0 01 7 0 0};
+#OPM@1{2 7
+31 13 05 07 04 32 0 00 0 0 0
+31 13 05 07 04 35 0 09 0 0 0
+31 13 05 07 04 46 0 00 0 0 0
+31 06 05 08 05 03 0 01 0 0 0};
+#A=[q8l16a+a+a+rq5l8a+a+a+a+a+a+];
+#B=f+f+f+8f+rf+f+f+8f+rf+f+f+r;#C=[B];
+#D=[q5l8[f+]6q8l16[f+<f+>]]4;
+%6@0q8v13p4o2l16[g+r<g+r>g+8<g+r>g+g+g+<g+r>g+<g+r]8
+$@1l8[q5[a+]4q8l16a+a+q5l8[a+]25|a+a+]4q8a+4&a+1&a+1
+[AA(-2)A(-3)|A(-2)]<g+>[g+]7@0>fa+<cfff>f<f@1l16
+CC(-1)C(-2)B(-3)B(9)C(7)C(6)C(5)C(4)[DD(2)]
+q8@0o2a+4a+8<a+4a+8>g+4g+8<g+4l8g+>f<f>f<f;
+
+// BACKING & MELODY
+//----------------------------------------
+#@2{5 0 0
+02 40 2 0 32 15 02 00 00 02 00 -3 00 00 00
+02 40 2 0 32 15 02 00 00 02 00 03 00 00 00
+01 40 2 0 32 15 00 00 00 01 00 00 00 00 00
+}@f110@lfo15mp0,6,10,20;
+#@3{1 0 0
+01 42 2 0 32 15 02 00 00 01 00 -4 00 00 00
+02 42 2 0 32 15 02 00 00 02 00 04 00 00 00
+}@f84,1mp0;
+#@4{1 0 0
+01 32 0 0 16 15 00 00 00 01 00 00 00 00 00
+01 32 0 0 16 15 12 00 00 04 00 06 00 00 00
+}@f110@lfo10mp6;
+#OPM@5{5 7
+28 01 00 06 01 26 0 01 0 0 0
+31 01 00 08 04 26 0 01 0 0 0
+24 01 00 08 01 12 0 02 0 0 0
+23 01 00 08 01 06 0 01 0 0 0}@f127,2mp0,24,30;
+#OPM@6{4 5
+31 08 00 00 00 23 0 04 7 0 0
+31 10 00 02 03 06 0 08 3 0 0
+31 08 00 00 00 18 0 02 7 0 0
+31 10 00 02 03 05 0 04 3 0 0}mp0;
+
+// Voice
+#X=%6@2@v48,20,24q8; // A,B,C
+#Y=%6@3@v48,,24q8;   // D,E,F
+#Z=%6@4@v24,12,16q8;
+// INTRO (SLOW)
+#A=v6l2[ d+..f1  c+8^1&|c+1]c+o7v3f+2*>>g0$@2v8l8o5;
+#B=v5l2[ c.. d1 >a+8^1&|a+1]a+o6v3c+2*>>d0$@2v7l8o4;
+#C=v5l2[>g+..a+1 f+8^1&f+1]$@2v7l8o4;
+#D=l8[o4d+2>g+4.<f ^2&f 16*<f4^16> c+^1^1]$@3v6;
+#E=l8[o3g+2 f4.  a+^2&a+16*<a+4^16>f+^1^1]$@3v6;
+#F=l8[o2[g+r]4g+g+[g+r]3]4<$@3v6;
+// INTRO2
+#AD+=[drrd+rrc+rrf+rrd+rg+rcrrc+rrf+rrd+rrg+r<|cr]4c4^1^1;
+#BE+=[frrg+rrf+rra+rrg+r<c>rd+rrf+rrg+rrg+rr<cr|d+r]4d+4^1^1;
+#CF+=[a+rr<crr>a+rr<c+rrcrd+r>g+rra+rr<c+rrcrrd+r|g+r]4g+4^1^1<;
+// Apart
+#AC+=@5v8[a+aa0*a+f4.^1d+dc4.c0*g^1.>a+4.a+0*<f^1^4d+d|d+dd0*d+c^1.];
+#AC+=c>g+g+0*<d+d4c>g+d+fa+aa0*<f4c>aa0*<f;
+#B+=@5v8[<dcc0*d>a+4.^1gfd+4.d+0*<d+^1.>d4.d0*a+^1^4gf|gff0*gd+^1.]d+cc0*gg4d+c>g+a<dcc0*a4fcc0*a;
+#D+=v5[o5d r4 f2.. r4d+rg+r d r4 f2..&x64f2 r4 x128d r4 f2.. &x64f2 r4|x128d+r4 c2.. &x64c2r4x128];
+#E+=v4[o4a+r4<d2.. r4c rd+r>a+r4<d2..&x64d2 r4>x128a+r4<d2.. &x64d2 r4|x128c r4>g+2..&x64g+2r4x128];
+#F+=v4[o4f r4 a+2..r4g+r<cr>f r4a+2..&x64a+2r4 x128g r4 a+2..&x64a+2r4|x128g+r4 d+2..&x64d+2r4x128];
+#D+=d+>g+<d+d4c>g+d+<cfcff>fa<f;
+#E+=co5g+>c<g+2d+o3a+<f>a+a+a+f4.;
+#F+=g+r2..a+ra+a+a+r4.;
+// Bpart
+#O=[x128cx64r]r8x128ccc8cx64r^4;
+#AC+=[2d+32>*g+32^4&g8*<g+16^1.g4.g32*f16.^1.>g+4.g+32*<f+16.^1.|l1g+g]d+4.d8^1.;
+#B+=@6v6l16>[O(3)]15O(5);
+#D+=@6v6l16[O(8)]7O(7)[O(8)]7O(10);
+#E+=@6v6l16<[[O(1)][O][O(-1)]|[O(-2)]]O(-2)O(2);
+#F+=@6v5p0l16[O(8)]7O(7)[O(8)]7O(10);
+// Cpart
+#A+=@3x128v4[4o5a+4.<c8^2.l4>a+<cc+>a+.<c8^1.]d+.d.c+.c.cc;
+#B+=@3x128v6[4o4f+4.g+8^2.l4f+g+a+f+.g+8^1.]a+.a+.g+.g+.a+a;
+#C+=@3x128v4[4o5f+4.g+8^2.l4f+g+a+f+.g+8^1.]a+.a+.g+.g+.a+a;
+#D+=@3x128v6[4o4a+4.<c8^2.l4>a+<cc+>a+.<c8^1.]d+.d.c+.c.cc;
+#E+=@3x128p4v5l1[2o4f+^^^g+^^^]l4<f.f.d+.d+.ff;
+#F+=@3x128p4v5l1[2o3f+^^^g+^^^]l4<a+.a+.g+.g+.a+a;
+// Sequence
+Xp0k-4A;Xp8k0B;Xp4k4C;Yv6D;Yv6E;Yv6F;
+
+// Strings
+//----------------------------------------
+Zl1[r]8p0o5$v6b-^^^^^^^^^^^^^^^^r
+v10l8[b-1<dcd>b-2ra-1g4.<d^2>b-1^1|a-1^1]a-1q4b-2.r4[r1]34;
+Zl1[r]8p8o6$v6b-^^^^^^^^^^^^^^^^r
+v10l8[f1b-ab-f2re-1c4.g^2d1^1|e-1^1]e-1f2.r4[r1]34;
+
+// DECO
+//----------------------------------------
+#OPM@10{4 7
+31 10 03 03 06 35 0 04 7 0 0
+31 10 03 07 06 03 0 02 3 0 0
+31 10 03 03 06 42 0 15 7 0 0
+31 10 03 07 06 03 0 04 3 0 0};
+#L=l16[<dd>d+d+a+a+d+d+];
+%6@10@v64,12,16q4v3k7l16o6
+[[g+g+[p0g+rp8g+p4g+]p0g+p8g+rp4g+p0g+r]3|
+p8g+v6p0>>g+<g+>g+<g+<g+8>>g+p8v3<<g+p4g+p0g+p8g+rp4g+p0g+r]
+p8g+v6p0>>g+<g+>g+<g+<g+8>>g+p8<<g+p4g+p0g+p8g+rp4g+p0g+r$
+@10l16p4q4v5o6[p0a+<p4a+>p8a+ra+<p4a+>p0a+<p4a+>p8a+rp0a+r>a+<p8a+<p4a+p0a+]18
+@lfo19,2mp10q8o5[Ll8<dcd>a+^2[L3<ff>d+d+a+a+d+d+]|[<cc>d+d+g+g+d+d+]3<c>d+d+g+cd+g+<c]
+cc>g+g+<d+d+ddr8c>g+d+c>g+d+<ffa+a+aa<ffc>a<f>ac>a<f>a
+mp0v7p8[2r1o6g+4.<g+8^2r1g4.f1^1g+8^2g+1|g1]a+1
+[r1]18p4;
+
+// DRUMS
+//----------------------------------------
+#@7{1 0 0 //BD
+00 63 0 0 36 00 00 00 00 01 00 00 00 00 00
+19 63 0 0 44 00 20 00 00 01 00 00 00 00 00
+};
+#@8{1 0 0 //Tom
+00 63 0 0 34 00 00 00 00 01 00 00 00 00 00
+19 63 0 0 38 00 08 00 00 01 00 00 00 00 00
+};
+#@9{0  7  0 //SD
+00 63 00 00 00 00 00 00 00 11 03 00 00 00 15
+00 63 00 30 30 00 00 00 00 15 07 00 00 00 15
+}@f96,1;
+%6@7@v128v24q0s,-128o3[ccccc8c8c[c]10]$
+[ccc16c16r8c[cc]6]4[c]8
+[c]64[cr]32[crcr8c8]32[c.]4cc;
+%2@19@v64q0l16[v16s22a2s38[v9arav6a]2ars20a8s38[v9arav6a]11]$
+[l8v16s22a2s38[v9av6a]29|v9av6a]v16s22a2.s38[v9aaas20v6as38v9aa]
+[v16s22a2s38[v9av6a]30][v16s22a2s38[v9av6a]30]
+l16[v16s22a2s38[v9arv6aa]30]v16s20l4p6c.s24p4a.c.p2d.<s25c>s22c;
+%6@8@v32v24q0s,-16r1^1^1r8l24ccc>l16ggr8c8c8>ggr8[r1]4$
+[r1..o5v12rgrgr1.v24ccc>ggc>g8|r1..o5v12rgrgr1^4v24o4ggc8r4ggc8]
+[r1]4@v40o5[rcc8r4|r2]>cggc>g<cc>g@v32
+[r1^1^1..o4cccc|[r1]3r4ggc8r4ggc8]r1^1<l8ccr>grccrrrrcrl16gcrccr
+[l8[r^2cr4]7|r1]l16r4rgcrrrrgrgrr
+[r1]16l8ro5p0ccrp3cc>rp5ggrp8cc>p4crcr;
+%6@9@v72q8[r1]7l16v12av14av16aaarv12aar[a(]7$
+[v16l4[ra]7rr[ra]6|r2rv9l16cccr]l16[cccr]3c4r1^1l4
+v16l4[ra]7rr[ra]7rl16v9aaarv16l4[ra]12r1l8raararrr
+[l4[ra]14|rarl16aar8]l16r8v8av16aarraraararar
+[l4[ra]15rl16aaaa]r1.l4aa;

@@ -1,0 +1,184 @@
+#TITLE{Planet the E.A.R.T.H / 超連射68k (stage1)};
+t148;
+#EFFECT0{lf12000,1.8};
+#TABLE0{128};
+#OPM@3{1 5 // choren CHH
+31 31 00 00 01 08 0 15 0 3 0
+31 28 02 00 04 17 0 12 0 3 0
+31 22 00 01 04 11 0 01 0 1 0
+31 16 08 08 04 02 0 07 0 0 0}@f96;
+#OPM@4{1 5 // choren OHH
+31 31 00 00 01 08 0 13 0 3 0
+31 28 02 00 04 17 0 12 0 3 0
+31 22 00 01 04 11 0 01 0 1 0
+31 18 00 06 15 05 0 07 0 0 0}@f100;
+#OPM@6{5 6 // choren SD1
+26 00 00 15 15 07 0 01 0 1 0
+31 13 21 15 02 04 0 01 0 2 0
+31 13 21 15 12 04 0 01 0 2 0
+31 12 15 15 02 00 0 01 0 2 0}@f96;
+#OPM@8{5 6 // chren bass
+31 08 00 09 01 07 0 02 3 0 0
+29 08 00 10 02 02 0 01 2 0 0
+31 08 00 09 01 19 0 01 1 0 0
+31 09 00 11 02 00 0 02 3 0 0}@f100;
+#OPM@13{0 7 // choren sq.melody
+20 00 00 06 00 27 0 01 0 0 0
+20 00 00 06 00 29 0 01 0 0 0
+20 00 00 06 00 37 0 02 0 0 0
+16 00 00 07 00 00 0 01 0 0 0}@f96,1;
+#OPM@14{6 7 // choren tom
+31 24 12 08 15 20 0 07 0 2 0
+31 00 13 07 00 00 0 02 0 1 0
+31 00 13 07 00 00 0 02 0 1 0
+31 19 00 08 15 00 0 00 0 0 0}@f96,2;
+#OPM@18{4 0 // choren tiny bell
+31 11 03 02 03 40 0 12 3 0 0
+31 10 04 03 04 05 0 02 3 0 0
+31 11 03 02 03 30 0 12 7 0 0
+31 10 04 03 04 05 0 02 7 0 0}@f96;
+#OPM@19{6 4 // choren organ
+31 00 00 08 00 27 0 00 7 0 0
+31 00 00 06 00 00 0 01 3 0 0
+28 00 00 08 00 02 0 04 2 0 0
+31 00 00 08 02 00 0 02 7 0 0}@f96;
+#OPM@24{1 6 // choren noizsaw
+18 04 08 08 02 22 0 04 0 0 0
+25 01 00 15 02 22 0 00 0 0 0
+28 08 01 08 05 21 0 01 0 0 0
+28 03 00 15 05 00 0 00 0 0 0}@f96;
+#OPM@31{5 4 // choren BD
+31 30 00 15 15 03 0 00 0 0 0
+31 14 16 15 01 10 0 08 0 0 0
+31 14 16 15 01 00 0 04 0 0 0
+31 14 16 15 01 00 0 04 0 0 0};
+#OPM@34{0 4 // choren brass1(intro)
+31 05 03 06 01 20 0 01 7 0 0
+31 10 03 06 01 20 0 05 0 0 0
+31 10 05 06 01 27 0 03 3 0 0
+31 10 10 05 08 00 0 02 0 0 0}@f100;
+#OPM@35{4 5 // choren brass2(Apart)
+31 02 00 02 00 03 0 01 3 0 0
+29 04 00 07 03 00 0 03 3 0 0
+31 02 00 02 00 20 0 01 7 0 0
+27 04 00 08 03 00 0 01 7 0 0}@f112;
+#OPM@36{4 6
+31 00 00 15 00 07 0 01 3 0 0
+29 02 00 15 03 00 0 03 3 0 0
+31 00 00 15 00 20 0 01 7 0 0
+27 02 00 15 03 00 0 01 7 0 0};
+#OPM@37{4 5
+20 02 00 02 00 03 0 01 3 0 0
+14 04 00 07 03 00 0 03 3 0 0
+20 02 00 02 00 20 0 01 7 0 0
+12 04 00 08 03 00 0 01 7 0 0};
+#OPM@70{0 7 // choren sequence
+31 00 00 15 00 36 0 02 0 0 0
+31 00 00 15 00 29 0 02 0 0 0
+31 00 00 15 00 27 0 02 0 0 0
+31 15 00 15 02 00 0 01 0 0 0};
+#OPM@198{5 7
+31 00 00 00 00 27 0 02 0 0 0
+21 14 07 07 03 00 0 01 0 0 0
+21 13 07 07 02 00 0 02 0 0 0
+21 14 07 07 02 00 0 04 0 0 0};
+
+// drum ------------------------------
+#TABLE1{(0,-1800)6};
+%6q8@31np1v11o2l4[ffff]16r2^8f16f16r8f8[ffff]16$[ffff]15v15ffffv10[ffff]24;
+#H=@4v15ccc8cc@3c@4ccc32c32cccc@3v10c8;
+%6q8v13mp0o6l16[H]16v7r2@6@lfo60mp-60l4>>cc<<v13mp0l16[H]16$[H]15r1[H]24;
+
+// bass ------------------------------
+#A=[>aa<aa]4[>ff<ff]4[>gg<gg]4[>ee<ee]4;
+%6q8@8v6kt-2q8@q2l16o3
+[A]4a4*>a0<kt-1r2.[A]
+[[>ff<ff]4[>gg<gg]4[>aa<aa]4|>aa<aa>gg<gg>ff<ff>ee<ee][>aa<aa]4
+$[[>a+a+<a+a+]4[cc<cc]4[>>ff<ff]4ff<ff>d+d+<d+d+>dd<dd>cc<cc]
+>g4&g4*>g0r2[<cc<cc]4>f4&f4*>f0r2[f+f+<f+f+]4[>gg<gg]4[cc<cc>]4[>ff<ff]4
+ff<ff>d+d+<d+d+>dd<dd>cc<cc>
+[>gg<gg]4[cc<cc>]4[>ff<ff]4[>f+f+<f+f+]4
+[>gg<gg]4[cc<cc>]4[>ff<ff]4v8[ff<ff]3v9>ee<eev6
+d+4&d+4*>d+0r2[ff<ff]4d4&d4*>d0r2gg<gg>ff<ff>d+d+<d+d+>dd<dd
+d+4&d+4*>d+0r2[ff<ff>]4[gg<gg>]4
+[gg<gg>]f+f+<f+f+>ff<ff[>d+d+<d+d+]4[>ff<ff]4[>dd<dd]4
+>gg<gg>ff<ff>d+d+<d+d+>dd<dd[>d+d+<d+d+]4[>ff<ff]4[>gg<gg]4r1;
+
+// brass ------------------------------
+#M=%6q8@34@lfo8,2mp8;
+#A=Mp8kt-2k0 l16[4v6[>ec)>ba)]4v6[<ec)>ba)]4v0[<d>bag(]4 v6[g+b)<df)]4];
+#B=Mp0kt-2k-8l16[4v0[>ec>ba(]4 v0[<ec>ba(]4 v6[<d>b)ag)]4v0[eg+b<d(]4];
+#C=Mp4kt-2k8 l16[4v2[>ec>ba]4    [<ec>ba]4    [<d>bag]4    [eg+b<d]4];
+#A+=@36l48p0o5v9a))g+)g )f+f) ed+)dc+l64c>ba+ar2.;
+#B+=@36l48p4o6v9e))d+)d )c+c)>ba+)ag+l64gf+fe r2.;
+#C+=@36l48p8o6v9c))>b)a+)ag+) gf+)fe l64d+dc+cr2.;
+#A+=@35@q5v4p4kt-1l8[[r<ee16e.ee16ff16g]rdd16d.dd16ee16free16e.ee16f+f+16g+];
+#B+=@35@q5v4p0kt-1l8[[rcc16c.cc16dd16e]r>bb16b.bb16<cc16dr>bb16b.bb16<cc16>b];
+#C+=@35@q5v4p8kt-1l8[[r>aa16a.aa16aa16a]rgg16g.gg16gg16grg+g+16g+.g+g+16g+g+16g+];
+#TABLE2{(0,128)8(128)16(128,0)72};
+#A+=@37@q0v3l1na2[cde|r]na0;
+#B+=@37@q0v3l1na2[ab<c+|r]na0;
+#C+=@37@q0v3l1na2[fga|r]na0;
+#A+=@198q6v7l16g.. *<g64 g g8 g g v5g v7f v3f v7f v3f v7e v3e v7e v3e;
+#B+=@198q6v7l16c+..*<c+64c+c+8c+c+v5c+v7c+v3c+v7c+v3c+v7c+v3c+v7c+v3c+>;
+#C+=@198q6v7l16a.. *<a64 a a8 a a v5a v7a v3a v7a v3a v7a v3a v7a v3a;
+#A+=$@35q8@q8v3l8>[rdd16d.dd16ee16f ree16e.ee16ff16g  [raa16a.aa16aa16|a]g];
+#B+=$@35q8@q8v3l8>[raa16a.aa16<cc16dr>a+a+16a+.a+a+16<dd16e rfa16f.ff16ff16frff16f.ff16d+d+16d+];
+#C+=$@35q8@q8v3l8>[rff16f.ff16ff16f rgg16g.gg16gg16g <[rcc16c.cc16cc16c]];
+#A+=v4 f4 &f4* >f0 r2< v3rgg16g.gg16gg16fv4 e4&e4*>e0r2<v3rd+d+16d+.d+d+16d+d+16d+;
+#B+=v4 d4 &d4* >d0 r2< v3ree16e.ee16ee16dv4 c4&c4*>c0r2<v3rcc16c.cc16cc16c;
+#C+=v4>a+4&a+4*>a+0r2<<v3rcc16c.cc16cc16cv4>a4&a4*>a0r2<v3raa16a.aa16aa16a;
+#A+=[rff16f.ff16ee16f rgg16g.gg16ff16g raa16a.aa16aa16a|raa16a.aa16aa16g;
+#B+=[rdd16d.dd16cc16d reg16e.ee16dd16e rfa16f.ff16ff16f|ree16e.ee16d+d+16d+;
+#C+=[ra+a+16a+.a+a+16a+a+16a+<rcc16c.cc16cc16c rcc16c.cc16cc16c|rcc16c.cc16cc16c>;
+#A+= rff16f.ff16ee16f rgg16g.gg16gg16f ree16e.ee16ee16e rd+d+16d+.d+d+16d+d+16d+];
+#B+= rdd16d.dd16cc16d reg16e.ee16ed16d rca16c.cc16cc16c rcc16c.cc16cc16c];
+#C+= ra+a+16a+.a+a+16a+a+16a+<rcc16c.cc16cc16c>raa16a.aa16aa16a raa16a.aa16aa16a];
+#A+=@q0mp24r.> d+4.^64*o7d+64d+4.^64*o4d+64;
+#B+=@q0mp24r.> c4. ^64*o7c64 c4. ^64*o4c64 ;
+#C+=@q0mp24r.>>a4. ^64*o6a64 a4. ^64*o3a64 ;
+#A+=@q8mp8<d4 &d4 *>d0 r2 r< d+d+16d+.d+d+16d+d+16d+ d4&d4*>d0r2^8<ff16f.ff16d+d+16d;
+#B+=@q8mp8 a+4&a+4*>a+0r2 r<<cc16c.cc16cc16c c4&c4*>c0r2^8<dd16d.dd16dd16>b;
+#C+=@q8mp8<g4 &g4 *>g0 r2 r< aa16a.aa16aa16a a4&a4*>a0r2^8<bb16b.bb16aa16g;
+#A+=d4 &d4 *>d0 r2r< d+d+16d+.d+d+16d+d+16d+rgg16g.gg16gg16grgg16g.gg16f+f+16f;
+#B+=a+4&a+4*>a+0r2r<<cc16c.cc16cc16crdd16d.dd16dd16drdd16d.dd16c+c+16c>;
+#C+=g4& g4 *>g0 r2r< aa16a.aa16aa16arbb16b.bb16bb16brbb16b.bb16a+a+16a;
+#A+=rdd16d.dd16d+d+16frd+d+16d+.d+d+16ff16g rcd16c.cc16dd16d+ rdd16d.dd16dd16d;
+#B+=ra+a+16a+.a+a+16<cc16drcc16c.cc16dd16d+r>aa16a.aa16aa16<ar>gg16g.gg16gg16g;
+#C+=rgg16g.gg16gg16graa16a.aa16aa16arff16f.ff16ff16frdd16d.dd16dd16d;
+#A+=rdd16d.dd16dd16drd+d+16d+.d+d+16ff16d+rdd16d.dd16dd16dv6ree16e.ee16ee16ev3;
+#B+=ra+a+16a+.a+a+16a+a+16a+r<cc16c.cc16cc16cr>bb16b.bb16bb16bv6r<dd16d.dd16c+c+16c+v3;
+#C+=rgg16g.gg16gg16graa16a.aa16aa16argg16g.gg16gg16bv6raa16a.aa16aa16av3;
+A;B;C;
+
+//main----------------------------------------
+#M=%6q8@70@q2;#A=Mv4p4k-128;#B=Mv2p8k-118;
+#AB+=l16[[p8<a<ap4ap0ep8ap4>ap0ap8<a]4[p0>gp8<gp4gp0dp8gp4>gp0gp8<g];
+#AB+=[p0>g+p8<g+p4g+p0ep8g+p4>g+p0g+p8<g+]]4;
+#AB+=@lfo8,2mp8@36q8@q2v9;
+#A+=kt-2k6 p4o5l48g))f+)f )ed+)dd+)c>bl64a+ag+g;
+#B+=kt-2k-6p4> l48c))>b)a+)ag+)gf+)fe l64d+dc+c;
+#A+=r2.;
+#B+=v15@14l4ro3e8...*>e64<d8...*>d64;
+#AB+=r1^1^1@q0@24mp16v6p8;
+#A+=kt-1l16o6q3eee8f+q8l8f+g+g+16g+q3l16 bbq8l8bg16..*a64a&a8...*>a64;
+#B+=kt-1l16o5q3bbb8b q8l8bbb16b    q3l16<eeq8l8ed16..*e64e&e8...*>e64;
+#AB+=r1^1.@18q8mp12p4;
+#A+=v7l4o7edc>b     [f16   <c8.&  c2.   >g16<d8.&  d2.   >e16<c+8.&c+2.|r1];
+#B+=v6r16l4o7edc>b8.[r32a16<e32&e8^2.r32>b16<f32&f8^2.r32>a16<e32&e8^2.|r1];
+#A+=r4 @14v6p0o3[g32..*c128]4p4kt0[e32..*>b128<]4p8kt1[c32..*>g128]r8;
+#B+=r4.@14v6p8o3[g32..*c128]4p4   [e32..*>b128<]4p0   [c32..*>g128]r8;
+#X=$@13p4kt-1mp8,32,30;
+#X+=l16o6d2.&d16..*>d64r4<e4f8f*l8ga.  a+g16*a+16aga1^4.&a16..*>a64r8;
+#X+=l16o6d2.&d16..*>d64r4<e4f8f*l8g<c.>a+g16*a+16aga1^4.&a16..*>a64<r16a16;
+#X+=q7mp8l4a+&a+8...*>a+64l8r<d*efl4edc>a+a&a8...*>a64l8r<a*a+<cl4c>a+a<c;
+#X+=c8*d4..r16l8d*efd*el4fge8el8fmp8,32,20,20f1.^8.;
+#X+=@19mp8l16ffgafgafgafga<c>a+aff32..*g128ccdcdedefeff32..*g128efgc*e8c*l8eec16*ef.g;
+#X+=l16g+>g+<a>a<a+>a+o7c>c<d+>d+<d>d<c>ca>a;
+#X+=mp32a..*<a64a4.&a..*>a64r4.<mp8c*aag8gffc*eed8de8mp8,64,30f2.&f..*>f64r1^8;
+#X+=@13mp8,32,30@q2l8[r<g*<ddd)3d16(3d+)3d+16(3dc2...)3c16(3;
+#X+=r>g*aaa)3a16(3b)3b16(3<c>b2...)3b16(3;
+#X+=l16f*g)3g(3g8)3g(3l8gg)3g16(3a)3a16(3a+g*l16a)3a(3a4b8.b<c4>|b1....)3b16(3]b1r1;
+#A+=v8X;#B+=r16v4X;
+A;B;
+

@@ -1,0 +1,161 @@
+/*
+   ドラゴンクエスト２エンディング
+*/
+
+#TITLE{DragonQuestII-Ending};
+
+#REV;
+#FPS  600;
+#QUANT  16;
+//#EFFECT0{reverb70,40,80,20};
+
+#TABLE  1 { (80,128)60,(128,80)60 | (80,100)54,(100,80)54};
+#TABLE  2 { (128,80)120           | (80,100)54,(100,80)54};
+#TABLE  9 { (32,127)112|127 };
+#TABLE 11 { (8)8,       | 8};
+#TABLE 12 { (12)8,       | 12};
+#TABLE 13 { (16)8,       | 16};
+#TABLE 14 { (20)8,       | 20};
+#TABLE 15 { (24)8,       | 24};
+
+#TABLE 21 {       | 1};
+#TABLE 22 {       | 2};
+#TABLE 23 {       | 3};
+#TABLE 24 {       | 4};
+#TABLE 31 {(4)20  | 3};
+#TABLE 32 {(4)20  | 2};
+#TABLE 33 {       | 3};
+#TABLE 34 {(2)20  | 4};
+
+#A=
+v7 x128
+%1 @2 na1 _na11 @@32 _@@21 s0
+
+o5 l8 q16
+r1r2.g4>
+d4.ee4.<g> d4.ee2 reeffedc< a2.ra>
+e4.ff4.<a> e4.ff2 rffagfed e2.c4
+a2&aq15ccd l4eedc g2&l8gegb q16a2.r<a>
+e4.ff4.<a> e4.ff2 rf<l4a>cd c2.r8l16ef
+
+l8q8[g]8 q16gq8feq16f4.rl16ga l8q16gq8feq16f&f2 l8q16fed#q16e4.rl16cd
+l8q8[e]8 q16bq8ag#a&q16a2 l4raea l8aq8gf#q16g4. <r8q16g8>
+
+d4.ee4.<g> d4.ee2 reeffedc< a2.ra>
+e4.ff4.<a> e4.ff2 rffagfed e2.c4
+a2&aq15ccd l4eedc g2&l8gegb q16a2.r<a>
+e4.ff4.<a> e4.ff2 rf<l4a>cd c2.<<
+
+@@24
+l48q16o4 b-&b->cde-fga-b->cde-
+
+o6kt3l8q16
+d4.ee4.<g> d4.ee2 reeffedc< a2.ra>
+e4.ff4.<a> e4.ff2 rffagfed e2.c4
+a2&aq15ccd l4eedc g2&l8gegb q16a2.r<a>
+e4.ff4.<a> e4.ff2 rf<l4a>cd c2.<l8ra>
+
+e4.ff4.<a> e4.ff2 l4rfl2<a>cd c1 
+kt0l32[c<a->]16 [e-c]16 [gd]16
+
+l32q16
+t95gdgd t90gdgd t85gdgd t80gdgd
+
+q16l4gr v0c
+
+;
+
+#B=
+v6 x128
+%1 @2 na2 _na11 @@34 _@@21 s0
+
+o4 l16 q16
+[eg>cec<g>ce<]8
+[fa>cfc<a>cf<]8
+[b>dfgfdfb<] >>c<eg>c<begb b-e>d<b-gedb-<
+[a>cfafcfa<] [a->cfa-fcfa-<]
+[b>dgbgdgb<] >>c#4<ea>c#egec#<agec#<a
+[fa>cfc<a>cf<]4 >l8raf4afbf[eg]4
+
+l4q8eeee aaaa a-a-a-a- gggg f#f#g#g# cece f#f#f#f#<b>dff l16q16<
+
+@@22
+[eg>cec<g>ce<]4
+[fa>cfc<a>cf<]8
+[b>dfgfdfb<] >>c<eg>c<begb b-e>d<b-gedb-<
+[a>cfafcfa<] [a->cfa-fcfa-<]
+[b>dgbgdgb<] >>c#4<ea>c#egec#<agec#<a
+[fa>cfc<a>cf<]4 >l8raf4afbf egege4
+
+l48q16o4 d&de-fga-b->cde-fg
+
+na1@@32o4l16q16
+kt3
+[eg>cec<g>ce<]4
+[fa>cfc<a>cf<]8
+[b>dfgfdfb<] >>c<eg>c<begb b-e>d<b-gedb-<
+[a>cfafcfa<] [a->cfa-fcfa-<]
+[b>dgbgdgb<] >>c#4<ea>c#egec#<agec#<a
+[fa>cfc<a>cf<]4 >l8raf4afbf <kt0gb->e-gb-ge-g
+
+l16[[a->c]6e-c<a-e-] r4>c4<[a-e-]4[>c<a-]4[ba-da-]2
+r8<gga-a-b-b->ccdde-e-gg
+l32[a-e-]16 [>c<a-]16 [b-g]24 l4b-r v0c
+
+;
+
+#C=
+v16 x128 @ph255
+%1 @8,60,0,0,60
+
+o4l8
+[q4c2.&c<q12g>]
+[q4c4&cq12cccrg]2
+[q4d4&dq12dddra]4<
+ q4g4&gq12gggr>g q2c4&cq12cc>l16q16b-gec<b-gl8
+[q2f4&fq12fq2f4&fr]
+ q2e4&eq12eeere l16q16<a>ea>c# r4>ec#<agec#<ac#l8
+[q4d4&dq12dddra] l2q16g<g>l8
+ q4c4&cq12cccr<g>
+
+cg>>c<<gcg>b-<g [f>c>c<c<]4
+[cg>>c<<g]< b>b>a<b eb>>d<<b<
+[a>e>>c<<e] [da>>c<<a]< [g>d>b<d<]>
+
+[q4c4&cq12cccrg]2
+[q4d4&dq12dddra]4<
+ q4g4&gq12gggr>g q2c4&cq12cc>l16q16b-gec<b-gl8
+[q2f4&fq12fq2f4&fr]
+ q2e4&eq12eeere l16q16<a>ea>c# r4>ec#<agec#<ac#l8
+[q4d4&dq12dddra] l2q16g<g>l8
+ q4c4&cq12c l4c<b->l8
+
+kt3
+[q4c4&cq12cccrg]2
+[q4d4&dq12dddra]4<
+ q4g4&gq12gggr>g q2c4&cq12cc>l16q16b-gec<b-gl8
+[q2f4&fq12fq2f4&fr]
+ q2e4&eq12eeere l16q16<a>ea>c# r4>ec#<agec#<ac#l8
+[q4d4&dq12dddra] l2q16g<g>l8
+ q4c4&cq12c ccrc
+
+kt0
+[q4f4&fq12f ffrf]
+[<q4b-4&b-q12b- >b-b-rb-]
+r8l16q12e-e-ffgga-a-b-b->cc<b-b-
+l8q12[a-e-]4 [e-<a->]4 [e-<b-]6 >q16e-4
+
+;
+
+
+t100
+@v128 A;
+@v128 B;
+@v128 C;
+r12@k1@v20 A;
+r12@k1@v20 B;
+r6@k-1@v10 A;
+r6@k-1@v10 B;
+
+#END;
+

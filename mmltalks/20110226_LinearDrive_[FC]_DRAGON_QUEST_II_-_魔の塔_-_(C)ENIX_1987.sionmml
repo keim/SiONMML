@@ -1,0 +1,90 @@
+/*
+   [FC] DRAGON QUEST II - 魔の塔 - (C)ENIX 1987
+   original MDX by GRA
+   SiON MML     by LinearDrive
+   date:2011-02-25
+   JASRAC:056-1911-4
+*/
+
+
+#TITLE{[FC] DRAGON QUEST II - 魔の塔 - (C)ENIX 1987};
+#REV;
+#FPS  600;
+#QUANT  8;
+
+
+//table for amplitude envelope & tremolo
+#TABLE  1 { (48,32)60, (40,24)60, (32,16)60, (24,8)60  |  8   };
+#TABLE  2 { (64,48)60, (48)60 | (48,32)30,(32,64)60,(64,48)30 };
+#TABLE  3 { (80,64)60, (64)60 | (64,48)30,(48,80)60,(80,64)30 };
+
+#TABLE 11 { (64,8)40,(8,0)180 | 0 };
+#TABLE 12 { (64,8)40,(8,0)360 | 0 };
+
+#TABLE 56 { (8)90  | 0 };
+#TABLE 57 { (8)210 | 0 };
+#TABLE 58 { (8)360 | 0 };
+#TABLE 59 {        | 0 };
+
+//table for tone-change
+#TABLE 81 {       | 4 };
+#TABLE 82 { (2)20 | 4 };
+
+#TABLE 99 {       | 1 };
+
+
+/* 矩形波１ */
+#A=
+   %1 @4,63,0,0,63,0 q8 @q0 v16 x128 s0  
+   o6 
+   $ 
+   [ 
+     na1 _na57 @@81 _@@99 q8
+     r4r8 d+8 r4r4r4 d+8 r4r4r8 
+     na2 _na59 @@82 _@@99 q8
+     << g1&g1 >> 
+   ]2 <
+   na2 _na58 @@82 _@@99 q8
+   a+8.g+16r8>c+8< a+16b16a+16b16 a+8a8 g+8.f+16r8b8g+4.
+   g8f+16<b16r16>f+16<b8>>e8d16r16<g16r16d16r16<g16r16
+   f+16r16>f+16r16b16r16f+16r16>c+16r16<f+16r8. _na56 f+16r16 >
+;
+
+
+/* 矩形波２ */
+#B=
+   %1 @4,63,0,0,63,0 q8 @q0 v16 x128 s0 
+   o3
+   $ 
+   na3 _na58 @@82 _@@99
+   [ 
+     g16r16>e8f16r16>e8<e8f16r16<g16>e16f16r16<g16>e16f16r16>
+     e8<<g16r16>e8f16r16<g16>e16f16r16<g1&g1 
+   ]2 >> 
+   f+8.e16r8a8  f+16g16 f+16g16 f+8f8e8.d16r8g8e4.d+8d16<g16r16>
+   d16<g8>>c8<a+16r16d+16r16<a+16r16d+16r16d16r16>d16r16g16r16
+   d16r16a16r16d16r8.d16r16<<
+;
+
+
+/* ノイズ */
+#D=
+   %1 @9,63,0,0,63,0 @ph-1 q8 @q0 v16 x128  
+   o0 kt5
+   $
+   [ 
+     na11 c16 c16 c16 c16 c16 c16 c16 c16 r8 na12 c8 c8 r8
+     na11 c16 c16 r16 c16 c16 c16 c16 c16 r8 na12 c8 c8 r8 
+   ]6  
+;
+
+
+/* 再生 */
+t100
+A;
+B;
+D;
+
+
+#END;
+

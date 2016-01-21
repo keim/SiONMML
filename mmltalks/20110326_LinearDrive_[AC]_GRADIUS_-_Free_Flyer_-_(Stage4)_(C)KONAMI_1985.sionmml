@@ -1,0 +1,129 @@
+/*
+   [AC] GRADIUS - Free Flyer - (Stage4) (C)KONAMI 1985 by LinearDrive
+   date:2011-03-27
+   JASRAC:033-1694-7
+*/
+
+
+#TITLE{[AC] GRADIUS - Free Flyer - (Stage4) (C)KONAMI 1985};
+#REV;
+#TMODE{unit=100};
+#QUANT 16;
+
+
+/* 0005289 波形データ */
+#WAVB  0 {F080F020405060504020F0C0A0908090A0C0F03050605030F0B0908090B0F060};
+#WAVB  1 {B090F0604010406020F0407050002030F0A0005010C0D0F0A080B000D090B0E0};
+#WAVB  2 {C0F020404020F0F0003050605020E0D0D0F0101000C0908090B0E0F0F0C0A0A0};
+#WAVB  3 {C0D0F0102030405050606060505040302010F0D0C0B0A090908080809090A0B0};
+#WAVB  4 {8080000000000070700000808080000000007070700080800000000070700000};
+#WAVB  5 {8080000000800070707000000080000000808080800080800000000080808000};
+#WAVB  6 {707080809090A0A0B0B0C0C0D0D0E0E0F0F00000101020203030404050506060};
+#WAVB  7 {8080606060606060606080808080808080806060608080806060606060808080};
+#WAVB  8 {F080F020405060504020F0C0A0908090A0C0F03050605030F0B0908090B0F060};
+#WAVB  9 {B090F0604010406020F0407050002030F0A0005010C0D0F0A080B000D090B0E0};
+#WAVB 10 {C0F020404020F0F0003050605020E0D0D0F0101000C0908090B0E0F0F0C0A0A0};
+#WAVB 11 {6050A0909090A0A0B0B0C0C0D0D0E0E0F0F00000101020203030404050506060};
+#WAVB 12 {8080707070708080808080808080808080808080808080808080808080808080};
+#WAVB 13 {8080707070707070707080808080808080808080808080808080808080808080};
+#WAVB 14 {F0D0F0002030F05050F060F05050F0302010F0D0F0B0F090F080F080F090F0B0};
+#WAVB 15 {80807070608090908080404030809090808020201080909080800000F0809090};
+
+
+/* シーケンサ初期化
+   AY3-8910:v-scale=-3dB/vstep
+   0005289 :v-scale=-1.25dB/vstep (0.25dB*5vstep)
+   113(v16) 108 103 98 93 88 83 78 73 68 63 58 53 48 43 38 0
+*/
+#I= %8 @8,63,0,0,63,0 %v3,4 %x1 v0 x128 q16 @q0 o5 kt0 k0;
+#J= %4 @0,63,0,0,63,0 %v4,1 %x1 v0 x128 q16 @q0 o5 kt0 k0;
+
+
+/* 音長制御用 */
+#O= q4;
+#P= q8;
+#Q= q2;
+#R= q16;
+
+
+/* AY3-8910 ch.1 (iv11) */
+#A=
+   I l16 @8,63,0,0,26,0 v14 o3
+   $
+   Q r2. grgr r2 rrgr ggrg >
+   [ cr>cr< ]8  <  [ a+r>a+r< ]8 
+   [ ar>ar< ]4  dr>dr<dr>dr< er>er<er>er<
+   [ fr>fr< ]4  [ gr>gr< ]4
+   [ cr>cr< ]4  d+r>d+r<d+r>d+d+<  fr>fr<fr>ff ccrcrc  R c4.r4
+;
+
+
+/* AY3-8910 ch.2 (iv11) */
+#B=
+   I l16 @8,63,0,0,25,0 v14 o5
+   $
+   R arr Q ar a fr brbr r4> R cr8 cr8 Q drdr r4.
+   R ) g4& ( g8rr Q fec< R gr4 Q fec< R gr4 > err grr  Q >cr
+   R ) g4& ( g8rr Q fec< R gr4 Q fec< R gr4 > grr >crr Q er
+   R ) g4& ( g8rr Q fec< R frr Q de 
+   O f6 e6 P f6 O g6 f6 P g6
+   Q g+a+>cdd+dc<a+g+a+g+gfgfd+
+   R drr frr a+rr >d+rr Q g+rrr
+   R ) g4& ( g8rr  Q fec< gr g >cr 
+   Q d d+r R d+r4 Q d+ fr R fr4 Q f gr gr f R g4.r4
+;
+
+
+/* AY3-8910 ch.3 (iv11) */
+#C=
+   I l16 @8,63,0,0,27,0 v14 o4
+   $
+   Q r2. grgr r2 rrgr ggrg >
+   [ cr>cr< ]8  <  [ a+r>a+r< ]8 
+   [ ar>ar< ]4  dr>dr<dr>dr< er>er<er>er<
+   [ fr>fr< ]4  [ gr>gr< ]4
+   [ cr>cr< ]4  d+r>d+r<d+r>d+d+<  fr>fr<fr>ff ccrcrc  R c4.r4
+;
+
+
+/* 0005289 ch.1 (iv12) */
+#D=
+   J l16 @3,63,0,0,24,0 v93 o5 k4
+   $
+   R frr Q fr f fr grgr r4 R g+r8 g+r8 Q a+ra+r r4. >
+   R )5 e4& (5 e8rr Q >fec< R gr4 Q fec< R gr4 drr err Q gr>
+   R )5 e4& (5 e8rr Q >fec< R gr4 Q fec< R gr4 crr err Q gr>
+   R )5 c4& (5 c8rr Q  fec< R frr Q de 
+   R (10 c4.r8 )10 c4.r8 (5 c4& )5 c4& )5 c4 r4 (5
+   R crr crr frr a+rr> Q d+r r8
+   R )5 e4& (5 e8rr Q >fec< gr g >cr<<
+   Q f gr R gr4 Q g ar R ar4 > Q d er er d  R e4.r4
+;
+
+
+/* 0005289 ch.2 (iv12) */
+#E=
+   J l16 @13,63,0,0,24,0 v93 o6 k8
+   $
+   R crr Q cr c cr drdr r4 R d+r8 d+r8 Q frfr r4.
+   R )5 g4& (5 g8rr Q fec< R gr4 Q fec< R gr4 >err grr  Q >cr
+   R )5 g4& (5 g8rr Q fec< R gr4 Q fec< R gr4 >grr >crr Q er
+   R )5 g4& (5 g8rr Q fec< R frr Q de 
+   O f6 e6 P f6 O g6 f6 P g6
+   Q g+a+>cdd+dc<a+g+a+g+gfgfd+
+   R drr frr a+rr >d+rr Q g+r r8
+   R )5 g4& (5 g8rr Q fec< gr g>cr
+   Q d d+r R d+r4 Q d+ fr R fr4 Q f gr gr f  R g4.r4
+;
+
+
+/* 再生 */
+t13608
+A;
+B;
+C;
+D;
+E;
+
+
+#END;

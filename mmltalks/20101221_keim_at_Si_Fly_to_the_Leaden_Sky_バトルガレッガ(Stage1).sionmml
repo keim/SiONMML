@@ -1,0 +1,88 @@
+#TITLE{Fly to the Leaden Sky/バトルガレッガ(Stage1)};
+#EFFECT1{delay};
+t150;
+
+//----- FM Voices
+#MA@0{3 0  // BritePno
+0 15 02 02 02 05 39 1 2 01 0 0
+0 15 02 02 03 15 28 0 2 05 0 0
+0 15 02 02 02 13 25 1 2 01 0 0
+0 15 02 01 05 04 10 1 0 01 0 0};
+#OPN@14{2 7 // Metal Lead 3 by valsound
+31 10 00 00 01 25 0 04 3 0
+31 05 00 04 15 25 0 00 3 0
+31 09 00 06 10 37 0 04 7 0
+31 00 00 08 00 00 0 02 7 0}@lfo24mp0,16,30;
+#OPN@15{3 7 // MONO Lead by valsound
+24 11 01 00 08 42 0 04 2 0
+24 09 01 00 05 19 0 04 6 0
+23 09 02 00 10 25 0 08 1 0
+23 05 03 08 08 00 0 01 0 0}@lfo24mp0,16,30@f110;
+
+//----- piano chord
+#M=%t0%6@0 q2v9 o4;
+#A=l8f.ff16f.f.ffa-16a-a-16a-a-.a-.a-a-;
+#B=l8a-.a-r16a-.a-.a-a-r16<cr16cc.c.cc;
+#C=l8<c.cr16c.c.ccr16e-r16e-e-.e-.e-e-;
+#D=l8<e-.e-r16e-.e-.de-r16gr16gg.g.a-g;
+#A+=c+.c+c+16c+.c+.d-c+e-.e-e-16e-.e-.e-e-;
+#B+=>f.fr16f.f.ffg.gr16g.g.gg;
+#C+=>a-.a-r16a-.a-.a-a-b-.b-r16b-.b-.b-b-;
+#D+=c.cr16c.c.>b-<cd.dr16d.e-.e-d;
+M$[7A][r1]10;
+M$[7B][r1]10;
+M$[7C][r1]10;
+M$[7D][r1]10;
+//----- synth chord
+#M=%t1%1@1@f80s12v5 q8@lfo20mp0,20,30;
+#A=l1$[<g..f4g|f2e-2g..b-4gb-<c..e-4c>b-2g2]3;
+#B=l1$[<c..c4c|>b-2b-2<c..e-4ce-f..a-4fd2e-2]3;
+#C=l1$[r]28;
+#A+=l4g.a-.b-l1f+a-a-b-2a-4b-4b<d-c+e-2r4c-4c+d-2a-2;
+#B+=l4>b-.<c.dl1d+ff-g-2r2g+b-a<c-2>e4r4a-<c-2e-2;
+#C+=b<d-d-e-2r2eg-f+a-2c+4r4f+a-2b-2;
+MA;MB;MC;
+//-----sequence
+#M=%5@1@f64 q3s32;
+#A=l16<d+g<cd+[[gd+cg+d+cgd+cgd+cgd+cgd+cgd+c|g+d+cgd+cgd+cd+c]a+d+cg+d+cgd+cd+c]6;
+%t2M k4 v8    $r1^1^1..A[r1]10;
+%t3M k-4v3r16.$r1^1^1..A[r1]10;
+
+//-----low-saw
+%t4%3@4@f80,3q8l8v12s32$r1^1^1..l4o2e*<c+1..>g+a+1<c2c>g<c+1.>g+fa+1[17r1]
+e2..l16d+ef+2c+2a2e8.f+8.a8g+2b4g+4a2..g+a
+b2<d+2d2>a8.b8.<d8c+2e8.>g+8.b8a2..g+ab4.ab<d+4>b4;
+//-----bass
+%t5%5@1,63,20,20,40,15@f32,1,36,0,0,0,64v12o2q8$l16[r1]10r1..
+o3g8..*d32[c+c+r8c+8c+c+8c+c8>a+ra+<crc+rcc+rcc+8d+8c+c+
+c+g+8r>g+a+ra+8a+a+8a+g+8f+rg+a+r<cr>a+<c|r>a+<c8f8>f+f+f+<c8]4
+g8ccg+8c+a+8g+8[10r1];
+//-----main1
+%t6%6@15@v64,24q8v8$[r1]10r1..l32rro4g<cd+g<cd+l16
+g2^8g+8grcd+4..&d+16..*>b64<d+8.f8.grf4..>a+*<c8drd+rgra32*a+8..g+4g8.f8.d+16.r32
+g2^8g+8grcd+4..&d+16..*>b64<d+8.d8.>a+8<c4>a+16.<f32g4c4>a+8b32<c16.>a+16.b32<c8g4g+8.a+8.
+g2^8g+8grcd+4..&d+16..*>b64<d+8.g8.f+8f4.d8g+32*a+.ra+8.<c16.r32>g8.f8.c8g8.<c8r>a+16.r32
+g2^8g+8grcd+^2c8d+rd+<c8.l32c4^16.r>a+<c16r>a+8..r<c8cc+drd+4>gra+16<d+8g+8d+16a+8.
+g+8^1^1^1^1[r1]6;
+//-----main2
+%t6%6@14@v64,24q8v8o5r1^1^1^1$[24r1]
+l16f+2..ff+g+2c+4c8c+16.r32<c+2^8>bra+g+8.a+4bra+4d+rf+g+a+8
+b2^8a+rb<c+8.d+4.fd+c+2r8g+8.f+8.f8.f+8.g+8d+8.f8.f+8f8.>g+8.b8
+<c+4^16.f+32*g+4c+8.>b8.<c+4.>b<c+g+4f+4g1^1r1^1;
+
+//-----HH&Cym
+#A=v12cv6cv8cv6c;
+#B=v12cv6cv8s28c8s36;
+#C=v12cv8cv10cv6cv10cv6cv8cv6cv10cv6ccv10cv6ccv10cv6c;
+%t7%2@1l16q0@v48r1$r1r1r2r4
+o6s36v10[c32]8[A]15v12cv6cv8[c32]4[A]12r2.[c32]8
+[v14s20>g2<s36BABABA[AABABABA]3]
+v14s20>g2<s36AA[C]7v14s20>g1<r1v14s20>g1<;
+//-----BD
+%t7%5@0@v80v28q0s32,-64o3$l4[r1]8[c]12rrrc
+[cccccccc8c8]8[cccccccc8c8ccccccc8.c8.c8]ccccccl16ceeeceee;
+//-----SD
+%t7%2@1q0s34o3 l4v7 $[r1]7@f84,1[r2..e8]3r1^1
+@f100,0v10[[re8.e16re]3r|e8.e16ee8e8]4l16v16rreereerreee
+[r1]7v7r2rreereeer2..eer2reeereeel4;
+

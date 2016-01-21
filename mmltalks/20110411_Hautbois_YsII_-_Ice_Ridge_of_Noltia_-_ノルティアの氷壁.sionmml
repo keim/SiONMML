@@ -1,0 +1,161 @@
+/*
+    YsII - Ice Ridge of Noltia - ノルティアの氷壁
+    日本ファルコム 1988
+*/
+
+#TITLE{YsII - Ice Ridge of Noltia - ノルティアの氷壁};
+#REV;
+#FPS  60;
+#QUANT  8;
+//#EFFECT0{reverb70,40,70,30};
+
+#OPN@000{
+//AL FB
+  04,07,
+//AR DR SR RR SL TL  KS ML DT AM
+  31,07,00,03,01,030,00,02,03,00,
+  24,31,00,06,00,016,00,02,03,00,
+  31,07,00,03,01,012,00,01,07,00,
+  30,31,00,06,00,016,00,02,04,00};
+#OPN@001{
+//AL FB
+  04,06,
+//AR DR SR RR SL TL  KS ML DT AM
+  27,04,00,06,15,035,00,03,03,00,
+  31,07,00,07,15,016,01,01,04,00,
+  31,07,00,04,14,041,00,14,07,00,
+  31,08,00,07,15,023,00,04,07,00};
+#OPN@002{
+//AL FB
+  00,07,
+//AR DR SR RR SL TL  KS ML DT AM
+  16,14,00,03,03,026,00,03,06,00,
+  19,00,00,05,00,025,00,01,03,00,
+  26,00,00,03,00,026,00,01,03,00,
+  27,00,00,11,00,000,00,01,03,00};
+#OPN@003{
+//AL FB
+  04,05,
+//AR DR SR RR SL TL  KS ML DT AM
+  31,00,00,00,00,022,00,02,07,00,
+  18,10,00,06,01,016,00,08,07,00,
+  31,00,00,00,00,023,00,04,03,00,
+  18,10,00,06,01,016,00,04,03,00};
+#OPN@004{
+//AL FB
+  00,07,
+//AR DR SR RR SL TL  KS ML DT AM
+  31,18,00,06,02,036,00,10,03,00,
+  31,14,04,06,02,045,00,00,03,00,
+  31,10,04,06,02,018,00,00,03,00,
+  31,10,03,06,02,000,00,00,03,00};
+
+#Z=x128 v15 @128;
+
+#A=Z
+$
+%6 @0 @v90 q8 s24
+@lfo9,2 mp0,22,20,20
+o5 l16 c4ce-gb->d2& l4q7dgfc q7d2.l16q8e-de-f 
+o6 l16 d8<g>d8.gfl2q6g q8dc l8.q6e-fg8 fe-<b-8>
+o6 l2c l16gfg8&g4&  q6g2<l16q8g#b->cde-dc<b->
+o6 c2 <l16g#b->cdq6e-4 q8cde-fg2&q4g8l16q8fe-
+o6 q6f8.g16&q7g2<q6f8.g16&q7g1
+@1 @v110 q8
+o6 l16c4.<b->c<g2> c4.cdl8e-.d.c 
+o6 d4.l16cd<b-4.b4.>c8d4l8fe-d
+o6 l16c4.<b->c<g2> c4.cdl8e-.f.g
+o6 l2fb->c1
+@2 @v30 s24
+o6 c2.l16cde-f d2.gfe-d e-2.<gfe-d e-1 
+o4 g#2.l16g#g#b->c d2l4e-f f.e-l16 [d|e-fde-f(3]4 v15ga-b-
+o6 c2.l16cde-f d2.gfe-d e-2.<gfe-d e-1 
+o4 g#2.l16g#g#b->c d2l4e-f l16e-dc8&c2. <l8q6g.a.bb.>c.d
+;
+
+#B=Z
+$
+%6 @2 @v20 q8 s24
+@lfo9,2 mp0,22,20,20
+o4 g2.>l16ce-l4q7g.>dc<f q7g2.l16q8a-ga-b- g8d16g&q6g4.q8dcd4
+o4 l2q7gg >l8q6c.d.e- d.c.<f q7g2.l16q8>e-de-8&q7e-2 l16q8fga-b->c<b-a-g
+o4 q7a-2l16q8fga-b->q6c4 <q8a-b->cde-8&q7e-2q8dc q6c8.d&q7d2<q6c8.d&q7d1
+@3 @v70 q8
+o4 g4.l16fgl2c g>l4cg 
+o5 f4.l16e-f l4d.d.e-8f4l8a-gf
+o4 g4.l16fgl2c g>l8c.d.e- l2dfg1
+r4 @2 @v15 k7 s24
+o6 c2.l16cde-f d2.gfe-d e-2.<gfe-d e-1 
+o4 g#2.l16g#g#b->c d2l4e-f f.e-l16 [d|e-fde-f(3]4 v15ga-b-
+o6 c2.l16cde-f d2.gfe-d e-2.<gfe-d e-1 
+o4 g#2.l16g#g#b->c d2l4e-f l16e-dc8&c2 kt0<l8q6b.>c.dd.e-.f
+;
+
+#C=Z
+%6 @4 @v30 s24
+$
+q7
+o4l16 [crcc]4 <[b-rb-b-]4 [a-ra-a-]4 [grgg]3 a-a-b-b-
+o4l16 [crcc]8 <[a-ra-a-]7 a-a-gg 
+o3l16 [frff]8 [grgg]8
+o4l16 [crcc]4 <[a-ra-a-]4 [b-rb-b-]4 [grgg]3 ggab
+o4l16 [crcc]4 <[a-ra-a-]4 [b-rb-b-]4 >[crcc]3 >c<ccc
+o3l16 [a-4>ce-a-2<a-a- b-4>dfb-2<b-b-> c4c>c<c2<gg> c4c>c<c8 l16fe-de-c<b-g8]3
+o3l16 a-4>ce-a-2<a-a- b-4>dfb-2<b-b-> c8.ce-dc8ce-de-fe-de-<l8q6g.a.bb.>c.d
+;
+
+//     00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff
+#WAVB0{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101010101010101};
+#TABLE  1 { (128,80)2 | 80 };
+#TABLE  2 { (128,80)2(80,0)50 | 0 };
+
+#D=Z
+%4 @0 v7 s24 k0 na1
+$
+o5 q8 c4.l16e-g>l2c<b-l4fb- g1<g2.l8a-b->
+o5 l2e-fg>ce-.l16c<b->c8& c2l4cd
+o6 e-1l2fg a8.b16&b2 <a8.b16&b1
+o6 l1 na2 cc d2.. d8&d2 l8dde-f l1ccde- 
+na1
+[o5 a-8l16e-a->c4 e-8l16ce-a-4 <b-8fb->d4 f8dfb-4 c8e-g>c2 <l16e-dc<b- g1]3
+o5 a-8l16e-a->c4 e-8l16ce-a-4 <b-8fb->d4 f8dfb-4 c1 <l8q6g.g.g g.a.b
+;
+
+#E=Z
+%4 @0 v7 s24 k-7 na1
+$
+o5 q8 c4.l16e-g>l2c<b-l4fb- g1<g2.l8a-b->
+o5 l2e-fg>ce-.l16c<b->c8& c2l4cd
+o6 e-1l2fg a8.b16&b2 <a8.b16&b1
+o6 l1 na2 e-e-< b-2.. b8&b2 l8bb>cd l1e-e-<b->c
+na1
+[o5 a-8l16e-a->c4 e-8l16ce-a-4 <b-8fb->d4 f8dfb-4 c8e-g>c2 <l16e-dc<b- g1]3
+o5 a-8l16e-a->c4 e-8l16ce-a-4 <b-8fb->d4 f8dfb-4 c1 <l8q6g.g.g g.a.b
+;
+
+#TABLE  3 { (80,30)2(30,0)5 | 0 };
+#TABLE  4 { (128,60)2(60,0)8 | 0 };
+#H=na3o5a;
+#S=na4o3a;
+
+#F=Z
+%2 @3 v7 na3 o0 l16
+$
+[H8HHS8HH]8
+[H8HH | S8HH]8 SSSS
+[H8HHS8HH]7 S8HHSSSS
+[H8HHS8HH]14 [S8HH]3 S8SS
+[[H4HHS4HHHHSH]3 HHHHS4HHHHSHHH]3
+[H4HHS4HHHHSH]3 H8.H8.H8S8.S8.SH
+;
+
+t142;
+A;
+B;
+C;
+D;
+E;
+F;
+
+#END;
+

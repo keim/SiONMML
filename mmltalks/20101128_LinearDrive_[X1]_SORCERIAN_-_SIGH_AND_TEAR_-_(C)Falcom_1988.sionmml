@@ -1,0 +1,192 @@
+/*
+   [X1] SORCERIAN - SIGH AND TEAR - (GAME OVER) (C)Falcom 1988 by LinearDrive
+   date:2010-11-29初版
+   JASRAC:045-4683-1
+*/
+
+
+#TITLE{[X1] SORCERIAN - SIGH AND TEAR - (C)Falcom 1988};
+#REV;
+#TMODE{unit=100};
+#FPS   1000;
+
+
+// tone for OPM (feedback adj./TL adj.)
+/* CON, FB,
+    AR,D1R,D2R, RR,D1L, TL, KS,MUL,DT1,DT2,AMS */
+#OPM@000
+{    3,  7,
+    31,  8,  2,  2, 14, 40,  3,  6,  0,  0,  0,
+    19,  6,  0,  2, 15, 51,  1,  6,  3,  0,  0,
+    15, 10,  0,  2,  2, 38,  3,  3,  6,  0,  0,
+    14,  3,  0,  9,  0,  0,  2,  3,  3,  0,  0 };
+#OPM@001
+{    4,  6,
+    31,  0,  0,  0,  0, 21,  0,  2,  7,  0,  0,
+    17, 14,  8,  2,  3,  0,  0,  2,  7,  0,  0,
+    31,  0,  0,  0,  0, 20,  0,  2,  3,  0,  0,
+    31, 14,  8,  2,  3,  0,  0,  2,  3,  0,  0 };
+
+/* orig.tone
+#OPM@000
+{    3,  7,
+    31,  8,  2,  2, 14, 40,  3,  6,  0,  0,  0,
+    19,  6,  0,  2, 15, 51,  1,  6,  3,  0,  0,
+    15, 10,  0,  2,  2, 38,  3,  3,  6,  0,  0,
+    14,  3,  0,  3,  0,  0,  2,  3,  3,  0,  0 };
+#OPM@001
+{    4,  5,
+    31,  0,  0,  0,  0, 21,  0,  2,  7,  0,  0,
+    17, 14,  8,  2,  3, 16,  0,  2,  7,  0,  0,
+    31,  0,  0,  0,  0, 20,  0,  2,  3,  0,  0,
+    31, 14,  8,  2,  3, 16,  0,  2,  3,  0,  0 };
+*/
+
+//table for amplitude envelope
+#TABLE  1 { (128,0  )10000 | 0   };
+#TABLE  2 { (128,104)200   | 104 };
+
+
+/* ch.1 FM */
+#A=
+   q8 @q0 k0 %6 @0 %v4,4 %x1 v15 x128
+   o3
+   t14249 @q4 /*MP40,1,4,6*/ 
+   g4>g4d4
+   $ 
+   d2.e2<g4>g4d4d2.e2e4d4c4e4d8c2..<a4>c4d4<b4a8g2..
+   g4>g4d4d2.e2<g4>g4d4d4e8c2..<a4>c4d4e4d8c2&c8d2d2 c1&c2 e4 g4
+   a1&a2b4>c2.c2d4c2.e1&e4 e4d4c4<g4e4d4c4<g4e4d4c4> 
+   a1&a2b4>c2.c2d4c2.e1&e4 <
+   e4b4>d4c1&c4c4<b4 
+   a4>c2.<a2>c4<b4a4>c2c2d2c2<
+   b8>c8<b8>c8<b2&b8>c8<b8>c8< (b8> (c8< (b8> (c8< ) 
+   [ b8& ( ]8 b8 < r8 v14 g4>g4d4
+;
+
+/* ch.2 FM */
+#B=
+   q8 @q0 k0 %6 @0 %v4,4 %x1 v12 x128
+   o3
+   k5 @q4 r4 v11 g4>g4d4
+   $ 
+   d2.e2<g4>g4d4d2.e2e4d4c4e4d8c2..<a4>c4d4<b4a8g2..
+   g4>g4d4d2.e2<g4>g4d4d4e8c2..<a4>c4d4e4d8c2&c8d2d2c1&c2e4g4
+   a1&a2b4>c2.c2d4c2.e1&e4 e4d4c4<g4e4d4c4<g4e4d4c4>  
+   a1&a2b4>c2.c2d4c2.e1&e4 < 
+   e4b4>d4c1&c4c4<b4
+   a4>c2.<a2>c4<b4a4>c2c2d2c2< [ b8>c8< ]4  
+   b2.& [ b8& ( ]8 b8 < r4. v11 g4>g4d4
+;
+
+/* ch.3 FM */
+#C=
+   q8 @q0 k0 %6 @0 %v4,4 %x1 v13 x128
+   o2
+   k-3 @q4 /*MP40,1,4,6*/
+   g4b4>d4
+   $ 
+   @p-64 e2.g2e4b4g4e2.>c2c4<b4e4>c4<a8a2..c4e4a4g4d8d2..
+   d4g4b4e4g2g2e4g4b4e4>c8<e2..c4e4b4>c4<a8a2&a8b2b2g1&g2b4>e4 
+   c1&c2f4a2.a2b4a2.g1&g4> c4<b4g4e4c4<b4g4e4c4<b4g4>>
+   c1&c2f4a2.a2b4a2.g1&g4 
+   <b4>e4g4a4e1 e4g4f4a2.c2a4f4c4g+2g+2g+2g+2g8a8g8a8g2&g8a8g8
+   a8 (g8 (a8 (g8 (a8 ) [ g8& ( ]8 g8 
+   << r8 v12 g4b4>d4
+;
+
+/* ch.4 FM */
+#D=
+   q8 @q0 k0 %6 @1 %v4,4 %x1 v14 x128
+   o2
+   r2.
+   $ 
+   g2.g1f+4e2.e1d4c2.c1c+4d2.d2.f+2g2.g1f+4e2.e1d4c2.c+4d2d2g2.g2g2.> 
+   c2r4.<g8>c4c4r4<g4> c2r4.<g8>c4c4r4c4< 
+   g2r4.d8g4g4r4d4     g2r4.d8g4g4r4d4  >
+   c2r4.<g8>c4c4r4<g4> c2r4.<g8>c4c4r4c4< 
+   b4b4b4b4b4a4g4f+4
+   e2r4.<b8>e4e4>e4d4c2r4.<g8>c4c4r4c4c2r4.<g8>c4
+   c4r4c4<g2r4.d8g4g4r4g4g1r1
+;
+
+/* ch.5 FM */
+#E=
+   q8 @q0 k0 %6 @1 %v4,4 %x1 v13 x128
+   o4
+   k2 r2.
+   $ 
+   @p64 [ f+2.f+1&f+4 ]2 
+   g2.g1&g4a2.a2.a2f+2.f+1&f+4f+2.f+2.f+2 g2.g4 a1 f+2.g2 d2 f+4
+   [ g2 ]24  [ f+2 ]4  g2g2g4g4f+4g4
+   [ g2 ]8   [ f+2 ]4  f+1 r1
+;
+
+/* ch.6 FM */
+#F=
+   q8 @q0 k0 %6 @1 %v4,4 %x1 v13 x128
+   o4
+   k2 r2.
+   $ 
+   @p64 [ d2.d1&d4 ]2 
+   e2.e1&e4f+2.f+2.c2d2.d1&d4d2.d2.d2e2.e4f+1d2.d2<b4>c4d4
+   [ e2 ]8   [ d2 ]8   [ e2 ]8  [ d2 ]4 < 
+   b2b2b4b4>c4d4 [ e2 ]4   [ d+2 ]4   [ d2 ]4 
+   d1 r1
+;
+
+
+/* ch.7 SSG */
+#G=
+   q8 @q0 k0 %8 @8,63,0,0,18,0 %v3,4 %x3 v10 x128
+   o4
+   na1 r2.
+   $ 
+   [ b2.b1&b4 ]3 > c2.c2.d2<b2.b1&b4b2.b2.b2>c2.c+4d2d2<b2.b2b2.> 
+   na2 (( 
+   [ b1& ]15 b1 >  [ c1& ]3  c1< 
+   ))
+   na1  
+   b4f+4b4f+4d4<b4>d4f+4d4<b4>d4f+4d2.r4<
+;
+
+/* ch.8 SSG */
+#H=
+   q8 @q0 k0 %8 @8,63,0,0,18,0 %v3,4 %x3 v8 x128
+   o4
+   k-6 na1 r2..
+   $ 
+   [ b2.b1&b4 ]3 > c2.c2.d2<b2.b1&b4b2.b2.b2>c2.c+4d2d2<b2.b2b2.> 
+   na2 ((( 
+   [ b1& ]15 b1 >  [ c1& ]3  c1< 
+   )))
+   na1  
+   b4f+4b4f+4d4<b4>d4f+4d4<b4>d4f+4d2.r4<
+;
+
+/* ch.9 SSG */
+#I=
+   q8 @q0 k0 %8 @8,63,0,0,18,0 %v3,4 %x3 v10 x128
+   o4
+   k-6 na1 r2.
+   $ 
+   [ g2.g1&g4 ]3  a2.a2.a2g2.g1&g4g2.g2.g2g2.g4a2a2g2.g2g2.>>> 
+   (( [ g1&g1 ]8  [ g1&g1 ]2 << g4d4g4d4<b4g4b4>d4<b4g4b4>d4<b2.r4 ))
+;
+
+
+
+/* 演奏 */
+A;
+B;
+C;
+D;
+E;
+F;
+
+G;
+H;
+I;
+
+
+#END;

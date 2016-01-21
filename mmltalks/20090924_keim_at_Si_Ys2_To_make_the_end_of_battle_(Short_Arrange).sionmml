@@ -1,0 +1,110 @@
+#TITLE{Ys2/To make the end of battle (Short Arrange)};
+#SIGN{Dm};
+#EFFECT0{eq200,70,150};
+t224;
+
+// Bass
+#OPM@1{3,5; // (c)kash1wa
+24,04,02,06,01,40,0,09,7,0,0;
+31,14,02,08,03,56,0,01,0,0,0;
+31,23,00,06,05,12,0,00,3,0,0;
+25,08,03,07,03,00,2,01,0,0,0};
+#B=[ddv18dv20d]4[ccv18cv20c]4 >bb<f&b<d>&bf&dccg&<ce&c>g&e;
+#C=ddf&a<d>&af&d >a<age>aav18av20a;
+#A=l8o3aaaa<c+>a<d>a <e>a<f>b<g>a<f>a <e>a<f>a<e>a<d>a <c+>abgab<c>b
+[aaar4.<g*a|a>aaraa<c+*d>]4 aa<a>abb<c+c+
+|[v20B|C]4d+d+b&d+g&d+a&d+ bd+<e>d+<g>d+<b>d+
+[dd<d>dga<cd >ff<f>fff<f>f bb<b>bbb<b>b |aa<a>a<g>a<a>a ]aa<a>a<aec+>a
+[[dr4dr4<cd |r>dfdd+d+gb]rdfdccec];
+%t0 %6@1@v48v20k8q8 r2[A]o4l1d^c^>l4b.<f.b<c.>g.cd.f.a>a.b.<c+l8
+[v20B|C]3d+d+b&d+g&d+a&d+ bd+<e>d+<g>d+<b>d+ <drrdrrd1&d4*>a0;
+
+// Guitar
+#EFFECT2{ws96,40lf3600chorus,,,,30delay400,30,1,30};
+#@0{1,0,0, 17,48,24,12,63,4,0,0,0,1,0,0,0,0,68};
+#A=l8q8s12d+&eg&g+*a>aaa<c+>&a<d>&a<e>&a<d>&a 
+l16a-&a&a-&a&a-&a&a-&a<a-&a&a-&a&a-&a&a-&a> l8a&b<c+>&ba&b<c+&d 
+a32*<c+16.>abgafge e32*b16.gafgefd c+&de&fg&ab&<c+ c+32*e16.c+>b<c+32*f16.c+>&b>e16e16*f
+g2&g*e0ra16a16*b <c+2&c*>a0r<e16e16*f gfefgab<c+ l4s4eefgs12
+l8[f&ec|d2.&d16>*a0r16^4a<cdc]d2..&d*>a4gfe l4f.d.fg.e.ga.f.de.g.a8*b8 
+a2.&a16*e0r8.l8<d&e&f&ga&g&f&e l4g.e.c>g.<c.d+8*e8 
+l8fd>afda<df ec>gecg<ce s4>dfa<rdfa<rd1s12>> [r1]7|[r1]7
+l16c+8*d+4>b&<d+&f8*g4d+&g&g8*b4g&b&<d+2
+l8v32g*a&a>*av8dfg*a^4g4fg8&g8*<d^4>a4g&f4 e4&e8*>a0< f4&f8*>a0< g4. 
+r4v32<g*a&a>*fv8ga^4g4fg4< s2d^4l4dedd2c+&c+*>e0
+l8[[[dfa]4|e-gb-g]|cceg]eeg<c>;
+%t1 %11@1,0 p2@v0,0,32 @lfo20mp0,8,0,20 v8o5 r2[A]
+cegbegb<cl8[d>a<]8d>a<e>a<f>a<g>a<a>a<g>a<f>a<gd2l4f.ed.c.d>
+l16c+8*d+4>b&<d+&f8*g4d+&g&g8*b4g&b&<d+2l8arrarraa2&a4*>v0a;
+
+// Lead
+#EFFECT1{delay500,30,1};
+#OPN@2{ 3,7; // (c)val-sound
+20,10, 0,15, 1,25,0,2,0,0;
+31, 0, 7,15, 0,15,0,1,3,0;
+31, 0, 0,15, 0,30,0,2,7,0;
+31, 0, 0,15, 0, 0,0,1,0,0;};
+#A=l8o5[d16*f16ec|d1>a4<cdc]d1>a4gfe l4e8*fd.f f8*ge.g g8*af.d e.g.g8*b8
+a2.&a8.*c16 l8<defgagfe l4f8*ge.c>g.<c.d8*e8
+l8d16*f16d>afda<df ec>gecg<ce> l16d+4.>b&<d+&g4.d+&g&b4. g&b&<d+2 
+l8c*a4.dfga^4g4fg4<d^4>a4gf4e4.f4.g4. r4 a4dfga^4g4fg4<d^4l4dedd2c+2
+[r1]8;
+#B=l8d16*f16ecd1>a4<cdcfeca4gfedfacfa>b<f[adgdfdgd]agf<c^2>cegbegb<c
+l16[d8>ad]9<e8>ad<f8>ad<g8>ad<a8>ad<g8>ad<f8>ad<g8>l4d2f.ed.c.d>
+l16d+4.>b&<d+&g4.d+&g&b4. g&b&<d+2 l8drrdrrd1;
+%t3 %6@2 p3@v32,12 @lfo8 mp0,20,10,20 k4      q8 r2 [r1]28A[r1]28B;
+%t3 %6@2 p5@v32,12 @lfo8 mp0,20,10,20 kt12k-4 q8 r2 [r1]28A[r1]28kt-12B;
+
+// drums
+#OPN@10{ 0,0; // BassDrum (c)val-sound
+30, 26,  0, 13, 15, 26, 0,  1, 0, 0;
+30, 28,  0, 14, 15, 37, 0, 15, 3, 0;
+30, 16,  0,  8, 15,  5, 0,  0, 0, 0;
+29, 16,  0,  8, 15,  4, 0,  0, 0, 0;}@f80;
+#@11{6  5  0 // SnareDrum (c)kash1wa modifyed
+00 63 00 00 00 00 00 00 00 11 03 00 00 00 15
+00 63 00 30 18 00 00 00 00 15 07 00 00 00 15
+16 50 40 30 20 01 02 00 00 06 00 00 01 00 20
+19 50 00 26 16 00 14 00 00 05 00 00 00 00 60}@f100;
+#@12{6  6  0 // Crash Cymbal
+00 63 32 00 00 04 16 00 00 08 00 00 02 00 01
+00 48 24 24 24 04 24 00 00 03 03 00 00 00 0
+16 32 40 20 24 02 04 00 00 11 03 00 00 00 48
+19 63 48 20 24 04 00 00 00 11 03 00 00 00 48}@f110;
+#@14{6  6  0 // OHH (c)kash1wa modifyed
+00 63 00 00 00 00 04 00 00 10 00 00 00 00 12
+00 63 40 26 24 03 02 00 00 15 03 00 00 00 24
+16 63 40 26 24 03 02 00 00 11 03 00 00 00 64
+19 63 40 26 24 03 02 00 00 11 03 00 00 00 48}@f100;
+#B=@10o1g;#S=@11o1d+;#C=v16@12c;#O=v8@14c;
+#W= o8[C1r1^1^1]3;
+#X= [r1.Sr]3 r1.SS8S8 r1.SS r2SS8S8 r8l16SSl8[S]5l4S.;
+#Y= [B2rB4.B2.BB]6;
+#W+=[C1[O]28]4;
+#X+=[[S|rSr]8l8rSSl4S.[SrS|r]7 r8l16SSl8[S]5l4S.];
+#Y+=[[BB4.]16         [BB4.]14 B1];
+#W+=[p2Cp6C1p4[O]11]  r[C2]14r2.;
+#X+=[S|rSr]8l8rSSl4S. [SrS|r]7 r8l16SSl8[S]5l4S.;
+#Y+=[BB4.]16          [[B4.]4B4B4]3 B1;
+#W+= o8C1[O]12   [C1[O.OO.][O]4];
+#X+= [SrS|r]4  [r.S|S.]4l8SSS2 l4[SS.|r.]3 r8l16SSl8[S]5l4S.;
+#Y+= [B2BB4.]4 [B2B4|BB]4r4      [B2B4BB]3 B1;
+%t4 %6q8@v120
+v32l4r2  WC1[r1]7C1[OOOO]7C1[OOOO]7C1r1^1^2^4^8C1^8r1^1^1p2C4.p6C4.p4C1^1;
+%t4 %6q8@v40v32l4rS  X[r1]7l16SSl8[S]4l4S.[S|rSr]8l8rSSl4S.[SrS|r]7 r8l16SSl8[S]5r8l2[S]7l4SS[rS]8S.S.S8S8;
+%t4 %6q8@v64v32l8rBr4Y[r1]7l4B.B.BB1      [BB4.]26 [B]17[B8B4.]8[B8B4];
+
+// backing from tsscp thread
+#A= >e4c+4d4e4 [[dc>ga^2<a4g4f4e4]d4.>a4.<d4e4.c4.e4f4.d4.>a4<c+4.e4.g4;
+#B= c+4>a4b4<c+4> [[agef^2<f4e4d4c4>]a4.f4.a4<c4.>g4.<c4d4.>a4.f4g4.<c+4.e4;
+#A+=>f1a2<d2e1c1f1e1|d1 d4c+4>b+4<c+4]))b1^1((;
+#B+=>d1f2a2<c1>g1<d1c1|>a1 a4a4r4a4<]))g1^1((;
+#A+=|v16q0[ffffrff4 ffffrff4 bbbbrbb4 aaaaraa4];
+#B+=|v16q0[ddddrdd4 ccccrcc4 ffffrff4 eeeeree4];
+#A+=[[4fa<d>]gb<d+>b[4fa<d>]gg<ce>];
+#B+=>[[4ad<f>]b<d+gd+>[4ad<f>]<eeg<c>>];
+%t5 l8 %5@2s20 p2@v32k-4 r2 [ o6l8v12q8e1g1  q2<bgec+>bgec+ efg+fefg+a  @lfo16mp16q8[b1<e1|g2.f4e1>]g1  mp0A]drrdrrd1;
+%t5 l8 %5@2s20 p6@v32k4  r2 [ o6l8v12q8e1g1  q2<gec+>bgec+>b<efg+fefg+a @lfo16mp16q8[g1b1<|e2.d4c+1>]e1 mp0A]drrdrrd1;
+%t5 l8 %5@2s20 p4@v32k0  r2 [ o6l8v12q8c+1e1 q2<ec+>bgec+>bg<c+dedc+def @lfo16mp16q8[e1g1|b2.a4g1]b1    mp0B]arrarra1;
+
+

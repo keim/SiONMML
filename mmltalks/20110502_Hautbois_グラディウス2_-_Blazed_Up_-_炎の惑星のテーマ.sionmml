@@ -1,0 +1,196 @@
+/*
+  グラディウス2 - Blazed Up - 炎の惑星のテーマ	
+  (C) KONAMI 1987 コナミ矩形波倶楽部
+  2011.5.3 MML - Hautbois.
+*/
+
+#TITLE{グラディウス2 - Blazed Up - 炎の惑星のテーマ	};
+#REV;
+#FPS  600;
+#QUANT  8;
+//#EFFECT0{chorus1,20,0.4,30,reverb70,40,70,30};
+
+//SCC-WAVES
+#WAVB00{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f80808080808080808080808080808080};
+#WAVB01{001931475A6A757D7F7D756A5A4731198090A0B0C0D0E0F00010203040506070};
+#WAVB02{00407F4001C081C001407F4001C0014001E0012001F0011001FFFFFFFF404040};
+#WAVB03{00407F4000C0FFC005EBD6C3B9AFA49C958F89848184898F959CA4AFB9C3D6EA};
+#WAVB04{004E626D757A7D7E7F7E7D7A756D624E00B19D928A858281808182858A929DB1};
+#WAVB05{00407F4001C081C001407F4001C0014001E0012001F0011001FFFFFFFF404040};
+#WAVB06{00F0E0D0C0B0A090808080808080808080808080808080807F70605040302010};
+#WAVB07{003050607060503000D0B0A090A0B0D000406070604000C0A090A0C000700090};
+#WAVB08{305050300000104060706030F0E0E000202010C0A090A0C00000D0B0B0D00000};
+
+//table env
+#TABLE  0 { 128 | 128 };
+#TABLE  1 { (128,60)8(60,40)50 | 40 };
+#TABLE  2 { (128,60)90 | 60 };
+#TABLE  3 { (108,60)60 | 60 };
+#TABLE  4 { (80,128)10(128,60)30 | 60 };
+#TABLE  5 { (128,50)50 | 50 };
+
+//BD
+#TABLE 20 {(128,0)10|0};
+#TABLE 21 {(0)};
+#TABLE 22 {(0,-24)10|-24};
+//SD
+#TABLE 30 {(70,18)20(18,0)50|0};
+#TABLE 31 {(0)8|1};
+#TABLE 32 {(0)8|-36};
+//HH-C
+#TABLE 40 {(7,6)10 (6,0)5 | 0 };
+#TABLE 41 {(0)|1};
+#TABLE 42 {(0)|0};
+//HH-O
+#TABLE 50 {(14,6)4 (6,0)300 | 0 };
+#TABLE 51 {(0)|1};
+#TABLE 52 {(0)|-48};
+//SD2
+#TABLE 60 {(50)10(30,0)60|0};
+#TABLE 61 {( 0)10|1};
+#TABLE 62 {( 0)10|-61};
+//TOM
+#TABLE 70 {(50,0)28|0};
+#TABLE 71 {(1)4|0};
+#TABLE 72 {(0,-12)28|-12};
+//?
+#TABLE 80 {( 20)10(20)10(5,4)40    |  0};
+#TABLE 81 {(  1)10( 0)10|1};
+#TABLE 82 {(-31)10( 0)10(-34,-31)40|-31};
+
+#Z= %0 @1 o4 na20 @@21 nt22 e;
+#S= %0 @1 o4 na30 @@31 nt32 c#;
+#H= %0 @1 o0 na40 @@41 nt42 c#;
+#O= %0 @1 o4 na50 @@51 nt52 c#;
+#J= %0 @1 o5 na60 @@61 nt62 d;
+#M= %0 @1 o4 na70 @@71 nt72 b;
+#N= %0 @1 o4 na80 @@81 nt82 a;
+
+#A=x128 @v90 v15 %4 na1 s32 q8 @p10
+$
+@1 na2 o5 l12 @q8
+   e-6e-b-2&b-b->c d-2.d-cd-c6<a-e-2&e-8r8
+@2 v10
+   [e-6e-r4]
+@1 v15
+   e-6e-b-2&b-a-g- >d-2l6g-d-<b-l12a-4&a-a-b->c2
+@3
+   e-4&e-fe-d2<
+@1
+   e-6e-b-2&b-b->c d-2.d-cd-c6<a-e-2.>
+@3
+   e-4&e-fe-l6de-f<
+@1 l12
+   e-6e-b-2&b-a-g- >d-2l6g-d-<b-l12a-4&a-a-b->c2
+@4 v8
+   de-fe-fg-fg-a-b->d-e-<<<
+@5 @q8 v12
+   g-a->ce-g-a->
+@6 na3 @q0 
+   e-4&e-c<a-b-4&b-b->cd-e-fe-4<<
+@5 na2 @q8
+   a-b->dfa-b->
+@6 na3 @q0 
+   f4&fd<b->c4&ccdde-fe-4
+   g-a-b-e-4e-fg-a-g-fe-e-e-@q8b-2.
+v9
+   l2b->c<<d-4.c4<b4.>
+@1 na2 v12 @q0 
+   l6b-d-g-l12b->cd-e-d-c<
+   l6b-e-a-l12b->cd-e-d-c<
+   b-6b->e-2<b->e-a-g1
+;
+
+#B=x128 @v90 v15 %4 na1 s32 q8 @p-10
+$
+@1 na2 o5 l12 @q8 v9 @k6
+   e-16e-6e-b-2&b-b->c d-2.d-cd-c6<a-e-2&e-8r16
+@2 v10 @k0
+   [b-6b-r4]
+@1 v9 @k6
+   e-16e-6e-b-2&b-a-g- >d-2l6g-d-<b-l12a-4&a-a-b->c2
+@4
+   e-4&e-fe-d2<
+@1
+   e-6e-b-2&b-b->c d-2.d-cd-c6<a-e-8.&e-2
+@3 v13
+   b-4&b->d<b-l6b->cd<
+@1 l12 v9 @k6 
+   e16e-6e-b-2&b-a-g- >d-2l6g-d-<b-l12a-4&a-a-b->c2
+@4 v6
+   de-fe-fg-fg-a-b->d-e-48<<<
+@5 @q8 v12
+   g-a->ce-g-a-
+@6 na3 @q0 
+   e-4&e-c<a-b-4&b-b->cd-e-fe-4<
+@5 na2 @q8
+   a-b->dfa-b-
+@6 na3 @q0
+   f4&fd<b->c4&ccdde-fe-4>
+   v7 @k6 g-16g-a-b-e-4e-fg-a-g-fe-e-e-48l20[a#b&]6a#&br24r96
+v9 @k4
+   l2e-f<g-4.f4e4.
+@7 na4 v12 @q0 @k6
+   l6b-d-g-l12b->cd-e-d-c<
+   l6b-e-a-l12b->cd-e-d-c<
+   b-6b-b-2b->e-a-e-1
+;
+
+#C=x128 @v90 %4 s32 q8 @p20
+@8 na5 o5 l12 v9 @k3
+$
+   [[a-b->e- <b-a-b- >e-<b-a- b->e-<b-]4]4
+na4 v12 @k-4
+   l2b->cd-l4c<b->l2cde-l4dc<
+   [v12 l2g-a->l12 v9@k3 [d-<b-g->]c<afbg#e<]
+   v12l1g->@7v8a-
+@8 na5 l12 v9 @k3
+   [a-b->e- <b-a-b- >e-<b-a- b->e-<b-]2
+;
+
+#D=x128 @v90 %4 s32 q8 @p-20
+@8 na5 o5 l12 v6 @k-3
+$
+   b-8 [[a-b->e- <b-a-b- >e-<b-a- b->e-<b-]4]3
+   [a-b->e- <b-a-b- >e-<b-a- b->e-<b-]3
+   a-b->e- <b-a-b- >e-<b-a- b->e-24 <
+na4 v12 @k0
+   l2g-a-a-l4a-g-l2a-b->c<l4b-a-
+   [v12 @k0 l2d-e->l12 v6@k-3 d-8[d-<b-g->]c<afbg#24]
+   v12l1d->@7v8e-<
+@8 na5 l12 v7 @k-3
+   a-8 a-b->e- <b-a-b- >e-<b-a- b->e-<b- &b-2.&b-8
+;
+
+#F=x128 @v128 v16 %4 na1 s28 q8 @q0
+l12
+$
+   [[ZH24H24ZSZH ZHZSHO]3 ZH24H24ZSSH ZH24H24ZSSS]6
+   ZH24H24HSHZ ZHZSHZ [SZZ]3 S24S24SS
+   ZH24H24ZSHZ ZH24H24ZSHH ZH24H24ZSHZ ZS24S24SSSS
+;
+
+#G=x128 @v120 v15 %4 na1 s32 q8 @q0
+$
+o3 na1 l12
+   [[e-e-e->e-<e-e-] [g-g-g->g-<g-g-] [a-a-a->a-<a-a-] [b-b-b->b-<b-b-]]4
+   [g-g-a->a-<a-a- [g-a-a->a-<a-a-]3]
+   [d-de->e-<e->e- <d-de-b->e-<b-]4
+   e-ef[g-]9 g[a-]11 [e-]9e-a-b- >[e-]6 l6e-<b-g
+;
+
+t150;
+//SCC
+A;
+B;
+C;
+D;
+//E;
+
+//PSG
+F;
+G;
+//I;
+
+#END;
+

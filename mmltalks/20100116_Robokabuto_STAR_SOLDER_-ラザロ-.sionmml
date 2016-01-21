@@ -1,0 +1,9 @@
+#TITLE {STAR SOLDER -ラザロ-}; 
+#REV;
+#A=kt-2[edea-ededea-ed]4kt-1[edea-ededea-ed]4;
+#B=kt1[[a>a<]5>>a<a< [g>g<]5>>g<g<] kt2[[a>a<]5>>a<a< [g>g<]5>>g<g<];
+#C=kt1[[a>a<]6[g>g<]6] kt2[[a>a<]6[g>g<]6];
+t150 
+%1 @1,63,63,25,63 v15 o5 q8     l16 $A; 
+%1 @1,63,63,25,63 v15 o4 q8     l16 $B; 
+%1 @8,63,63,00,63 v15 o3 q8 @q2 l16 $C;

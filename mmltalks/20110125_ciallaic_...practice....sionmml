@@ -1,0 +1,187 @@
+#TITLE{...practice...};
+#REV;
+
+#OPN@0{0 7 // Magical bass
+31 08 00 06 10 38 0 01 3 0
+28 18 05 06 13 47 0 10 7 0
+31 07 07 06 08 23 0 00 2 0
+28 09 06 08 01 00 0 00 0 0};
+
+#OPN@1{5 5 // RUFINA BD o2c
+29 20 18 15 05 11 0 00 2 0
+31 16 18 15 05 02 0 00 0 0
+31 16 17 15 03 00 0 00 0 0
+31 15 18 15 04 00 0 00 0 0};
+
+#OPN@2{4 7 // Snare4 -808type- o2
+31 12 00 12 04 00 0 07 3 0
+27 15 18 15 01 00 0 15 3 0
+31 20 15 12 15 11 0 01 7 0
+31 19 15 15 15 00 0 01 7 0};
+
+#OPN@3{2 7 // Synth Strings #2
+20 01 00 08 01 32 0 02 7 0
+15 04 00 08 01 28 0 02 0 0
+22 01 00 08 01 34 0 02 3 0
+14 02 00 09 01 00 0 02 0 0};
+
+#OPN@4{4 7 // Hi-Hat close 5
+31 00 00 00 00 00 0 15 7 0
+21 18 18 13 05 00 0 00 7 0
+31 00 00 14 00 00 0 08 3 0
+31 17 13 09 15 05 0 15 3 0};
+
+#OPN@5{5 7 // PSG Cut 1
+21 00 00 00 00 30 0 02 0 0
+28 15 00 15 03 00 0 01 0 0
+28 15 00 15 03 00 0 00 0 0
+28 15 00 15 03 00 0 01 0 0};
+
+t150
+
+// ***** BASS
+%6@0 o3 l8 v13 q8
+
+eeee16e16eeee >dddd16d16dddd cccc16c16cccc dddd16d16dddd<
+eeee16e16eeee >dddd16d16dddd cccc16c16cccc dddd16d16d>d<d>d< 
+
+$
+eeee16e16eeee cccc16c16cccc dddd16d16dddd eeee16e16eeee
+eeee16e16eeee cccc16c16cccc dddd16d16dddd eeee16e16eeee
+
+eeee16e16eeee cccc16c16cccc dddd16d16dddd eeee16e16eeeeeeee16e16eeee cccc16c16cccc dddd16d16dddd eeee16e16eeee
+
+cccc16c16cccc dddd16d16dddd <gggg16g16gggg eeee16e16eeee
+>dddd16d16dddd <gggg16g16gggg aaaa16a16aaaa bbbb16b16bbbb >
+cccc16c16cccc dddd16d16dddd <bbbb16b16bbbb >eeee16e16eeee
+cccc16c16cccc dddd16d16dddd eeee16e16eeee eeee16e16eeee;
+
+// ***** BASS DRUM
+%6@1 o1 q8 v13
+
+l4 cccc8c8 cccc8c8 cccc8c8 cccc8c8
+cccc8c8 cccc8c8 cccc8c8 cccc8c8
+
+$
+cccc8c8 cccc8c8 cccc8c8 cccc8c8
+cccc8c8 cccc8c8 cccc8c8 cccc8c8
+
+cccc8c8 cccc8c8 cccc8c8 cccc8c8
+cccc8c8 cccc8c8 cccc8c8 cccc8c8
+
+cccc8c8 cccc8c8 cccc8c8 cccc8c8
+cccc8c8 cccc8c8 cccc8c8 cccc8c8
+cccc8c8 cccc8c8 cccc8c8 cccc8c8
+cccc8c8 cccc8c8 cccc8c8 c8.c8.c8.c8.c8r16c16
+;
+
+// ***** snare drum
+%6@2 o2 q8 v13
+
+r1r1r1r2.c8.v3c16v13
+r1r1r1r2 l8rccc
+
+$
+l4 rcrc rcrc rcrc rcr8c8r8c8
+rcrc rcrc rcrc rcr8c8r8c8
+
+rcrc rcrc rcrc rcr8c8r8c8
+rcrc rcrc rcrc rcr8c8r8c8
+
+rcrc rcrc rcrc rcrc
+rcrc rcrc rcrc rcrc
+rcrc rcrc rcrc rcrc
+rcrc rcrc rcrc8c16c16 l16 rcrr crcr crcr rrcr l4
+;
+
+%6@4 v4 q8
+l16 o5
+$[v4crcv3c]4
+;
+
+// ***** Melody
+o4q8v9l8@lfo10,2mp0,16,18,24
+
+r1r1r1r1r1r1r1r2 
+
+$%1@1
+ra16*b16ag
+
+f+4ge rbagf+4ge rbagf+.g.a g.f+.d q4dddq8e rbag
+f+4ge rbagf+4ge rbagf+.d.a g.f+.d gf+de r>a16*b16ag
+
+f+4ge rbagf+4ge rbagf+.g.a g.f+.d ddde rbag
+f+4ge rbagf+4ge rbagf+.d.a g.f+.d gf+de r2
+
+%1@4
+b4.e4.b4 a2 f+.g.a g4.d4.f+4e2.r4
+f+2d4a4 g2.ab >c2<a4e4 g2f+2
+e4.>c4.c4 <b4.a4.&a4 b4.f+4.b4 a4.g4.&g8 e16f+16
+grg4f+g4 ara4g f+.b.a gf+de2.r4.
+;
+
+// ***** Melody 2
+o4q8v7l8@lfo10,2mp0,16,18,24
+
+r1r1r1r1r1r1r1r1
+
+$
+r1r1r1r1r1r1r1r1
+
+%1@7
+g2e4b4>c2<g2 a2f+8.g8.a8 bab>d4<bag
+e2g2g4e4c4g4f+4g4a4>c4 d<bagadga
+
+%1@4r1r1r1r1 r1r1r1>d2d+2
+r1r1r1r1
+ere4de4 f+rf+4d d.e.f+ ed<gb2.r4. r2;
+
+%6@3 o4 q8 v8
+l1
+e d c d 
+e d e d4.e4.d4
+
+$ e c d e e c d e
+
+e c d e e c d e
+
+c d g e d g g f+
+c d d e c d e e4.d4.d4
+;
+
+%6@3 o3 q8 v8
+l1
+b a g a 
+b a >c< a4.b4.>c4<
+
+$ b g a b b g a b
+
+b g a b b g a b
+
+b a >d< b a >d <a b
+g a b b g a b b4.a4.a4
+;
+
+%6@5 q2 o5 l16 v6
+r1r1r1r1
+r1r1r1r1
+
+$
+>ed<bg v4>ed<bg v2>ed<bg v1>ed<bg
+r1r1r1r1r1r1r1
+
+r1r1r1r1r1r1r1
+v5 egab> e<gab> dega b>cde<<
+
+v6
+[ceg>cec<ge]2 [df+a>cd<af+d]2
+[dgb>d gd<bg]2 eb>de bed<b gbeg> e<bge
+
+[df+a>d <af+d<a>]2 [dgb>d gd<bg]2
+a>cde g>cde aedc dc<ae baf+d f+d<bf+ >baf+d+ bd+f+b
+
+<[ceg>c ec<ge]2 [df+a>c d<af+d]2
+[df+b>d f+d<bf+]2 [egb>e ge<bg]2
+[cg>ce gec<g]2 [f+a>df+ af+d<a]2
+[egb>e ged<b]2 egab >cdeg <g>cde gede;
+

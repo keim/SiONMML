@@ -1,0 +1,282 @@
+/*
+   ドラゴンクエスト３エンディング
+   2011.4.4 MML Hautbois.
+   2011.5.6 一部修正
+*/
+
+#TITLE{DragonQuestIII-Ending};
+
+#REV;
+#FPS  600;
+#QUANT  16;
+//#EFFECT0{reverb70,40,80,20};
+
+#TABLE  0 { (128) };
+#TABLE  1 { (60,128)70| 128};
+#TABLE  2 { (128,80)120           | (80,100)54,(100,80)54};
+#TABLE  3 { (128,50)120|50};
+#TABLE  4 { (80,128)70| (128,90)74(90,128)74};
+#TABLE  9 { (32,127)112|127 };
+#TABLE 11 { (20)10,       | 20};
+#TABLE 12 { (70,8)200,   | 8};
+#TABLE 13 { (80)10,       | 80};
+#TABLE 14 { (127,70)20(70,0)320|0};
+#TABLE 15 { (127,30)20(30,0)20|0};
+
+#TABLE 21 {       | 1};
+#TABLE 22 {       | 2};
+#TABLE 23 {       | 3};
+#TABLE 24 {       | 4};
+#TABLE 31 {(4)10  | 1};
+#TABLE 32 {(4)10  | 2};
+#TABLE 33 {(1)10  | 2};
+#TABLE 34 {(2)10  | 4};
+
+#A=@f95
+v7 x128 
+%1 @1 na0 _na11 @@32 _@@21 s0
+
+o5
+l12q10g>cd q14g2. q10ffa q14g2. <q10g>cd l8q8g>c<q14b-2 l12q10agf l24q12efg&g8&q12g2 
+na0 _na13 @@32 _@@24 s20 
+l4q16g q14a2q16b>l8cdq14e-2l4q12ff
+na0 _na11 @@32 _@@21 s0
+g1&q2g4r2.<
+
+na1 _na12 @@24 _@@21
+l4q16cgfb- g2&ge- l8fgl4e-d<b-> q16s63c1
+l4rs0b-l8afl4c& cb-l8afg4> de-c<b-g4fg de-d4.c<b-4> l4c1&crrr
+
+na4 _na12 @@23 _@@21
+l16q16e8dc<b4&l8bab>c el16dc<b4&l8b>cdg el16dc<b4&l8bab>c d2&defg
+l16g#8f#ed#4&l8d#c#d#e g#l16f#ed#4&l8d#ef#b g#l16f#ed#4&l8d#ef#g# q15b-2.l12q12b-b-b-> q15c1<
+
+l4q16cgfb- g2&ge- l8fgl4e-d<b-> q16s63c1
+l4rs0b-l8afl4c& cb-l8afg4> de-c<b-g4fg de-d4.c<b-4> s0c1&c2.&l8q8cr
+
+t136
+na0 _na11 @@33 _@@21 s0
+o5
+l16q10b-b-b-b- l8q6b-b-r q15b-4q6b-
+l16q10gggg l8q6ggr q15g4q6g
+l16q10b-b-b-b- l8q6b-b-r q15b-4q6b->
+l16q10dddd l8q6ddr q15d4q6d<
+l16q10b-b-b-b- l8q6b-b-r q15b-4q6b-
+l16q10gggg l8q6ggr q15g4q6g
+l16q10b-b-b-b- l8q6b-b-r q15b-4q6b->
+l16q10cccc l8q6cct120ct110c
+
+t100
+na0 _na11 @@32 _@@21 s0
+o5
+l12q10g>cd q14g2. q10ffa q14g2. <q10g>cd l8q8g>c<q14b-2 l12q10agf l24q12efg&g8&q12g2 
+na1 _na12 @@24 _@@24 s0 
+l4q16g q14a2q16b>l8cd< g2&g<efg
+l12agf bag> c<ba> dcd
+
+na0 _na11 @@32 _@@21 s0
+q4e-8l24q8<b->e-fq15b-2.<
+q4e-8l24q8<b->e-fq15b-2.
+q4e-8l24q8<b->e-fq15b-2.
+q4e-8l24q8<b->e-fq12b-4
+q4b-8l24q8e-fb->q12c4<
+q4a8l24q8aaaq12f#4
+q4a-8l24q8a-a-a-q12f4
+[q4d8q8d24q8d12]
+[q4d#8q8d#24q8d#12]
+[q4e8q8e24q8e12]
+[q4f8q8f24q8f12]
+q4f#8q8f#24q8f#12
+q4g8q8g24q8g12
+q4g#8q8g#24q8g#12
+q4a8q8a24q8a12
+q4a#8q8a#24q8a#12
+q4a#8q8a#24q8a#12
+q4b8q8b24q8b12
+
+na0 _na11 @@32 _@@21 s0
+l12q10g>cd q14g2. q10ffa q14g2. <q10g>cd l8q8g>c<q14b-2 l12q10agf l24q12efg&g8&q12g2 
+na0 _na13 @@32 _@@24 s20 
+l4q16g q14a2q16b>l8cdq12e-2l4q12ffg2.
+l8q8ffq12g2.<<
+q8b-b->q12c1&c2 <l4b-b- >q16c1 &c4 <_@@22 s22c1
+
+;
+
+#B=@f95
+v6 x128
+%1 @2 na2 _na11 @@32 _@@21 s20
+r4
+o5 r4l12q12eeel8q8eer4 r4l12q12eeel8q8eer4 r4l12q12gggl8q8ggr4 r4l12q12eeel8q8eer4
+l16q16cfa>cfc<af 
+dgb>dgd<bg 
+l24f#b>d#f#bf#d#<bf#d#<b>d# 
+dfb->dfb->d<b-fd<b-f
+egeg>ceg>cec<gegecec<g>c<geceg> 
+l4q13c<ccc
+
+na3 _na11 @@23 
+l12q15 [ce-g] [<b->df] [<b->e-g] <a>e-g<a>cg [<a->cf] <gb->f<g>df egeg>ege<gegec
+l16q16 [[gb->e-<b-] a>c<afafcf] e-8gb-db-ge- c8e-gcge-c g-ce-g-b-g-e-c <b->fdfdfd<b->
+[eceg]4 ecegb->dgb->d<b-ged<b-ge
+
+na1 _na12 @@23 _@@21
+aceaec<a>c <a>cefec<a>c g<b>dgd<bgb> g<b>dgd<b>dg [f<a>cfc<a>cf] bdgbgd<b>d g<b>dgbgdg
+[ac#eg#ag#ec#] [bd#f#bbd#f#d#] [>c#<c#eg#ec#eg#] gb-e-gb-ge-b- gb-e-gl12b-gg> ece<g>cegec<gec
+
+l24 e-<e-g> ce-g> e-c<g> c<ge-  d<df b->df> d<b-f b-fd 
+e-<e-g b->e-g> e-<b-g b-ge-  c<ce- >ace-> c<ge- gc<a>
+c<cf a->cf >c<a-f a-fc  b-gf d<b-g dgb-> dgf 
+[eg]6<gg#aa#b>cc#dd#eff#
+
+l16q16 [[gb->e-<b-] a>c<afafcf] e-8gb-db-ge- c8e-gcge-c g-ce-g-b-g-e-c <b->fdfdfd<b->
+[eceg]8
+
+na0 _na11 @@32 _@@21 s0
+o5
+l16q10ffff l8q6ffr q15f4q6f
+l16q10dddd l8q6ddr q15d4q6d
+l16q10ffff l8q6ffr q15f4q6f
+l16q10aaaa l8q6aar q15a4q6a
+l16q10ffff l8q6ffr q15f4q6f
+l16q10dddd l8q6ddr q15d4q6d
+l16q10ffff l8q6ffr q15f4q6f
+l16q10gggg l8q6gggg
+
+na2 _na11 @@32 _@@21 s20
+r4
+o5 r4l12q12eeel8q8eer4 r4l12q12eeel8q8eer4 r4l12q12gggl8q8ggr4 r4l12q12eeel8q8eer4
+l12q16<a>cfa>cf <<b>dgb>dg<< gb>dgb>d c#<<ega>c#e 
+c<ba> dc<b> agf ggf
+q14f#2>
+q4e-8l24q8e-e-e-q15d-2.<
+q4c8l24q8cccq15<b2.
+q4b-8l24q8b-b-b-q15a-2>
+q4f#8l24q8f#f#f#q15d#4
+q4g8l24q8gggq15e4
+q4e-8l24q8e-e-e-q15e-4
+q4c8l24q8ccc<
+[q4a8q8a24q8a12]
+[q4a#8q8a#24q8a#12]
+[q4b8q8b24q8b12]>
+[q4c8q8c24q8c12]
+q4c#8q8c#24q8c#12
+q4d8q8d24q8d12
+q4d#8q8d#24q8d#12
+q4e8q8e24q8e12
+[q4f8q8f24q8f12]
+q4f#8q8f#24q8f#12 g8r8
+o5 r4l12q12eeel8q8eer4 r4l12q12eeel8q8eer4 r4l12q12gggl8q8ggr4 r4l12q12eeel8q8eer4
+<l12q16 a>cfa>cf<<
+b>dgb>dg
+d#<bf#d#f#b
+>fd<b-fb->d
+gec<geg>c<ge l8q8dd
+>l12q16gec<geg>c<ge l8q8dd
+l16q16 [egcegecg]3 g<b->e-ge-<b->ge- [eg]8 e4<
+_@@22 s22 l24q16[e&g&]10e4
+
+;
+
+#C=@f95
+v16 x128 @v128
+%1 @8,60,0,0,60
+r4
+o4 
+r4l12q12ccc   l8q8ccr4 
+r4l12q12ccc   l8q8ccr4 
+r4l12q12e-e-e-l8q8e-e-r4 
+r4l12q12ccc   l8q8ccr4
+
+l16@q0q16@ph255 fa>cfafc<af 
+b>dgbfd<f< 
+l24b>f#b>d#f#>d#<bf#d#<bf#b< b->>dfb->dfb-fd<b-fd<
+cg>ceg>ceg>c<gecec<g>c<gege<geg>c 
+l4q12errr<
+
+l1rrr l12q16ceg>ecegecec<g
+
+l8q12[e-e-re-]4
+l16q16 c>ce-gb-ge-c <<a>a>ce-ge-c<a< a->a->ce-ge-c<a-< g>gb->dfd<b-g
+[cg>cec<g>ce<] cg>cegb->egb-gec<b-gec<
+
+
+fa>cfc<afa fa>c<a>c<afa egb>d<bgeg egb>e<bgb>e<
+[dfa>c<afa>c<] gb>dgd<bgb egb>ege<be
+[f#a>c#ef#ec#<a] [g#b>d#f#g#f#d#<b]< [a>a>c#ec#<a>c#e<<]>[e-gb->e-ge-<b-g e-gb->e-<l12g>e-<e- cg>ceg>cec<gec<g
+
+l2q14c<b-b-aa-g l24q16> [ceg>c<ge]d#eff#gg#aa#b>cc#d<
+l8q12[e-e-re-]4 l16q16c>ce-gb-ge-c <<a>a>ce-ge-c<a <a->a->ce-ge-c<a- <g>gb->dfd<b-g
+[cg>cec<g>ce<]4
+
+o5
+l16q10e-e-e-e- l8q6e-e-r q15e-4q6e-
+l16q10cccc     l8q6ccr   q15c4 q6c
+l16q10e-e-e-e- l8q6e-e-r q15e-4q6e-
+l16q10g-g-g-g- l8q6g-g-r q15g-4q6g-
+l16q10e-e-e-e- l8q6e-e-r q15e-4q6e-
+l16q10cccc     l8q6ccr   q15c4 q6c
+l16q10e-e-e-e- l8q6e-e-r q15e-4q6e-
+l16q10eeee     l8q6eeee
+
+r4
+o4 r4l12q10cccl8q8ccr4 r4l12q12cccl8q8ccr4 r4l12q12e-e-e-l8q8e-e-r4 r4l12q12cccl8q8ccr4
+l2q16 ffe<a> l4q12fedb- q15b2
+q4g8l24q8gggq15f2.
+q4e8l24q8eeeq15e-2.
+q4d8l24q8dddq15c2>
+q4d-8l24q8d-d-d-q15<g4>
+q4f8l24q8fffq15d-4<
+q4b8l24q8bbbq15>c4<
+q4a8l24q8aaa
+[q4g8q8g24q8g12]4
+[q4a8q8a24q8a12]4
+q4b8q8b24q8b12>
+q4c8q8c24q8c12
+q4c#8q8c#24q8c#12
+q4d8q8d24q8d12
+q4d#8q8d#24q8d#12
+q4d#8q8d#24q8d#12
+q4e8q8e24q8e12 f8r8
+o4 r4l12q10cccl8q8ccr4 r4l12q12cccl8q8ccr4 r4l12q12e-e-e-l8q8e-e-r4 r4l12q12cccl8q8ccr4
+l2q16ff<
+l12q16b>d#f#b>d#f#<<
+b->fb->dfb-<
+cg>cece
+gecl8q8<b-b-
+l12q16cg>cece
+gecl8q8<ff
+l16q16
+ceg>cec<ge
+ceg>cec<ge
+ceg>cec<ge
+e-gb->e-<b-ge-g
+l8q8[c<g>]4q8c4 >q16c1
+;
+
+#D=
+v14 x128 @v128
+%1 @9 s14 q15
+r4 [o0na14c4 l12 na15bbb l8 bb r4]4
+[r1]33
+na15
+[r1]7
+r2.
+r4 [o0na14c4 l12 na15bbb l8 bb r4]4
+[r1]11
+r2.
+r4 [o0na14c4 l12 na15bbb l8 bb r4]4
+
+;
+
+t100
+@v118 @p10  A;
+@v118 @p-10 B;
+C;
+D;
+r12 @v20 @k1 @p20  A;
+r12 @v20 @k1 @p-20 B;
+r6  @v10 @k-1 @p30  A;
+r6  @v10 @k-1 @p-30 B;
+
+#END;

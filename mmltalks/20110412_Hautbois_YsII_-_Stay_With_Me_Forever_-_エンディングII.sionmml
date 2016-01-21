@@ -1,0 +1,188 @@
+/*
+    YsII - Stay With Me Forever - エンディングII
+    日本ファルコム 1988
+*/
+
+#TITLE{YsII - Stay With Me Forever - エンディングII};
+#REV;
+#FPS  60;
+#QUANT  8;
+//#EFFECT0{reverb70,40,70,30};
+
+#OPN@000{
+//AL FB
+  03,07,
+//AR DR SR RR SL TL  KS ML DT AM
+  31,09,03,05,14,040,01,06,00,00,
+  20,07,00,05,15,051,00,06,03,00,
+  16,11,00,05,02,038,01,03,06,00,
+  15,04,00,27,00,000,01,03,03,00};
+#OPN@001{
+//AL FB
+  04,05,
+//AR DR SR RR SL TL  KS ML DT AM
+  31,00,00,00,00,022,00,02,07,00,
+  18,10,00,06,01,016,00,08,07,00,
+  31,00,00,00,00,023,00,04,03,00,
+  18,10,00,06,01,016,00,04,03,00};
+#OPN@002{
+//AL FB
+  06,02,
+//AR DR SR RR SL TL  KS ML DT AM
+  31,12,04,05,01,028,00,05,03,00,
+  31,11,02,07,15,035,00,03,03,00,
+  31,10,03,07,00,015,00,00,03,00,
+  31,08,05,05,02,025,00,00,03,00};
+#OPN@003{
+//AL FB
+  06,07,
+//AR DR SR RR SL TL  KS ML DT AM
+  31,13,05,05,02,000,00,15,06,00,
+  31,17,10,06,05,003,00,00,03,00,
+  31,17,04,06,10,004,00,00,03,00,
+  31,12,09,07,08,008,00,00,03,00};
+#OPN@004{
+//AL FB
+  04,07,
+//AR DR SR RR SL TL  KS ML DT AM
+  31,02,02,00,00,033,01,02,06,00,
+  22,02,03,27,02,040,00,02,05,00,
+  31,02,02,00,00,013,00,01,02,00,
+  22,02,03,27,02,000,00,02,01,00};
+#OPN@005{
+//AL FB
+  00,07,
+//AR DR SR RR SL TL  KS ML DT AM
+  31,18,00,06,02,036,00,10,03,00,
+  31,14,04,06,02,045,00,00,03,00,
+  31,10,04,06,02,018,00,00,03,00,
+  31,10,03,06,02,012,00,00,03,00};
+
+#Z=x128 v15 @128;
+
+#A=Z
+%6 @0 @v45 q8 @q1
+@lfo10,2 mp0,22,22,30
+o6l2.el4c#l2el6dedl2c#<a>l4c<b>cdec#e<a>c#<bab
+$
+@1 @v110 s20
+o5[ l8e<g#ab>d#eg#b ac#re2r ac#re4f#ef# | l4g#f#ag# ] e1
+o5 l8 [ f#ed#e&e2.l4c#ef# | l8ag#f#g#&g#2.<g#ab>c#d#e] l2g#f#ad#
+o5 l8 e2&ef#ef# l4gaga [b4l8c#d&d2]
+o5 l8 e2&l8ef#ef# l4gab>c< b2l6f#age2&l8e<g#ab>
+o5 l8 l2c#l4de gf#2d <b>e2<b> l2dd 
+o5 l4 e2f#g agf#a b2l6g#ab e1 
+o5 l4 e2f#ga2gf# s63e2.&e8...*>e128r128e1
+@2
+o5 [[l8g#a>e<] l16g#a>e8<]5 [l8g#a>d#<] l16g#a>d#8
+;
+
+#B=Z
+%6 @0 @v15 q8 @q1 k6
+@lfo10,2 mp0,22,22,30
+o6l2.e8.&el4c#l2el6dedl2c#<a>l4c<b>cdec#e<a>c#<bab
+$
+@1 @v45 s20
+o5[ l8e<g#ab>d#eg#b ac#re2r ac#re4f#ef# | l4g#f#ag# ] e1
+o5 l8 [ f#ed#e&e2.l4c#ef# | l8ag#f#g#&g#2.<g#ab>c#d#e] l2g#f#ad#
+o5 l8 e2&ef#ef# l4gaga [b4l8c#d&d2]
+o5 l8 e2&l8ef#ef# l4gab>c< b2l6f#age2&l8e<g#ab>
+o5 l8 l2c#l4de gf#2d <b>e2<b> l2dd 
+o5 l4 e2f#g agf#a b2l6g#ab e1 
+o5 l4 e2f#ga2gf# e2.&e16 
+@3np11o5l16bbbr gggr eeer cccc
+npr8.
+@2
+o5 [[l8g#a>e<] l16g#a>e8<]5 [l8g#a>d#<] l16g#a>d#8
+;
+
+#TABLE 11 { (0,-600)14 | -600 };
+#T=@3np11o5gnp;
+
+#C=Z
+%6 @4 @v30 q8 @q-1
+o2 l1 e d d- c <l8b>bv6b4 v7bv9b4v12b4v15b2..
+@v70
+l8
+$
+[@5o4eeT@5o4e] [@5o3aaT@5o3a] [@5o4ddT@5o4d] @5o4eeT@5o4e @5o3bbT@5o3b
+[@5o4eeT@5o4e] [@5o3aaT@5o3a] [@5o3bbT@5o3b] [@5o4eeT@5o4e] 
+[@5o3aaT@5o3a>a<aT@5o3a]2 [@5o4eeT@5o4e>e<eT@5o4e]
+@5o3aaT@5o3a>a<aT@5o3a @5o4f#f#T@5o4f#>f#<f#T@5o4f# [@5o3bbT@5o3b>b<bT@5o3b]
+[@5o4c>cT@5o5c]4 [@5o3g>gT@5o4g]4 
+[@5o4c>cT@5o5c] [@5o3a>aT@5o4a] @5o4d>dT@5o5d @5o4d#>d#T@5o5d# [@5o4e>eT@5o5e]
+
+@5o3aaT@5o3a aT@5o3aa @5o4ddT@5o4d dT@5o4dd
+@5o3ggT@5o3g gT@5o3gg @5o3ggT@5o3g g#g#T@5o3g#
+@5o3aaT@5o3a aT@5o3aa @5o4ddT@5o4d dT@5o4dd
+[@5o4eeT@5o4e eT@5o4ee] [@5o4ccT@5o4c] [@5o4ddT@5o4d] [@5o4eeT@5o4e]3 @5o4f#g#T@5o4b 
+[@5o4eeT@5o4e] [@5o4ddT@5o4d] [@5o4d-d-T@5o4d-] [@5o4ccT@5o4c]
+[@5o3bbT@5o3b]3 @5o3b>bT@5o4g#
+;
+
+//     00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff
+#WAVB0{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f01010101010101010101010101010101};
+#TABLE  0 { 128 };
+#TABLE  1 { (128,70)5(70,20)80 | 20 };
+
+#D=Z
+%4 @0 v5 k0 q8 na0 s63
+[[o6l8ef#g#]l16ef#g#8]5 [l8ef#b]l16ef#b8 
+$
+[na1e1.l8ac#4e2g#4ag#a | l4ed#f#d#] g#2l8&g#g#ab 
+[bag#a&a2. l4aab | l8f#ed#e&e2. ef# g#ab>c#< ] l2g#f#ad#<
+l1ge d2.>d4<b ge l2f#ag#1
+l8a4ea4ef#g b4ab4df#a g4f#g4dgb >d<bgdg#d<b>d 
+l8e4c#e4c#eg f#4df#4df#a g#4eg#4eg#e g#b>e<b>eg#b>e<
+g2l4ce f#2da l1g#g# na0
+[[ l8ef#g#]2 l16ef#g#8 ]5 [l8ef#b]2 l16ef#b8
+;
+
+#E=Z
+%4 @0 v5 k0 q8 na0 s63
+[[o6l8g#a>e]l16o6g#a>e8]5 [o6l8g#a>d#]l16o6g#a>d#8 
+$
+v5
+[<na1k-7e1.l8ac#4e2g#4ag#a | l4ed#f#d#] g#2l8&g#g#ab 
+[bag#a&a2. l4aab | l8f#ed#e&e2. ef# g#ab>c#< ] k0 l2ba>c#<b<
+k-7l1ge d2.>d4< l1bg el2f#a g#1
+k0 l8e4c#e4c#d#e g4f#g4<a>df# d4<b>d4<b>dg bgdgd<bg#b>
+l8c#4<a>c#4<a>c#e d4<a>d4<a>df# e4<b>e4<b>e<b> eg#bg#b>eg#b
+e2l4<g>c d2<a>f# l1e<b> r16.na0k-7v3
+[[ l8ef#g#]2 l16ef#g#8 ]5 [l8ef#b]2 l16ef#b32
+;
+
+#TABLE  3 { (60,30)2(20,0)5 | 0 };
+#TABLE  4 { (128,60)2(60,0)6 | 0 };
+#TABLE  5 { (80,60)2(60,0)14 | 0 };
+#H=na3o5a;
+#S=na4o3a;
+#O=na5o5a;
+#L=na4o2a;
+
+#F=Z
+%4 @0 v2 k7 q8 r8.
+[[o6l8ef#g#]l16ef#g#8]5 
+kt0 %2 @3 @v40 l16 v3H v4Hv5Hv6Hv7H v8Hv9Hv10Hv11H v12Hv13Hv14Hv15H
+v16
+$
+[HHHH|SHHH]8SHSS
+[HHHHSHHH]7HHSHSHSH
+[HHHH|SHHH]8SHSH
+[HHHHSHHH]7l8SOSO
+l16[HHHHSHHH]16
+[HHHHSHHH HHSHSHSH]8
+[HHHHSHHH]6[HHSL]4
+[HHHHSHHHHHHHSHSL]6
+;
+
+t150;
+A;
+B;
+C;
+D;
+E;
+F;
+
+#END;
+

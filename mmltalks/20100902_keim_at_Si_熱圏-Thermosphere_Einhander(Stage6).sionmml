@@ -1,0 +1,197 @@
+#TITLE{熱圏-Thermosphere / Einhander(Stage6)};
+t146;
+
+//--------------------------------------------------Seq.
+#TABLE0{|(64,84,64)80};#TABLE1{|90};
+#EFFECT1{nlf0,1};
+#@0{0,4,0
+3,48,0,0,0, 15,8,0,0,2,0,-6,0,0,0
+1,63,0,0,40,15,0,0,0,1,0, 6,0,0,0
+}@v32,48v8;
+#@1{1,7,0
+0,63,28,0,28,15,5,0,0,2,0,8,0,0,0
+1,63, 0,0,36,15,0,0,0,1,0,-16,0,0,0
+}@v64v16;
+#A=l16b<eadg<c>fa+<d+>g+<c+f+e>bf+c+;
+#B=[o5ga<d>a<dgdgaga<d>ad
+o5f+a<d>a<dedeaea<d>ad
+o5fg<c>g<cfcfgfg<c>gc
+o5e-fb-fb-<e->b-<e-fe-fb-f>b-
+o5f+g+<c+>g+<c+f+c+f+g+f+g+<c+>g+c+
+o5g+a+<d+>a+<d+g+d+g+a+g+a+<d+>a+d+
+o5ab<e>b<eaeabab<e>be
+o5f+b<c+>b<c+f+>ab<eab<eab]r2x32>b<eabx128;
+%6@0p2o4q8[A]24q3[A]32[r1]8o4q8[A]15b<eadg<c>fa+r2
+%5@5,63,0,0,36@f72l8q3v3p1r2B;
+%6@1p7o4q2[A]24 [r1]32[r1]8o4q2[A]15b<eadg<c>fa+r2
+%5@5,63,0,0,36@f72l8q3v9B;
+
+//--------------------------------------------------Bass
+#@2{1,0,0
+1,63, 0,0,32,15,0,0,0,1,0,0,0,0,0
+2,63,32,0,32,15,8,0,0,2,0,4,0,0,0
+}@f72,1;
+#A=l16[q6b8q3bq6b8.<c&c*>b0]3bb<b>q1bq6b<<c*>b>b;
+#L=l16q6b8q3bq6b8.<c*>b;
+#B=[L]3bb<b>q1bq6b<<c*>b>b;
+#M=l4>q6ff<q8e8*f>q6f.f<q8f;
+%9@24@v64s32@f32,2,40,24,12,0,54,36,28,128o2[A]12
+[r1]32[r1]8o2[A]7[L]2b<eadg<c>fa+r2
+v6[MM(-1)M(3)M(2)M(-1)M(-2)M(-3)f+2.a1];
+%6@2@v40v20o2[r1]8[A]8
+@v48v24[B]4kt3[B]4kt0[B]4kt3[B]4kt7
+l4b-.af+d2f.g+ b.a+gd+2f+.a8f+8<c.>bg+e2g.a+kt3
+[L]4kt0[A]7[L]2b<eadg<c>fa+r2
+[MM(-1)M(3)M(2)M(-1)M(-2)M(-3)>f+2.a1]r2.;
+
+//--------------------------------------------------Dist.Synth
+#@3{1,8,0
+0,63,0,0,63,15,0,0,0,2,0,0,0,0,0
+1,63,0,0,63,15,4,0,0,3,0,0,0,0,0};
+#A=o3l16[[q6b8.b8.q3bb|brbrq6<d4>]|q3bbbbbq6<c8.>]4<q8d8c+8c4;
+%6@3@f84,2[r1]15r2q8l8v8o4gf+f4[r1]7v6l16q6f+8.f+8.q3f+f+l8q8(2g(2f+(2f4
+[r1]16v6l16[q8o7d4r4q4>3cccc<1q8e4r1]8[r1]8[r1]7r2
+q8l8v8o4gf+f4[r1]7v10l16q8b<ea(2dg(2<c>fa+l8v10dc+c4[r1..]16r2.;
+%6@3p0v12k4 [r1]16A[r1]32[r1]8[r1]8A[r1..]16r2.;
+%6@3p8v12k-4[r1]16A[r1]32[r1]8[r1]8A[r1..]16r2.;
+
+//--------------------------------------------------Strings
+#TABLE2{(0,128)128};
+#@4{5 0 0
+2 40 0 0 32 15 2 0 0 2 0 -3 0 0 0
+2 40 0 0 32 15 2 0 0 2 0  3 0 0 0
+1 40 0 0 32 15 0 0 0 1 0  0 0 0 0
+}@f96@lfo15mp4;
+#A=v4na2,8l1^1^1^1q8o4b^^^[r1]8p1k-3na;
+#BC=l1^1^1^1r^^^^^p7k3;
+#A+=v4[r1]16l1^1o4bagl2(d(g<(d4.l16(c+>b<c+2;
+#B+=v4[r1]16l1^1o4f+ed>l2(g<(d(a<e>;
+#C+=r^^^;
+#A+=v4l2 d(a(<d(ae2.)2f4)ec>(b-1.<c4.l16ef(2g2..ab-<c1;
+#B+=v6l2>d(a(<d(ae2.)2f4)ec>(b-1.<c4.l16ef(2g2..ab-<c1;
+#C+=r^^^;
+#L=l4b-.af+d2f.g+;#M=a1<(2c2(2e-2;
+#A+=v10@f72o4LL(1)L(2)<@f80a1<(2@f88c2(2@f96e-2;
+#B+=v10@f72o4kt-7LL(1)L(2)M;
+#C+=v10@f72o4kt-3LL(1)L(2)M;
+#A+=ktv6@f72[r1]16l1..[gf+f f f+e- e f+2.a1];
+#B+=ktv6@f72[r1]16l1..[dd c e-e c >b<e2. g1];
+#C+=ktv6@f72[r1]16l1..[fe a-b-a+a- a b2.<d1];
+%6@4q8Ar2.;
+%6@4q8Br2.;
+%6@4q8Cr2.;
+
+//--------------------------------------------------Perc.
+#MA@7{5 6 // Tambourine
+00 08 07 04 01 02 10 0 0 10 0 2
+13 14 07 12 11 05 00 0 0 05 0 2
+08 08 07 05 02 02 00 0 0 10 0 2
+08 13 07 12 07 06 00 0 0 15 0 2};
+#A=r2^8o6c.;
+%6@7v12q8[r1]4[A]4[A]16[A]32[r1]8
+[A]15r1l4v6p7[a]112r2.;
+//--------------------------------------------------Cym
+#C=v24q0s24o6a;#H=v20q0s20o5c;#O=v12q6s63o2a4;
+%5@19@v48l8[r1]8[p2C1[r1]3]4
+[p2C2.p5O[r2.O]3]4[p2C2.p5O[r2.O]3]4
+l4[p2C.p6H2p3H2p7C.p5H]2p1C.C2p6H2p1C.p5H H1^1
+[p2C1[r1]3]4
+p5l1..CrrrCrp2Hp5Hp3CrCrp6CrCp3Cr2.;
+//--------------------------------------------------HH
+#O=s36v12c;#C=s24v8c;#A=OCO16C.OCO16O16C;
+%5@18p5@v96q0l8o6[r1]4[A]4[A]16
+@19s36l16[v16ccv8cc]64[v16ccv8cc]64
+l16[v16ccv8cc]4l12v16ccv8cl16[v16ccv8cc]3
+l16[v16ccv8cc]4l12[v16ccv8c]4
+l16[v16ccv8cc]16
+l8v16[A]15r1
+@19p1[OOOC4.O4O4OC4.]16r2.;
+//--------------------------------------------------SD
+#@8{1,7,0
+ 0,63,32,0,32,15,0,0,0,1,0,0,0,0,60
+16,63,32,0,32,15,0,0,0,1,0,0,0,0,32
+}@f92,1q8;
+#@9{6  7  0 // SnareDrum (c)kash1wa modifyed
+00 63 00 00 00 00 00 00 00 11 03 00 00 00 15
+00 63 00 30 18 00 00 00 00 15 07 00 00 00 15
+16 50 40 30 20 01 02 00 00 06 00 00 01 00 20
+19 50 00 26 16 00 14 00 00 05 00 00 00 00 60
+}@f100;
+%6@8@v80v16[r1]7r2.l16cccc[
+[l8rv12cv16crl4rcrcr|c8.v12c16]c16c16r8
+[l8rv12cv16cr|l4rcrcrc8.v12c16]
+l8rv12cv16c.v12l16cv16rcrcccc8v12[cc(]4]
+l4[rcrc]7l16cccrcrcccrrcccccl4[rcrc]7l16crccrccrr[c]7
+l4[rcrc]7rcl16rrccrcccl4[rcrc]7l16r4ccr8ccr8c8c8
+l8rrcrrcrrl12rccl8rrrcrc
+l8rrcrrccrl12rccrrcrrcrcc
+l8rrcrrc16c16rc rrcrc16c16rcc l4rcrcrcrc8.l16c
+[[l8rv10cv16crl4rcrcr|c8.v12c16]c16c16r8
+[l8rv12cv16cr|l4rcrcrc8.v12c16]|
+l8rv12cv16c.v12l16cv16rcrcccc8v12[cc(]4]r1.
+%6@9l4[[rrcrrrc]6rrcr.c.c r.c.rrcc8c8]r2.;
+//--------------------------------------------------BD
+#@10{1 0 0 
+00 63 0 0 36 00 00 00 00 01 00 00 00 00 00
+19 63 0 0 44 00 20 00 00 01 00 00 00 00 00
+}s,-128;
+%5@4q0s38,-64@v112v32[r1]8o3l4[c]64
+[c]28l8rccrcccrl4[c]96
+c2c8cc.ccc
+ccrr8c8l12crrccrrcrcrr
+l4cccccccc[c]8
+l4[c]60r1
+%6@10l8[crccrrrcrcccrr crccrrrcrccc16c16rr]8r2.;
+
+//--------------------------------------------------EPiano
+#EFFECT2{chorus20,50,6,3,50delay320,75,1,20};
+#@16{4 7 0
+0 63 28 00 28 12 40 0 0 13 0 0 0 0 0
+0 63 28 00 28 12 16 0 0 01 0 0 0 0 0
+0 63 22 02 01 10 18 0 0 01 0 0 0 0 0
+0 63 12 02 01 06 00 0 0 01 0 0 0 0 0}@lfo20mp4;
+#@17{5 0 0 // SuperBrightness by kash1wa 
+0 40 20 14 24 04 32 0 3 07 0  0 0 0 0 
+0 37 24 15 24 03 00 0 1 02 0  0 0 0 0
+2 40 25 18 24 04 00 0 1 01 0  5 0 0 0
+1 38 23 20 24 04 00 0 1 02 0 -5 0 0 0}@f94;
+#ABCD=l1^1^1^1r^^^^^@16;
+#AD+= l4v16@q,9f+^1v8@qb<c+(4d(4@q,9c+.>a1 l8@qv8e(2a. (2b.(2<c+>;
+#B+= l4v16@q,3d ^1v8@qd e(4f+(4@q,3a.  c+1l8@qv8r(2c+.(2d.(2 e;
+#C+=>l4v16    b1^1                <e1^1;
+#AD+=v16b4. g2...d.g.a.b@q,6b2<d2d.c+.>a.)2e.)2c+4;
+#B+=v16g4.>b2.b2..     @q,3g2 b2a1;
+#C+=   d1^1                d2 g2e1;
+#AD+=v16a^2v10e.(2f.(2<c.(2e.f<c4>>v14f4g^2(2<g.e.c^2>e4.;
+#B+=   f4.^1            v10<f<c4> v14d4d2.^16<c.>g^2 c4.;
+#C+=   c4.>l8d^4^1                v14a4b2.^16<g.e2>c g4.;
+#AD+=f2..v8d16e16v12f.(2g.(2@q,0a<c.>b-.a a^2<c>f4g^2g4.;
+#B+=c1.                    @q,0c.>b-.a<f1      d^2d4.;
+#C+=b-1^1                             b-1     <c^2c4.;
+#AD+=l4f+<c+ >bf+>b     <d   f+    b;
+#B+=l2f+     bl8>r16f+ b a<d >b<f+ <d   a16>;
+#C+=l4r <c+2> f+.>    a   b   <d     <f+8>;
+#AD+=l4ebae >a     <c+   e     a;
+#B+=l2e al8>r16e b   a<c+>a <e <e c+16>;
+#C+=l4rb2e.>    a     b   <c+    a8;
+#AD+=l4dag<d^2^8>l8b.<c+.d2g4f+4e1>;
+#B+=l4ra2.^1            g2b2   b4.l16<c+>b<c+2>;
+#C+=l4d1^1              d2d2   g2a2;
+#AD+=l6r aaag+g+ g+g g fgr<l8c^2)2>g.)f.)2e.f.g<c2;
+#B+=l6r fffe e  e d+d+def l8a^2)2 e.)d.)2c.d.eg2;
+#C+=l6>daaag+g+ g+g g fga<l8c^2)2>g.)f.)2e.f.g<c2;
+#AD+=l4>b-.a.<c2)2e.g8.e8. (a.f8^2 l16>>arrr<arrr<arrr<cs40rr<c;
+#B+=l4 f4^1    )2e.^8.g8. (f.d8^2 l16  rcrg<rcrg<rcrg<rs40err;
+#C+=l4>b-.a.<c2)2r.g8.e8.<(c.>a8^2l16  rrer<rrer<rrer<rs40rgr;
+#L=@17l4g1.af+^1def2.b-2^8g.f2.>b-1<f+^1g+a+g+2.d+2a+<c>a.e.a.b.<c+>b.f+.<d1;
+#AD+=[r1]24>>[L];
+#B+=[r1]24>>[L];
+#C+=[r1]24[r1..]8>;
+#C+=k0@4@f84mp0,20,30,30v12>>
+l8g1.ag+16g16f+4.d1>a<def4.c4f16r16f*g2fe-de-4.>b-1^4.
+l4<f+.c+.<c8*c+2.>f+8 g+.d+.<c+8*d+2c+8c8>g+8a.e.<d8*e4.l8dc+>bab2^8<c16c+16d2.;
+%6@v0,0,96q8k-5o5A;
+%6@v0,0,96q8k5o5D;
+%6@v0,0,128q8o5B;
+%6@v0,0,128q8o5C;
+

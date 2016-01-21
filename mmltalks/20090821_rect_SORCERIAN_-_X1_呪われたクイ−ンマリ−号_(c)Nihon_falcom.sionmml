@@ -1,0 +1,197 @@
+#TITLE{SORCERIAN - X1 / 呪われたクイ−ンマリ−号 (c)Nihon falcom};
+#REV;
+
+t99;
+
+#A= %6 @20 o4 v16 @v126 l12 @lfo11 mp3,16,40 q5;
+#A+=o4d8f8a;
+#A+=$[o4g2def3e6c+6|o4d2^16^64&d4.^32.d8f8a]o4d2^6e2^6;
+#A+=@v70 v14 p7 @22 >f+4f3f3e4^6f4f3f3r;
+#A+=@23 p4 @v90 q4 <e8f8ga4^6a+>cd<a+4^6agfe4^6fga+a4^6;
+#A+=gfed4^6efgd4^6efgd4^6efdd4c+6efga4^6;
+#A+=a+>cd<a+4^6>cdfe4^6fga+a8f8ga6>c6<a+d3efg;
+#A+=a+8a8>c<a+3a+8a8>c<a+8>c8de8f8gere6f3<ga+>dfererdc+4g2^16^64&g192f+24e24f+4^6;
+#A+=p1 q7 @24 @v119 <<a>def+4^6gaa+g4^6f+edg4f+24e24f+2^16^64&f+8^32.<a>def+4^6edf+f+3e3;
+#A+=@v70 @22 g4f4^6e4f4^6g4f4^6e3;
+#A+=@v126 v16 @20 p4<d8f8a;
+
+#B= %6 @20 o4 v14 @v118 l12 @lfo11 mp3,16,40 r12 k-2 q5;
+#B+=o4d8f8a;
+#B+=$[o4g2def3e6c+6|o4d2^16^64&d4.^32.d8f8a]o4d2^6e2^6;
+#B+=@v60 p7 @22 >f+4f3f3e4^6f4f3f3r;
+#B+=@23 p4 @v80 q4 <e8f8ga4^6a+>cd<a+4^6agfe4^6fga+a4^6;
+#B+=gfed4^6efgd4^6efgd4^6efdd4c+6efga4^6;
+#B+=a+>cd<a+4^6>cdfe4^6fga+a8f8ga6>c6<a+d3efg;
+#B+=a+8a8>c<a+3a+8a8>c<a+8>c8de8f8gere6f3<ga+>dfererdc+4g2^16^64&g192f+24e24f+4^6;
+#B+=p1 q7 @24 @v109 <<a>def+4^6gaa+g4^6f+edg4f+24e24f+2^16^64&f+8^32.<a>def+4^6edf+f+3e3;
+#B+=@v60 @22 g4f4^6e4f4^6g4f4^6e3;
+#B+=@v118 @20 p4<d8f8a;
+
+#C=%6 r3 $ @26 p2 l24 @v25 @lfo11 mp2,12,40 k0 q7;
+#C+=o4 g2^6f2^6d3<a+3 g3a+6>d6g2^6a2^6a+2^6>c2^6;
+#C+=@0 @v25 q3 k4 [o4d8>dr12c<cfrarcdf<a+12>a+rdfga<a>c+ergaec+<a];
+#C+=@27 @v40 k0 p2 o3 a8a8a3r12 [o3a+8a+8a+3r12] o3a8a8a3r12f8f8f3r12 [o3a+8a+8a+3r12] o3a8a8a3r12a8a8;
+#C+=a3r12a+8a+8a+3r12>c+8c+8c+3r12e8e8d3r12[o3a+8a+8a+3r12]o3g8g8g3r12;
+#C+=a8a8a3r12a+8a+8a+3r12g8g8g3r12[o3a8a8a3r12];
+#C+=@26 @v40 q7 p6 o5 d2^6d+2^6d2^6g2a6b2^6>c2^6;
+#C+=[o6d2^6&]3 o6d2^6;
+
+#D=%6 r3 $ p2 @26 @v15 k4 q7 l24;
+#D+=r6o4g2^6f2^6d3<a+3g3a+6>d6;
+#D+=g2^6a2^6a+2^6>c2 @v20 [o5d2^6&]3 o5d2^6;
+#D+=@27 @v40 p2 <<f8f8f3r12[o3g8g8g3r12] o3f8f8f3r12[o3d8d8d3r12]o3g8g8g3r12e8e8;
+#D+=e3r12f8f8f3r12g8g8g3r12[o3a8a8a3r12] o3f8f8f3r12d+8d+8d+3r12 [o3e8e8e3r12] o3f8f8f3r12e8e8e3r12 [o3d8d8d3r12];
+#D+=@26 @v20 p6 o5 r6 d2^6d+2^6d2^6g2a6b2^6>c2^6;
+#D+=[o6d2^6&]3o6d2;
+
+#E=%6 @103 v6 @v72 l12 @lfo11 mp2,8,15 q7;
+#E+=o4f8a8>c;
+#E+=$ @103 [o4b2gga+3a6e6|o4f2^16^64&f4.^32.f8a8>c]o4g4f>fga+>d<<g4f>fa+>cg<a4a3;
+#E+=g3e4^6a4a3g4^6g8a8a+<d6f4fa6d6g>d<d<a+ga+>c6g6c;
+#E+=ega+f6e6cec<aa+6>f4ga+>d<a+<a+>f4ga+>d;
+#E+=<a+<a+>g+6>g+6<a+g+g4g6gaa+>c6f4fa6d6g>d<fd;
+#E+=<a+6>c+6gac+ec+<a>f8<a8>cf6a6gf6<a+4>d6g8f8d+g3;
+#E+=g8f8eg8g8a+>c+8c+8c+c+rc+6d<a+gfdfga+a+rgraa4;
+#E+=@101 a3d4d24c+24d4^6<ef+aa6>c+d6dde<a+6;
+#E+=>de6<a+a+a+a4>d24<a24>c+6<a6a4g6ef+gb6>c+d6<bbb>c+3c+3[o5d4d4^6]3 o5d3<f8a8>c;
+
+#F=%6 @102 o4 v4 @v70 l24 r12 q7;
+#F+=f8a8>c12 ;
+#F+=$v4 @103 [o4b2g12g12a+3a6e6|o4f2^16^64&f4.^32.f8a8>c12];
+#F+=o4 g4f12>f12g12a+12>d12<<g4f12>f12a+12>c12)<d4d3d3c+4^6d4d3d4^6g8a8a+12;
+#F+=@100 v8 c<afdfa>dfd<afdfa>df [o5gd<a+ga+>dga+][o5gec<a+ga+>ce] o5fec<afa>cefdc<afa>cd;
+#F+=[o5fd<a+gfga+>d][o5gd<a+gfga+>d][o5g+e<bg+eg+b>e][o5d<aec+dea>c+];
+#F+=[o5fc<afa>cfa][o5gd<a+gfga+>d][o5ec+<aec+ea>c+];
+#F+=o5fc<afcfa>cfd<afcfa>d[o5fd<a+gdfa+>d][o5d+<a+gd+<a+>d+ga+];
+#F+=[o5e<a+geceg>c][o5ec+<aec+ea>c+][o5d<a+gfdfga+] o5c<a+gecega+>c+<agec+ea>c+;
+#F+=@101 v4 <d3a4aaa3&((a6e12f+12a12a6>c+12d6d12d12e12<a+6>d12e6;
+#F+=<a+12a+12a+12a4a12>c+6<a6a4g6e12f+12g12b6>c+12d6<b12b12))g3g3;
+#F+=[o4a4a4^6]3o4a3((<f8a8>c12r12;
+
+#G= %6 @0 q4 v15 @v75 l24 o4 r3;
+#G+=$[[o4gr12ggrdr]o4cr12ccr<grar12aar>c+r|[o4dr12ddr<ar]4] [o3a+r12a+a+rf|r]o3a+[o4cr12ccr|o3gr];
+#G+=o4e12q3[o4d8>dr12c<cfrarcdf<a+12>a+rdfga<a>c+ergaec+<a]q4[o4dr12ddr<ar];
+#G+=[o4gr12ggrdr][o4cr12ccr<gr]o4fr12ffrcrfr12fd12c12[o3a+r12a+a+rfr][o3gr12ggrdr][o4er12eer<br];
+#G+=[o3ar12aarer][o4fr12ffrcr][o4gr12ggrdr][o4ar12aarer]o4fr12ffre12dr12ddr<ar[o3a+r12a+a+rfr];
+#G+=[o4d+r12d+d+r<a+r][o4er12eer<a+r][o3ar12aarer][o3a+r12a+a+rfr]o4cr12ccr<grar12aar>c+12;
+#G+=[o4dr12ddr<ar]3o4d>dr<afgef[o4dr12ddr<ar][o4gr12ggr|o4dr]o3a+12>dr12ddr<ar>c+r12c+c+r<ar;
+#G+=[o4cr12ccr|o3gr]o4er[o4gr12ggrdr][o4ar12aarer][o4dr12ddr<ar]3o4d>d<c>c<<a+>a+<a>a;
+#G+=[o4dr12ddr<ar]3 o4d>dr<afgef;
+
+
+#H=%6 @5 @v50 v22 l24 r3 q5;
+#H+= $[o4g12r12>g12r12]7 o5sbbgreree;
+#H+= [o4g12r12>g12|r12]8 o5g12 [o4g12r12>g12r12<g12|o4g12>g12r12] r12;
+#H+=o5grgg[o4g12r12>g12r12<g12|o4g12>g12r12]r12o5gggg;
+#H+=[o4g12r12>g12r12|o4g12g12>g12r12]8o5bbggeecc;
+#H+=[o4g12r12>g12r12<g12|o4g12>g12r12]10 o5bbgrgg [o4g12r12>g12r12<g12g12>g12r12]11;
+#H+=o5bbbbggggeeeecccc;
+
+A; B;
+C; D;
+E;
+F;
+G;
+H;
+
+
+#OPM@0{
+2, 7;
+31, 14,  6,  3,  2, 33,  0,  0,  6,  0,  0;
+19, 15,  5,  3,  4, 20,  2,  6,  6,  0,  0;
+31,  4,  5,  3,  1, 40,  0,  0,  6,  0,  0;
+31, 13,  6,  3,  5,  0,  0,  1,  6,  0,  0;
+};
+
+
+#OPM@20{
+4,  5;
+31,  0,  0,  0,  0, 22,  0,  2,  7,  0,  0;
+17,  9,  0,  2,  1, 16,  0,  8,  7,  0,  0;
+31,  0,  0,  0,  0, 23,  0,  4,  3,  0,  0;
+17,  9,  0,  2,  1, 16,  0,  4,  3,  0,  0;
+};
+
+#OPM@22{
+6,  7;
+3,  0,  2,  4,  1, 55,  3,  4,  6,  0,  0;
+3,  7,  2,  4,  1, 37,  3,  2,  6,  0,  0;
+3,  0,  2,  4,  1, 10,  3,  2,  6,  0,  0;
+3,  0,  2,  4,  1,  0,  0,  2,  6,  0,  0;
+};
+
+#OPM@23{
+6,  0;
+31, 10,  0,  2, 15,  8,  0,  4,  4,  0,  0;
+31, 10,  0,  1,  0, 16,  0,  8,  4,  0,  0;
+31, 10,  0,  1,  0, 16,  0,  8,  4,  0,  0;
+31, 10,  0,  1,  0, 16,  0,  2,  4,  0,  0;
+};
+
+#OPM@24{
+5,  5;
+19,  9,  0,  4,  1, 33,  0,  1,  4,  0,  0;
+19,  9,  0,  3,  2, 16,  0,  1,  4,  0,  0;
+19,  9,  2,  4,  3, 16,  0,  2,  4,  0,  0;
+19,  9,  0,  3,  2, 16,  0,  2,  4,  0,  0;
+};
+
+#OPM@26{
+3,  7;
+31,  8,  2,  2, 14, 40,  3,  6,  0,  0,  0;
+19,  6,  0,  2, 15, 51,  1,  6,  3,  0,  0;
+15, 10,  0,  2,  2, 38,  3,  3,  6,  0,  0;
+14,  3,  0,  3,  0,  0,  2,  3,  3,  0,  0;
+};
+
+
+#OPM@27{
+4,  7;
+31,  0,  0,  0,  0, 33,  0,  8,  7,  0,  0;
+17, 14,  8,  3,  3, 16,  0,  8,  7,  0,  0;
+31,  0,  0,  0,  0, 24,  0,  4,  3,  0,  0;
+31, 14,  8,  3,  3,  7,  0,  4,  3,  0,  0;
+};
+
+#OPM@100{
+4,  7;
+31,  5,  0,  0,  0, 28,  0,  4,  0,  0,  0;
+20, 19,  8,  1,  3,  0,  0,  2,  0,  0,  0;
+31,  5,  0,  0,  0,127,  0,  4,  0,  0,  0;
+31, 14, 10,  5,  2,127,  0,  2,  0,  0,  0;
+};
+
+#OPM@101{
+4,  7;
+31,  5,  0,  0,  0, 28,  0,  4,  0,  0,  0;
+20,  7,  7, 10,  3,  0,  0,  2,  0,  0,  0;
+31,  5,  0,  0,  0,127,  0,  4,  0,  0,  0;
+31, 14, 10,  5,  2,127,  0,  2,  0,  0,  0;
+};
+
+#OPM@102{
+4,  7;
+31,  5,  0,  0,  0, 28,  0,  4,  0,  0,  0;
+31,  7,  7,  5,  6,  0,  0,  2,  0,  0,  0;
+31,  5,  0,  0,  0,127,  0,  4,  0,  0,  0;
+31,  0,  0, 15,  0,127,  0,  2,  0,  0,  0;
+};
+
+#OPM@103{
+4,  7;
+31,  5,  0,  0,  0, 28,  0,  4,  0,  0,  0;
+31,  7,  7, 10,  6,  0,  0,  2,  0,  0,  0;
+31,  5,  0,  0,  0,127,  0,  4,  0,  0,  0;
+31,  0,  0, 15,  0,127,  0,  2,  0,  0,  0;
+};
+
+
+#OPM@5{
+6,  7;
+31, 13,  4,  3,  2,  0,  0, 15,  6,  0,  0;
+31, 16,  9,  6,  5,  5,  0,  0,  3,  0,  0;
+31, 16,  3,  2, 10,  4,  0,  0,  3,  0,  0;
+31, 11,  8,  6,  8,  7,  0,  0,  3,  0,  0;
+} @lfo73 mp-300,-2000,1;
+
+

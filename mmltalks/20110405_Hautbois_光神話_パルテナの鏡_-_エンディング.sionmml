@@ -1,0 +1,108 @@
+/*
+   光神話 パルテナの鏡 - エンディング
+   [FC][FDS][パルテナの鏡]
+   2011.5.21 波形修正 Hautbois.
+*/
+
+#TITLE{光神話 パルテナの鏡 - エンディング};
+#REV;
+#FPS  600;
+#QUANT  16;
+//#EFFECT0{reverb70,40,80,30};
+
+// table env
+#TABLE  0 { (40,128)120(128)160(128,0)400 | 0 };
+#TABLE  1 { (80,128)80(128,80)80          | 80 };
+#TABLE  2 { (90,70)20(70,0)10             | 0 };
+#TABLE  3 { (128,70)70(70,0)70            | 0 };
+#TABLE  4 { (25) |(25,10)20(10,0)20};
+
+// table pitch
+#TABLE 10 { (0)320(0,60)40(60,0)40(0,60)40(60,0)40 | 0 };
+
+//     00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff
+#WAVB0{007C7A787674706E6C6C6A68666462605E5C5A58565452504E4C4A48464442403E3C3A38363432302E2C2A28262422201E1C1A18161412100E0C0A0806040200};
+#WAVB1{7f80};
+#WAVB2{7f808080};
+
+#A=
+v16 x128 %4
+@0 na0 np10 s60
+o4 l12 q16 
+ cccer<g>c4cegf#1
+ eeegrce4eg>c<b-1
+ a-a-a->cr<e-a-4a->ce-d1
+ <bbb>d#r<f#b4b>d#f#f1
+ [f#2.f#rf#f1]
+ l2[f#f]
+ l12[f#ff#ff#f]4
+o6 l12 q16
+ [crcl4defg2>c4<b6>l12c<g2r6fe6cl2cd]
+o4 l12 q16
+ ggg>cr<eg4g>ced1
+ cccer<g>c4cegf1
+ eeegrce4eg>c<a2l4ba
+ g2fe>l2cd
+o6 l4 q16
+ c1<d2eg c1d2g>c<b-1
+o4 l12 q16
+ cccerg eeegrc ggg>cr<g> l2q8eee <q12c1 <l8cccc4
+;
+
+#B=
+v8 x128
+%4 @1 na1 s60
+o5 l1 q16 gagb- e-fg-a l12[d-2.d-rd- c1] l2[d-c] l12[d-cd-cd-c]4
+o5 [l12 q16 grgl4gggg2>gg6a12d1<l4ab>c<a-]
+o5 l4 q16 e2g>c<a2ba e2g>cd2<b4l12b>cd l4cegl12ceg l2f#c <l4efg>c<baba-
+l12 q16
+[
+o7 gde- <b->c<g b-e-g cd<b- |
+o7 beg de<b >d<ab egd
+]3
+o4 l12 q16 ggg>cr<e> cccer<g> eeegre> l2q8ccc <<q12c1 <l8gggg4
+;
+
+#C=
+v8 x128
+%4 @1 na1 s60
+o5 l1 q16 ed#ef a-b-e-f< l12[b-2.b-rb-a1] l2[b-a] l12[b-ab-ab-a]4
+o6 [l12 q16 crcl4ccccdfd6e12b2l4cb<fgaf>]
+o5 l4 q16 c2egf2gf c2egb2g#l12g#ab l4a>ce<l12g>ce l4c<b g-2l4cdeagfgf
+l12 q16
+[
+o7 e-<a->c <ga-e- gce- <a-b-g | 
+o7 bcd <a>c<g aeg <b>da
+]3
+o3 l12 q16 [ccccrc]3 >>l2q8ggg <q12g1 <l8cccc4
+;
+
+#D=
+v16 x128
+%1 @8,60,0,0,60
+o3 l12 [q14c4>q16cr<q12c]32
+o4 l4 q16 [c&<b&a&g&l1f&e&g&>]
+o3 l12 q14 [e4ere] [f4frf] [g4grg] [a-4a-ra-] a4ara a4a>e<a l4d&>c&<b&a&l12q12g4q14grg [g4grg]3
+o3 l12 q14 [[b-4<b-r>e-] | [>c4<crg]]3 q14[c]18 l2q8ccc q12c1 l8q8ccc q12c4
+;
+
+#E=
+v6 x128
+%1 @9 l12 q15
+o0
+na2 l12 [c4ccc]28 [c]24
+na2 l2 [c]16
+l12 [na2 crc na3 c4]16
+l12 na2 [ccccrr]10
+l12 [na2 ccc na3c6c]3
+l2ccc na4c1 na3l8cccc4
+;
+
+t152
+@v128      A;
+@v50 @p10  B;
+@v50 @p-10 C;
+@v90       D;
+@v70       E;
+
+#END;

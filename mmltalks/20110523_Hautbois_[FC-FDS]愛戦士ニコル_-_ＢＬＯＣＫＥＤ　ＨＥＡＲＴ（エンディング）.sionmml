@@ -1,0 +1,140 @@
+/*----------------------------------------------------------------------------------
+   [FC-FDS]愛戦士ニコル -ＢＬＯＣＫＥＤ　ＨＥＡＲＴ（エンディング）
+   JASRAC 003-5756-1
+   1987.04.24 KONAMI コナミ矩形波倶楽部
+   2011.04.07 初版 Hautbois.
+   2011.05.12 SCCで再挑戦 Hautbois.
+   2011.05.21 波形修正 Hautbois.
+   2011.05.23 波形修正 Hautbois.
+   2011.05.24 20:52 last update Hautbois.
+----------------------------------------------------------------------------------*/
+
+#TITLE{[FC-FDS]愛戦士ニコル - ＢＬＯＣＫＥＤ　ＨＥＡＲＴ（エンディング）};
+#REV;
+#FPS  600;
+#QUANT  8;
+//#EFFECT0{reverb70,40,80,10};
+
+//波形テーブル
+#WAVB00{7f80};
+#WAVB01{7f808080};
+#WAVB02{FA02070603FAF4EFE9EBF0FD040D162122231C1201E6D9D0C3C4C9DDEAF91926303C3F3F362F262119191D292F3A5D605B4F473E2110FEE8E1DFE4F0FD17222D3F41414037302618121012181E292E3031281F04F6E5C4B9B0AEAEB9C5E0EDF90D11120D0901EDE5E0DFE0E5F1F9FF040500F0DFCFBFA1958B8A8C97B5C8D8F4};
+#WAVB03{1BF2D4D4BDADA09898908C8787878498CBCBEC0619272731393F4444484C49492904EAD6D6C7BCB5AEAEAAA7A9A7A7BBE400001625323A3A4045494C4C4E50351313FEEBDFDFD5CEC8C5C5C2C3C3D1D1F10B1E1E2B353C424246494C4E4E513B21101001F7EFEFEAE5E2E0E0E0E0E7020217253038383D40434346474A4A4A27};
+#WAVB04{04FFFF01FDEAE7E4F0FEFFCFBCBFC5ADA4BA1A41401F1C1D181E26221D1C0C0A19595B40EAD9D9D2ACB2C7E9EAE7E0DFE6F6F6F5F4F8F9EBFE2E7C6C4B21191000FDFE01F6ECE7E4ECF9F6D9BFC4C2B1B0D70B4634241D1A162429241D1A100734565C20F4DDD5C3ADC1D9E8E8E5E1E3EDF5F5F4F3F7F6EEF2537A7735221B0902FD0001FBE9E5E5F5FFFCC5BBC2C3A7ADCA2D453D1E1C1C1921281F1D1C090A2960512CE1D9D8CAA9B9D2EAE8E6DFE0E9F6F6F4F5FAF8F10C437E613D1D150C04FCFF01F3EAE6E7F1FEECCDBCC5BBAAC1EC20402E1F1C18172628221C170D08435C5B0BE7D9D1BAAACAE0EAE7E4DFE6F0F5F5F3F4F8F2ED01647A6E2D201806};
+#WAVB05{000C17212A3035312C29273E464C545C61665F4C3E332D2D2D2C2C30333536230EF4EAE0D9D2D4DBE0E5E3D2C6BEB5A99F9893A6B9C6D5D8D9DCD7CEC9C4CDE5F806121E2830342E28242139424850595F655B493C312B2C2C2B2C2F33353620FBEEE5DDD8D2D6E1E7EDE9D5C6BCB2A69D9693A4B7C4D0D1D1D2D1CCCBC8D4EBFD091420282F322E2A27263D444B55626A73685243362F2E2C2A2A2E3134341B02E4DAD0CAC3C8D3D9E0D9C7B8AEA69D969191A4B6C4CDCCCBCBCBCACAC8D9F305141E282E3436312D292840484E555C5F655A473B302C2B2B292A2D30323019F1E4DFDAD8D5D8DFE3E8DDC9BBB0A89E989194A8BBC8D4D5D6D7D7D4D4D2E1F6};
+
+#TABLE  0 { 128 | 128 };
+#TABLE  1 { (128,30)200 | 30 };
+#TABLE  2 { (100,128)6(128,0)220 | 0 };
+#TABLE  3 { (100,128)6(128,60)30 | 60 };
+#TABLE  4 { (70,80)6 | 80 };
+#TABLE  5 { (100,128)6(128,60)60 | 60 };
+#TABLE  6 { (128,60)90 | 60 };
+
+#TABLE 10 { (100)12     |   0 };
+#TABLE 11 { (128)12(128,0)20 |   0 };
+#TABLE 20 { (0,-2)20 | -2 };
+
+#A=x128 @v128 %4 q8 s32 @q0 v16 @f110
+@2 na6 o4 l12 @q6
+   ggg >c6rc<g>c d6rd<g>d f6rfed @q4c6r<b6r @q4ab>cagf@q0er@q4c<g>c<b>c1 r2
+t100
+@3 na1 o6 l16 @q0
+   c<b>c8<g8 @q12 a4 @q0 gfegfd @q12 c8. @q0ed32e32d8c@q0c2 r4
+@4 o4 l4 @q10 v12[c<g>]4
+@5 na1 o5 v16
+$
+   @q12e4.@q0l16efl8gfed& 
+   @q12d@q0<g>g<g>fl16ede8c<g
+   a8b>c<g8b>c<f8b>cfedc 
+   @q12c4.@q0dcc8<@q12 b4.>
+   @q12a4l32@q0abl16aga @q12b4l32@q0b>c<l16bab>
+   l8c<gal16gfl8egl16fedc<
+   @q12a4>l16@q0fedcq6c4<q8b8ab>
+   l8c<gl16agf8 @q12e2
+   l4@q8dgg.l16@q0ab >@q12c2.l16@q0dc<ba
+   l4@q8dgg.l16@q0ab >@q12c1<
+   l4@q8ggb l16@q0>c<bab>
+   l4@q8cg>c<l16@q0defd
+   @q12c1<
+   b2..l16@q0ab>
+;
+
+#B=x128 @v30 %4 q8 s32 @q0 @er1 v16 @k4 @p10
+@0 na0 o5 l12 @q0
+   v5d4>[c<ge>][d<bg>][c<af>]<afcbgd @q8v10na5<fa>cfed>c<baf4[>c<gf]@q0e2 r2
+@0 na2 o7 l16 @q0 
+   c<b>c8<g8 c<b>c <cedc8f8 gcegl8fd na3 c2 r4
+na2 o5 l8 @q0
+   [<c>[c]7]
+$
+@0 na2 o5 l8 @q0 v16
+   <c>[c]7<
+   g>ggg< c>cc<g>
+   l16f8ga e8fg d8fg c8egl8gggga g4.>
+@1 @q0 v12
+   ffff gggg gefl16edc8e8dc<ba
+   <l8f>fff <g>ggg gl16>c<gfed8 na3c2
+   l8@q4 gggg gggg @0na4@q0 g4&>g4..&l16<g&>f&e&d&c<
+   @1na1 l8 gggg ffff eeee eeee 
+   @0na4 l16 [gd<b>d]4
+   g4>c4..l16<cfgaf
+   g8&>c&<b&>c8& <g&f&g8& e&d&l8e&c&<
+   g&>>l16g&f&g8& d&c#&d8& <b&a#&l8b&g
+;
+
+#C=x128 @v30 %4 q8 s32 @q0 @er1 v16 @k-4 @p-10
+@0 na0 o5 l12 @q0
+   v5d4>[c<ge>][d<bg>][c<af>]<afcbgd @q8v10na5<fa>cfed>c<baf4[>c<gf]@q0e2 r2
+@0 na2 o7 l16 @q0 
+   c<b>l8c<ga4 l16 gfegfdc8.ed32e32d8c c2 r4
+o5 l8 
+   [<c>[c]7]
+$
+@0 na2 o6 @q0 v16
+   l16 e4.ef l8gfe d4<g>g<g> fl16ede8c<g 
+   a8b>c<g8b>c<f8b>cfedcc4.dcc8<b4.
+@1 o6 l8 @q0 v12
+   ffff gggg gefl16edc8e8dc<ba
+   <l8f>fff <g>ggg gl16>c<gfed8 na3c2
+   l8@q4 gggg gggg @0na4@q0 g4&>g4..&l16<g&>f&e&d&c<
+   @1na1 l8 gggg ffff eeee eeee 
+   @0na4 l16 [gd<b>d]4
+   g4>c4..l16<cfgaf
+   g8&>c&<b&>c8& <g&f&g8& e&d&l8e&c&<
+   g&>>l16g&f&g8& d&c#&d8& <b&a#&l8b&g
+;
+
+#D=x128 @v90 %1 @8,56,0,0,56 @ph255 q8 @q0 v16
+o4 l12
+   r4 @q20c4 @q8ccc @q20g4 @q8ggg l4f&a&g&<g> l12@q8fff >c4& <@q8ggg >d4& @q0<c1 r2
+o6 l16 @q0 
+   c&<b&>l8c&<c&fr l16 e&d&l8@q2efgr @q0gl16rf& @q0e2 r4
+l1 @q0
+   c&c&
+$
+   c1&l2<g&>c&l4f&e&d&c& <f2& l8@q12g g4.& l8@q6ffffgggg>
+   l4@q0c&<b&a&g& @q1ff&g@q0g&>c& <l16f&e&d8&@q6c2
+   l8@q15 gggg ffff eeee ccff gggg ffff cccc ccl16@q1cdef
+   l8@q15 gggg ffff cccc ffff
+   @q12g>>l16@q1ederc<b>cr <gfgr l8@q12c< g>>l16@q1dcdr<babrgf#gr <@q12d8>
+;
+
+#H=na10nto0d;
+#S=na11nt20o0f#;
+#E=x128 v10 @v30 %1 @9 q8 @q0 @ph-1
+l12
+   HHH S4HHH S4HHH S4S4 S4HHH
+   HHHS4 HHHS4 H4H4H4
+;
+
+
+t150
+A;
+B;
+C;
+D;
+E;
+
+#END;
+

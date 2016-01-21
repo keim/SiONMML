@@ -1,0 +1,199 @@
+/*
+   [AC] BUBBLE SYSTEM - Konami Morning Music - (BOOT) (C)KONAMI 1985 by LinearDrive
+   date:2011-04-02
+   JASRAC:101-9376-6
+*/
+
+
+#TITLE{[AC] BUBBLE SYSTEM - Konami Morning Music - (BOOT) (C)KONAMI 1985};
+#REV;
+#TMODE{unit=100};
+#QUANT 16;
+
+
+/* 0005289 波形データ */
+#WAVB  0 {F080F020405060504020F0C0A0908090A0C0F03050605030F0B0908090B0F060};
+#WAVB  1 {B090F0604010406020F0407050002030F0A0005010C0D0F0A080B000D090B0E0};
+#WAVB  2 {C0F020404020F0F0003050605020E0D0D0F0101000C0908090B0E0F0F0C0A0A0};
+#WAVB  3 {C0D0F0102030405050606060505040302010F0D0C0B0A090908080809090A0B0};
+#WAVB  4 {8080000000000070700000808080000000007070700080800000000070700000};
+#WAVB  5 {8080000000800070707000000080000000808080800080800000000080808000};
+#WAVB  6 {707080809090A0A0B0B0C0C0D0D0E0E0F0F00000101020203030404050506060};
+#WAVB  7 {8080606060606060606080808080808080806060608080806060606060808080};
+#WAVB  8 {F080F020405060504020F0C0A0908090A0C0F03050605030F0B0908090B0F060};
+#WAVB  9 {B090F0604010406020F0407050002030F0A0005010C0D0F0A080B000D090B0E0};
+#WAVB 10 {C0F020404020F0F0003050605020E0D0D0F0101000C0908090B0E0F0F0C0A0A0};
+#WAVB 11 {6050A0909090A0A0B0B0C0C0D0D0E0E0F0F00000101020203030404050506060};
+#WAVB 12 {8080707070708080808080808080808080808080808080808080808080808080};
+#WAVB 13 {8080707070707070707080808080808080808080808080808080808080808080};
+#WAVB 14 {F0D0F0002030F05050F060F05050F0302010F0D0F0B0F090F080F080F090F0B0};
+#WAVB 15 {80807070608090908080404030809090808020201080909080800000F0809090};
+
+
+/* シーケンサ初期化
+   AY3-8910:v-scale=-3dB/vstep
+   0005289 :v-scale=-1.25dB/vstep (0.25dB*5vstep)
+   113(v16) 108 103 98 93 88 83 78 73 68 63 58 53 48 43 38 0
+*/
+#I= %8 @8,63,0,0,63,0 %v3,4 %x1 v0 x128 q16 @q0 o5 kt0 k0;
+#J= %4 @0,63,0,0,63,0 %v4,1 %x1 v0 x128 q16 @q0 o5 kt0 k0;
+
+
+/* 音長制御用 */
+#P= q4;
+#Q= q2;
+#R= q16;
+
+/* エンベロープブレイク */
+#X= x0 r64 x128 r32.;
+#Y= r;
+/* Yの箇所もX同様breakするが、X部分のみ有効とする */
+
+
+/* AY3-8910 ch.1 (iv7) */
+#A=
+   I l16 @8,63,0,0,24,0 v10 o6 k0
+   $
+   r4
+   r1r1
+   r2   R c8rr rr Q <cr>
+   drrr R c8rr rr Q <b a brrr
+   R b2 r4 Q ar gr
+   R a2 r4 Q gr f+r
+   R g2 r4 Q ar b>c drrr crrr< R b4 r4
+   R a8 r4 Q gr f+r gr ar f+r
+   R b8 r4 Q ar gr ar br gr
+   Q g+rrr R b8 r4 Q a g+ ar gr
+   Q f+rrr R a8 r4 Q g f+ gr f+r
+   R e4 r4 Q dr er f+r>dr<
+   R g2 r4 Q f+r er
+   Q dr d e f+ e d f+ er f+r gr er
+   R f+2 r2 r4 b4 r2
+     r4 a4 r2  r4  Q  grrr   R  f+2&f+4
+     r4  Q  f+rrr  R  a4
+     r4  Q  gr f+r errr drrr
+   R c+2 r4 d4& d4&d8 r8 r4  Q  c+r gr
+   rr f+r er gr f+r rr r4 >
+;
+
+
+/* AY3-8910 ch.2 (iv8) */
+#B=
+   I l16 @8,63,0,0,24,0 v11 o6 k0
+   $
+   r4
+   R d1 r4 <a4. r4> Q cr <brrr> drrr R g2 r1
+   r1 r1 r1 r1
+   R c8&c2 r4 Q er R d+4.r4 Q f+rrr R e8
+     r4 Q frrr R e4 r4 d2. r4
+   Q er <ar> cr er R d8 r4 Q cr <
+   R b2 r4 Q ar gr f+r f+ g a g f+ a gr ar a+r gr
+   R f+2 r2
+   Q r4 e8 r8 e8 r8 r4
+     r4 d8 r8 d8 r8 r4
+     r4 c+8r8 c+8r8 r4
+   r2. R f+4 <
+   r1 r1
+   r2 r8 Q brrr r8
+   r1 >>
+;
+
+
+/* AY3-8910 ch.3 (iv7) */
+#C=
+   I l16 @8,63,0,0,24,0 v10 o6 k4
+   $
+   r4
+   r1r1
+   r2   R c8rr rr Q <cr>
+   drrr R c8rr rr Q <b a brrr
+   R b2 r4 Q ar gr
+   R a2 r4 Q gr f+r
+   R g2 r4 Q ar b>c drrr crrr< R b4 r4
+   R a8 r4 Q gr f+r gr ar f+r
+   R b8 r4 Q ar gr ar br gr
+   Q g+rrr R b8 r4 Q a g+ ar gr
+   Q f+rrr R a8 r4 Q g f+ gr f+r
+   R e4 r4 Q dr er f+r>dr<
+   R g2 r4 Q f+r er
+   Q dr d e f+ e d f+ er f+r gr er
+   R f+2 r2 r4 b4 r2
+     r4 a4 r2  r4  Q  grrr   R  f+2&f+4
+     r4  Q  f+rrr  R  a4
+     r4  Q  gr f+r errr drrr
+   R c+2 r4 d4& d4&d8 r8 r4  Q  c+r gr
+   rr f+r er gr f+r rr r4 >
+;
+
+
+/* 0005289 ch.1 (iv11) */
+#D=
+   J l16 @1,63,0,0,19,0 v88 o4 k4
+   $
+   P
+   drrr
+   gr ar br gr> cr rr Yr <b a
+   br gr er ar f+r Xe drrr
+   gr ar br gr >cr rr Yr <ar
+   br >cr< ar Yg  R  g4 rrrY
+   rr  P  br er gr cr rr Yr d e
+   f+r gr ar cr <br rr Yr >c d
+   er f+r gr <br> crrr grrY
+   rr  f+ e f+r Yg   R  g2
+   rr  P  er f+r gr  R  a2
+   rr  P  f+r gr ar  R  b2
+   rr  P >cr dr <br> R  c8rr rr  P  <br
+   ar    br >cr< ar  R  b8rr rr  P  ar
+   gr cr er gr f+r gr ar f+r
+   gr f+r er dr      R  c+8rrrr  P  dr
+   R  d2...r d2r4
+   P
+   <a> d e a
+   br gr er dr c+rrr <a> c+ e a
+   ar f+r dr c+r <brrr a b> d g
+   gr er c+r <br  R  a+8rr rr  P  >c+r<
+   R  b8rr rr  P  >c+ d  R  c+8rr rr  P  f+ c+<
+   br rr >  R  g8rr rr  P  er f+r gr
+   <ar rr>  R  a8rr rr  P  dr er f+r
+   <gr br> er f+r  R  g8rr rr  Q  c+r
+   R d2..r8
+;
+
+
+/* 0005289 ch.2 (iv11) */
+#E=
+   J l16 @1,63,0,0,19,0 v88 o3 k4
+   $
+   r4  P
+   brrr grrr arrr f+rrr
+   grrr c+rrr dr er f+r er
+   grrr  R  f8rr rr  Q  e d er cr
+   dr er f+r er gr <gr> gr f+r
+   errr grrr arrr <arrr>
+   drrr f+rrr grrr <grrr>
+   crrr errr <ar br >cr< ar>
+   R  d8rr rr  Q  dr er f+r gr er<
+   R  a2...r a2...r a2...r a2...r a2.r4
+   P  grrr brrr  R  a4 rrrr
+   R  d2...r d2r2
+   rrrr  P  g+rrr g+rrr rrrr
+   rrrr f+rrr grrr rrrr
+   rrrr d+rrr f+rrr> errr
+   drrr <brrr arrr f+rrr
+   R  g1
+   rrrr  Q  f+r er  R  f+4 rrrr
+   e4 rrrr a4 rrrr>
+   d2 rr  P  er f+r dr
+;
+
+
+/* 再生 */
+t10300
+@v120 A;
+@v120 B;
+@v120 C;
+@v120 D;
+@v120 E;
+
+
+#END;

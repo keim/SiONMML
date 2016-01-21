@@ -1,0 +1,89 @@
+/*----------------------------------------------------------------------------------
+   [FC-FDS]愛戦士ニコル - クリスタルダイヤモンドをさがせ（３，５ＳＴ．ＢＧＭ）
+   JASRAC 003-5756-1
+   1987.04.24 KONAMI コナミ矩形波倶楽部
+   2011.05.23 初版 Hautbois.
+   2011.05.23 18:57 last update Hautbois.
+----------------------------------------------------------------------------------*/
+
+#TITLE{[FC-FDS]愛戦士ニコル - クリスタルダイヤモンドをさがせ（３，５ＳＴ．ＢＧＭ）};
+#REV;
+#FPS 600;
+#QUANT 8;
+//#EFFECT0{reverb70,40,80,30};
+
+#WAVB02{7f80808080808080};
+#WAVB03{7f808080};
+#WAVB04{7f80};
+
+#WAVB10{00203E7474565C7A78787A7C5C4A666E50202650440A067C2C12000016160004040016160000122C7C060A44502620506E664A5C7C7A78787A5C5674743E2000};
+#WAVB11{0018263C5250442A1C141C2634382E221C20344C626458402E262E3A4C4E443830344662747A684C383038404C4C4032282C365260605036221C202C38382C1E};
+
+#TABLE  0 { (128)       | 128 };
+#TABLE  1 { (40,128)40(128,60)140(60)  |  60 };
+#TABLE  2 { (128,80)80  |  80 };
+#TABLE  3 { (128,60)60  |  60 };
+
+#TABLE 10 { (100)12     |   0 };
+#TABLE 11 { (128)12(128,0)20 |   0 };
+
+#V=mp0,18,160,30;
+#U=mp0;
+//FDS
+#A=%x0 x128 %4 @v128 @q0 q8 @f89
+$
+v11@10na1o4l8s32 @lfo11,1 V
+   [q2g2&gq6cga-& q2a-2&a-q6ca-b-& q2b-2&b-q6cb-a-& q2a-2&a-q6ca- | g&]g
+v16@11na2 U
+   [g4.>c&c2 <a-re->c&c2 <b-rf>d&d4.l16cd | l4e-d<b-g] >l8q4e-.d.q5e-q4f.e-.q5d
+v11@10s34
+   [l16q4cr<cccrccl8q3ce-c>q5c4<l16q4cccrcc>l8q3cde-q6d&d2 | <b-4.f4q7b-&b-2.>]
+   f4.g4>q4dq7g2.
+;
+
+//2a03-square-1
+#B=x128 %4 @v25 @q0 q8 @k6
+$
+@2v14na3o5l8s32
+   [c2&c<g>ce-& e-2&e-<a->e-f& f2&f<a>fe-& e-2&e-<a->e- | c&]c
+//                                  ↑これは本当にＡなのか。
+@3l16
+   [c4.g2g>c <e-4c8a-2a->c< f4d8b-2cd | l4e-d<b-g>] l8e-.d.e-f.e-.d
+v16l16s34
+   [a-r<a-a-a-ra-a-a-r>cr<a-r>a-rrr<a-a-a-ra-a->l8a-b->c<b-&b-2 | f4.d4f&f2.]
+   >c4.d4b>d2.
+;
+
+//2a03-square-2
+#C=x128 %4 @4 v12 @v60 na1 _na2 s0 @q0 q8
+;
+
+//2a03-triangle
+#D=x128 %1 @8,52,0,0,52 v16 @v80 @ph255 q8 @q0 
+$
+o4l16q6
+   [cr>cc<cr>cr<]16
+   [[cr>cc<cr>cr<]<[a-r>a-a-<a-r>a-r<][b-r>b-b-<b-r>b-r]cr>cc<cr>cr<<b-r>b-b-<b-r>b-r]
+   q6a-r<a-a-a-ra-a-a-r>l4q5a-a-<l16q6a-a-a-ra-a-a-r>l4q5a-a-8<
+   l16q6[b-rb-b-]6>crccdrdd <[a-r>a-a-<]8 [b-rb-b-]4[brb|b]4r
+;
+
+#H=na10o0d;
+#S=na11o0f#;
+//noise
+#E=x128 v10 @v40 %1 @9 q8 @q0 @ph-1
+l16
+$
+   [HrHHSrHr]32
+   [HrHHSrHH r8S4S8] [HrHHSrHr]12
+;
+
+t151
+A;
+B;
+C;
+D;
+E;
+
+#END;
+

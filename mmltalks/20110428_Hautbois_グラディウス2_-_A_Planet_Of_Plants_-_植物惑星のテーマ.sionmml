@@ -1,0 +1,190 @@
+/*
+  グラディウス2 - A Planet Of Plants - 植物惑星のテーマ
+  (C) KONAMI 1987 コナミ矩形波倶楽部
+  2011.4.28 MML - Hautbois. 
+*/
+
+#TITLE{グラディウス2 - A Planet Of Plants - 植物惑星のテーマ};
+#REV;
+#FPS  600;
+#QUANT  8;
+//#EFFECT0{chorus1,20,0.4,30,reverb70,40,70,30};
+
+//SCC-WAVES
+#WAVB00{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f80808080808080808080808080808080};
+#WAVB01{7070707070707070808080808080808070707080808070707070808080808080};
+#WAVB02{0000008000707070000000800000008080808000800000000080808000808080};
+#WAVB03{305050300000104060706030F0E0E000202010C0A090A0C00000D0B0B0D00000};
+#WAVB04{001931475A6A757D7F7D756A5A4731198090A0B0C0D0E0F00010203040506070};
+#WAVB05{305050300000104060706030F0E0E000202010C0A090A0C00000D0B0B0D00000};
+
+//table env
+#TABLE  0 { 128 | 128 };
+#TABLE  1 { (128,20)50 | 20 };
+#TABLE  2 { (128,80)10(80,20)40 | 20 };
+#TABLE  3 { (128,60)60 | 60 };
+#TABLE  4 { (128,0)50 | 0 };
+#TABLE  5 { (128,80)320 | 80 };
+#TABLE  6 { (128,40)320 | 40 };
+#TABLE  7 { (128,80)5(80,10)40 | 10 };
+#TABLE  8 { (70,40)5(40,10)40 | 10 };
+
+///BD
+#TABLE 20 {(128,0)12|0};
+#TABLE 21 {(0)};
+#TABLE 22 {(0,-24)12|-24};
+//SD
+#TABLE 30 {(30,30)10(30,0)40|0};
+#TABLE 31 {(0)8|1};
+#TABLE 32 {(0)8|4};
+//HH-C
+#TABLE 40 {(10,3)10 (3,0)5 | 0 };
+#TABLE 41 {(1)};
+#TABLE 42 {(0)|0};
+//HH-O
+#TABLE 50 {(24,4)10 (4,3)100 (3,0)120 | 0 };
+#TABLE 51 {(1)};
+#TABLE 52 {(0)|0};
+//TOM
+#TABLE 60 {(50,20)10(20,0)40|0};
+#TABLE 61 {(0)8|1};
+#TABLE 62 {(0)8|-10};
+#TABLE 63 {(0)8|-5};
+#TABLE 63 {(0)8|0};
+#TABLE 70 {(50,0)28|0};
+#TABLE 71 {(1)4|0};
+#TABLE 72 {(0,-12)28|-12};
+
+#Z= %0 @1 o3 na20 @@21 nt22 a;
+#S= %0 @1 o4 na30 @@31 nt32 c;
+#H= %0 @1 o5 na40 @@41 nt42 b;
+#O= %0 @1 o5 na50 @@51 nt52 b;
+#J= %0 @1 o5 na60 @@61 nt62 d;
+#K= %0 @1 o4 na60 @@61 nt63 a;
+#L= %0 @1 o4 na60 @@61 nt64 e;
+#M= %0 @1 o4 na70 @@71 nt72 b;
+
+#A=x128 @v60 v13 %4 s34 q8 
+@1 na1 o4 l12 @q0
+   ddd<aaab-b-b-fffgggddde-e-e-<b-b-b-
+@2 na2 o2
+   cdd>d<d>d [cd<d>d<d>d]3
+$
+@1 na1 o3
+   [[dddrdd]3 [d]6 [gggrgg]3[g<g>]3]4
+v15
+   [b-fb-<b->f<b->]4 [e-b-e->e-<b->e-<]2 [e-]3[g]3[b-]3>[e-]3
+@2 na2 o4 v13
+   cd<<d>d<d>d [cd<d>d<d>d]3
+;
+
+#B=x128 @v60 v15 %4 s34 q8 @p10
+@3 na3 o5 l12 @q0 @k5
+   d>d<d <a>a<a b->b-<b- f>f<f g>g<g d>d<d gb->e- gb->e-
+o7 na4 v5
+   r24 d<ag> d<ag> d<ag> d<ag> na3 v6d<ag> d<ag> na4 v4 d<ag> v2 d<ag24>
+@lfo13,1 mp0,13,10,0
+$
+[
+@4 na5 o5 v15 
+   eb>e&e2<f>cfr2<l4ef>
+@3 l12 v11
+   gfe fed edc dc<b >c<ba bag agf gfe
+   v15 eb>e&e2<f>cfr2<l4ef>>
+   l12 v11 c<ba bag agf gfe fed edc dc<b >c<ba
+]
+na3 o4 v15
+   d>d<d>c6<a&a1 >l6ab->c 
+   l12<d>d<d>c<dg&g1> l12na0 dcgc<b-f
+o7 v5
+   r24 v3 d<ag> v4 d<ag> d<ag> d<ag> v5 d<ag> d<ag> v3 d<ag> v1 d<ag24>
+;
+
+#C=x128 @v60 v15 %4 s34 q8 @p-10
+@4 na3 o5 l12 @q0
+   d>d<d <a>a<a b->b-<b- f>f<f g>g<g d>d<d e->e-<e- <b->b-<b-
+@3 o7 v8
+   d<ag> d<ag> d<ag> d<ag> v6 d<ag> na4 v5 d<ag> v4 d<ag> v2 d<ag>
+@lfo13,1 mp0,13,10,0
+$
+[
+na5 o5 v15 
+   eb>e&e2<f>cfr2<eb>e<f>cf
+v11
+   r24gfe fed edc dc<b24 >gfe fed edc dc<b 
+v15
+   eb>e&e2<f>cfr2<eb>e<f>cf>
+v11 
+   r24c<ba bag agf gfe24 >c<ba bag agf gfe<
+]
+v15 na6
+  d>d<d>c<da&a2 d>d<d>c<d>c l6<fga<
+  l12 a>a<a>g<a>e- v7 d>d<d>c<dg&g2 v15l12na0 >dcgc<b-f
+o7 v5
+   v10 d<ag> d<ag> d<ag> d<ag> v8 d<ag> v6 d<ag> v4 d<ag> v2 d<ag>
+;
+
+#D=x128 @v60 v15 %4 s34 q8
+@4 na3 o4 l12 @q0 @k-5
+   a>a<a d>d<d f>f<f c>c<c d>d<d <g>g<g >e-gb- >e-gb->
+@3 o6 l4 @lfo13,1 mp0,13,10,0 @k-5
+   na3 d v12d v10@q28d v9d v7d v5d v3d v1d
+$
+[
+na5 o5 v15 l12 @q0
+   eb>e&e2<f>cfr2l4<ef>
+l12 v11
+   gfe fed edc dc<b >c<ba bag agf gfe
+v15
+   eb>e&e2<f>cfr2l4<ef>
+l12 v11
+   gfe fed edc dc<b >c<ba >c<ba bag agf
+]
+@4 na3 o4 v15
+   d>d<d>c6<a&a1 >l6ab->c 
+   l12<d>d<d>c<dg&g1> v10 l12na0 dcgc<b-f
+@3 o6 l4 v15
+   d& v13d& v11d& v9d& v7d& v5d& v3d& v1d
+;
+
+#E=x128 @v80 v15 %0 @0 s32 q8 @q0
+o4 l12 na7 @k4
+   ddd<aaab-b-b-fffgggddde-e-e-<b-b-b->>
+na8
+   [cd<d>d<d>d]4<
+$
+na7
+[
+l12
+   [dad>d4<]3l6[d]3<
+l12
+   [g>d<g>g4<]3l6[g]3>
+]4
+l12 
+   [<b->f<b->b-fb-]3 <b->f<b->b-b-f [e-b-e->e-<b->e-<]2 [e-]3[g]3[b-]3>[e-]3
+na8
+   [cd<d>d<d>d]4<
+;
+
+#F=x128 @v127 v15 s30 q8 @q0 @0
+l12
+[ZMZ]8[ZM]10MMMM
+$
+l12
+[[HrH OHH]3 l6MMM]8
+l12
+[ZrZMZZ]8 [ZM]10MMMM
+;
+
+t172;
+//SCC
+A;
+B;
+C;
+D;
+//PSG
+E;
+F;
+
+#END;
+

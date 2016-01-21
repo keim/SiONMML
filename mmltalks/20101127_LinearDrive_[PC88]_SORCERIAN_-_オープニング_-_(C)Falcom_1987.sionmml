@@ -1,0 +1,127 @@
+/*
+   [PC88] SORCERIAN - オープニング - (C)Falcom 1987 by LinearDrive
+   date:2010-11-28初版
+   JASRAC:045-4683-1
+*/
+
+
+#TITLE{[PC88] SORCERIAN - オープニング - (C)Falcom 1987};
+#REV;
+#TMODE{unit=100};
+#FPS   1000;
+
+
+// tone for OPN (feedback adj.)
+/* CON, FB,
+    AR, DR, SR, RR, SL, TL, KS,MUL, DT,AMS */
+#OPN@000
+{    4,  6,
+    31,  0,  0,  0,  0, 21,  0,  2,  7,  0,
+    18, 15,  9,  6,  3,  0,  0,  2,  7,  0,
+    31,  0,  0,  0,  0, 20,  0,  2,  3,  0,
+    31, 15,  9,  6,  3,  0,  0,  2,  3,  0 };
+/* orig.tone
+#OPN@000
+{    4,  5,
+    31,  0,  0,  0,  0, 21,  0,  2,  7,  0,
+    18, 15,  9,  6,  3, 16,  0,  2,  7,  0,
+    31,  0,  0,  0,  0, 20,  0,  2,  3,  0,
+    31, 15,  9,  6,  3, 16,  0,  2,  3,  0 };
+*/
+
+//table for amplitude envelope
+#TABLE  1 { (128)16,(104,0)4250 | 0   };
+#TABLE  2 { (128)16             | 104 };
+#TABLE  3 { (128)16,(104,0)4250 | 0   };
+
+
+/* ch.1 FM */
+#A=
+   q8 @q0 k0 %6 %v3,4 %x1 v15 x128
+   t10162 @0 @q4 k3
+   o4 r8
+   d8g8a8b2&b8g8a8b8>c8<
+   b8a8b4.>f+4e4.<b4.>f+4e4.<b4b8a8b8g2e8.f+8.g8r64g2f+2
+   t9297 g2 t5749 a2 
+   t10162 r2a64b16..a8g4>c4<b8a4g4b2&b8
+   a64b16..a8g4a4g8g4d+4d32d+32d2&d16r64>d16..e8e8f8f4<
+   b8>e4d4e2&e8<a8b8>c8d8d4f+8a4c4<b8&b2b2b2b8e8
+   g+8b8b4.a4.e4b8a8g8a4b8>c4<b4.a2&a8b8a8g8a4b8>
+   c8d8&d2..d2&d8
+   t9499 g8f+8e8f+8g1r32g1
+;
+
+/* ch.2 FM */
+#B=
+   q8 @q0 k0 %6 %v3,4 %x1 v15 x128
+   @0 @q1 k2 
+   o2 r2 
+   g8>d8a2.<b8>e8b8a2&a8>b4.e4.
+   b4b4.g4g8f+8g8e2<b8.b8.b8r64>e2d2e2f+2r2>d2d+1r2d2
+   d+4.f4c4<b2&b8b2b4.b2>c2<<b2&b8r4.>>f+4<a4g8&g2a2
+   a2g+2 [ e4.e2&e8 ]2  g4.f2&f8g4.f2a1a2&a8r2>d1r64d1
+;
+
+/* ch.3 FM */
+#C=
+   q8 @q0 k0 %6 %v3,4 %x1 v15 x128
+   @0 k2
+   o2 r2r8 
+   g8>d8b2&b8>e4.d+2&d+8<<e8b8>f+8g2&g8<d8b8>f+8
+   g2&g8<c+8b8>c+8e2&e8<d2d2d2d2&d64g8>d8a8b2&b8<
+   g8>d+8g8>c2&c8<<g8>d8a8b2&b8<g8>d+8g8>c2&c8<<
+   g8>d8a8b2&b8e8b8>e8g+2&g+8<<a8>e8a2.<d8a8>
+   d8f+2&f+8<g8>d8g8b8<f8>c8f8a8<e8b8>d8f+8g+2< 
+   [ a8>e8g8a2&a8< ]2
+   [ f8>c8f8a2&a8< ]2
+   d8a8>c8d4a8>c8d1&d8<< 
+   t9103 g8>c8d8g8 t8739 a8>c8 t8403 d8 t7803 e8 t6621 g1
+;
+
+/* ch.4 SSG */
+#D=
+   q8 @q0 k0 %0 @0,63,0,0,18,0 %v3,4 %x3 v12 x128
+   o5
+   na1 k6
+   r2 g2&g8g8d8g8a4.b4.a4g4.g4.e8f+8g4.g4.f+8g8>
+   b12g12e12g12e12c+12<<g8.g8.g8a2a2a2a2&a64
+   na2 g1>c4.d+4f4g1&g8>c4.d+4<g4 
+   na3 g1&g8g+4.g+2b1&b8a4.a4 )f+4d8&d2c2e1 ( 
+   [ c4.c2&c8 ]3
+   c4.c2g1f+2&f+8r2>c1<b1
+;
+
+/* ch.5 SSG */
+#E=
+   q8 @q0 k0 %0 @0,63,0,0,18,0 %v3,4 %x3 v12 x128
+   o5
+   na1
+   r2 g2&g8g8d8g8a4.b4.a4g4.g4.e8f+8g4.g4.f+8g8>
+   (( r12b12g12e12g12e12<< )) g8.g8.g8a2a2a2a2&a64 
+   na2 g1>c4.d+4f4g1&g8>c4.d+4<g4 
+   na3 g1&g8g+4.g+2b1&b8a4.a4 )f+4d8&d2c2e1 ( 
+   [ c4.c2&c8 ]3 
+   c4.c2g1f+2&f+8r2>c1<b1
+;
+
+/* ch.6 SSG */
+#F=
+   q8 @q0 k0 %0 @0,63,0,0,18,0 %v3,4 %x3 v12 x128
+   o4
+   na1
+   r2 b2&b8b8b8b8b4.b4.b4>e4.e2&e8e4.e2&e8>
+   b12g12e12g12e12c+12<b12g12e12g12e12c+12d2d2d2d2&d64
+;
+
+
+/* 演奏 */
+A;
+B;
+C;
+D;
+E;
+F;
+
+
+#END;
+

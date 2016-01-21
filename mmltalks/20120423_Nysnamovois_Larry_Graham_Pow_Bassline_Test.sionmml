@@ -1,0 +1,13 @@
+#TITLE{Larry Graham "Pow" Bassline Test};
+#REV;
+#SIGN{Cm};
+t140;
+#OPN@3{0 5 // Chopper Bass0
+28 14 15 15 04 25 0 10 1 0
+31 14 10 09 03 34 0 00 2 0
+31 14 09 09 02 23 0 00 3 0
+31 06 05 11 02 00 0 00 7 0};
+#A=o4 l16 v15 b>&c<cc8c8b>&c<c>b>&c<<c32r32g32r32b>&c<b>&c<cc8c8ce*f>fr<e8>er<;
+%6@3 AAAA;
+#END;
+

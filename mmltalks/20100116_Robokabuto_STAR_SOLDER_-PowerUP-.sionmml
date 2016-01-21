@@ -1,0 +1,25 @@
+#TITLE {STAR SOLDER -PowerUP-}; 
+#REV;
+#A=red-eaea>d-<a>d-ed-eaea a-aa-e-c<a-e-c>g-g-ra-4^; 
+#B=[[g-8f<d->d-<<a->d-<a->>g-<d->fd-8<<a->d-|<a->>]<f> 
+e-e-re-re-8.<bbrbrb8.>e-e-re-re-8.g-g-rg-rg-8.]4; 
+#C=[[e-8ed-<aer>]d-8 [d-8e-c<a-e-r]>e-8] 
+e-ee-er<e<ea> e<a>eaea>ea a-a-ga-r<e-<e-a->e-<a->e-a-e-a->d-e- 
+e ee-er<e<ea> e<a>eaea>ea a-a-ga-r<a-<a->e-a-e-a->e-<a->ce-a- [rrd-d-]ccrc4^; 
+#D=rd-<a>d-ed-eaea>d-<a>d-ed-e e-c8<a-8e-8<a->>d-<b-r>c4^; 
+#E=[[d-8d-r<a-rrr>d-rd-<a-8rrr>]< 
+bbfg-rb8<b>g-g-e-frg-fe- e-e-<b>g-rg-8e- bbg->e-re-8<g-]4; 
+#F=[[rrd-8]rrd-d-rrd-8 [rrc8]rrccrrc8] 
+>cd-cd-r4.<d-d-cd->cd- cc<b>cr4.<cc<b->cb->c 
+cd-cd-r4.<d-d-cd->cd- e-e-de-r4.<ccd-e-b->c< e-8g-8e-8g-8e-8.e-8.c8; 
+#G=[a8>a8<]3a8>>d-8 c8.<a-e-8<a-8>a-<a-r>a-8.c8; 
+#H=[d-8>a-d-f<d->d-8< d-8>a-f<d-8>d-8< d-8>a-d-f<d->d-8 b-<d->a-f<d-8>d-8<< 
+b8>b8<b8>b8<b8>bb<b8>b8< b8>b8<b8>b8<b8>e-e-ffg-g-]4<; 
+#I=[a8>a8<a8>a8<a8>aa<a8>a8< a-8>a-8<a-8>a-8<a-8>a-a-<a-8>a-8<] 
+a>ea>d-<< a8>a8<a8>aa<a>ea>e a-e-c<a-<a-8>a-8<a-8>a-a-< a->e-a->e-<< 
+a>ea>d-<< a8>a8<a8>aa<a>ea>e a-e-c<a-<a-8>a-8<a-8>a-a-< a->e-a->e-< 
+a-8>a-a-<a-8>a-a-<a-a-r>a-8 <a-e-<a-; 
+t150 
+%1 @4,63,63,22,63 v15 o5 q8 l16 A$BC; 
+%1 @4,63,63,22,63 v15 o5 q8 l16 D$EF; 
+%1 @8,63,63,00,63 v15 o3 q8 @q1 l16 G$HI;

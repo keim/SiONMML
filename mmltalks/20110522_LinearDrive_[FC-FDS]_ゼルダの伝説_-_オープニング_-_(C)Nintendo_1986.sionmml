@@ -1,0 +1,207 @@
+/*
+   [FC-FDS] ゼルダの伝説 - オープニング - (C)Nintendo 1986 by LinearDrive
+   date:2011-05-22
+   JASRAC:044-5119-8
+*/
+
+
+#TITLE{[FC-FDS] ゼルダの伝説 - オープニング - (C)Nintendo 1986};
+#REV;
+#FPS   600;
+#QUANT  16;
+
+
+/* ゼルダの伝説 波形データ */
+#WAVB 0 {8084888C90989CA4ACB8C0CCE0002C50707C7C78746858483C3024181004F8E0E4E0F804101824303C48586874787C7C70502C00E0CCC0B8ACA49C98908C8884};
+#WAVB 1 {80C030381C242C282014243C3430280810507C4434686C1CC8A8FC301C0C2008F808200C1C30FCA8C81C6C6834447C5010082830343C241420282C241C3830C0};
+#WAVB 2 {8084B0D800101C1C283C3C48404C5868585C444850747C7C6C60544C403C240C0C0C243C404C54606C7C7C745048445C5868584C40483C3C281C1C1000D8B084};
+
+
+//table for amplitude envelope
+#TABLE  0 {                             | 0  }10*8;
+#TABLE  1 { 14,5,6,7,8,9,10,11,10,9,8,7 | 7  }10*8;
+#TABLE  2 { 7,10,10,9,9,8,8,7,7,6,6,5,5,4,4,3,2,1,0 | 0 }10*8;
+#TABLE  7 {                             | 16 }10*8;
+#TABLE  9 { 8                           | 0  }10*8;
+
+#TABLE 30 { (4,32)8,(32)520,(32,0)180   | 0  }*4;
+#TABLE 32 { (24,0)580                   | 0  }*4;
+#TABLE 33 { (24,0)240                   | 0  }*4;
+#TABLE 35 { (32,0)1440                  | 0  }*4;
+
+//table for tone-change
+#TABLE 71 { 1 | 4 }10;
+#TABLE 72 {   | 4 }10;
+
+//table for lfo
+#TABLE 80 {        | 0              };
+#TABLE 81 { (0)240 | (-16)45,(16)45 };
+#TABLE 82 { (0)300 | (-16)45,(16)45 };
+
+
+/* シーケンサ初期化 */
+#M=
+   @0,63,0,0,63,0 %v0,4 %x0
+   v0 x128 q16 @q0 o5 kt0 k0 na0 v16
+;
+
+
+/* RP2A03 SQUARE-1 */
+#A=
+   %1 M l16 o3
+   $
+   @@71 na1
+   a+4 >f4 a+2<  g+4 >d+4 g+2<
+   f+4 >c+4 f+2< f4 >c4 f2
+
+   @@72 na2
+   f8f<a+>f8f<a+>f8f<a+>f<a+>f<a+>  f8f<a+>f8f<a+>f8f<a+>f<a+>f<a+>
+
+   f8f<a+>f8f<a+>f8f<a+>f<a+>f<a+>  d+8d+<g+>d+8d+<g+>d+8d+<g+>d+<g+>d+<g+>
+   c+8c+<f+>c+8c+<f+>c+8c+<f+>c+<f+>c+<f+>  c8c<f>c8c<f>c8c<f>c<f>c<f>
+
+   f8f<a+>f8f<a+>f8f<a+>f<a+>f<a+>  d+8d+<g+>d+8d+<g+>d+8d+<g+>d+<g+>d+<g+>
+   c+8c+<f+>c+8c+<f+>c+8c+<f+>c+<f+>c+<f+>  g+8g+c+g+8g+c+g+8g+c+g+c+g+c+
+
+   f+8f+<b>f+8f+<b>f+8f+<b>f+<b>f+<b>  f8f<a+>f8f<a+>f8f<a+>f<a+>f<a+>
+   g8gcg8gcg8gcgcgc  d8dd c+8c+c+ c8cc <b8bb>
+
+   f8f<a+>f8f<a+>f8f<a+>f<a+>f<a+>  d+8d+<g+>d+8d+<g+>d+8d+<g+>d+<g+>d+<g+>
+   c+8c+<f+>c+8c+<f+>c+8c+<f+>c+<f+>c+<f+>  c8c<f>c8c<f>c8c<f>c<f>c<f
+
+   b8beb8beb8bebebe > c8c<f>c8c<f>c8c<f>c<f>c<f
+   b8beb8beb8bebebe > c8c<f>c8c<f>c8c<f>c<f>c<f>
+
+   f+8f+<b>f+8f+<b>f+8f+<b>f+<b>f+<b>  f8f<a+>f8f<a+>f8f<a+>f<a+>f<a+>
+   g8gcg8gcg8gcgcgc  d8dd c+8c+c+ c8cc <b8bb>
+;
+
+
+/* RP2A03 SQUARE-2 */
+#B=
+   %1 M l16 o5
+   $
+   @@71 na1
+   d2&d8d8d8d8 cc c2&c4&c24r12
+   c+2&c+8c+8c+8c+8 cc c2&c4&c24r12
+
+   r1 r1
+
+   [a+4 f4.a+8 a+>cdd+  f2&f4&fr8.<]2
+
+   d4 d12d12c12 d8.d dd+fg
+   g+8.a+ a+>cdd+ f4 <g+12a+12>c12<
+   f+8.f+ f+g+a+>c c+6c+12 c+12c12<a+12>
+   c+6<a+12 g+12g+12f+12 g+6g+12 g+12f+12g+12
+
+   f+8f+f f+8f+g+ a+4 g+8f+8
+   f8fd+ f8ff+ g+4 f+8f8
+   e4 e8ef g8ga a+8>c8<
+   <a8aa g+8g+g+ g8gg f+8f+f+>
+
+   d4 d12d12c12 d8.d dd+fg
+   g+8.a+ a+>cdd+ f4 <g+12a+12>c12
+   c+2.e4
+   d+4 c2 <a4
+
+   << @@72 na2
+   [
+     e12a+12>c+12 e12a+12>c+12 e2
+     f8r8<f12f12f12 f2<
+   ]2
+   >>
+
+   @@71 na1
+   f+2.b4
+   a+4 f2 c+4
+   e4 e8ef g8ga a+8>c8<<
+   a8aa g+8g+g+ g8gg f+8f+f+
+;
+
+
+/* RP2A03 TRIANGLE */
+#C=
+   %1 M l16 o3
+   @8 na7
+   $
+   q16 @q0 @ph255
+   a+1 g+1 f+1 @q1 f1
+
+   q12 @q0 @ph0
+   [a+ra+a+]4 [a+ra+a+]4
+
+   [a+ra+a+]4 [g+rg+g+]4
+   [f+rf+f+]4 [frff]4
+
+   [a+ra+a+]4 [g+rg+g+]4
+   [f+rf+f+]4>[c+rc+c+]4<
+
+   [brbb]4    [a+ra+a+]4>
+   [crcc]4    fr<ff frff frff frga
+
+   [a+ra+a+]4 [g+rg+g+]4
+   [f+rf+f+]4 [frff]4
+
+   [eree]4    [frff]4
+   [eree]4    [frff]4
+
+   [brbb]4    [a+ra+a+]4>
+   [crcc]4    fr<ff frff frff frga
+;
+
+
+/* RP2A03 NOISE */
+#D=
+   %1 M l16 o0
+   @9 @ph-1 na9 kt3
+   $
+   r1 r1
+   r1 r1
+   [crcc]4 [crcc]4
+   [crcc]4 [crcc]4 [crcc]4 [crcc]4
+   [crcc]4 [crcc]4 [crcc]4 [crcc]4
+   [crcc]4 [crcc]4 [crcc]4 [crcc]4
+   [crcc]4 [crcc]4 [crcc]4 [crcc]4
+   [crcc]4 [crcc]4 [crcc]4 [crcc]4
+   [crcc]4 [crcc]4 [crcc]4 [crcc]4
+;
+
+
+/* RP2C33 FDS */
+#E=
+   %4 M l16 o5 @f96
+   $
+   @0 na30 np81
+   a+2r8f8f8a+8   g+f+g+2.r8
+   a+2r8f+8f+8a+8 aga2.r8
+
+   <
+   @1 na32 np80
+   c+2c+2 c+2c+2
+   [r4 a+4 f2  r8a+8 na33 a+>cdd+ na32 f2<]2
+   >
+
+   @2 na35 np82
+   a+8r8 f4&f12r24 a+8 a+>cdd+  f4.r8 r8f8 f12f+12g+12
+   a+4.r8 r6a+12 a+12g+12f+12  g+12r12f+12 f4.r8 f4
+   d+8d+f f+4.r8 f8d+8  c+8c+d+ f4.r8 d+8c+8
+   c8cd e4.r8 g4  fr<ff frff frff f8f8
+   a+8r8 f4&f12r24 a+8 a+>cdd+  f4.r8 r8f8 f12f+12g+12
+   a+4.r8r4>c+4  c8r8 <a4.r8 f4
+   f+4.r8r4a+4   a8r8 f4.r8 f4
+   f+4.r8r4a+4   a8r8 f4.r8 d4
+   d+4.r8r4f+4   f8r8 c+4.r8<a+4>
+   c8cd e4.r8 g4  fr<ff frff frff f8f8
+;
+
+
+/* 再生 */
+t90
+@v48 A;
+@v48 B;
+@v64 C;
+@v48 D;
+@v56 E;
+
+
+#END;

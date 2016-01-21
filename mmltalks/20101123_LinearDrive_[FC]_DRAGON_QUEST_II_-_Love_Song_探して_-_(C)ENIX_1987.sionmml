@@ -1,0 +1,144 @@
+/*
+   [FC] DRAGON QUEST II - Love Song 探して - (C)ENIX 1987
+   original  MML by Yumi. http://dic.nicovideo.jp/mml_id/4258
+   translate MML by LinearDrive
+   date:2010-11-24
+   JASRAC:056-1911-4
+*/
+
+
+#TITLE{[FC] DRAGON QUEST II - Love Song 探して - (C)ENIX 1987};
+#REV;
+#QUANT  8;
+#FPS  600;
+
+//table for amplitude envelope & tremolo
+#TABLE  1 { (32,80)20,(80,64)60,(64)120 | (64,48)30,(48,80)80,(80,64)40 };
+#TABLE  2 { (80,64)80,          (64)120 | (64,48)30,(48,80)80,(80,64)40 };
+#TABLE  8 {           |  0 };
+#TABLE  9 { (8)400    |  0 };
+
+//table for tone-change
+#TABLE 11 {       | 4 };
+#TABLE 12 { (2)20 | 4 };
+#TABLE 19 {       | 1 };
+
+
+/* 矩形波１ */
+#A=
+   %1 @4,63,0,0,63,0 o6 l8 q8 @q0 v16 x128 s0 na1 _na9 @@11 _@@19 
+   q8 d4
+   $
+   q6 b4. b4 q4bbb q7bbb q5bbb q8 a& q3 b
+   q8 a4 q3 g q8 g1&g4r g a
+   q3 b- q5 b-4 b-4 b-b-b- q8b-& q3ar q6 g4. q5 g g
+   q8 g-& q3gr q8 a1&a4r q5 d d
+   q8 e4. e e q6 e q3 g- q8 g2&g4r q5 g g
+   q4 d4 d d q8 g q5 g q3 a q8 b2&br q5 b b b
+   q8 >c& q3 <b a q6 e4. q5 b b q8 >c& q3 <b a q8 e2&er
+   q5 g q8 g q3 e q5 gggg q6 a4. q8 g1&g4.r4
+   q6 e-4 e-4 e-4 q4 g  q8 f2..r
+   q6 g4. g4 g4   q4 b- q8 a2. r q8 g a
+   q5 b- b-r b- q8 b- q5 a g b- q8 a q5 ar b- q8 a q5 a g f
+   r gr f e- q8 e- q5 f g q8 g- q5 gr q8 a2 r
+   q6 e-4 e-4 e-4 q4 g  q8 f2..r
+   q6 g4. g4 g4   q4 b- q8 a2..r q8 g16 a16
+   q4 b- b-r b-r < g b- g b-r > q8 d4 c4 <b-> f16 g16
+   q4 a ar ar < a b- a b-r > q8 a4 g4 f e-16 f16
+   q6 g4 q4 g grr q8<b-4>c4. q4<b-4> g- q8 g- q4 g
+   q7 g-2 g2 a2.. q4 d
+   q6 b4. a4. q8 g1 r q4 d
+   q6 b4. a4. q8 g1 r q4 d
+   q6 b4. a4. q8 g1&g2r4 g2
+   g1&g1
+   na2 @@12
+   g12g12 e-12e-12 g12g12 e-12e-12 c12c12 e-12e-12
+   c12c12 <a12a12> c12c12 <a12a12  g12g12 a12a12
+   na1 @@11
+   b1&b2.
+   >d4
+;
+
+
+/* 矩形波２ */
+#B=
+   %1 @4,63,0,0,63,0 o5 l8 q8 @q0 v16 x128 s0 na2 _na9 @@12 _@@19 
+   r4
+   $
+   q4
+   [ r d q8 b q4 d ]4
+   [ r g q8 b q4 b ]2  r <b4 r brbr>
+   [ r g q8 g q4 g ]3  r g q8 b- q4 b-
+   r a q8 a q4 g-   r g- q8 g- q4 g-   r g- q8 c q4 g-   r g- q8 g- q4 g-
+   [ r e q8 e q4 e ]2  [ r e- q8 e- q4 e- ]2
+   r c- q8 g q4 c-   r c- q8 g q4 d   [ r e q8 a- q4 e ]2
+   r c q8 e q4 c   r c q8 g q4 c   r c q8>e< q4 c   r c q8 c q4 c
+   r e q8 e q4 g   r e q8 e q4 e   [ r c- q8 b q4 c- ]2 < [ r b q8 b q4 b ]2 >
+   q6 g4 g4 g4 q4 b- q8 a2..r >
+   q6 e-4. e-4 e-4 q4 g q8 f2.r < e-&f q4
+   [ r d q8 b- q4 d ]2   r c q8 a q4 c   r c q8 b- q4 a
+   r <b-> q8 b- q4 a   r g q8 a q4 b-   r <a> q8>c< q4 g-   r g- q8>c< q4 g-
+   q6 g4 g4 g4 q4 b- q8 a2..r >
+   q6 e-4. e-4 e-4 q4 g q8 f2..r < e-16&f16
+   q4 g gr gr <b->d<b->d r q8 b-4 a4 g a16 b-16 >
+   q4 c cr cr <f g f g r > q8 c4<b-4 a g16 a16
+   q6 b-4 q4 b- b-rr q8 g4 a4. q4 g4 a q8 a q4 b-
+   a c q8<a> q4 c   e c q8 e q4 c   [ g- d q8 c q4 d ]2 >
+   q8 e q4 g e q8 g- q4 d g- < q8 b1 r4 >
+   q8 e q4 g e q8 g- q4 d g- < q8 b1 r4 
+   q8 c q4 e g q8 d q4 g- a  q8e q4<b> q8e q4<b> q8e q4<b> q8e q4<b> q8e<b>c r4.r2 <
+   a4 >c4 e-4 g4 >c4 <g4 e-4 c4>
+   e-12e-12 c12c12 e-12e-12 c12c12 <a12a12> c12c12 <
+   a12a12 e-12e-12 a12a12 c12c12 e-12e-12 c12c12
+   _na8
+   g1&g2.
+   r4
+   _na9
+;
+
+
+/* 三角波 */
+#C=
+   %1 @8,63,0,0,63,0 v16 o5 l8 q8 @q1
+   o5 q8 d4 <<
+   $
+   q4
+   [ g>g   q8>>d<< q4 g<  ]4 >
+   [ e>e   q8>d<   q4 e<  ]2 eeeeeeee
+   [ e->e- q8>e-<  q4 e-< ]4
+   [ d>d   q8>c<   q4 d<  ]2  d>d q8 e q4 d<  d>d q8>c< q4 d<
+   [ c>c   q8g     q4 c<  ]4 <
+   [ g>g   q8>b<   q4 g<  ]2 [ a->a- q8>>d<< q4 a-< ]2
+   [ a>a   q8>>c<< q4 a<  ]3 a>a q8>e< q4 a 
+   [ d>c   q8>c<   q4 c<  ]2 < [ g>g q8>>d<< q4 g< ]2   g>g q8>g< q4 g<   g>g q8>d< q4g
+   c b- c b- c b- c f& f c f c f c f b-
+   c b- c b- c b- c f& f c f c f c f c
+   q3
+   [ gg   q8g  q3g  ]2 [ ff q8f q3f ]2
+   [ e-e- q8e- q3e- ]2 [ dd q8d q3d ]2
+   q4
+   c b- c b- c b- c f& f c f c f c f b-
+   c b- c b- c b- c f& f c f c f c f c
+   q3
+   [ gg   q8g  q3g  ]4
+   [ ff   q8f  q3f  ]4
+   [ e-e- q8e- q3e- ]4
+   [ dd   q8d  q3d  ]4
+   q8 c> q4eg q8<d> q4g-a< q8 e4&erererer
+   q8 c> q4eg q8<d> q4g-a< q8 e4&erererer
+   q8<a8 q4>>ce<< q8b>> q4dg-< q8 c4&crcrcrcr d8. r2. r16
+   f4 r2. r1
+   r1r1
+   >d1&dr<<grgr
+   >>d4<
+;
+
+
+/* 再生 */
+t140
+A;
+B;
+C;
+
+
+#END;

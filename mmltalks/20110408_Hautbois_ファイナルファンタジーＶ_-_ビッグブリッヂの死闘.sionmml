@@ -1,0 +1,262 @@
+/*
+    ファイナルファンタジーＶ - ビッグブリッヂの死闘
+    1992 スクウェア
+    [SFC][SQUARE][FinalFantasyV]
+*/
+
+#TITLE{ファイナルファンタジーＶ - ビッグブリッヂの死闘};
+#REV;
+#FPS  600;
+#QUANT  16;
+#EFFECT0{reverb70,40,70,20};
+#EFFECT1{autopan1,100};
+
+//Organ
+#OPN@000
+{   6,3,
+　　31, 0, 0, 4, 1,33, 0, 2, 0, 0
+    31, 0, 0,10, 1, 2, 0, 1, 3, 0
+    31,12, 0,10, 1, 2, 0, 4, 7, 0
+    31,16, 0,12, 6, 2, 1, 8, 3, 0};
+
+//E.Bass
+#OPN@001
+{   2, 5,  
+    31, 8, 0, 4, 3,34, 0, 1, 3, 0
+    31,14, 6, 9, 2,42, 0, 2, 0, 0
+    31, 8, 3, 4, 2,20, 0, 1, 7, 0
+    31,12, 5, 8, 2, 0, 0, 2, 0, 0};
+
+//Dis.GT
+#OPN@002
+{   0,5,
+　　31, 4, 1, 0, 0,11, 0, 3, 0, 0
+    18, 1, 4, 8, 0,23, 0,15, 0, 0
+    31, 4, 2, 0, 0,24, 0, 5, 1, 0
+    31,12, 0, 8, 1, 0, 0, 1, 7, 0};
+
+//Brass
+#OPN@003
+{   5,7,
+    31, 7, 0,10, 2,24, 0, 2, 0, 0
+    31, 2, 0,10, 2, 0, 0, 4, 0, 0
+    28, 2, 0,10, 2, 2, 0, 1, 0, 0
+    26,10, 5,15,10, 0, 0, 2, 0, 0};
+
+#OPM@011{
+//  AL FB
+    1,  0,
+//  AR DR SR RR SL TL KS ML D1 D2 AM
+    10,31, 0,15,15,38, 0, 0, 3, 3, 1,
+    30,31, 0,15,15, 6, 0,15, 7, 2, 1,
+    29,15, 0,10,15, 6, 0, 0, 4, 0, 0,
+    28,16, 0,15,15, 1, 1, 0, 0, 0, 1};
+
+#OPM@012{
+//  AL FB
+    4,  7,
+//  AR DR SR RR SL TL KS ML D1 D2 AM
+    31,22, 0,12, 1, 0, 0,15, 6, 1, 0,
+    29,18,15,12, 9, 2, 0, 0, 7, 2, 0,
+    26,26,20, 8, 9,20, 0, 0, 4, 3, 0,
+    29,17,16, 9, 2, 1, 0, 0, 0, 0, 0};
+
+#OPM@013{
+//  AL FB
+    6,  7,
+//  AR DR SR RR SL TL KS ML D1 D2 AM
+    31,20,12,15, 0, 0, 0,15, 0, 0, 0,
+    31,23,22,15, 6, 6, 0, 0, 1, 1, 0,
+    31,20,12,15, 4, 0, 0, 0, 7, 2, 0,
+    31,20,12,15, 4, 0, 0, 0, 3, 3, 0};
+
+#TABLE 9 {(0,-800)120|-800};
+
+#OPM@014{
+//  AL FB
+    4, 6,
+//  AR DR SR RR SL TL KS ML D1 D2 AM
+    31, 5, 6, 0, 5, 0, 2,15, 7, 0, 0,
+    31,10, 4, 7, 8,19, 2, 3, 1, 0, 0,
+    31,20, 6, 3, 3, 0, 2, 1, 7, 0, 0,
+    31,25, 6, 7,10, 6, 3, 7, 0, 0, 0};
+
+//=== Organ & Brass ===
+#A=
+%4 @0 na0 s30 v8 @v128,100 x60
+%6 @0
+o4 l16 q16 @v128,100[ cfg>c fg>cf gfcf g>c<gf c<gfc< gfc<g> ] 8
+o6 l4 q14 r@v128e-d rdd- rd-c
+o4 l16 q16 @v128,100[ cfg>c fg>cf gfcf g>c<gf c<gfc< gfc<g> ] 2
+o6 l4 q14 r@v128e-d rdd- rd-c rc<b
+l1[r]4
+$
+@3 o5 l8 [ q15fq6ga-f b-a-gf >c<q15f>q6d-<q15f >q6c<q14a-4a- 
+           q6b-q15e>q6c<q15e q6b-q14g4g | a-gfg a-b-a-g ] a-b->cd- e-d-cd-
+o6 e-1&q14e-4 l8 cdl4e-g q12f1&f1
+
+o5 l4 q15 b-.f.e- d.e-.d c.f.g a.>c.d
+o6 l8 e-4dc4de-2. l4e-f gl8fe-4fg1r4
+o6 l8 a4 f#d#<a>cdl4e-e-c8fe-d1&l8dr4.r2
+l1[r]6
+@0 o6 l4 q14 d-.c.<b ra-gf#
+l8 q12 [@v128fg@v98fg@v68fg@v38fg @v128ef#@v98ef#@v68ef#@v38ef#]@v128
+l1rr
+;
+
+//=== Organ ===
+#B=
+%4 @0 na0 s30 v8 @v128  x60
+%6 @0
+l1. [r]4
+l1. [r]4
+o5 l4 q14 rb-a raa- ra-g
+l1. [r]2
+o5 l4 q14 rb-a raa- ra-g rgg-
+o5 l8 q14 ffrf a-frf a-fb-b l24b-bb-l8a-fe- ffrf a-gfr
+r1
+$
+o6 q16 c1&c1 <b-1 l2a-b-> c1&c1 <b-1 l16a-d-fa-fcfa- b-e-gb-ge-gb-
+o6 q16 c1&c1 <b1&b2. l48defgab> cdefga l8b-ab-f gfde- fefd e-c<b->d
+o6 q16 c1&c1 c4l8<b-a-4b->c4&c2l4cd e-l8dc4dq12e-1r4
+o5 q15 l4 a.>c.e-.g-.a>c d8l16d-c<bb-aa-gg-fee-dd-c l8r<gb>dgfd<b
+
+o6 l4 q15 a-q6gq15f#q6g l16q15a-e-ce-gd<b>df#c#<a#>c#gr8.
+o7 l16 q15 c<ge-g b-fdf a-e-ce- gd<b>d fc<a->c e-c<g>c e-c<g->c d<bgd
+o5 l8 q14 ccrc e-crc e-cfg- l24fg-fl8e-c<b-
+o5 l4 q14 e-.d.d- r<b-aa-
+l8 q12 [@v128ga@v98ga@v68ga@v38ga @v128g-a-@v98g-a-@v68g-a-@v38g-a-]@v128
+o5 l8 q14 ffrf a-frf a-fb-b l24b-bb-l8a-fe-
+;
+
+//=== Organ ===
+#C=
+%4 @0 na0 s30 v8 @v128 x64
+%6 @0
+l1. [r]4
+l1. [r]4
+o5 l4 q14 ree- re-d rdd-
+l1. [r]2
+o5 l4 q14 ree- re-d rdd- rd-c
+o5 l8 q14 ccrc e-crc e-cff fe-c<b-> ccrc e-dcr
+r1
+$
+o5 q16 f1&f1 e1 l2fg f1&f1 e1 l16d-<fa->d-<a-fa->d- e-<gb->e-<b-gb->e-
+o5 q16 l1 g&g g&g2. l48cdefga b>cdefg l4d.c.<b-b-.f.g a1&a1
+o5 q14 l8 e-4e-e-4e-e-4&e-2 l4e-f gl8gg4gg4&g1
+o5 q15 l4 d#.f#.a.>c.d#f# f8l16ee-dd-c<bb-aa-gg-fe>c<<l4gfe-d
+
+o6 l4 q15 c<q6bq15a#q6b l16q15>c<a-e-a- bgdg b-g-d-g- br8.
+o6 l16 q15 e-c<g>c d<b-fb-> c<a-e-a- bgdg a-fcf ge-ce- ae-ce- gd<bg
+o5 l8 q14 ggrg b-grg b-g>cc c<b-gf
+o5 l4 q14 a.a-.g ree-d
+l8 q12 [@v128d-e-@v98d-e-@v68d-e-@v38d-e- @v128cd@v98cd@v68cd@v38cd]@v128
+o5 l8 q14 ccrc e-crc e-cff fe-c<b->
+;
+
+//=== E.Bass ===
+#D=
+%4 @1 na0 s30 v16 @v120 x90
+%6 @1
+o2 l1. q16 fe-d-e-1&e-4 >l32q16e-dd-c<l48bb-aa-gg-
+o2 l8 q14 [ ff>f<f f>f<ff ga-b->c< ff>f<f f>f<ff e-ce-g ]
+o2 l8 q14 ff>l4c<b rbb- rb-a< 
+o2 l8 q14 ff>f<f f>f<ff ga-b->c< ff>f<f f>f<ff e-ce-g
+o2 l8 q14 ff>l4c<b rbb- rb-a raa-
+o2 l8 q14 ffrf a-frf a-fb-b b-a-fe- ffrf a-gfr
+r1
+$
+o2 l8 q14 [f4.>f4c<b-a- f4.>f4c<b->d- c4.<g4.b-4>d-4.<a->e-<b-4-g]
+o3 l8 q14 [c]16
+o2 l4 q14 g.>d.<bg.a.b
+o2 l8 q14 [b-]16
+o2 l4 q14 f.>c.<af.g.a
+o2 l8 q14 [a-]14 b-b-
+o3 l4 q14 c.g.e-c.<g.>c<a.>c.e-.g-.e-c
+o2 l8 q14 [gg>g<]3r4.r2
+o2 l4 q14 [rg]4 cd8e-4.gfg8a.b4
+o2 l8 q14 ccrc e-crc e-cfg- fe-c<b-
+o2 l4 q14 f.e.e- c>c<bb- l1q16[ag#]
+o2 l8 q14 ffrf a-frf a-fb-b b-a-fe-
+;
+
+//=== D.GT ===
+#E=
+%4 @2 na0 s30 v8 @v100 x100 @q1
+%6 @2
+o4 l1. q16 fe-d-e- 
+o4 l16 q15 [[f8ff]6]4
+o5 l4 q14 rc<b rbb- rb-a
+o4 l16 q15 [[f8ff]6]2
+o5 l4 q14 rc<b rbb- rb-a raa-
+o4 l8 q14 ffrf a-frf a-fb-b b-a-fe- ffrf a-gfr
+r1
+$
+o4 l16 [[q14f8q12ff frff frff ffff] q14e8q12ee eree eree eed-d- d-4.e-e-e-2]
+   l8[c]16 [g]16 [b-]16 [f]12 l4fg l8[a-]16 [c]16 [a]16 [g]9 r4.r2
+o4 l4 q14 [rg]4 c2..l16cc c1
+o4 l8 q14 ccrc e-crc e-cfg- fe-c<b-
+l1[r]6
+o4 l8 q14 ffrf a-frf a-fb-b b-a-fe-
+;
+
+//=== Cymbal ===
+#F=
+%2 @0,31,30,17,17,3 x100 @v128 v12 @q1 q16 o5 @f128,3,55,15,0,0,100,10 @p0
+l1. [a]4
+l4 [rarara]4
+[raa]3
+l4 [rarara]2
+[raa]4
+a1l4[ra]4
+
+%6 @14 v16 np @p60 40 @f o6
+l16 [q16c8q1cc]4
+$
+%6 @14 v16 np @p60 40 @f o6
+l16 [[q16c8q1cc]4]23 r1
+r4
+%2 @0,31,30,17,17,3 x100 @v128 v12 @q1 q16 o5 @f128,3,55,15,0,0,100,10 @p0
+l2aaaa4
+%6 @14 v16 np @p60 40 @f o6
+l8 [q1cq16cq1cc]4
+%2 @0,31,30,17,17,3 x100 @v128 v12 @q1 q16 o5 @f128,3,55,15,0,0,100,10 @p0
+a1&a4a2a4 l4a.a.a l1[a]5
+a1&a4a2a4
+;
+
+//=== Drum ===
+#Z=@11np  @p  0 o1a;
+#S=@12np  @p-20 o4b;
+#L=@13np9 @p-60 o4c;
+#M=@13np9 @p 20 o4g;
+#N=@13np9 @p 60 o5c;
+
+#G=
+@v128v16x128 q15s63%6@q1
+l1. [r]4
+l16 [ L8LL N8LL M8|LL S8LL ]6 SS SSSS
+l8 ZZS4Sl24NML l8ZZSZSS ZSSl16NMl8Sl24NML 
+l16 [ L8LL N8LL M8 LL S8LL ]3
+l8 ZZS4Sl24NML l8ZZSZSS ZSSl16NMl8Sl24NML l8ZSSNML
+l8 SSZS rZrZ l16r8NNr8MM r8LLl8ZS SSZS NMLr
+r1
+$
+l4 [ZS8ZZ8S]22 ZS8ZS8Z8l16ZZS1
+l4 [rS]4 [ZS8ZZ8S8Z8]2
+l8 SSZS rZrZ l16r8NNr8MM r8LLS4.NNN4MMM4LLL4 l8NZMZLZ
+l4 [Z]16
+l8 SSZS rZrZ l16r8NNr8MM r8LLl8ZS
+;
+
+t180
+A;
+B;
+C;
+D;
+E;
+F;
+G;
+
+#END;
+

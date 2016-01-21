@@ -1,0 +1,178 @@
+/*
+「ｇｄｇｄ☆パラダイス」ファミコン風Ver.
+*/
+
+#TITLE{「ｇｄｇｄ☆パラダイス」ファミコン風Ver.};
+
+// Bass
+t145 %1 kt-2
+
+// Intro
+@8,63,0,0,63 o4 l8 q8 @q11 v18
+ffr2ra-& a-4a-4b-b-r<c& c1>
+e-gb-f& fa<c>f
+
+// A
+[o4@q11c.@q1c16r@q11c4>g@q1a16<@q11c16&c]3
+ o4@q11c.@q1c16r@q11c4>g<@q1c16e16d16e16
+[o4@q11c.@q1c16r@q11c4>g@q1a16<@q11c16&c]
+o4e-e-r4ffr>g& ggg2a-4
+
+// B
+a.@q1a16r@q11a4e@q1g16@q11a.
+<e.@q1e16r@q11e4>b<@q1d16@q11e.
+f.@q1f16r@q11f g.@q1g16r@q11g
+c.@q1c16r@q11c4>g<@q1d16e16d16>b16@q11
+a.@q1a16r@q11a4e@q1g16@q11a.
+<e.@q1e16r@q11e4>b<@q1d16@q11e.
+f.@q1f16r@q11f g-.@q1g-16r@q11g&
+g.@q1g16r@q11g4d@q1f16@q11g.>
+a-.@q1a-16r@q11g&g4@q0<<po8g&>>g
+
+// C
+o4 @q3
+[c<c16c16]7 >>b<b16b16>
+[a<a16a16]5 >b<b16b16c<c16c16>d-<d-16d-16>
+[d<d16d16]5 >c<c16c16>>b<b16b16>a<a16a16>
+[g<g16g16]5 >a-<a-16a-16>a<a16a16>b<b16b16
+[c<c16c16]8 >[f<f16f16]3 >ff& f2.<po8f&>f
+c<c16c16>cf&f<f16f16>f>g& ggr4g4g4
+<c4.c&c2& c1
+
+@q11 o4
+ffr2ra-& a-4a-4b-b-r<c& c1>
+e-gb-f& fa<c>f fa<c>g& gb<d>g
+r4>a1& a1
+
+;
+
+// Melo
+t145 %1 kt-2
+
+// Intro
+@7,60,0,0,30 o6 l8 q4 v12
+r4ccccrd16&e-16& e-4d4cdrq8c& c1
+v5l16o5ge-d>b-ge-a8& a<cfga<cfg
+
+// A
+r8@4,62,0,0,31 o6 q4 l8 v13 @lfo12,1 mp0,12,12,30 ma0,16,12,30
+gggg4gg  a-32*a16.ggg4a4g
+rfffffff ef4q7g-32*g16.&g2q4
+rggggggg a-32*a16.g4a4g4r
+v7>b-b-<v12b-b-agfa& a&g16&a16&q8g2v7d4
+
+// B
+v13o6q4
+r4aab<c&c4 >b-32*b16.a4g4efg
+aaaaddaa& ag&g2.
+r4eeaab<c d-32*d16.d>bg&g4r4
+a4<c4>a<c4q8d-32*d16.& d1
+q6v8>>b.b16rb&b4 
+@4,62,0,0,30
+v13o6q4g<c
+
+// C
+d4cd4g-32*g..e& e2&eedc
+>bbrab<cd>b32*<c16.& c2&cr>a<d-
+e4f>a&a2 <e4f>a&a4.<c16c16
+>bbrabb<cd-32*d16.& d2&dr>g<c
+d4cd4g-32*g..e& e2&ered
+c4cc>q6a.<c.f& f2q4g4f4
+e4.f&f4.g& ggff>bb<d4
+q8d-16*d4&d16c&c2& c2.&cr
+
+@7,60,0,0,30 o6 l8 q4 v12 mp0,0 ma0,0
+r4ccccrd16&e-16& e-4d4cdrq8c& c1
+v5l16o5ge-d>b-ge-a8& a<cfga<cfg
+       fc>agfcd8& dgab<dgab
+o6q8r4d-1& d-1
+
+;
+
+// Sub
+t145 %1 kt-2
+
+// Intro
+@7,60,0,0,30 o5 l8 q4 v8 k-8
+r4aaaar<c& c4>b-4a-b-rq8g& g1
+l16o6v10q4e-d>b-ge-df8& fga<cfga<c
+
+// A
+o5q1v6er>gr<cerere>gr<crer
+      dr>grb<drdrd>grbr<dr
+      cr>fra<crcrc>frar<cr
+      er>gr<cerere>gr<crer
+      er>gr<cerere>gr<crer
+      dr>grb<drdrd>grbr<dr
+l8o5q4gg<v8ggfedc& cdq8d2>q4b4
+
+// B
+@5,60,0,0,32
+o5v5l16ec>a<ec>a<ec>a<ec>a<ec>a8
+      <e>bg<e>bg<e>bg<e>bg<e>bg8
+      <fc>a<fc>a<fc>b<gd>b<gd>b8
+      <gecgecgecgecgd>b8<
+      ec>a<ec>a<ec>a<ec>a<ec>a8
+      <e>bg<e>bg<e>bg<e>bg<e>bg8
+      <fc>a<fc>a<fc>a<g-c>a<g-c>gb
+      <dc>g<dc>g<dc>g<dc>g<dg<cd
+      v8q8e8.er8d8&d2
+
+// C
+@6,63,0,0,34
+o6v8q2[c>))c((e))c((g<c>))c((<c>))c((<c>e))c((g))c|((<c>))c((] ((<d>))c((<
+      [c>))c((e))c((a<c>))c((<c>))c((<c>e))c((a))c|((<c>))c((] ((<d->))d-((<
+      [d>))d((f))d((a<d>))d((<d>))d((<d>f))d((a))d((<d>))d((]<
+      [d>))d((g))d((b<d>))d((<d>))d((<d>g))d((b))d((<d>))d((]<
+      [c>))c((e))c((g<c>))c((<c>))c((<c>e))c((g))c((<c>))c((]<
+       c>))c((f))c((a<c>))c((<c>))c((<c>f))c((a))c((<c>))c
+o7v10l32q4fdc>a-fdc>a-fdc>a-fdc>a-
+       fa-<cdfa-<cdfa-<cdfa-<cd
+o6v7q2l16c>))c((e))c((g<c>))c((<c>))c((<c>f))c((a))c
+v10q4o6l8g&
+ggff>bb<dr q8f4.e&e2& e2.&e8r8
+
+@7,60,0,0,30 o5 l8 q4 v8 k-8
+r4aaaar<c& c4>b-4a-b-rq8g& g1 
+l16o6v10q4e-d>b-ge-df8& fga<cfga<c
+       >agfc>agg8& gab<dgab<d 
+o6q8r4a-1& a-1
+
+;
+
+// Noise
+t145 %1@9,63,0,0,63@ph-1o0l16q8v8
+
+// Intro
+kt15@q8crcrr2r8kt8dr r4drr8drdrr8dr
+kt0v1@q1 [c32c32c32c32(]8 v8
+kt15@q8crcrr8cr r8crkt8dddd
+
+// A
+[kt15@q8crkt0@q9|cc]16 v6d8 v8
+[kt15@q8crkt0@q9cc]8
+kt15@q8crcrkt8ddddkt15crcrkt8ddkt15cr
+r8kt8drdrr8kt15crkt8drdddd
+
+// B
+[kt15@q8crkt0@q9cckt8@q8drkt0@q9|cc]8 v6 d8 v8
+[kt15@q8crkt0@q9cckt8@q8drkt0@q9|cc]6 v6 d8 v8
+kt15@q8crkt0@q9cckt8@q8drkt0@q9cc
+kt15@q8crkt0@q9v6d8v8kt8@q8drkt0@q9v6d8v8
+kt8@q8dkt15cckt8dkt15cckt8dkt15c
+kt0v1@q1 [c32c32((]8
+
+// C
+[kt15@q8v8ckt0@q9v6cd8kt8@q8v8dkt0@q9v6cd8]16
+[kt15@q8v8ckt0@q9v6cd8kt8@q8v8dkt0@q9v6cd8]6
+[kt0@q9v6dcd8]4
+[kt15@q8v8ckt0@q9v6cd8kt8@q8v8dkt0@q9v6cd8]
+[kt0@q9v6dcd8]4
+kt8@q8v8drr4drr2 kt0v1@q1[c32c32c32c32(]8 v8
+
+kt15@q8crcrr2r8kt8dr r4drr8drdrr8dr
+kt0v1@q1 [c32c32c32c32(]8 v8
+kt15@q8crcrr8cr r8crkt8drdd
+kt15@q8crcrr8cr r8crkt8dddd
+kt0v10@q1r4 [c32c32c32c32)]16;
+

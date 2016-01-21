@@ -1,0 +1,186 @@
+/*
+   [AC] MAPPY - BONUS ROUND BGM - (C)namco 1983 by LinearDrive
+   date:2011-04-18
+   JASRAC:099-8506-9
+*/
+
+
+#TITLE{[AC] MAPPY - BONUS ROUND BGM - (C)namco 1983};
+#REV;
+#TMODE{unit=100};
+#FPS   60;
+#QUANT 16;
+
+
+/* MAPPY 波形データ */
+#WAVB  0 {6060606060606060606060606060606080808080808080808080808080808080};
+#WAVB  1 {80809090A0A0B0B0C0C0D0D0E0E0F0F000001010202030304040505060607070};
+#WAVB  2 {80A0B0C0E0E0C0D01020200020F02010F0F010E000E0D0E02040202040506070};
+#WAVB  3 {30506050402000000020405060503000C0A090A0B0D0F0F0F0D0B0A090A0C0F0};
+#WAVB  4 {F020405060504020F0C0A0908090A0C0F03050605030F0B0908090B0F060F080};
+#WAVB  5 {20404020F0F0003050605020E0D0D0F0101000C0908090B0E0F0F0C0A0A0C0F0};
+#WAVB  6 {F0604010406020F0407050002030F0A0005010C0D0F0A080B000D090B0E0B090};
+#WAVB  7 {6060F0F06060F0F06060F0F06060F0F08080F0F08080F0F08080F0F08080F0F0};
+
+
+/* テーブルエンベロープ */
+#TABLE  0 {                                      | 0 }*8;
+#TABLE  1 { (12)2, 11,10,9,8,7,6,5,4,3,2,1,0     | 0 }*8;
+#TABLE  2 { (12)79,11,10,9,8,7,6,5,4,3,2,1,0     | 0 }*8;
+
+#TABLE 11 { (9)2, 0                              | 0 }*8;
+#TABLE 12 { (7)6, 0                              | 0 }*8;
+#TABLE 13 { (7)12,0                              | 0 }*8;
+
+#TABLE 21 { (7)12,0                              | 0 }*8;
+#TABLE 22 { (7)6, 0                              | 0 }*8;
+
+#TABLE 31 { 6,10,(12)2,11,10,9,8,7,6,5,4,3,2,1,0 | 0 }*8;
+
+
+/* シーケンサ初期化（位相非同期モード） */
+#M=
+   %4 @0,63,0,0,63,0 %v0,4 %x0
+   @ph255
+   v0 x128 q16 @q0 o5 kt0 k0 s0 na1 _na0 v16
+;
+
+
+/* WSG ch.1 (iv12) */
+#A=
+   M l16 @1 o6 k-32
+   na1
+   f4 r8c8 a8>c4 r8    d4 r8<a8& a8 g8 f4
+   d4 f4 f8 d8 a8 g8&  g8 r2..
+   f4 r8c8 a8>c4 r8    d4 r8<a8& a8 g8 f4
+   d4 f4 d8 f4 c8&     c8 r2..
+
+   r4 d8 f8 f8 d8 f8 g8  e8 c4 d4 r4.
+   d4 f4 f8 d8 f8 c8&    c8 r2..
+   r4 d8 f8 f8 d8 f8 g8  a8 g4 f4 r4.
+   g4 g4 g8 a4 na2 >c8&  c1 na1
+
+   d4 r8<a8>c8 d4 r8   c4 r8 <a4 g8 f4
+   d4 f4 f8 d8 a8 g8&  g8 r2..
+   f4 r8 c8 a8>c4 r8   d4 r8 <a4 g8 f4
+   d4 f4 f8 d8 a8 g8&  g8 r2..
+
+   r4 d8 f8 f8 d8 f8 g8  a8>c4 d4<a4 r8
+   g4 g4 >c8< a4 r8      f4 r4 > f4 r4
+   r1
+;
+
+
+/* WSG ch.2 (iv12) */
+#B=
+   M l16 @1 o6 k-26
+   na1
+   f4 r8c8 a8>c4 r8    d4 r8<a8& a8 g8 f4
+   d4 f4 f8 d8 a8 g8&  g8 r2..
+   f4 r8c8 a8>c4 r8    d4 r8<a8& a8 g8 f4
+   d4 f4 d8 f4 c8&     c8 r2..
+
+   r4 d8 f8 f8 d8 f8 g8  e8 c4 d4 r4.
+   d4 f4 f8 d8 f8 c8&    c8 r2..
+   r4 d8 f8 f8 d8 f8 g8  a8 g4 f4 r4.
+   g4 g4 g8 a4 na2 >c8&  c1 na1
+
+   d4 r8<a8>c8 d4 r8   c4 r8 <a4 g8 f4
+   d4 f4 f8 d8 a8 g8&  g8 r2..
+   f4 r8 c8 a8>c4 r8   d4 r8 <a4 g8 f4
+   d4 f4 f8 d8 a8 g8&  g8 r2..
+
+   r4 d8 f8 f8 d8 f8 g8  a8>c4 d4<a4 r8
+   g4 g4 >c8< a4 r8      f4 r4 > f4 r4
+   r1
+;
+
+
+/* WSG ch.3 (iv12) */
+#C=
+   M l16 @3 o5 k-26
+   na11
+   [
+     f8 fa >c8<a8 >f8c8 <a8f8   d8 df a8f8 >d8<a8 f8d8
+     d8 df a+8f8 >d8<a+8 f8d8   c8 ce g8e8 >c8<g8 e8c8
+    ]2
+
+   d8 df a+8f8 >d8<a+8 f8d8   na12 <a8 a+8> c8 na13 d4 na12 e8 na13 f4 na11
+   d8 df a+8f8 >d8<a+8 f8d8   c8 ce g8e8 >c8<g8 e8c8
+
+   d8 df a+8f8 >d8<a+8 f8d8   na12 <a8 a+8> c8 na13 d4 na12 e8 na13 f4 na11
+   d8 dg b8 g8 >d8<b8  g8d8   c8 ce g8e8 >c8<g8 e8c8
+
+   [
+     f8 fa >c8<a8 >f8c8 <a8f8   d8 df a8f8 >d8<a8 f8d8
+     d8 df a+8f8 >d8<a+8 f8d8   c8 ce g8e8 >c8<g8 e8c8
+    ]2
+
+   d8 df a+8f8 >d8<a+8 f8d8   na12 <a8 a+8> c8 na13 d4 na12 e8 na13 f4 na11
+   d8 df a+8f8 c8 ce g8e8     f4 r4 >c4 r4
+   r1
+;
+
+
+/* WSG ch.4 (iv12) */
+#D=
+   M l16 @6 o5 k-26
+   [
+     na21 a4 na22 a8g8a8g8a8>c8<   na21 a4 na22 a8g8a8g8f8c8
+     na21 a+4 na22 a+8a8a+8a8g8f8  na21 e4 na22 e8d8e8d8e8c8
+   ]2
+
+   na21 <a+4 na22 a+8a8a+8>d8f8d8  c8d8e8 na21 f4 na22 g8 na21 a4
+   na21 a+4  na22 a+8a8a+8a8g8f8   na21 e4 na22 e8d8e8d8e8c8
+
+   na21 <a+4 na22 a+8a8a+8>d8f8d8  c8d8e8 na21 f4 na22 g8 na21 a4
+   na21 g4  na22 g8f+8g8f8e8d8     c8c8c+8c+8d8d8e8e8
+
+   [
+     na21 a4 na22 a8g8a8g8a8>c8<   na21 a4 na22 a8g8a8g8f8c8
+     na21 a+4 na22 a+8a8a+8a8g8f8  na21 e4 na22 e8d8e8d8e8c8
+   ]2
+
+   na21 <a+4 na22 a+8a8a+8>d8f8d8   c8d8e8 na21 f4 na22 g8 na21 a4
+   na21 g4 na22 g8f8e8c8d8e8        na21 f4 r4 a4 r4
+   r1
+;
+
+
+/* WSG ch.5 (iv12) */
+#E=
+   M l16 @1 o3 k-26
+   na31
+   [
+     f4r8a4r8>c4<  d4r8f4r8a4
+     g4r8a+4r8>d4  c4r8<g4r8c4
+   ]2
+
+   <a+4r8a+8>d8f4r8  e8a8c8d4f8a4
+   g4r8a+4r8>d4      c4r8<g4r8c4
+
+   <a+4r8a+8>d8f4r8  e8a8c8d4f8a4
+   g4r8b4r8>d4       c8c8<a+8a+8a8a8g8g8
+
+   [
+     f4r8a4r8>c4<  d4r8f4r8a4
+     g4r8a+4r8>d4  c4r8<g4r8c4
+   ]2
+
+   <a+4r8a+8>d8f4r8  e8a8c8d4f8a4
+   >g8<b8>d4c8<g8c4  f4 r4 >f4 r4
+   r1
+;
+
+
+/* 再生 */
+t18000
+A;
+B;
+C;
+D;
+E;
+
+
+#END;
+

@@ -1,0 +1,186 @@
+/*
+  グラディウス2 - A Dream Of Dreamer - エンディング・テーマ
+  (C) KONAMI 1987 コナミ矩形波倶楽部
+  2011.4.12 MML - Hautbois.
+  2011.5.6  Hautbois
+*/
+
+#TITLE{グラディウス2 - A Dream Of Dreamer - エンディング・テーマ};
+#REV;
+#FPS  600;
+#QUANT  8;
+//#EFFECT0{reverb70,40,70,30};
+
+//SCC-WAVES
+#WAVB00{00F8F0E8E0D8D0C8C0B8B0A8A098908880787068605850484038302820181008};
+#WAVB01{00F0E0D0C0B0A090808080808080808080808080808080807F70605040302010};
+#WAVB02{007F0080A0C0D8F008203040506070787C7F7C7870605040302008F0D8C0A080};
+#WAVB03{0070502050703000507F6010304000B0106000E0F000B090C010E0A0C0F0C0A0};
+#WAVB04{003050607060503000D0B0A090A0B0D000406070604000C0A090A0C000700090};
+#WAVB05{305050300000104060706030F0E0E000202010C0A090A0C00000D0B0B0D00000};
+#WAVB06{00407F4001C081C001407F4001C0014001E0012001F0011001FFFFFFFF404040};
+#WAVB07{001931475A6A757D7F7D756A5A4731198090A0B0C0D0E0F00010203040506070};
+#WAVB08{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f80808080808080808080808080808080};
+
+//table env
+#TABLE  0 { 128 | 128 };
+#TABLE  1 { (100,128)10 (128,80)30 | 80 };
+#TABLE  2 { (128,90)10(90,40)30 | 40 };
+#TABLE  3 { (100,128)10 (128,90)30 (90,0)1100 | 0 };
+#TABLE  4 { (100,128)10 (128,90)30 (90,0)2100 | 0 };
+//table drums
+#TABLE  5 { (20,3)10 (3,0)5 | 0 };
+#TABLE  6 { (30,12)10 (12,9)70 (9,0)60 | 0 };
+#TABLE  7 { (90) | 60 };
+#TABLE  8 { (40,30)10 (30,0)20 | 0 };
+#TABLE  9 { (100) | 60 };
+#TABLE 10 { (80,40)10 (40,0)60 | 0 };
+#TABLE 11 { (128) | 90 };
+#TABLE 12 { (20,10)10 (20,0)5 | 0 };
+//drums
+#Z=%5 @19 na5 o7 a;
+#Y=%5 @19 na6 o7 a;
+#X=%5 @264 na7 o5 d192 @19 na8 o7 a24...;
+#W=%5 @264 na9 o4 c192 @19 na10 o4 e24...;
+#V=%5 @264 na11 o3 c192 @19 na12 o7 a24...;
+#U=%5 @264 na9 o4 c192 @19 na10 o3 a24...;
+#Q=%5 @264 na7 o5 d192 @19 na8 o7 a48..;
+#P=%5 @264 na7 o4 a192 @19 na8 o7 a48..;
+#O=%5 @264 na11 o3 c192 @19 na12 o7 a48..;
+
+#G=
+  x128 @v128 v15 s63 q8
+l12 ZZYZZZ ZZZZZY l24ZZl12XXWWW Zl24ZZl12ZZZZ YZZYZZ ZZZZZZ l24ZZl12WWVVV WZZWWW
+[
+l12 [VZZWZY]22 | VrrZrrY6Y6ZZ
+l12 [VrrZ4Z4ZZZ VrrZ4Z4Z4 VrrZ4Z4ZZY VrrZ4Z4Z4 VrrZ4Z4ZZY VrrZ4Z4WWW]
+l12 Vl24ZZl12ZWZY VZZWZY VZZZZZ l24PrPrPrOQl12WW
+]
+l12 VZZWZY l24PrPrPrOQl12WW
+l12 [[UXXUXX]3 UXPPQQPPOO]3
+l12 UXXUXX UXXQPVV V
+;
+
+#A=
+   x128 @v80 v16 %4 na1 s31 q8
+o5 l12 @q6 @0
+   c6c6def4edc& c2 @q0e-24e-24 @q6 a->c<fb->d
+   c3def4edc& c2l24@q4<<e-a->ce-a->ce-a->ce-c<a-
+[
+o6 l6 @q6 @1 @lfo10,1 mp0,12,220,0
+   d2<b>cd d2c<b12&b4 >l2gd gd
+   gf cd el6<g>ce e2<a>ce
+   l2fe c4&c6d12&d2 l2fe | d4&(2d6<(2b12&b2
+o5 @q6 @1 mp
+   [ l6 c2<g>cd l4gfl6fgf e2d6c12&l4c ecd6e12&e <a2l6ab>c l4fecd ] c2l6cde- )1c2 @2 )1d)1f)1b-
+]
+o6 d4&d6<b12&b2
+o5 l12 @q6 @0 mp
+   c6c6def4edc& c2 @q0e-24e-24 @q6 a->c<fb->d
+   c3def4edc& c2l24@q4<<e-a->ce-a->ce-a->ce-c<a-
+   l12 @q6 c6c6def4edc& c2< @q0e-24e-24 @q6 a->c<fb->d c6c6l12def4t110ed6 l2c c.&v1c8.
+;
+
+#B=
+   x128 @v80 v16 %4 na1 s31 q8 
+o5 l12 @q6 @1 @k-6 v10
+   c24 c6c6def4edc& c2 @q0 e-24e-24 @q6 a->c<fb->d
+   c3def4edc& c2 @3v10l24@q4<<e-a->ce-a->ce-a->ce-c
+[
+o6 l6 @q6 @2 @lfo10,1 mp0,12,220,0
+   d2<b>cd d2c<b12&b4 >l2gd gd
+   gf cd el6<g>ce e2<a>ce
+   l2fe c4&c6d12&d2 k0 l2dc | <b4&(2b6(2g#12&g#2
+o6 @q6 @5 @k-6
+   [ l6 c2<g>cd l4gfl6fgf e2d6c12&l4c ecd6e12&e <a2l6ab>c l4fecd ] c2l6cde- )1c2 <@1 )1d)1f)1b-
+]
+o5 b4&b6g#12&g#2
+o5 l12 @q6 @1 mp @k-6 v10
+   c24 c6c6def4edc& c2 @q0 e-24e-24 @q6 a->c<fb->d
+   c3def4edc& c2 @3v10l24@q4<<e-a->ce-a->ce-a->ce-c<a-
+   @1 v8 l12 @q6 c6c6def4edc& c2< @q0e-24e-24 @q6 a->c<fb->d24 @k0 v10 e6e6l12fgb-4ag6 l2f e. &v1e8.
+;
+
+#C=
+   x128 @v80 v16 %4 na1 s31 q8
+o5 l12 @q6 @1 @k6 v10
+   c12 c6c6def4edc& c2 e-24e-24 a->c<fb->d
+   c3def4edc& c2l24@q4<<e-a->ce-a->ce-a->ce-
+[
+o6 l6 @q6 @1 @lfo10,1 mp0,12,60,0
+   d24 d2<b>cd d2c<b12&b4 >l2gd gd
+   gf cd el6<@5g>ce @1e2<@5a>ce@1
+   l2fe c4&c6d12&d2 l2fe4&e6&e24 | d4&(2d6<(2b12&b2
+o5 @q6 @3 mp
+   c24&[l6 c2<g>cd l4gfl6fgf e2d6c12&l4c ecd6e12&e <a2l6ab>c l4fecd ] c2l6<a-b->c< )1a-4&a-6&a-24 @2 )1b->)1d)1f
+]
+o6 d4&d6<b12&b2
+o5 l12 @q6 @1 mp @k6 v10
+   c12 c6c6def4edc& c2 @q0e-24e-24 @q6 a->c<fb->d
+   c3def4edc& c2l24@q4<<e-a->ce-a->ce-a->ce-c<a-
+   l12 @q6 c6c6def4edc& c2< @q0e-24e-24 @q6 a->c<fb->d c6c6l12def4edc l2c c6&c &v1c8.
+;
+
+#D=
+   x128 @v70 v16 %4 na1 s31 q8 @k3
+o6 l6 @4 @q6 
+   ccc <b-4b-a-12&a-2 l4a-b- >l6ccc< b-4 b-6a-12&a-2 >na3c2
+[
+o5 l2 @q6 @6 na1 dddddddd
+e-e-e-e- eeee
+ffff | dfna4g#1na1
+@7 v10 o5 l1 [gggaaa] v11gl4v12b-&v13b-&v14b-&v15b-
+]
+v16l12 [d]6[f]6[g#]6[f]6
+o6 l6 @4 @q6 
+   ccc <b-4b-a-12&a-2 l4a-b- >l6ccc< b-4 b-6a-12&a-2 >na3c2 na1
+   ccc <b-4b-a-12&a-2 l4a-b- >l6ccc< l4 b-a l2na3gg.&na0v1g8.
+;
+
+#E=
+   x128 @v60 v16 %4 na1 s31 q8 @k-3
+o5 l6 @4 @q6 
+   eee d4dc12&c2 l4cd l6eee d4 d6c12&c2 na3e-2
+[
+o4l2 @q6 @6 na1 bbbbbbb-b->
+cccc cccc
+cccc | <b>dna4f1na1
+@7 v10 o5 l1 [cccccc] v11cl4v12d&v13d&v14d&v15d
+]
+v16l12 <[b]6>[d]6[f]6[d]6
+o5 l6 @4 @q6 
+   eee d4dc12&c2 l4cd l6eee d4 d6c12&c2 na3e-2 na1
+   eee d4dc12&c2 l4cd l6eee l4 dc l2na3fe.&na0v1e8.
+;
+
+#F=
+   x128 @v50 v16 %4 @8 na2 s31 q8 @q8
+o4 l12 [[c]3]12 l2cc
+[
+o3 l4 [f]8[e]4[e-]3l12e-ge-
+o3 l4 [a-]8 ggl6ggg l4g-g-l6g-g-g-
+o3 l4 l4[f]7l12fff | l4[g]4 na4(4g1na2
+[
+o3 l12 a-2&a-6a-a-e-a- a-2l6a->cd e4&e<e12a2
+o3 l12 g-2g-4g-dg- f2l6fff f2&f6l12ffga
+]
+o3 l4 [a-]4 v7 l12[b-b-b-)2]4 v16
+]
+o3 l12 [g]12>[g]12
+
+o4 l12 [[c]3]15ceg
+o5 l12 [[c]3]11c<t100gt90e c2&c2.&v1c8.
+;
+
+t120;
+A;
+B;
+C;
+D;
+E;
+F;
+kt-12@k-8F;
+G;
+
+#END;
+

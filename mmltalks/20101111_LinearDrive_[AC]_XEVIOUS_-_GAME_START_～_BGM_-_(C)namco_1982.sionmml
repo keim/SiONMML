@@ -1,0 +1,72 @@
+/*
+   [AC] XEVIOUS - GAME START ～ BGM - (C)namco 1982 by LinearDrive
+   date:2010-11-11初版
+   JASRAC: 004-7220-4
+*/
+
+#TITLE{[AC] XEVIOUS - GAME START ～ BGM - (C)namco 1982};
+#REV;
+#FPS 1000;
+
+
+#WAVB 0 {102030405050606060505040302010F0D0C0B0A090908080809090A0B0C0D0F0};
+#WAVB 1 {6060606060606060606060606060606080808080808080808080808080808080};
+#WAVB 2 {F020405060504020F0C0A0908090A0C0F03050605030F0B0908090B0F060F080};
+#WAVB 3 {6060606060606060808080808080808060606080808060606060608080808080};
+#WAVB 4 {60608080404050B060604040404050F090A0A0A0A080803090A0A060608080F0};
+#WAVB 5 {6040F02040F0D0406050002030E0A0F04000B0C0E09080B010F0A0C0F0A080F0};
+#WAVB 6 {4060606060403010F0E0D0D0D0E00020303010E0C0A0A0A0B0D0C0B0A090B0F0};
+#WAVB 7 {00306050F05060504030B0A0908090F09080B0E0006050406000B080A09080E0};
+
+
+//envelope
+#TABLE 1 { (128,96)78|96 };
+#TABLE 2 { (128,96)39,(96,48)16,(48,0)39|0 };
+
+
+/* wsg ch.1 */
+#A=
+   t114
+   %4 @5,63,0,0,63,0 v14 x128 o6 l16 q8 @q0 k13 na1
+   f4rcfa>c<arf grggrd8rgfre
+   f4rcfa>c<arf g-rg-g-rf4..
+   r8
+   t150
+   $
+   @0
+   c>c<b>cec<b>c<
+   c>c<b->cec<b->c<
+   c>c<a>cec<a>c<
+   c>c<a->cec<a->c<
+;
+
+
+/* wsg ch.2 */
+#B=
+   %4 @4,63,0,0,63,0 v14 x128 o5 l16 q8 @q0 k13 na1
+   a4raa>cfcr<a b-rb-b-rb-8rb-b-rb-
+   a4raaaaara   b-rb-b-ra4..
+   r8
+   $
+   rrrrrrrr rrrrrrrr rrrrrrrr rrrrrrrr
+;
+
+
+/* wsg ch.3 */
+#C=
+   %4 @3,63,0,0,63,0 v14 x128 o3 l16 q8 @q0 k5 na2
+   ffffr8 ffffr8 ffffr8 ffffr8 
+   ffffr8 ffffr8 ffffrf r4.
+   r8
+   $
+   rrrrrrrr rrrrrrrr rrrrrrrr rrrrrrrr
+;
+
+
+/* 再生 */
+A;
+B;
+C;
+
+
+#END;

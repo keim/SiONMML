@@ -1,0 +1,24 @@
+#TITLE{ZANAC(FDS) / AREA1,3,6,9};
+#TABLE0{(128,70)9}; //for amp envelope
+#TABLE1{(90,128)2 (128,40)4}; //for amp envelope
+#TABLE2{(7,5)5}; //for note envelope
+#TABLE3{(128,0)5 |0}; //for amp envelope
+
+
+t150
+k-10 %1 @1 v13 o4 l8  q8 na0 $
+
+[ab<c>a16b<c16>bab]
+< [cdec16de16dcd]
+[fgaf16ga16gfg]
+ef+g+e16f+g+16f+ef+     ef+g+ab<cde
+l2 ag                   f16e8d16e.
+gf                      ed4e4
+fe                      dc
+> l16 [8b<c>]           b1 ;
+
+k-10 %1 @2 v11 o3 l16 q8 na1 $ [4a<<a>a<e<e>a>aa][4o4c<<c>cg<gc>cc][4o4f<<f>f<c<c>c>ff][4o4e<<e>eb<b>bee] ;
+
+k-10 %1 @8 v15 o3 l1  q8 $ a^1<c^1f^1e^1 ;
+
+k-10 %1 @9 v08 o0 l16 q8 na3 nt2 $ c8c8cccc ;

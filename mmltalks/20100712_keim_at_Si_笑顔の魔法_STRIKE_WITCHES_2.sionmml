@@ -1,0 +1,144 @@
+#TITLE{笑顔の魔法/STRIKE WITCHES 2};
+#SIGN{A};#EFFECT1{delay};#EFFECT2{chorus};t174;
+
+//----------------------------------------Bass
+#OPM@0{4 7
+31 00 00 03 00 31 0 01 3 0 0
+23 15 07 05 01 06 0 02 3 0 0
+21 21 00 11 01 16 0 01 7 0 0
+31 15 07 07 01 06 0 01 7 0 0};
+%6@0q8o3l1r^ff-e2..e-8^df->l4q6[[a.a8r]|aa]f-4g-4
+l8[[a]8[g]6eg[f]8<[e]8ddd<c*d>d<d>ccc<c4>aec>[b]9<[e]8]
+dr2.d4ddr^2cccr2f4ff4rrfe[d]8[e-]8[e]8>ffggaabb
+[[a]8<[c]8[d]8e>b<ed4>a<dc4cccccf4[f]5e4.dddc*dc*de4eee|f>f<g>g<]
+d*e+d*e+fffcrcff-4f-f-crcf-ceee>br<e4>b4b<e-e->bb<ccddddddddf-1
+l4[[a.a8r]aa];
+//----------------------------------------Melody
+#@2{1 0 0
+01 42 2 0 32 15 02 00 00 01 00 -4 00 00 00
+02 42 2 0 32 15 02 00 08 02 00 04 00 00 00
+}@f100@lfo30mp6;
+#A=l8a4g&a^2a4g&a^2l4ab<cd8>b.<c8>a8^2rl8agf4ga2a<c16*d8.>ara4ga^1^1r1^1
+[l4re8e8ef8edc>b<c.rcg16*a8.geec8&f.rrfec>a<cc>b8b.rr1<]
+rf8f8ff8f.ged8er.ebba8al8rfg a4ga4.fga4ga4.<[c-16*c8.]>bb^2r2l4cd
+[ec8eba2..a8g8ga8f.e8f8ga8f.g8e8^2ba2.a8.b8.<c8c>b8bab8^2|cd]
+l8<c4>ga^2a4ga^2l4ab<cd8>b.<c8>a2..l8agf4ga2a<d4>ara4ga^1^1;
+#B=l8f4ef^2f4ef-^2l4f-f-ee8e.e8e-8^2rl8e-e-d4dd2df-4f-rf-4f-e^1^1[r1]10
+>l4ra8a8aa8geede.re<c>bgge8a.rrfec>a<cc>b8b.rr1<<
+rd8d8dd8d.ec>b8<cr.cggf8fl8rde f4ef4.def4f-f4.a4a4gg^2r2l4>ab<
+[c>a8<cge2..e8e8df8d.c8d8ef8d.e8c8^2gf2.f8.g8.a8ag8gfg8^2|>ab<]
+l8a4f-f^2f4f-f-^2l4f-f-ee8e.e8e-8^2rl8e-e-d4dd2df-4f-rf-4f-e^1^1;
+%6@2@v50,40,24r1.q6o5A;
+%6@2@v25,20,12p7r1.q6o5B;
+//----------------------------------------Strings
+#@3{5 0 0
+02 40 2 0 32 15 02 00 00 02 00 -3 00 00 00
+02 40 2 0 32 15 02 00 00 02 00 03 00 00 00
+01 40 2 0 32 15 00 00 00 01 00 00 00 00 00
+}@f96@lfo15mp4;
+#TABLE1{(0,32,128)120};
+#A=l1v16na1>>f^<<na255fga2..b8^<cd  l8[dc>|aer4]3a4<[dc>aer4]c-4d4<;
+#B=l1v16na1> c^< na255c>bb2..a8^a<c-l8[aa|e>b<r4]3e4<[aae>b<r4]f-4g-4;
+#A+=v10l1>c>bagfed<v16l4gab<dc1d2>b2<c1a2gef1g1a2g2bage;
+#B+=v10l1>edc>bagfgv12<<edc>bagfg;
+#A+=v16l8>fr2.frffr^2eeer2araara4g4f1f1g1l4ab<cd;
+#B+=v16l8 ar2.araar^2gggr2<crccrc4>b4a1a1b1l4fgab<;
+#A+=[e1.d2c1>b4.b2<c1..>b4.<d2..|e8^1]e8^2e+2;
+#B+=[c1.>b2a1g4.g2g2..a2..g4.a2..|b8^1]b8^2<c2;
+#A+=l1fga2..b^8<cd> l8[dc>ae|r4]3<[dc>a|er4]3a;
+#B+=l1c>b<e2..f^8ff-l8[aae>b<|r4]3[aae|>b<r4]3e;
+%6@3@v28,10p0q8o5A;
+%6@3@v28,10p8q8o4B;
+
+//----------------------------------------Seq
+#@4{1 0 0 
+02 63 0 0 32 00 08 00 00 01 00   8 00 00 00
+02 63 0 0 32 08 08 00 00 01 00 448 00 00 00
+}@f88,2;
+#A=l16p0o5fc(p1ge(<p2fc(p3ge(<p4fc(p5ge>)p6fc)p7ge>)p8fc)ge>)fcge)fcge)fcge
+v8p4r1[aaea<aaea<aaea>aaea]v10[aaea<aaea<aaea>aaea]
+[r1]15v16o3dgeb<dgeb<dgeb<dgeb
+[[r1]7v16o3dgeb<dgeb<dgeb<dgeb][r1]8
+o5eaf<ceaf<ce>afce>afc eaf-<ceaf-<ce>af-ce>af-c 
+eaf<ceaf<ce>afce>afc eaf<ceaf<ce>afce>afc
+;
+%6@4@v64,32v10q2r1^1^1^1^1A;
+
+#OPM@5{4 7
+31 10 03 03 06 35 0 04 7 0 0
+31 10 03 07 06 03 0 02 3 0 0
+31 10 03 03 06 42 0 15 7 0 0
+31 10 03 07 06 03 0 04 3 0 0};
+%6@5v8@v64,32,16l4[r1]15o6rage8f2..r[r1]2gab<dc1
+[r1]2rage8f2..r[r1]2v4rbaf[r1]7v6>ab<cde1[r1]7e1[r1]7
+l1fga2..b^8<cd;
+
+//----------------------------------------Drums
+#@7{1 0 0 //BD
+00 63 0 0 36 00 00 00 00 01 00 00 00 00 00
+19 63 0 0 44 00 20 00 00 01 00 00 00 00 00
+};
+#@9{6  7  0 // SnareDrum (c)kash1wa modifyed
+00 63 00 00 00 00 00 00 00 11 03 00 00 00 15
+00 63 00 30 18 00 00 00 00 15 07 00 00 00 15
+16 50 40 30 20 01 02 00 00 06 00 00 01 00 20
+19 50 00 26 16 00 14 00 00 05 00 00 00 00 60
+}@f100;
+
+%2@19@v64q0s16v16o5r1^1p2c1p6c1p4c2..p6c8^1p2c1p8c1p2c1
+s20v8p5l4[a]4v16s16p3c1s20v8p5aav16s16p1ep7gp5c1
+v6l16[s40[araa]3ars28a8]6s16l4v16p3ev12gv14p5p2cp5cp4a1
+v9l8s36[a]56v16s16p3e1^1v12p6a1^1p5c1v7l4s28[a]8v13s16p3cp7a(p5e(p1e
+[p3a1v9l4s24[a]8v13s16p3c.p7a.p2c1p6e2..v10p5a1r8v9l4s24[a]3v15s16p2ep6e]
+p3c1v9l8s32[a]24s16p3v12a1p5v16c1c1v9l8s28[a]6v12s16p2c4v14p6a1r2p5c4.p3a1;
+
+%6@7@v128v28q0s,-128o3r1^1c1c2.c4c2..c8^1c1c1
+[c]16[[c]7c8c8[c]6c8c8c]4
+[[c]6c8c8c][c]16[[c]12cr8crcc8cccccr8c.[c]8]
+[crc8c8r]cr8cc8r8ccr8c8c8r[c]4r1[c]8l8[cccc|rr]3;
+
+%6@9@v80,16q8o1[r1]8l4rr8c8rr8c8rcrc[c]8[r1]8[rc]15rl16c)c))cr
+l8v16c4r^2c4cc4r4c4ccc4r4.c4cc4r4ccl4[rc]5r8c8c8c8l16v10[cc(]8
+l4v16[[rc]8rcccrccr[rc]4][rc]7ccv12l8[cc(]4c1r4rcr4rcl4rcccl8[cccc|rr]3;
+
+//----------------------------------------WindNoise/ReverseCym
+#@16{0 0 0
+16 12 0 0 12 15 00 0 0 1 0 0 0 0 0
+}@f28,1,16,0,0,0,96,96,96,96;
+#@17{0 0 0
+17 10 0 0 40 00 00 0 0 1 0 0 0 0 0
+}@f24,1,20,0,0,0,96,96,96,96;
+%6@16@v32q8c1^1[r1]54%6@17@v64r2.c1;
+
+//----------------------------------------Guitar
+#OPN@11{0 7  // Soft Dis.Guitar
+16 15 01 09 03 26 0 06 3 0 
+19 15 01 00 00 27 0 03 0 0 
+26 15 02 00 02 26 0 01 5 0 
+21 31 00 07 00 00 0 01 0 0 }@f84,1;
+#OPN@12{0 5  // New Dis.Guitar 1
+31 05 00 00 00 20 0 02 3 0 
+18 05 04 07 01 20 0 05 3 0 
+31 06 05 00 00 22 0 01 7 0 
+31 12 00 08 01 00 0 01 7 0 }@f76,1;
+#A=l8o5q7v1[e(<e(f>]8v10[g<f|g>]3)[a|<ga]3b>)[b<a|b]3>>v5d1f-1
+l8v8[dc>|aer4]3a4[<dc>aer4]f-4g-4<<
+[eeareare r<c>rarerr rferfgra rgrercrr<
+redredrd crdcr>arf rbarbarb l4gab<d]
+l8redred>ae< reded>aec< rdcrdc>ad< rdcdc>a<dc
+rdcrdcrc re-cre-crc redredre redredre
+[rdcrdc>ae< rdc>a<rdc>a< redredrd e4ed4.>d<c4>ge4crf2.fe4.d2^d4e4ee4|fa<cd]
+>f-rf-4f1f-1e2..e-8^1d1f-1l8[dc>ae|rr]3<[dc>a|err]3a4*>a0;
+%6@11@v40,20,8p8A;
+%6@12@v50,12,8p1A;
+
+//----------------------------------------Orch.Hit
+#MA@55{7 5  // Orch.Hit
+8 15 04 04 06 06 00 1 0 04 0 1
+6 12 05 03 03 01 00 0 0 01 0 0
+6 12 07 06 06 00 00 0 0 01 0 0
+6 11 07 07 06 00 00 0 0 00 0 0};
+#A=l1[r]11r2>v16f-4g-4a[r]6g4a4b4<d4c[r]
+7l8>d2..v10d4ddr^2cccr2f4ff4v16l4fed1r1^1l4ab<cd[r1]16[r1]8v10l8>[dc>a|err]3a;
+%6@55q8p8@v40,16,16o5A;
+%6@55q8p0@v40,16,16o3A;

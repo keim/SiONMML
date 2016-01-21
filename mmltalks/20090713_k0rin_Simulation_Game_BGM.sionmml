@@ -1,0 +1,28 @@
+// 昔MSXで作ったゲームのBGM。しょぼくてすいません(汗)
+#TITLE{Simulation Game BGM};
+t138
+l12
+@lfo10 ma2,15,0,10 v12
+$
+[ o6 e2.>g<ce f2.>a<cf g2.d4 e2& erdcr>b
+o6 c2.>ab<c d2>a4<d4 c2.c>ba | g2rab<c6d ] >g2^4gab
+[ o6 c2.>a<c>a b2.g<gf | e2.>b<ed c1 ] e2.efe d1
+o6 c2.>a<c>a b2.g<gf e2.>b<ed c1
+f2>a2 b2b4b<cd c1^1
+;
+v7
+@lfo10 ma2,15,0,10
+$
+[ o5l4q6 b2.r <c2.r d2.>b <c2.>g+ 
+a2.g f+2.a g1&f1 ]
+o5 q7 f1g1g+1a2.g f1g1<c1>b1
+f1g1g+1a2.g q6 f2<c2>g2<d2>e1^1
+;
+l4 q2
+%1@8v16
+$
+[ o4 cgcg caca >b<g>b<g cgc>g+
+o3 a<e>a<e dad>a g<d>g<d >g<d>ab ]
+[ o3 f<c>f<c >f<d>f<d >ebeb a<e>ag | o3 f<c>f<c >f<d>f<d >g<c>g<c >g<d>g<d ]
+o3 f<c>f<c >g<d>g<d cgcg cgc>g
+;

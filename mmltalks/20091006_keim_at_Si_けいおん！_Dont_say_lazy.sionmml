@@ -1,0 +1,99 @@
+#TITLE{けいおん！ / Don't say "lazy"};t180;
+#SIGN{Em};#EFFECT1{reverb};#EFFECT2{ws96,30lf4000chorus};
+
+// Drums
+#OPN@10{0 0 // BassDrum by val-sound
+30 26 0 13 15 26 0  1 0 0
+30 28 0 14 15 37 0 15 3 0
+30 16 0  8 15  5 0  0 0 0
+29 16 0  8 15  4 0  0 0 0}@f80;
+#@11{6 7 0 // SnareDrum by kash1wa modifyed
+00;63  0  0  0; 0  0;0 0;11 3 0;0 0 16
+00;63  0 30 18; 0  0;0 0;15 7 0;0 0  0
+16;50 40 30 20; 1  2;0 0;06 0 0;1 0 20
+19;50  0 26 16; 0 14;0 0;05 0 0;0 0 60}@f90;
+#@12{8 0 0 // Tom
+19;60 48  0 48;15 12;0 0;1 0   0;0 0 68
+17;48  8  0  0; 0  0;0 0;1 0   0;0 0 68
+34;60 45  0  0; 8 26;0 0;1 0 300;0 0  0
+32;60 24  0 24;15  0;0 0;1 0   0;0 0  0}@f100,0;
+#@15{6  7  0 // Crash Cymbal
+00;63 32 00 00;04 16;0 0;08 0 0;2 0 01
+00;48 24 24 24;04 24;0 0;03 3 0;0 0  0
+16;32 40 20 24;02 04;0 0;11 3 0;0 0 48
+19;63 48 20 24;04 00;0 0;11 3 0;0 0 48}@f110;
+#OPM@13{0 8 // Close HC by rect
+31  8 10 10  1 38 2 15 0 3 0
+31  8 10 14  1 38 1 11 0 1 0
+31  5 10 14  1  8 1  9 7 1 0
+31 20 10 10 10  5 1  9 3 2 0};
+#OPM@14{4 8 // Open HC by rect
+31  8  8  7 10  9 0 15 0 3 1
+31  8  6 10 10 10 1  3 3 1 1
+31 10  6  3  3 10 0 15 7 3 1
+31 20  6  7 10 10 0  3 3 1 1}@lfo11 ma2,64,0,40;
+#TABLE0{(0,-36)40}*64;
+#T=@12np0;#B=@10o2;#S=@11;#C=@15v24c;#H=@13v10o6c;#O=@14v16o6c;
+@v128v18 %6q8   l4  OOr2p2
+[[C2p5[O]22C2OOOOOO] C2l4[O]14|C1l8[HH]12 C2l4[O]14
+C1l8[HH]25p2C2p6C4 p4C1[HH]11@15v18c4C1[HH]4@15v20c4[O4]7 r2]C1;
+#A=v20l4[rar|a]4l16v16gggg;
+@v128 %6q8S v20 l16 r2o0v20aav16ggv20aav16gg  
+[[v20l4[rara]6[a]7l16v16gggg] A|AA v20l4[rara]14r[a]4v18l16[g]8r4v0 r2]v20l8aa;
+#A=l8[cc[rc]5crcr];
+@v128 %6q8B v20 l4  r2crcr
+[[c8c8r]31 A|AA [c8c8r4]32 r2]c1;
+#A=[r1]3r2.ggcc;
+@v128 %6q8T v20 l16 [r2o4ggcrggcr
+[[[r1]7r2.ggcc] A|AA [r1]15r4ggggccccr4 r2];
+
+// Bass
+#OPM@1{3 5; // by kash1wa
+24 04 02 06 01 40 0 09 7 0 0;
+31 14 02 08 03 56 0 01 0 0 0;
+31 23 00 06 05 12 0 00 3 0 0;
+25 08 03 07 03 00 2 01 0 0 0};
+#P=v24c4)cc(c)c(c)c;#Q=PP(2)P(-1)eeeedddd;
+#A=[q8QPP(2) eer4.eer2eeee4 QP(-3)P(-1) eer4.eer2eeee4
+[q4eerq8ererereree4f-4]|[[q6eer2]eer4] [q4eerq8ererereree4f-4]
+[P[d]8P(-1)eeeedddd|[c]8[d]8[e]12[d]4][a]8[f]8[b]15ra+16*b16a&f>&b]q8<ee;
+%6@1@v64,,8o4r1l8A;
+
+// Melody
+#OPN@27{3 4 // by valsound
+25 7 0 0 5 23 0 2 7 0
+17 0 0 9 0 32 0 4 3 0
+25 7 0 0 6 27 0 2 3 0
+16 8 0 9 1  0 0 2 0 0} @lfo12mp8;
+#P=l8dedede4edededg*f+g4;#Q=[ede4.dedededg*f+|f+d]g*f+;#R=eg4e4f4g4f4e4f4b4b2a2;
+#A=l4o4[[ra+8*b8agagabra+8*b8agagegrbagagb.P]|[r1]3r2..dQ[r1]3r2.
+[d4 g4ed4e4a4b^2d4 g4ed4e4a4e^2d4 g4eg2|ea4g4f4g4f4ee^1^4]R r2];
+#B=l4o4[[rgfefefgrgfefe>b<ergfefeg.P]|[r1]3r2..dQ[r1]3r2.
+[>b4<d4>ba4b4<d4e^2>b4<d4>ba4b4<e4>b^2<d4 g4eg2|ea4g4f4g4f4ee^1^4]R r2];
+%6@v128,64,8@27r1p0k4A;%6@v96,48,8@27r1p8k-4B;
+
+// Guitar
+#OPN@7{3 7 // by kash1wa
+20 00 00 05 00 14 00 3 7 0
+18 16 04 05 02 16 00 2 3 0
+31 08 00 08 02 20 00 1 3 1
+31 28 02 06 01 04 00 4 7 0}@lfo30mp0,8,20 @f70,2;
+#C=[[q6v20eerq0v16e]3q8v20e4f-4];#D=C[[q6v18eeq0v16ee|ee]3]C;
+#A=q8l1v18o4cd>b<e2d2cd q4l8eer4.eer2eeee4 q8l1cd>b<e2d2>ab< q4l8eer4.eer2eeee4;
+#B=q8l1v20d8*e^4.d4&e4>b.a4&b4e^^^2l8&ab<eb<l1e.d4e4>b.a4&b4eb-b^;
+%6@7@v,,8p1po2r1k4kt-12ADkt12Br2kt-12ACee;
+%6@7@v,,8p7po2r1k-4kt-5ADkt0Br2kt-5ACee;
+
+// deco
+#MA@56{7 5 // orch hit
+10 15 04 04 06 06 00 1 0 04 0 1 
+06 12 05 03 03 01 00 0 0 03 0 0 
+06 12 07 06 06 00 00 0 0 01 0 0 
+06 11 07 07 06 00 00 0 0 00 0 0}@f96,1;
+#OPN@57{4 7 // bell by valsound
+21 15 08 00 03 27 1 08 3 0
+31 13 05 06 04 00 1 04 3 0
+21 15 08 00 03 25 1 06 7 0
+31 13 05 06 04 00 1 03 7 0}@f100;
+%6@v64,48r1o4[@56l1v20cd>b<e2d2cdl4er.errer.l1cd>b<e2d2>ab<l4er.errer.l2[eeee4f-4]|[r1]4 [eeee4f-4]
+@57q8l8o7[v12redebeaev8d>bv6aererr]7 r1r4. v12l16deab(<de(ab<e8r2];

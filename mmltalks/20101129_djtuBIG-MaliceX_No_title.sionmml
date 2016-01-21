@@ -1,0 +1,31 @@
+#TITLE <toying with mml>;
+t150;
+
+//BASSLINE
+#B= b-b-rb-rb-<a-&b->b-*a- gfra-<f&g;
+
+l16 %1 q0 k8 $ o2 B;
+l16 %1 q0 $ o2 B;
+
+
+//4-4 DRUMBEAT
+l32 %5 v15 $ o5c*o2b-rrrrrr;
+l32 %3 v15 $ o5c*o2b-rrrrrr;
+l16 %2 $ rro7cro4c^o7cr;
+
+
+//chordgate sequence
+#A=l16 rb-rb-b-^rb-;
+
+%1 @2 $[r1]4 [A]8;
+%5 @1 k-512 $[r1]5 [A]6;
+%1 @2 k-24 $[r1]4 [A]8;
+%5 @1 k-500 $[r1]5 [A]6;
+
+//octave arp
+%1 @3 l32 q0 $b-<rb-r;
+
+//sus4 arp
+%3 @4 l16 po1 $o3 b-&<e-&f&b-&<e-&f&b-&<e-&f&b-&<e-&f&b-&<e-&f&b-& f&e-&>b-&f&e-&>b-&f&e-&>b-&f&e-&>b-&f&e-&>a-&;
+%1 @2 v8 l16 r16. $o3 b-<e-fb-<e-fb-<e-fb-<e-fb-<e-fb- fe->b-fe->b-fe->b-fe->b-fe->b-;
+

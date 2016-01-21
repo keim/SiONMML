@@ -1,0 +1,35 @@
+#TITLE{太陽の神殿 ASTEKA Ⅱ / 太陽の神殿  Templo del Sol};
+
+#EFFECT1{hf1000 lf5000 delay200,1,1 reverb230,20,80,50 comp70,50,20,20,6,50};
+
+t96
+%11 @0,48,50,6,80,18s9@f80
+o4l8q6@v80,58
+ g64a16..<c
+$
+ d^^^^^f^ e^^^^^<c64>c16..>g g^^a^^^^ r^^^^^a<c
+ d^^^^^f^ e^^^^^cd  e^^^^^@v60g64g+64@v80g16.r g^^f^^>a<c
+ d^^^^^<a64>a16..^ grer^^cr  c^^d^^^^ r^^^^^>g64a16..<c
+;
+
+%11 @0,58,48,2,97,21s12@f50
+o5l8q7@v50,58
+ r^
+$
+ afdfafdf <c>geg<c>gec ec>a<fd>afa  da<edd>a<fd
+ afdfafdf <c>geg<c>gec <c>geg<c>gec ec>a<d^>a<fd
+ afdfafdf ercr^^>ar<   gecfd>afa    defa<defa
+;
+
+%11 @0,48,40,6,59,18s29@f90
+o3l8q7@v45,18
+ r^
+$
+ [b-^^b-b-^^b-]
+ [d^^dd^^d]
+ [b-^^b-b-^^b-]
+ a^^aa^^a d^^dd^<dc>
+ b-^^b-b-^^b-
+ arar^^ar
+ [d^^dd^^d]
+;

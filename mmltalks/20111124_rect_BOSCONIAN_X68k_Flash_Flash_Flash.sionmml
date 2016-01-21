@@ -1,0 +1,222 @@
+#TITLE{BOSCONIAN X68k / Flash Flash Flash};
+
+/*
+ JASRAC:082-3781-6
+ Mr.unknown's MDX Data modifyed.
+*/
+
+#EFFECT1{eq100,100,70};
+t106;
+
+%6 @v0,100 q6 mp0 @10 v15 @q0 p4 l16
+r2[o4d]7 f8[f]6 g8[g]6 a+8a+a+a8aaad8r4cd8r4^16cd^24&d48*o3a0&a32r32r4^16a&aaaa&aaaa
+$[[o4[d]7 c8[c]6 o3a+8 [a+]5 o4a+o3a+[a+]8 [a]6 o4ao3aaao4ao3aaaaa|o4[d]7 f8ffg8ggg]
+[d]9 r8.dc+co3a+&[a+a+a+a+a+a+a+a+o4[c]8 [f]8 [f+]8 | [g]7 d+&d+[d+]6 c&cco5co4ca+o5co4[c]10] [g]8 [c]8 [f]8|ro3ara&a4]
+o4[f]7f&[f]28 g+g+a+f&[f]31 d&[d]28 ffgd&[d]31 o3a&[a]28 a+a+o4co3a&[a]28 ao4ec+o3a&[a]28 a+a+o4co3a&[a]31
+o4 d&[d]7 f8[f]6g8[g]6 a+8a+a+a8aaad8r4cd8r4^16cd^24&d48*o3a0&a32r32r4^16a&aaaa&aaaa;
+
+
+%6 @v0,64 mp0 @15 v12 q7 @q0 p8 l16
+r2o6d4.&df2g2a+4a&a4dagfedcd&dagfedcd&dagfedcd4c+&c+4
+$p4[[d4.&de2f&f1e1|d4.&do5f8^12&f24*g0&g4&g192&g64^96*c0&c32] o6d2drrrdc+co5a+&[a+2g2o6c2d2|d4.&dd+2c8ccrccrc8cc4.] d2e2|c2rc+rc+&c+4] c2&c4&c8.rr1r1r1r2.r8.
+q5 p0 k0 [o5d8dddf8rd8df8rg8]4 [a8aaao6c8.o5a8aaag8.]8
+q7 p8 o6d&d4.&df2g2a+4a&a4dagfedcd&dagfedcd&dagfedcd4c+&c+4;
+
+
+%6 @v0,64 mp0 @15 v11 q7 @q0 p4 l16
+r2o5a4.&ao6c2d2f4e&e4o5ao6fedco5a+aa&ao6fedco5a+aa&ao6fedco5a+aa4a&a4
+$p4[[a4.&ac2d&d1o6c1|o5a4.&ac8^12&c24*d0&d4&d192&d64^96*o4a0&a32] o5a2arrrag+gf&[f2e2a2a2|a+4.&a+a+2g8ggrggrg8gg4.] a+2o6c2|o5g8.a&a4rara&a4]
+g8.a16&a4&a4&a8^16rr1r1r1r2.r8.
+q5 v12[o4a8aaao5c8ro4a8ao5c8rd8]4 [e8eeeg8.e8eeed8.]8
+v11 q7 p4 a&a4.&ao6c2d2f4e&e4o5ao6fedco5a+aa&ao6fedco5a+aa&ao6fedco5a+aa4a&a4;
+
+
+%6 @v0,64 mp0 @15 v11 q7 @q0 p4 l16
+r2o5f4.&fa2b2o6d4c+&c+4o5fo6dco5a+agff&fo6dco5a+agff&fo6dco5a+agfe4e&e4
+$[p4[f4.&fg2a&a1a1|f1] f2frrrrrro6p8d&[d2c2f2f+2|g4.&gg2f8ffrffre8ee4.] g2g2|f2rere&e4] p8f2&f4&f8.rr1r1r1r2.r8.
+q5 p8 k6 v12[o5d8dddf8rd8df8rg8]4 [a8aaao6c8^16o5a8aaag8.]8
+v11 q7 p4 f&f4.&fa2b2o6d4c+&c+4o5fo6dco5a+agff&fo6dco5a+agff&fo6dco5a+agfe4e&e4;
+
+
+%6 @v0,64 @15 mp0 v12 q7 @q0 p0 k4 o6 l16
+r2d4.&df2g2a+4a&a4dagfedcd&dagfedcd&dagfedcd4c+&c+4
+$[p4 v11 @v0,85 @7 @lfo11,2 mp0,28,21 k0 d4.&de2f&f1g2e4c4d2.r4d4.&de&e4g8.f&f2.d8^32&d16.*e0&e2o5a4o6e4f8ed&d4r4r8.r
+@14 @lfo11,2 mp0,23,21 v12 [o3a+4o4a4g2c4a+4|a8a8o5c8o4a8a+4g8aa+&a+4a+agg&g2r2]2 a8a8a+8o5c8c8o4a+d&d2g4g8^16f&f4|r2] r4.r
+p4 @7 @lfo11,2 mp0,28,21 v12 r8r8.o6c4^16^32^48&c8^96*o5a+0&a+32g+32g32f32g+32g32f32d+32f8^96&f32^48*e0&e24d+24d24d+8^96&d+32^48*d0&d24c+24c24r8f24g24g+24a+24g+24g24g+32o6c32o5a+32g32a+32g+32f32g+32g32d+32g32f32g32a32a+32b32o6c24f24g32&g96*a+0&a+8&a+24f24g24g+16^24&g+48*g0&g32f32d+32d32f32d+32d32c32d+32d32c32o5a+32[o6c24d+24a+24|o5a+24o6d24a24]2 o7c32^64&c16^24&c12*o6c0&)3c64
+@14 @lfo11,2 mp0,23,21 v10 o2a1o3a1o4d1&d1a1e1f1d1e1o3a1a+1e2.&e8.
+@15 mp0 @v0,64 v12 q7 @q0 p0 k4 o6d&d4.&df2g2a+4a&a4dagfedcd&dagfedcd&dagfedcd4c+&c+4;
+
+
+%6 @v0,64 q8 @4 mp0 v11 p4 k3 o3 l16
+r2d4.&df2g2a+4a&a4 @13 mp0 dagfedcd&dagfedcd&dagfedc(a&[a32o4e32a32o5d32]2 p0(o3a32o4e32a32o5c+32)2 p8 o4a32o5e32a32o6c+32
+$r8[p4 v9 @v0,80 @7 @lfo11,2 mp0,28,21 k5 d4.&d16e2f&f1g2e4c4d2.r4d4.&de&e4g8.f&f2.d8^32&d16.*e0&e2o5a4o6e4f8ed&d4r4r8.r
+@14 @lfo11,2 mp0,23,21 v10 [o3a+4o4a4g2c4a+4|a8a8o5c8o4a8a+4g8a16a+16&a+4a+16a16g16g16&g2r2]2a8a8a+8o5c8c8o4a+16d16&d2g4g8.f16&f4|r2] r4.r
+p4 @7 @lfo11,2mp0,28,21 v7 r8r8.o6c4^16^32^48&c8^96*o5a+0&a+32g+32g32f32g+32g32f32d+32f8^96&f32^48*e0&e24d+24d24d+8^96&d+32^48*d0&d24c+24c24r8f24g24g+24a+24g+24g24g+32o6c32o5a+32g32a+32g+32f32g+32g32d+32g32f32g32a32a+32b32o6c24f24g32&g96*a+0&a+8&a+24f24g24g+16^24&g+48*g0&g32f32d+32d32f32d+32d32c32d+32d32c32o5a+32[o6c24d+24a+24|o5a+24o6d24a24]2 o7c32^64&c16^24&c12*o6c0&)3c64
+@14 @lfo11,2 mp0,23,21 v10 o2a1o3a1o4d1&d1a1e1f1d1e1o3a1a+1e2.&e
+@4 mp0 v11 @v0,64 p4 k3 d&d4.&df2g2a+4a&a4 @13 mp0 dagfedcd&dagfedcd&dagfedc(a&[a32o4e32a32o5d32] p0(o3a32o4e32a32o5c+32)2 p8 o4 a32o5e32a32o6c+32;
+
+
+%6 @v0,70 q8 @13 mp0 v11 p4 l16
+r2[o3d32f32a32o4d32]3 o3d32f32[f32a32o4c32f32]4 [o3g32b32o4d32g32]4 [o3d32f32a+32o4d32] [o3a32o4c+32e32a32]2o3a32o4c+32[r]23 d4c+&c+4
+$p4 @13 mp0 r1r1o3e2c4o2a4o3a2r2r4rr2rrrrr v11d32f32a32o4d32o3f32a32o4d32f32o3a32o4d32f32a32o5d32o4a32f32d32a32f32d32o3a32)o4f32d32o3a32f32)o4d32o3a32)f32)d32o4c2o3a4o4c4d8co3a&a4
+@15 mp0 k6 v11 o6 drrrdc+co5p0a+&[o6d2c2f2f+2|g4.&gg2f8ffrffre8ee4.] g2g2f2rere&e4 k0 p8 @13 mp0 v12 r1r1r1o4aaaaa+arf8o5cfo4g8o5dg8p4r4rr2rrrrr v11 o3 d32f32a32o4d32o3f32a32o4d32f32o3a32o4d32f32a32o5d32o4a32f32d32a32f32d32o3a32o4f32d32o3a32f32r8o4c2o3a4o4c4d8c16o3a16&a4
+@15 mp0 k6 o6 drrrdc+co5p0a+&[o6d2c2f2f+2|g4.&gg2f8ffrffre8ee4.] g2g2f2r2[r1]12 @7 @lfo11,2 mp0,28,21 v11 p4 o4a32a+32o5c+32d32e4.e32f32g32a+32o6c+4.c+32d32e32f32o5a+32o6c32c+16o5g32a32a+32o6c+32o5e32f32g16c+32d32e32f32g32a32a+32o6c+32e32f32g32o7c+32e8[f32c+32o6a32o7e32o6a+32g32]5 r8o7a4a+32g32e32c+32g32e32c+32o6g32o7e32c+32o6g32e32[o7c+32o6g32|e32c+32)3]3
+@13 mp0 v11 p4 [o3d32f32a32o4d32]3 o3d32f32[f32a32o4c32f32]4 [o3g32b32o4d32g32]4 [o3d32f32a+32o4d32] [o3a32o4c+32e32a32] o3a32o4c+32[r]23 d4c+&c+4;
+
+
+%6 @v0,80 @3 mp0 p4 @16 v13 l16
+r2o5c8c8c8rrrrc8c8rrrrc8c8rrrccrrccc @3 v15 ro8cccccrrccccccrrccccccc[r]9
+$ @16 v12[[o5c8c8c8rrrrc8c8rrrrc8ccc8c8c8c8c8[c8]8 | c8c8c8rrrrc8rrrr] [c8]4
+@3 v15 o8 crcrrrrr8r @16 mp0 v11 o5c8c8c8c8c8c8c8[c8]22 r4rrrr[c8]12 [c8]14 |r2]
+@3 v14 [o8c8]4 [r1]8 [c8]31 r8[c8]32 p4 @16 v12 o5c8c8c8rrrrc8c8rrrrc8c8rrrccrrccc
+@3 v15 ro8cccccrrccccccrrccccccc[r]9;
+
+
+%6 @v110 @41 o3 v16 q7 @f70
+r2 e8r8 e16e8e8e8. e16e8e8e8. e16e8e8.r16e8
+r8.e4.e16e4..e16e4..e16e8r8e8r8.
+$[[e8r8e16e8e8.r8e16e8e8.r8e16e8.e8r8e16e8.|[e8r8|e16e16r8]3 e16e16r16e8r8e8r8.]2 e8r8e16e16r8 [e8r8e16e16r8] e4r8.e8.r8e16e16r8 [e8r8e16e16r8]6
+e8r8[r32]8 e8r8e16e16r8 [e8r8e16e16r8]6 |e16e8e8r8.]
+[r32r32r32r32]3 r16e8.r8e16e32e8^32 [[e16e16r16r32r32|e16e16r8]7 r8 r16|e8.r8e16e16r8]4
+[e8.r8e16e16r16]3 e8r16r16e8 r8.e4.e16e4..e16e4..e16e8r16r16e8r8.;
+
+
+%6 @v100 @42 o5 v20  @f110 q7
+r4.e64e16^32.
+r8e8r8e8r8e8r8e8r8e8 r8e8r8e16e8. @46o4p0f16p4c+16o3p8a16 p4@42o5r4.r16r4..r16r4..r8e16e8.@46o4p0f16p4c+16o3p8a16@42o5p4
+$[[r8e8r8e8r8e8r8e8r8e8r8e8r8e8r8e8 | [r8e8|r8e8]3 r8e8.e16e8.e16e16e16]2 r8e8r8e8 [r8e8r8e8] r4e16e16e4e8r8e8 [r8e8r8e8]6
+r8e8[f32e32]4 r8e8r8e8 [r8e8r8e8]6 | r16r8r8e16e16e16]
+[f32e32e32e32]3 f16r8.e8r8e8 [[r8e16 @46o4c+32o3a32|@42o5r8e8]7 @42o5f32[e32]3 e16|r8.e16@46o4c+32o3a32@42o5r8e8]4
+[r8.e8r8e16]3 r8e16e8. @46o4p0f16p4c+16o3p8a16 p4@42o5r4.r16r4..r16r4..r16r8e16e8.@46o4p0f16p4c+16o3p8a16@42o5p4;
+
+
+%6 @v64 k0 p4 l16 q7 v20 o7 @43erer@44e8
+@53 o7 v20 @v0,127 q8 mp0 @f110 r8 r8r8 r8.e4^16 r8.e4^16 r8.e4e8 r8.e4.f16e4..f16e4..f16e8r8e8r8.
+$[[e8r8r8.e8.r8 r8.e8.r8 r4r4 r4 |[r4|r4]3 r8.e8r8e8r8.] r4r4 [r4r4] e4r8.e8.r8r8r8 [r4r4]6
+r4[r32]8 e8r8r8r8 [r4r4]6 | r16e8e8r8.]
+[r32r32r32r32]3 r16e8.r8r16r16r8 [[r4|r4]7 r8 r16 |e8.r16r16r4]4
+[e8.r8r8.]3 e8r16r16e8 r8.e4.e16e4..e16e4..e16e8r16r16e8r8.;
+
+
+
+#OPM@41
+{    5,  6,
+    31, 23, 10,  8, 10, 12,  0,  0,  0,  3,  0,
+    31, 15, 10,  0, 10,  0,  0,  0,  3,  2,  0,
+    31,  3, 10,  0,  8,  0,  0,  0,  0,  1,  0,
+    31,  0,  9,  0,  0,  0,  0,  0,  0,  0,  0};
+
+
+#OPM@42
+{    4,  8,
+    31,  0,  2, 15,  0,  0,  3,  3,  7,  1,  1,
+    31, 12, 15, 10,  1,  1,  0,  7,  7,  0,  1,
+    31, 21, 10,  7, 10,  3,  1,  0,  3,  2,  0,
+    31, 15, 10,  7,  5,  0,  1,  0,  3,  0,  1
+}@lfo10 ma2,32,0,30;
+
+
+#OPM@43
+{    4,  7,
+    31, 10,  0,  7, 10,  0,  0,  9,  0,  3,  0,
+    31, 17,  6, 10, 10, 10,  1,  0,  3,  3,  0,
+    31, 10,  6,  3,  5, 10,  0,  3,  7,  1,  0,
+    31, 20,  6,  7, 10, 10,  0,  0,  7,  0,  0};
+
+
+#OPM@44
+{    4,  7;
+    31,  9,  8,  7, 10,  0,  0, 15,  0,  3,  1,
+    31,  8,  6, 10, 10, 10,  1,  3,  3,  1,  1,
+    31,  8,  6,  3,  3, 10,  0, 15,  7,  3,  1,
+    31, 15,  6,  7, 10, 10,  0,  3,  3,  1,  1
+}@lfo11 ma2,32,0,40;
+
+
+#OPM@46
+{    5,  7,
+    31, 20,  5,  8,  5, 20,  1,  1,  0,  1,  0,
+    31, 14, 15,  8,  3, 18,  2,  1,  0,  2,  0,
+    31, 16, 15,  8,  3, 12,  2,  0,  0,  2,  0,
+    31, 10, 12,  8,  3, 12,  1,  0,  0,  2,  0
+}@lfo13,6 mp40;
+
+#OPM@53
+{    4,  7,
+    31,  0,  2,  1,  0,  4,  0,  1,  7,  1,  2,
+    31,  9,  9,  5,  1,  5,  0,  1,  0,  0,  2,
+    31, 10,  5,  5,  1,  1,  0,  0,  3,  2,  1,
+    31, 10,  9,  5,  8,  8,  1,  8,  0,  1,  1
+}@lfo12 ma1,6,0,20;
+
+
+#OPM@3
+{    4,  6,
+    31,  1,  0,  5, 12,  7,  0,  0,  0,  3,  0,
+    31, 13, 15, 10, 15, 14,  0, 14,  0,  1,  0,
+    31, 22,  7,  8,  6, 19,  0,  0,  7,  0,  0,
+    31, 20, 20,  8, 15,  2,  0,  0,  0,  1,  0};
+
+#OPM@4
+{    0,  5,
+    31,  4,  1,  0,  1, 10,  0,  3,  4,  0,  0,
+    18,  1,  1,  8,  1, 28,  0, 15,  4,  0,  0,
+    31,  4,  1,  0,  1, 23,  0,  7,  7,  0,  0,
+    31, 12,  2,  8,  1,  0,  0,  1,  7,  0,  0};
+
+
+#OPM@7
+{    6,  5,
+    31,  0,  0,  7,  0, 20,  0,  5,  7,  0,  0,
+    20,  0,  0,  7,  0, 10,  0,  2,  3,  0,  0,
+    20,  0,  0,  7,  0,  0,  0,  3,  7,  0,  0,
+    20,  0,  0,  7,  0,  0,  0,  1,  3,  0,  0};
+
+
+#OPM@10
+{    2,  7,
+    31, 14,  7,  8,  2, 33,  0,  0,  7,  0,  0,
+    21, 15,  6,  7,  4, 18,  2,  6,  7,  0,  0,
+    31,  5,  6,  7,  1, 40,  0,  0,  3,  0,  0,
+    31, 12,  7,  7,  5,  0,  0,  1,  7,  0,  0};
+
+
+#OPM@12
+{    2,  7,
+    31,  8,  3,  5,  2, 41,  1,  1,  3,  0,  0,
+    31,  5,  4,  5,  2, 39,  0,  5,  2,  0,  0,
+    31,  4,  2,  5,  1, 31,  0,  3,  7,  0,  0,
+    28, 30,  6,  6,  0,  0,  2,  1,  4,  0,  0};
+
+
+#OPM@13
+{    4,  7,
+    31,  0,  0,  0,  0, 33,  0,  8,  7,  0,  0,
+    31, 10,  0,  6,  1,  4,  0,  8,  7,  0,  0,
+    31,  0,  0,  0,  0, 24,  0,  4,  3,  0,  0,
+    31, 10,  0,  6,  1,  0,  0,  4,  3,  0,  0};
+
+
+#OPM@14
+{    4,  5,
+    31,  0,  0,  0,  0, 22,  0,  4,  7,  0,  0,
+    18,  0,  1,  6,  3,  0,  0,  4,  7,  0,  0,
+    31,  0,  0,  0,  0, 23,  0,  4,  3,  0,  0,
+    31,  0,  1,  6,  3,  0,  0,  4,  3,  0,  0};
+
+
+#OPM@15
+{    2,  7,
+    31,  8,  1,  5,  2, 41,  1,  1,  3,  0,  0,
+    31,  5,  2,  5,  2, 39,  0,  5,  2,  0,  0,
+    31,  4,  0,  5,  1, 31,  0,  3,  7,  0,  0,
+    28, 10,  2,  6,  0,  0,  0,  1,  4,  0,  0};
+
+
+#OPM@16
+{    3,  7,
+    26,  0,  0,  2,  0, 41,  0,  2,  2,  1,  0,
+    26,  4,  0,  2,  2, 21,  0,  4,  1,  3,  0,
+    31, 18,  3,  6,  3, 24,  0,  7,  2,  2,  0,
+    26, 18, 10,  8,  1,  0,  0,  2,  3,  0,  0};
+

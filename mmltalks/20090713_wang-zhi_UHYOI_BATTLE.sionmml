@@ -1,0 +1,43 @@
+#TITLE{UHYOI BATTLE};
+t150;
+#Q=mp10,12,1,8;
+
+// BASS
+#A=s5 na0,1 l16;
+#B=r32>a+16<; #C=r32c16;
+#D=d4d8c+4c+8c4c8>b8<bfd8> a+ra+a+<f8>a+<f8>a+<df crccg8cg8cec;
+#E=[[[3ddfd]ddga] l32 a+16a+16 <fBeBfBgBfBeBfB c16c16gCfCgCfCl16ecfec8]>;
+#F=d8<d>d8<d>dd<d8> dd<d>dd<d>gfe8;
+#G=[4>a+a+<f][3ccg]fef;
+#H=[4>a+a+<f>a+]<[3ccgc]gaa+<c>;
+#I=dd<d8>d<d8>d8d<d8>fdfgdd<d8>d<d8>>a+8a+a+8a+<c8.;
+v15o3p4A$DEFGFHI;
+
+// MAIN
+#A=l16 o5 s20;
+#B=d4.e4.f4.g4dga2.g2. [d8r4.f8.e8.f8d8r4.a8.g8.a8 [5>a+<fe]>a+< [5cgf]c];
+#D=d8.a8.grar<c8.>g8.frer;
+#E=[4>a+<fe] [4cgf];
+#F=[5a+df]a+ [4<c>eg]<c>a+aga4r2.r1;
+k0Ap5v13Q$BDEDF;
+k-3p2v10r32.AQ$BDEDF;
+
+// GUITAR
+#A=l8 %1@2 s12;
+#B=d4rc+4rc4r>b4ra+2.<c2.>;
+#C=r>afrafrafraff2.g2.;
+#D=[l32 [4d16]f16dr16.dr d16dr16.drg16dr16.dr 
+        [4d16]a16dr16.dr d16dr16.drf16dr16.dr 
+        l8 >a+a+<ffeeffggffeeff];
+#E=[l32 [4a16]<c16>ar16.ar a16ar16.ar<d16>ar16.ar 
+        [4a16]a16ar16.ar a16ar16.ar<c16>ar16.ar 
+        l8 >r>a+r<frerfrgrfrerf<];
+#F=l8 dr16fr16efar16fr16ed >a+2.<c2. 
+      dr16fr16efar16fr16ed a+a+aaggff<cc>a+a+aagg a1r1;
+#G=l8 ar16<cr16>b<cer16cr16>ba f2.g2. 
+      ar16<cr16>b<cer16cr16>ba >ra+rargrf<rc>ra+rarg a1r1;
+p7v12A$BDF;
+p0v10A$CEG;
+
+
+

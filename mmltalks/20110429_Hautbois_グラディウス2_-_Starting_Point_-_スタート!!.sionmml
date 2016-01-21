@@ -1,0 +1,104 @@
+/*
+  グラディウス2 - Starting Point - スタート!!
+  (C) KONAMI 1987 コナミ矩形波倶楽部
+  2011.4.28 MML - Hautbois. 
+*/
+
+#TITLE{グラディウス2 - Starting Point - スタート!!};
+#REV;
+#FPS  600;
+#QUANT  8;
+//#EFFECT0{chorus1,20,0.4,30,reverb70,40,70,30};
+
+//SCC-WAVES
+#WAVB00{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f80808080808080808080808080808080};
+#WAVB01{001931475A6A757D7F7D756A5A47311900E7CFB9A6968B8380838B96A6B9CFE7};
+#WAVB02{00407F4001C081C001407F4001C0014001E0012001F0011001FFFFFFFF404040};
+#WAVB03{00F0E0D0C0B0A090808080808080808080808080808080807F70605040302010};
+#WAVB04{00407F400110202D37444E59636C73787C7F7C78736C594E44372D2010030201};
+
+//table env
+#TABLE  0 { 128 | 128 };
+#TABLE  1 { (128,80)60 | 80 };
+#TABLE  2 { (80,128)30(128,60)80 | 60 };
+
+#A=x128 @v70 %4 s30 q8
+@1 o6 na0 l24 @q0 v15
+   e&e-&d&d-&c&<b& b-&a&a-&g&g-&f& l8e&v12e&v9e&v6e 
+@2 o3 na1 l16 @q0 v15
+   [c>c<]15cc&c2&q4c8
+;
+
+#B=x128 @v70 %4 s30 q8 @p10
+@1 o5 na0 l24 @q0 v15
+   b&b-&a&a-&g&g-& f&e&e-&d&d-&c& <l8b&v12b&v9b&v6b 
+@3 o5 na2 l4. @q0 v15 q7
+   fcfb->e-a-2&l8a-&q4a-
+;
+
+#C=x128 @v70 %4 s30 q8 @p-10
+@2 o3 na0 l24 @q0 v14
+   l8d12e6&e d12e6&v12e& v10e&v8e 
+@3 o5 na2 l4. @q0 v12 q7 @k6
+   f8 fcfb->e-a-2&l8q4a-
+;
+
+#D=x128 @v70 %4 s30 q8 @p20
+@4 o5 na0 l24 @q0 v15
+   e&<b&>e&f#& <b&>f#&>e&<b&> e&f#&<b&>f#&< b&>e&f#&b&< v8 b&>e&f#&b&< v3 b&>e&f#&b
+@3 o5 na2 l4. @q0 v15 q7
+   b-fb->e-a->d-2&l8d-&q4d-
+;
+
+#E=x128 @v70 %4 s30 q8 @p-20
+@4 o5 na0 l24 @q0 v15 @k-6
+   e&<b&>e&f#& <b&>f#&>e&<b&> e&f#&<b&>f#&< b&>e&f#&b&< v8 b&>e&f#&b&< v3 b&>e&f#&b
+@3 o5 na2 l4. @q0 v11 q7 @k-6
+   fcfb->e-a-2&l8a-&q4a-
+;
+
+#I=x128 @v50 s63 q8 %0 @0
+o5 na0 l24 @q0 v15 @k3
+   e&<b&>e&f#& <b&>f#&>e&<b&> e&f#&<b&>f#&< b&>e&f#&b&< v8 b&>e&f#&b&< v3 b&>e&f#&b
+o3 na1 l16 @q0 v15
+[c>c<]15cc&c2&q4c8
+;
+
+//効果音適当でごめんなさい
+#TABLE  3 { (0) | (0,240)100 };
+#TABLE  4 { (0) | (0,8)900 };
+#TABLE  5 { (0,-12)30 | -12};
+#TABLE  6 { (0,-31)100 | -31};
+#TABLE  7 { (-31,0)240 | 0};
+#TABLE  8 { (128,0)480 | 0};
+#TABLE  9 { (0,-12)70(0,-12)70 | -12};
+
+#J=x128 @v70 s63 q8 %0 @0
+r1r8
+o3 na0 np3 nt4 v8 a2...
+np nt5 o3 v15 a32 
+@1 
+np nt6 o2g8
+np nt7 na8 o2g1
+;
+
+#K=x128 @v70 s63 q8 %0 @0
+r1r8
+o3 na0 np3 nt4 v8 @k6 a2...
+o3 na np0 nt9 v15a6 v10a6 v5a6
+;
+
+t150;
+//SCC
+A;
+B;
+C;
+D;
+E;
+//PSG
+I;
+J;
+K;
+
+#END;
+

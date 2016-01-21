@@ -1,0 +1,99 @@
+#TITLE{ツインビー（通常時）};
+
+// メロディ
+t150
+%0 @0 o6 l8 q8 r2
+$
+v4 k0 e&(e&(e&(e& e&( e&)e&)e& e&))e&))e&))e& e&)e&)e&)e
+v4 k0 d&(d&(d&(d& d&( d&)d&)d& d&))d&))d&))d& d&)d&)d&)d
+v4 k0 e&(e&(e&(e& e&( e&)e&)e& e&))e&))e&))e& e&)e&)e&)e
+v4 k0 d&(d&(d&(d& d&( d&)d&)d& d&))d&))d&))d& d&)d&)d&)d>
+v4 k0
+ercg&gefg&g2.erdra4&afga&a2grfr
+ercg&gefg&g2.erdra4&afga&a2grfr
+r1r1r1r1 r1r1r1r1
+ercg&gefg& g2argrf4.<cc2&c2 >a<frf
+frge&ecde frge&ecde frgc&c2 frgc&c2
+frge&ecde frge&ecde frgc&c2 frgc&c2>
+b4.<cr4>b4& b<cr4d4c4 d4.ee2&e2d4e4>
+b4.<cr4>b4& b<cr4d4c4 d4.ee2&e1
+r1r1r1r1 r1r1r1r1
+r1r1r1r1 r1r1
+;
+
+// メロディ（デチューン用）
+%0 @0 o6 l8 q8 r2
+$
+v3 k4 e&(e&(e&(e& e&( e&)e&)e& e&))e&))e&))e& e&)e&)e&)e
+v3 k8 d&(d&(d&(d& d&( d&)d&)d& d&))d&))d&))d& d&)d&)d&)d
+v3 k4 e&(e&(e&(e& e&( e&)e&)e& e&))e&))e&))e& e&)e&)e&)e
+v3 k8 d&(d&(d&(d& d&( d&)d&)d& d&))d&))d&))d& d&)d&)d&)d>
+v3 k4
+ercg&gefg&g2.erdra4&afga&a2grfr
+ercg&gefg&g2.erdra4&afga&a2grfr
+r1r1r1r1 r1r1r1r1
+ercg&gefg& g2argrf4.<cc2&c2 >a<frf
+frge&ecde frge&ecde frgc&c2 frgc&c2
+frge&ecde frge&ecde frgc&c2 frgc&c2>
+b4.<cr4>b4& b<cr4d4c4 d4.ee2&e2d4e4>
+b4.<cr4>b4& b<cr4d4c4 d4.ee2&e1
+r1r1r1r1 r1r1r1r1
+r1r1r1r1 r1r1
+;
+
+
+// ベース
+%1
+// [ws], [ar], [dr], [sr], [rr], [sl], [tl], [ksr], [ksl], [mul], [dt1], [detune]
+@     1,   63,    0,    0,   63,   10,   0
+v6 o4 l8 q4 r2
+$
+cccc cccc cccc c16c16ccc >b-b-b-b- b-b-b-b- b-b-b-b- b-16b-16b-b-b-<
+cccc cccc cccc c16c16ccc >b-b-b-b- b-b-b-b- b-b-b-b- b-16b-16b-b-16b-16b-<
+cccc cccc cccc c16c16ccc >b-b-b-b- b-b-b-b- b-b-b-b- b-16b-16b-b-b-<
+cccc cccc cccc c16c16ccc >b-b-b-b- b-b-b-b- b-b-b-b- b-16b-16b-b-16b-16b-
+aaaaaae16g16a aaaaaae16g16a 
+ggggggd16f16g ggggggd16f16g
+aaaaaae16g16a aaaaaae16g16a 
+ggggggd16f16g ggggggd16f16g<
+ccccccccccccc16c16ccc>ffffffffffffffff<
+c<c>c<c>c<c>c<c> c<c>c<c>c<c>c<c>> f<f>f<f>f<f>f<f> g<g>g<g>g<g>g<g
+c<c>c<c>c<c>c<c> c<c>c<c>c<c>c<c>> f<f>f<f>f<f>f<f> g<g>g<g>g<g>g<g>
+ffffffc16d16f ffffffc16d16f< ccccccc16c16c ccccccc16c16c>
+ffffffc16d16f ffffffc16d16f< ccccccc16c16c> ggggggg16g16g
+aaaaaae16g16a aaaaaae16g16a ggggggd16f16g ggggggd16f16g
+aaaaaae16g16a aaaaaae16g16a ggggggd16f16g ggggggd16f16g
+ffffffc16d16f ggggggd16f16g a-a-a-a-a-a-e-16f16a- b-b-b-b-b-b-f16a-16b-<
+c4r2.r1
+;
+
+
+// スネア
+#D=rrbr;
+#E=rbrb;
+#F=rbb16b16b;
+%0
+// [ws], [ar], [dr], [sr], [rr], [sl], [tl], [ksr], [ksl], [mul], [dt1], [detune]
+@     1,   63,   34,   40,   28,   10,   0
+v15 o1 l8 r2
+$
+[ DDDD DDDD DDDD DDDE ]
+[ DDDD DDDD DDDD DDDD ]
+[ DDDD DDDD DDDD DDDD ]
+DDDD DDDD DDDD DDDD DDDF
+;
+
+
+// ハイハット
+#G=ddrd;
+%0
+// [ws], [ar], [dr], [sr], [rr], [sl], [tl], [ksr], [ksl], [mul], [dt1], [detune]
+@     1,   63,   40,   60,   60,   10,   0
+v12 l8 r2 o0q7
+$
+[ GGGG GGGG GGGG GGG d16d16rd16d16r ]
+[ GGGG GGGG GGGG GGGG ]
+[ GGGG GGGG GGGG GGGG ]
+GGGG GGGG GGGG GGGG GGG drrr
+;
+

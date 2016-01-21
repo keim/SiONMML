@@ -1,0 +1,46 @@
+#TITLE{gontiti / 放課後の音楽室 CM-Version};
+#REV;
+#EFFECT0{reverb70,40,60,45};
+
+t75;
+
+#A= %11 @0,44,46,0,0,20 s16 @f60 o5 q8 v16 l4;
+#A+= r1 [[dgeg af+g2 | bbbb baa2] gbag gf+g2];
+#A+= ba>c<b f+ag2 gggg gfd2 aga+a ef+16&g8.f4..((q4f16))q8 ffff fd+f+2;
+#A+= [dgeg af+g2 | bbb l16 q7br>q5dc<bagq6f+agf+eq7gf+ed4r l4q8] gbag gf+g2;
+
+A;
+
+#I=%t1 %11 @0,40,46,10,60,20 s12 @f60,0;
+#B= I o4 q8 v11 l8 k4;
+#C= I o4 q8 v11 l8 k2;
+#D= I o4 q8 v11 l8 k-2;
+#E= I o3 q8 v11 l8;
+
+#B+= r4.d8  r32b4...;
+#C+= r4g4   r64g4....;
+#D+= r8d4r8 r64d4....;
+#E+= g4r4   g2;
+
+#B+=[[rrrd4r>c4rrrd+4rr<g4rrg4rrg4rra>|f+2<]rrrd];
+#C+=[[rrg4rrrg4ra4rrb4rrb4rr>c4rrc4|r64c16..c4r<]rrg4];
+#D+=[[rd4rrg4rrd+4rrg4rrg4rrg4rra4r|r64a16..ra4]rd4r];
+#E+=[[g2>c2<b2e2>c2<a2>d2|r32d16.^4d<]g2];
+
+#B+=rrrb4rr>f+4rr<b4rre4rra+4rra+4rra4rrd;
+#C+=rrg4rr>d4rr<a4rrg4rr>d4rrd4rrg4rrd4;
+#D+=re4rra4rrd+4rre4rra+4rra+4r>rd+4r<ra4r;
+#E+=a2>d2<b2e2>d+2c2f2a+2;
+
+#B+=o4rrrf4rra+4rr>e4rrd4rr<g+4rrg+4>rf4rrrd;
+#C+=o4rra+4rr>e4rrc+4rrf4rrc4rrc+4rc+4rrrc4;
+#D+=o4rf4rra+4rre4rra4rrg+4rrg+4rrrrg4f+4r;
+#E+=o3g2>c2<a2>d2c+2<a+2>d+2d2;
+
+#B+=o4[rrrd4r>c4rrrd+4rr<g4rrg4rrg4rra>|f+2<]rrr<do4d1;
+#C+=o4[rrg4rrrg4ra4rrb4rrb4rr>c4rrc4|r64c16..c4r<]rr<gro4r32g1;
+#D+=o4[rd4rrg4rrd+4rrg4rrg4rrg4rra4r|r64a16..ra4]rbrro4r16b1;
+#E+=o3[g2>c2<b2e2>c2<a2>d2|r32d16.^4d<]g2o3r8g1;
+
+B; C; D; E;
+

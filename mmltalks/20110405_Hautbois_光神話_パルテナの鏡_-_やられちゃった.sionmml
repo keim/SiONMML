@@ -1,0 +1,82 @@
+/*
+   光神話 パルテナの鏡 - やられちゃった
+   [FC][FDS][パルテナの鏡]
+   2011.5.11 修正 Hautbois
+   2011.5.21 波形修正 Hautbois
+*/
+
+#TITLE{光神話 パルテナの鏡 - やられちゃった};
+#REV;
+#FPS  600;
+#QUANT  16;
+//#EFFECT0{reverb70,40,80,30};
+
+// table env
+#TABLE  0 { (40,128)120(128)160(128,0)440 | 0 };
+#TABLE  1 { (80,128)80(128,80)80          | 80 };
+#TABLE  2 { (90,70)20(60,0)10             | 0 };
+
+//     00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff
+#WAVB0{007C7A787674706E6C6C6A68666462605E5C5A58565452504E4C4A48464442403E3C3A38363432302E2C2A28262422201E1C1A18161412100E0C0A0806040200};
+#WAVB1{7f80};
+#WAVB2{7f808080};
+
+#A= @v128
+v18 x128 %4
+@0 na0 np10 s60
+[r1]10
+[r1]4 r4
+o4 l12 q16 r1 d-a>d-d<b-farr<a4
+;
+
+#B= @v50 @k2 @p20
+v8 x128
+%4 @1 na1 s60
+[r1]2 q16 o4
+[
+l12 e-e-e-a-rce-4e-a->c l4[d<b>]
+l12 ccce-r<a->c4ce-a-g-4<g-b->d-fd-<a-fa->d-<
+]
+%4 @2 na1 s60
+o6 l12 q16 [e-re-a-re-a-r>c<a-4a-ra->cr<a->e-rre-rr<]e-re-
+o6 l12 q16 e4araa2<c#4d4c#rr<a4
+;
+
+#C= @v50 @k2 @p-20
+v8 x128
+%4 @1 na1 s60
+[r1]2 q16 o4
+[
+l12 a-a-a->cr<e-a-4a->ce-l2gf
+l12 e-e-e-a-rce-4e-a-cl2b->d-<<
+]
+%4 @2 na1 s60
+o6 l12 q16 [erearear>c#<a4ara>c#r<a>errerr<]ere
+o6 l12 q16 e-4a-ra-a-2<<a4b-4arre4
+;
+
+#D= @v90
+v16 x128
+%1 @8,60,0,0,60
+o3 l12 q12 [a-a-a-a-4]20
+o4 [r4q10a4>l12q10ara r8l16q8aal12q10ara< q10a4>l12q10ara r8l16q8aa<]r4
+o4 [q14a8>l16q8aal12q10ara<]<l4q8eb-q6a<q8a
+;
+
+#E= @v90
+v6 x128
+%1 @9 l12 q15
+o0
+na2[l4cccl12ccc]10
+[r1]4 r4
+[r1]2
+;
+
+t152
+A;
+B;
+C;
+D;
+E;
+
+#END;

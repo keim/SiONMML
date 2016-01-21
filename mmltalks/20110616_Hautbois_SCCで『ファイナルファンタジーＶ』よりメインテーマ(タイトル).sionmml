@@ -1,0 +1,199 @@
+/*---------------------------------------------------------------
+   SCCで『ファイナルファンタジーＶ』よりメインテーマ(タイトル)
+    1992.12.06 スクウェア/植松伸夫
+    2011.06.16 MML Hautbois.
+---------------------------------------------------------------*/
+
+#TITLE{SCCで『ファイナルファンタジーＶ』よりメインテーマ(タイトル)};
+#REV;
+#FPS 600;
+#QUANT 8;
+#EFFECT0{delay180,22,0,100reverb70,40,80,18};
+
+#WAVB00{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f80808080808080808080808080808080};
+#WAVB01{305050300000104060706030F0E0E000202010C0A090A0C00000D0B0B0D00000};
+#WAVB02{00F8F0E8E0D8D0C8C0B8B0A8A098908880787068605850484038302820181008};
+#WAVB03{007F0080A0C0D8F008203040506070787C7F7C7870605040302008F0D8C0A080};
+#WAVB04{001931475A6A757D7F7D756A5A4731198090A0B0C0D0E0F00010203040506070};
+#WAVB05{305050300000104060706030F0E0E000202010C0A090A0C00000D0B0B0D00000};
+#WAVB06{00407F4001C081C001407F4001C0014001E0012001F0011001FFFFFFFF404040};
+#WAVB07{004E626D757A7D7E7F7E7D7A756D624E00B19D928A858281808182858A929DB1};
+
+#TABLE 00 {(128)|128};
+#TABLE 01 {(50,128)40|128};
+#TABLE 02 {(40,128)100(128,100)100|100};
+#TABLE 03 {(128,80)30(80,30)200|30};
+
+//BD
+#TABLE 20 {(128,0)10|0};
+#TABLE 21 {(0)};
+#TABLE 22 {(0,-24)10|-24};
+//SD
+#TABLE 30 {(70,20)20(20,0)60|0};
+#TABLE 31 {(0)8|1};
+#TABLE 32 {(0)8|-36};
+//HH-C
+#TABLE 40 {(11,6)10 (6,0)5 | 0 };
+#TABLE 41 {(0)|1};
+#TABLE 42 {(0)|0};
+//HH-O
+#TABLE 50 {(14,6)4 (6,0)300 | 0 };
+#TABLE 51 {(0)|1};
+#TABLE 52 {(0)|-48};
+//SD2
+#TABLE 60 {(50)10(30,0)60|0};
+#TABLE 61 {( 0)10|1};
+#TABLE 62 {( 0)10|-61};
+//Cymbal
+#TABLE 90 {(60,15)4(15,0)600 | 0 };
+#TABLE 91 {(0)|1};
+#TABLE 92 {(11,0)600|0};
+
+#Z= %0 @1 o4 na20 @@21 nt22 e;
+#S= %0 @1 o4 na30 @@31 nt32 c#;
+#H= %0 @1 o0 na40 @@41 nt42 c#;
+#O= %0 @1 o4 na50 @@51 nt52 c#;
+#J= %0 @1 o5 na60 @@61 nt62 d;
+#X= %0 @1 o0 na90 @@91 nt92 c#;
+
+#Q=x127 v15 @v127 %4 @0 q8 @q0;
+#A=Qr16@p60%t4
+   l4[[H]4]4
+$
+   l4[[H]4]8
+   l4[[H]4]4
+   l8[HO]14Hr4.
+
+   l16[[H8HHO8HH]2]16
+
+   l16[[H8HHO8HH]2]8
+;
+
+#B=Qr16%t2
+@2na0@v20s30@q16 @k5 @p40
+   l8[gggggggg]4
+$l8@q16na0
+   [gggggggg aaaaaaaa]6
+l16@q0na1
+   g<b->e-g b-e-gb-> e-<gb->e- g<b->e-g <acfa >c<fa>c f<a>cf acfa g1&g1
+na2@v28
+   <l4g1& ggab- >c1& c1 c1   f2c2 d2g2& g1
+   <l4g1& ggab- >c1& c1 l2cf ga   g1&   g1
+   
+   <b-2.>l4c d1 e-fl2g-& g-e- l1 d c d- c
+;
+
+#C=Qr16%t2
+@2na0@v20s30@q16 @k2 @p20
+   l8[eeffeedd]4
+$l8@q16na0
+   eeffeedd f#f#ggf#f#ee [e-e-ffe-e-dd]6
+   eeffeedd f#f#ggf#f#ee [e-e-ffe-e-dd]2
+l16@q0na1
+   e-<gb->e- g<b->e-g b-e-gb- >e-<gb->e- <f<a>cf acfa >c<fa>c f<a>cf c1<b1
+na2@v28
+   l4e-1& e-e-fg f1& ffga l1f& f    g   f
+   l4e-1& e-e-fg f1& ffga l2fa >l1c <b& b
+
+   e-& e- l4g->dc2& c2<b-g- l1f& f& f& f
+;
+
+#D=Qr16%t2
+@2na1@v20s30@q16 @k2 @p-40
+   l8[cccc cccc]4
+$l8@q16na0@v20 
+   cccc cccc dddd dddd cccc cccc cccc cccc 
+   <b-b-b-b- b-b-b-b- >cccc cccc <b-b-b-b- b-b-b-b- >cccc cccc 
+   cccc cccc dddd dddd cccc cccc cccc cccc
+l4@q0na1 @k7
+   <e-dc<b- agf>c< g1&g1>
+na2@v28 @k2
+   l1g& g a& l4aab->c l1d  c <b-& b-
+     g& g a& l4aab->c l1d& d <g&  g
+
+   g& l4g>dc<b- l1b-& b- b- a- b- a-
+;
+
+#E=Qr16%t0
+@3na0@v35s38 @lfo11,2 mp0,12,100,500 @p-10
+   r2..l16@q8cf g1& g2.r8fb-> c1
+@6o5l4@q4
+$
+   g2<b>c d2.a g1 e-2e-f
+   g2>c2 <a2.f g2>d2 <a1
+   g2<b>c d2.a g1 e-2e-f
+   g2b-2 a2.f g1&g2.r4
+
+   l2>d<g> fl4e-d cd<a2& a1
+   >cd<a2& aga>c <b-g2.& ggab-
+   l2>d<g> fl4e-d cd<a2& a1
+   l2>c<f >l4gfe-f d1&d2.r4
+
+   d2.c <l2b-g l4g->dc2& c2<b-g- 
+   b-1&b-1& b-4r2. r1
+;
+
+#F=Q%t3
+@7na3@v20s25 @p-20
+o4l4q2 e>f>grr1 <<e>f>gr r16 l8<<c>c<g>gc>c<g>g
+o3@0@v38s36l8q6%t1
+$
+   [ccr2>c<gccr2.]
+   [e-e-r2>e-<b-e-e-r2.]
+   [ccr2>c<gccr2.]
+   >l4q8e-dc<b- agf>c
+   <l8q6[ggrd]4
+
+   [e-e-r2>e-<b-e-e-r2. e-e-r2>fc<e-e-r2.
+   ddr2>d<addr2. ggr2>gd<ggr4 ffr4]
+
+   [ccr>c<ccr>c<ccrgrcr | g] c
+   b-b-rf b-b-r4 a-a-rf a-a-r4
+   [q2g-q6d-]4 [ffr4]
+;
+
+#G=Qr32%t3
+@7na3@v20s25 @p10
+   o4l4q2 g>g>>crr1 <<<g>g>>cr r32 r24 l8<<<e>ec>c<e>ec>c12
+q8s63@v110%t4
+$
+   l8[ZZr2.]8
+   l8[ZZr2.]4
+   l4[Z]8l8[ZZr4]3ZZSl16SS
+
+   l8[[ZZr4 Sr4Z | Zr4. Sr4Z]4 ZZr4 SZrZ]
+
+   [ZZr4 SZr4 ZZrZ SZ | rZ]4 Sr
+;
+
+#I=Qr16%t3
+@7na3@v20s25 @p-60
+   o5l4q2 c>c>err1 <<c>c>er r12 l8<<<g>ge>e<g>ge>e24
+q8s63@v100%t4
+   l1X $ [r]15
+
+%4 na @@ nt%t3
+@7na3@v20s25
+   o4l16q2
+  [[e-gb->e- gb->e-g b-ge-<b- ge-<b-g]
+   [e-a>cf a>cfa >c<afc <afc<a]
+   [dfa>d fa>df afd<a fd<af] |
+   [dgb->d gb->dg b-gd<b- gd<b-g]]
+   [dgb>d gb>dg bgd<b gd<bg]
+   l1[r]7r2.
+q8s63@v100%t4
+   X1r4
+;
+
+t141
+A;
+B;
+C;
+D;
+E;
+F;
+G;
+I;
+
+#END;
+

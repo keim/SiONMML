@@ -1,0 +1,46 @@
+#TITLE{[FC] 忍者じゃじゃ丸くん - ステージＢＧＭ - (C)JALECO 1985};
+#REV;
+#FPS 1000;
+
+#TABLE 1 { (128,0)1000 | 0 };
+#TABLE 2 { (128,0)67   | 0 };
+
+/* ch.1 */
+#A=
+   t150
+   %1 @1,63,0,0,63,0 v10 x128 o6 l8 q8 @q0 k0 na1
+   $
+   [rgggg4fgg1r>c<a-gf4dfg1]2
+   g1r4g+gf4g4
+   [g+g]3
+   dfg1f1r4f+fd+4f4
+   [f+f]3
+   cd+f1
+;
+
+
+/* ch.2 */
+#B=
+   %1 @8,63,0,0,63,0 v15 x128 o5 l8 q6 @q0 k0
+   $
+   [ccfg]16
+   [<gg>cd]8
+   [<ffb->c]8
+;
+
+
+/* ch.3 */
+#C=
+   %1 @9,63,0,0,63,0 @ph-1 v12 x128 o0 l8 q8 @q0 k0 na2
+   $
+   [kt15c4 kt12c c kt15c4 kt8c kt15c]16
+;
+
+
+/* 再生 */
+A;
+B;
+C;
+
+
+#END;

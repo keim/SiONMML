@@ -1,0 +1,143 @@
+/*
+   [AC] GRADIUS - Final Attack - (Stage7) (C)KONAMI 1985 by LinearDrive
+   date:2011-03-28
+   JASRAC:033-1694-7
+*/
+
+
+#TITLE{[AC] GRADIUS - Final Attack - (Stage7) (C)KONAMI 1985};
+#REV;
+#TMODE{unit=100};
+#QUANT 16;
+
+
+/* 0005289 波形データ */
+#WAVB  0 {F080F020405060504020F0C0A0908090A0C0F03050605030F0B0908090B0F060};
+#WAVB  1 {B090F0604010406020F0407050002030F0A0005010C0D0F0A080B000D090B0E0};
+#WAVB  2 {C0F020404020F0F0003050605020E0D0D0F0101000C0908090B0E0F0F0C0A0A0};
+#WAVB  3 {C0D0F0102030405050606060505040302010F0D0C0B0A090908080809090A0B0};
+#WAVB  4 {8080000000000070700000808080000000007070700080800000000070700000};
+#WAVB  5 {8080000000800070707000000080000000808080800080800000000080808000};
+#WAVB  6 {707080809090A0A0B0B0C0C0D0D0E0E0F0F00000101020203030404050506060};
+#WAVB  7 {8080606060606060606080808080808080806060608080806060606060808080};
+#WAVB  8 {F080F020405060504020F0C0A0908090A0C0F03050605030F0B0908090B0F060};
+#WAVB  9 {B090F0604010406020F0407050002030F0A0005010C0D0F0A080B000D090B0E0};
+#WAVB 10 {C0F020404020F0F0003050605020E0D0D0F0101000C0908090B0E0F0F0C0A0A0};
+#WAVB 11 {6050A0909090A0A0B0B0C0C0D0D0E0E0F0F00000101020203030404050506060};
+#WAVB 12 {8080707070708080808080808080808080808080808080808080808080808080};
+#WAVB 13 {8080707070707070707080808080808080808080808080808080808080808080};
+#WAVB 14 {F0D0F0002030F05050F060F05050F0302010F0D0F0B0F090F080F080F090F0B0};
+#WAVB 15 {80807070608090908080404030809090808020201080909080800000F0809090};
+
+
+/* シーケンサ初期化
+   AY3-8910:v-scale=-3dB/vstep
+   0005289 :v-scale=-1.25dB/vstep (0.25dB*5vstep)
+   113(v16) 108 103 98 93 88 83 78 73 68 63 58 53 48 43 38 0
+*/
+#I= %8 @8,63,0,0,63,0 %v3,4 %x1 v0 x128 q16 @q0 o5 kt0 k0;
+#J= %4 @0,63,0,0,63,0 %v4,1 %x1 v0 x128 q16 @q0 o5 kt0 k0;
+
+
+/* 音長制御用 */
+#O= q4;
+#P= q6;
+#Q= q2;
+#R= q16;
+
+
+/* AY3-8910 ch.1 (iv10) */
+#A=
+   I l16 @8,63,0,0,27,0 v13 o6
+   $
+   R))c4rr(( <g8r4> Q crrr<  R  a+8r4 g8r4 Q frrr>
+   R )c4rr(  <g8r4  Q eg>ce  R))f4&f4r8((  Q errr dr 
+   R))c4rr(( <g8r4> Q crrr<  R  a+8r4 g8r4 Q fr
+   R  g8&g2&grrr  r Q d+f    R  g&g2    rr Q de fgab>
+
+   R))c4rr (( <g8r4> Q crrr<   R  a+8r4  g8r4  Q frrr>
+   R  c4rr    <g8r4  Q ceg>c   R))d2r4     r(( Q <a+>cd
+   R))d+4rr(( <a+8r4 Q a+>cdd+  ))f&f&frrr  (( c+&c+&c+rrr  c+d+fr
+   R))g2r4 (( Q cdef  R ))g2r4(( Q cdef
+   P a+6)a6)g+6(( g6)f+6)f6((  Q ed+rd  R c+4.rr
+;
+
+
+/* AY3-8910 ch.2 (iv12) */
+#B=
+   I l16 @8,63,0,0,33,0 v15 o4
+   $
+   Q
+   cr<brargr> cr<brargr a+rargrfr a+rargrfr>
+   cr<brargr> cr<brargr frerdrcr frerdrcr>
+   cr<brargr> cr<brargr a+rargrfr a+rargrfr
+   d+rdrcr<br> d+rdrcr<br> drcr<brar> grfrerdr>
+   cr<brargr> cr<brargr a+rargrfr a+rargrfr>
+   cr<brargr> cr<brargr a+rargrfr a+rg+rgrfr>
+   d+rdrcr<a+r> d+rdrcr<a+r> c+rcr<a+rg+r> c+rcr<a+rg+r
+   grdrgr>dr<gr>drgrdr <grdrgr>dr<gr>drgrdr<
+   grrr grrr grrr grrr g gr g  R  g4.rr
+;
+
+
+/* AY3-8910 ch.3 (iv12) */
+#C=
+   I l16 @8,63,0,0,33,0 v15 o5
+   $
+   Q
+   cr<brargr> cr<brargr a+rargrfr a+rargrfr>
+   cr<brargr> cr<brargr frerdrcr frerdrcr>
+   cr<brargr> cr<brargr a+rargrfr a+rargrfr
+   d+rdrcr<br> d+rdrcr<br> drcr<brar> grfrerdr>
+   cr<brargr> cr<brargr a+rargrfr a+rargrfr>
+   cr<brargr> cr<brargr a+rargrfr a+rg+rgrfr>
+   d+rdrcr<a+r> d+rdrcr<a+r> c+rcr<a+rg+r> c+rcr<a+rg+r
+   grdrgr>dr<gr>drgrdr <grdrgr>dr<gr>drgrdr<
+   grrr grrr grrr grrr g gr g  R  g4.rr
+;
+
+
+/* 0005289 ch.1 (iv14) */
+#D=
+   J l16 @1,63,0,0,27,0 v103 o5 k4
+   $
+   R d8r4 e2rr c8r4 d2rr
+   R d8r4 e2rr  O grrr  Q >cr<  R a8 r4  Q frrr
+   R d8r4 e2rr c8r4 d2rr
+   Q <a+rrr>d+r<a+rrr>d+r<a+rrr ar>dr<ar brrr b>c defg
+   Q drrr gr  R  e2rr  Q  crrr  fr     R  d2 rr
+   Q drrr gr  R  e2rr  Q  frrr  a+rfr rra+r g+rrr
+   Q frrr a+r R  g2rr  Q  g+rrr >c+r<  R  g+8 r4  Q  >c+rrr
+   R c8r4<b8r4 Q ab>cd
+   R c8r4<b8r4 Q ab>cd
+   P c6 <b6 a+6 a6 g+6 g6  Q  f+fre  R  d+4.rr
+;
+
+
+/* 0005289 ch.2 (iv11) */
+#E=
+   J l16 @13,63,0,0,26,0 v88 o6 k8
+   $
+   R)10 c4rr(10 <g8r4> Q crrr<  R  a+8r4 g8r4     Q frrr>
+   R )5 c4rr(5  <g8r4  Q eg>ce  R)10 f4&f4r8 (10  Q errr dr 
+   R)10 c4rr(10 <g8r4> Q crrr<  R  a+8r4 g8r4 Q fr
+   R  g8&g2&grrr     r Q d+f    R  g&g2    rr Q de fgab>
+
+   R)10 c4rr (10 <g8r4> Q crrr<   R  a+8r4  g8r4      Q frrr>
+   R    c4rr     <g8r4  Q ceg>c   R )10  d2r4    r(10 Q <a+>cd
+   R)10 d+4rr(10 <a+8r4 Q a+>cdd+   )10 f&f&frrr  (10 c+&c+&c+rrr  c+d+fr
+   R)10 g2r4 (10  Q cdef  R )10 g2r4 (10  Q cdef
+   P a+6 )5 a6 )5 g+6(10 g6 )5 f+6 )5 f6(10   Q ed+rd  R c+4.rr
+;
+
+
+/* 再生 */
+t18200
+A;
+B;
+C;
+D;
+E;
+
+
+#END;

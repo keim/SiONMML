@@ -1,0 +1,89 @@
+#TITLE{RomancingSaGa2-Battle1-(未完成)};
+//スネアの音色作るのが面倒でドラムセットを全く作ってないﾊﾊﾊ
+#REV;
+#EFFECT0{eq120,60,50};
+//#EFFECT1{delay50,55,0,85};
+#EFFECT1{delay80,50,0,85};
+#EFFECT2{reverb70,37,50,100};
+t163;
+
+//       ag fb
+#OPN@002{04,05;//Strings2
+//ar dr sr rr sl tl ks ml dt ams
+  31,00,00,00,00,20,03,02,03,00;
+  14,00,00,08,00,15,03,02,03,00;
+  31,00,00,00,00,32,03,02,07,00;
+  14,00,00,08,00,15,03,04,07,00;};
+
+//      ag fb
+#OPN@11{03,07;
+//ar dr sr rr sl tl ks ml dt ams
+  21,04,00,00,01,35,03,09,00,00;
+  19,20,00,00,02,45,00,00,00,00;
+  22,20,00,00,02,22,00,00,05,00;
+  25,00,07,13,00,00,00,01,00,00;};
+
+//       ag fb
+#OPN@022{04,06;//Tranpet(RS2)
+//ar dr sr rr sl tl ks ml dt ams
+  19,10,00,04,00,24,00,02,00,00;
+  22,03,00,09,00,00,00,04,00,00;
+  19,03,00,04,00,29,00,02,00,00;
+  22,03,00,09,00,00,00,04,00,00;};
+
+#L=@lfo4,1 mp5;
+
+#A=
+l16	aea>cecea<gdgb>d<b>dg<afa>cfcfa<ba-b>ea-ea-ba1^1< $
+l16	[r1r1r1aea>ceceaeaec<a>c<ae> r1r1r2|eaec<a>c<ae c4g4g-4e-4]2 ecea>c<a>cea4r2.<
+l4	[rab>cdc<b>c|<bdefee-8e8g2]2>d<b>cdee-8e8 l16 ged-<a>d-<aed->
+l8	f4.e16f16g-.d.g- g4.g-16g16a-.e.a- a.b.>cd.c.<brr a1g4g-4e-4e1.r2;
+#O=%6 @02 @v,50,30 q8@q2 kt02 p3;
+O v13o4k0  LA;
+O v11o4k6   A;
+O v11o4k-6  A;
+
+
+#B=
+l8	cea>c<<b>dgb cfa>c<ea-b>e c1^1< $
+l8	[r1r1r1 cea>c<aec<a> r1r1|r1 r4c4<a4g-4]2 r2r>cea>c4r2.<
+l4	[c2defede|d<fgag2b-2>]2 fdefg2> l16 d-<aed-ed-<ae>
+		fdfa>d4< a8.g-8.d8 gegb>e4<b8.a-8.e8 l8 c.d.fg.f.dr4
+l16	c4^16<a>ceaec<a> [c<a>ceaec<a>]3 c<a>ceaea>ceaec<a>c<aec4r4;
+#O=%6 @02 @v,50,30 q8@q2 kt02 p3;
+O v13o4k0  LB;
+O v11o4k6   B;
+O v11o4k-6  B;
+
+
+#C=
+r1r1
+l16	@q0[aea>cecea c<a>cfd<b>dg<]2 $
+l16	[@q0[[aga>c<]4[agae]4]2 [fefc]4[gfgd]4 [aga>c<]4 @q2 |a4e4d4<b4>]2 >e4r2.<
+l4	f2gabagag<b>cdc2d-2 f2gabagabgab>c2 l16ed-<aeaed-<a>
+		dfa>df4 d8.<a8.g-8 bgb>eg4 e8.<b8.a-8 f8.g8.a8b8.a8.g8r4
+l16	@q0 e4^cea>c<aec [ecea>c<aec]3 ecea>c<a>cea>c<aecec<ae4r4;
+#O=%6 @02 @v,50,30 q8@q1 kt02 p6;
+O v13o3k0  LC;
+O v11o3k6   C;
+O v11o3k-6  C;
+
+
+
+#D=
+l8	r8c16r16<a4r8b16r16g4r8a16r16f4r4 > l24e-&d&d-&c&<b&b-l8 [aga>c<agae]2 $
+l8	[aaagaaae aaagre16r16   > l24e-&d&d-&c&<b&b-l8 aga>c<agae aga>c< a>a16r16<g16>g8.<
+l8	 fffefff>c<|gggfrd16r16 > l24e-&d&d-&c&<b&b-l8 aga>c<agae a4a4a>a16e16<a16>ae16]2<
+l8	gggfggg>d< aga>c<agaea12a12a12r> l16 gae-ed<gag8.
+l8	[[fef>c<]4[gfg>d<]2> c<b>cg |c>c16<c16<b-16>b-8.]2 <a.>d-.<a
+		d.>d.c16d16<a16>d16<a16d16^4 e.>e.d16e16 <b16>e16<b16e16^4 f2g2
+		> l24e-&d&d-&c&<b&b- l8 a4.ga>c<[aga>c<]5e2;
+%6 @11 @v100 v15 o4 q8@q2 kt02 k0 D;
+
+#E=
+r1r1r1r1 $
+l8	[b2^8aeab4>d2c4<b16>c16<b16a16e1.^8r8
+		 a2^8b>cd|c4<b2g4 b16>c16<b16a16>e1r2.]2 e4<b4r8b16>c16d16<b16g16b16a1r1
+l8	r1r1r1 rgg-gb-.a.gf1r1 r1 ree-eg.a.g
+l16	f4.efg-8.d8.g-8 g4.g-g l8 a-.e.a- a.b.>cd.c.<b r4 a2.^1^1r1;
+%6 @22 @v,50,30 v8 o4 q8@q3 kt02 k0 @lfo9 mp00,07,20,0 E;

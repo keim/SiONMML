@@ -1,0 +1,131 @@
+#TITLE{FinalFantasyV-Battle with Gilgamesh-};
+#REV;
+#EFFECT0{eq90,60,50};
+#EFFECT1{delay100,60,0,80};
+#EFFECT2{reverb70,37,50,100};
+
+//      ag fb
+#OPN@02{00,05;//FF5　DistGT.
+//ar dr sr rr sl tl ks ml dt ams
+  21,20,00,00,01,20,03,05,00,00;
+  19,20,00,00,02,25,00,00,00,00;
+  22,20,00,00,02,15,00,00,05,00;
+  25,00,07,13,00,00,00,01,00,00;};
+
+//      ag fb
+#OPN@01{04,04;//FF5　Bass.
+//ar dr sr rr sl tl  ks ml dt ams
+  31,00,00,00,00, 25,00,01,00,00;
+  25,10,07,15,01, 00,00,01,00,00;
+  31,00,00,00,00, 20,00,01,00,00;
+  25,10,07,15,01, 00,00,01,00,00;};
+
+//      ag fb
+#OPN@03{06,06;//FF5　Orgun.
+//ar dr sr rr sl tl  ks ml dt ams
+  31,00,00,00,00, 27,00,04,00,00;
+  28,10,00,15,01, 00,00,02,00,00;
+  31,10,00,15,01, 00,00,03,00,00;
+  28,10,00,15,01, 00,00,01,00,00;};
+
+
+t180;
+
+//DistGT.
+#V=%6 @02 @v,50,30 v14 q8@q5 p3;
+#A=
+l1 a.g.f.g.
+l16	[[a8aa]6]4 > l4 r ee-re-drdd-<
+l16	[[a8aa]6]2 > l4 r ee-re-drdd-rd-c<
+l8	aara>c<ara>c<a>de-dc<ag aara>c<bar r1
+$
+l16 [[a8aaaraaaraaaaaa]2a-8a-a-a-ra-a-a-ra-a-a-a-fff4.ggg2]2<;
+#B=
+l8	[aaaa]4>[eeee]4[gggg]4[dddd]3d4e4 [ffff]4<[aaaa]4>[g-g-g-g-]4[eeee]2errrrrrr [r4e4]4< a2.r8a16a16 a1
+l8	aara>c<ara>c<a>de-dc<ag r1r1 r1r1r1r1>;
+#C=
+l8	aara>c<ara>c<a>de-dc<ag;
+V o4 kt-4 A kt03 B kt-4 C;
+V o4 kt-9 A kt-2 B kt-9 C;
+
+//Bass
+#V=%6 @01 v16 q8@q1 kt-4 p4;
+#A=
+a1.g1.f1.g1^4>l28 e&e-&d&d-&c&<b&b-
+l8	[aa>a<aa>a<aab>cde< aa>a<aa>a<aagegb]2>
+l4	a8a8>ee-re-drdd-< l8 <aa>a<aa>a<aab>cde< aa>a<aa>a<aagegb>
+l4	a8a8>ee-re-drdd-rd-c<
+l8 aara>c<ara>c<a>de-dc<ag aara>c<bar r1
+$
+l8	[a4.>a4edc<a4.>a4edf e4.<b4.>d4f4.cgd4<b]2> kt3<
+	[aaaa]4 e4.b4.a-4e4.g-4.a-4 [gggg]4 d4.a4.g-4 d4.e4.g-4 
+	[ffff]3ffgg a4.>e4.c4<a4.e4.a4 g-4.a4.>c4.e-4.c4<a4 ee>e<ee>e<ee> err2.<
+	r4e4r4e4r4e4r4e4< a4b>c4.e4d4eg-4.a-4<
+	aara>c<ara> c<a>de-dc<ag> d4.d-4.c4<a4>a4a-4g4 g-1f1g-1f1 kt-4
+l8	aara>c<ara>c<a>de-dc<ag
+
+;
+V o2 A;
+
+
+//Organ1
+#V=%6 @03 @v,50,00 v16 q8@q2 p4;
+#A=
+l16 [eab>e ab>ea baea b>e<ba e<bae <bae<b>]4
+l16 [eab>e ab>ea baea b>e<ba e<bae <bae<b>]2
+[
+l16 [eab>e ab>ea baea b>e<ba e<bae <bae<b>]2
+>>r4g4g-4r4 g-4f4r4 f4e4     <<]2
+>>r4e4e-4<
+l8	aara>c<ara>c<a>de-d24e-24d24c<ag aara>c<barr1>
+$
+l1	e^dc2d2 e^d   l16 c<fa>c<afa>c d<gb>d<bgb>d kt3<
+l1	a^a-.. <l48b>d-de g-a-ab >d-deg-l8 gg-gded<b>c dd-d<b>c<agb a1^1
+l8	a4gf4ga2.a4b4> c4<ba4b>c1r4< l4 g-.a.>c.e-.g-a l16 b8b-aa-gg-fee-dd-c<bb-a l8 rea-b>ed<ba->
+l16	f4errre-4errr fc<a>c e<ba-b> e-<b-gb->errr
+l16	aece gd<b>d fc<a>c e<ba-b> d<afa> c<aea> c<ae-a ba-e<b>
+l8	aara>c<ara>c<a>de-d24e-24d24c<ag> l4 f.e.e-rc<bb-
+l8	[ab((((ab((((ab((ab)))))))))) a-b-((((a-b-((((a-b-((a-b-))))))))))]2 kt-4
+l8	aara>c<ara>c<a>de-d24e-24d24c<ag;
+V kt-4 o4 A;
+
+//Organ2
+#A=[r1.]4 [r1.]2
+[
+ [r1.]2
+ >>r4d4d-4r4 d-4c4r4 c4c-4     <<]2
+>>r4<b4b-4
+l8	eere g ere g e aa a     g ed eere g g-err1
+$
+l1	a^a-f2g2 a^a- l16 f<a>cfc<a>cf g<b>dgd<b>dg kt3
+l1	e^e.. <l48 ab>d-d eg-a-a b>d-de < l4 b.a.gg.d.eg-1^1
+l8	c4cc4cc2.c4d4  e4ee4ee1^4      l4 c.e-.g-.a.>ce- l16 d8d-c<bb-aa-gg-fee-dd-r l8 <e4d4c4<b4>>
+l16	a4a-rrrg4a-rrr afcf a-e<b>e ge-<b->e-a-rrr>
+l16	c<aea bgdg afcf a-e<b>e fd<a>d ec<a>c g-c<a>c e<ba-e>
+l8	eere g ere g e aa a     g ed> l4 c.<b.b-rgg-f 
+l8	[eg-((((eg-((((eg-((eg-)))))))))) e-f((((e-f((((e-f((e-f))))))))))]2 kt-4
+l8	eere g ere g e aa a     g ed
+;
+
+V kt-4 o4 A;
+
+//Organ3
+#A=[r1.]4 [r1.]2
+[
+ [r1.]2
+ >>r4a-4g4r4 g4g-4r4 g-4f4     <<]2
+>>r4f4e4 r1r1r1r1
+$
+r1r1r1r1 r1r1r1r1 kt3
+r1r1r1r1 r1r1r1r1
+r1r1r1r1 r1r1r1r1
+r1r1
+r1r1
+r1r1 l4 g-.f.er d-c<b
+l8	[b-b+((((b-b+((((b-b+((b-b+)))))))))) ab((((ab((((ab((ab))))))))))]2 kt-4
+r1r1
+
+;
+
+V kt-4 o3 A;
+

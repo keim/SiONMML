@@ -1,0 +1,26 @@
+#TITLE {GG なぞぷよ 解答中};
+#REV;t169;
+
+#A=l8
+[c<b>c<g4fef4ecd^2 efec4<a>cf4ecd^2> 
+ c<b>c<g4fef4ecd4def g>c<b>c4cdf4e((c))d^2]2
+d4.c4.<a4^1>d4.c4.<a-1a-4 g2^gab>d-4dd-4d4e2cc1^cde2cc1 l16< ce-fa->ce-fa-;
+%0@0,35,20,15,30,1 v12 o6 q8@q0 kt-1 k03 $ A;
+%0@0,35,20,15,30,1 v06 o6 q8@q0 kt-1 k-3 r8 $ A;
+
+#B= l8
+[e>g<ef>>c<<fed>a<d>a<g>b<gf>b< e>g<ef>a<fed>a<d>>c<<g>b<gf>b<
+ e>g<ef>>c<<fed>a<d>a<g>b<gf>b< e>e<ef>a<fed>a<d>>c<<g>b<gf>b<]2
+ff>ca<ff>da<f>>e<g<f>>d<f>c<<f ff>ca-<ff>da-< f>>c<e-<f>b-dc<f
+ee>db<ee>d<a aa>g>e<<aa>g<d
+dda>f< dda>e< d>cc<d ddag gg>fa< gg>f<< b- [b->b-<]4;
+%0@0,63,25,20,40,1 v12 o4 q8@0 kt-1 $ B;
+
+#C=%2@0,63,63,26,26,0 o8 v15 q8@0 g;
+#D=%2@0,63,63,35,35,0 o8 v15 q8@0 g;
+#E=%2@0,63,63,26,26,0 o8 q8@0;
+$ l8
+[D4CD4DCD4DCD4D|C4]4CC
+[D4CD4DCD4DCD4|DC4]4CCC
+[D4CCD4C4]4
+D4CCD4CD4DCCD4C D4DCCD4C4 D4CCD4CD4DCCD4CD4 E v03 g))g))g))g))g))g))g;

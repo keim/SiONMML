@@ -1,0 +1,214 @@
+/*------------------------------------------
+   魍魎戦記MADARA - ENDING THEME
+   1990 コナミ
+   2011.04.05 初版 Hautbois.
+   2011.05.18 修正版再アップ Hautbois.
+   2011.06.12 23:09 last update Hautbois.
+------------------------------------------*/
+
+#TITLE{魍魎戦記MADARA - ENDING THEME};
+#REV;
+#FPS 600;
+#QUANT 16;
+//#EFFECT0{reverb70,40,80,30};
+
+//      00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff
+#WAVB01{7f7f7f7f80808080808080808080808080808080808080808080808080808080};
+#WAVB03{7f7f7f7f7f7f7f7f808080808080808080808080808080808080808080808080};
+#WAVB04{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f80808080808080808080808080808080};
+#WAVB05{7f7f7f7f7f7f7f7f7f7f7f7f7f7f808080808080808080808080808080808080};
+#WAVB06{fff7efe7dfd7cfc7bfb7afa79f978f877f776f675f574f473f372f271f170f07};
+#WAVB20{00FFFEFEFEFEFEFEFEFEFEFFFEFEFEFEFFFFFF000000F7EBDFDDE0D6D5E2E6E5E8DEDDE9F6FD0002F6EADFD5CCC3BCBCC0BAB4B3B3AEB0BBC7D3DEEAF5010D1925313A3A38363432302F2E2B2A29211F1E1003F7ECECEDE6EBEBE2E3E4DBD2CBC3BDB7B2ADA9A5A29F9C9A999BA0A3A8ACB0B3B6B9BCC1C4C7CACED2D5D9DBDDE1E5E6EAEDF1F4F6F9FD0004080F131315191F1F1F22293139414A525A63676D7174787B7874716D696361554536292B35404B4C443C36302E29231E160C05FEF8F3EEE9E6E2DEDCDEDAD5D6D4D2CFCFD1CECBC8C9C7C5C0BEBCB8B5B2B2B5B9BCBFC1C4C6C9CCCED0D2D5D7D8DBDDDEE1E4E5E9ECEEF1F4F7FAFD000305080C101115181C202427292D3033353A3E3F444648494A4B4C4D4E505352535757565653555555595A5B5955524F4C494644413F3C3A37312F2D2B2923201C1B1A191816110E09040201FDF9F6F4F0EDEBEBE8E5E2E0DDDBDCE7F3FF0B18242B2A292725242221201E1D1C1A19181716151413121111100F0E0D0D0C0B0B0A0A090807FDFB0607060605050504040303030202020101010100000000FFFFFFFFFFFEFEFEFEFEFEFDFDFDFDFDFDFDFDFDFCFCFCFCFCFCFCFCFCFCFCFCFCFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFCFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFFFFFFFFFFFFFFFFFFFFFFFEFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000};
+
+#TABLE  0 { (128)| 128 };
+
+#TABLE  1 { (40,128)240| 128 };
+#TABLE  2 { (90,128)10,(128,20)80,(60,90)10,(90,30)80,(30,60)90|(60)};
+#TABLE  3 { (128,20)20,(20,0)20   | 0 };
+#TABLE  4 { (100,128)10   | 128 };
+#TABLE  5 { (128,30)40    | 40 };
+
+#TABLE  6 { (40,128)60| (128,100,128)120 };
+#TABLE  7 { (128,30)120    | 30 };
+#TABLE  8 { (40,128)20(128,70)60 | 70 };
+#TABLE  9 { (70,30)120    | 30 };
+#TABLE 10 { (40,70)30   | 70 };
+
+#TABLE 11 { (4)10 | 3 };
+#TABLE 12 { (3)10 | 1 };
+#TABLE 13 { (1)10 | 5 };
+
+#TABLE 14 { (80,128)40 | (128,100,128)120};
+#TABLE 15 { (100,128)5(128,20)85(20,90)5(90,20)85(20,60)5(60,20)85 | (20,40,20)120};
+#TABLE 16 { (100,128)10(128)1000(128,0)1200   | 0 };
+
+#TABLE 20 { (128)50(128,0)10|0};
+
+#Z=o6l4 c#2.&c#r<af#2.&f#2r4 l8a2&ar s23 f#2l4 s19 c#< b2.&br q16 a
+na6 _na7 q16s0
+   o5f#gl8re l4f#ed eal8re f#4.rl4g
+   f#dl8r<b> l4d.r8e f#a2&l4ar<a
+   o5f#gl8re l4f#ed eal8re f#4.rl4g
+   f#dl8r<b> l4d.r8e d2.&d2r4
+
+   o5l8 f#4g4rf#a2&ar f#4g4rf#a2&ar
+   f#4g4rf#e4d4re l4f#ab l8a2&ar
+   f#4g4rf#a2&ar f#4g4rf#l4ab>d#
+   l4f#.r8e l4d<bl8r>d< a2&ar l4c#de
+
+   o5l8 f#2&f#r l4ef#l8ra l4bal8rb d2&dr
+   l4gf#l8ed ff#rd<l4a b>df# er8l16cc#dd#ef 
+   l8f#2&f#r l4ef#l8ra b4rab>d fed4.r<
+   l4def# bl8rf#ed< b4l8r>c#de l4f#ga
+   b>c#d l8f#erd<ba gab>c#de f#2&f#r s19 l8q8s12 g*a&a2&a2.
+na1 _na0 q12 s19 
+   o6l4c#2.&c#r<af#2.&f#2r4 l8a2&ar s23 f#2l4 s19 c#< l2b.&br4
+   l2b.&br4 l4g.r8a b-.r8>c l8d2&dr l4egb> q12s20c#2.&c#2. r1v0c#
+;
+
+//VRC1
+#A=x128 %4 @3 v15 @v60 na1 @@11 @q0 q12 @p10
+   @lfo12,2 mp0,16,690,60 s19
+   Z
+;
+
+//VRC2
+#B=x128 %4 @3 v15 @v50 na8 _na9 @@11 @q0 q12 @p-10
+   @lfo12,2 mp0,15,700,60 s0 @k-6
+   
+   o5l4q14f#2.&f#rc#<b2.&b2r4 >l8c#2&c#r<a2l4eg2.&gr2
+@@12
+   o4l2.ab>c#d# l4d<bl8rg b4.r>l4c# df#2< bl8>d<bg4>>
+na10 @@13
+   l4del8rc# l4dc#<b> c#el8rc# d#4.r<l4b> d<bl8rg b4.r>c#4 d2.&d2r4
+na8 _na9 @@12
+   o4l8b2&br >l4del8rd <a2&ar> l4c#dl8rc#<
+   g4.rb>d l4c#<bl8r>c# l4df#g l8f#2&f#r
+na10 @@13
+   l8b2&br >l4del8rd <a2&ar> l4c#d#f#
+   g#2l4g# l4g#dl8rg# c#2&c#r< l4ab>c#
+na2 @@11 _na12
+   o6l8 d<adf#a>d c#<ac#f#a>c# c<acf#a>c <bg>gf#ed<
+   b-gdb->c<b-> c#d4<af#d g#ebg#>d<b> c#4.l16<g#aa#b>cc#
+   l8d<adf#a>d c#<ac#f#a>c# c<acf#a>c <b-f>gfed<
+   f#dgeaf# >dc#d<bg#f# dc#dgb>c# dc#<baed
+   gf#gab>c# dc#4<ag f#ef#gab> c#dc#<bgb>
+   dc#dedc# <ba4.gf#e
+
+na8 _na9 @@11 q12
+   o5l4f#2.&f#rc#<b2.&b2r4 >l8c#2&c#r<a2e4 l2g.&gr4
+   l2g.&gr4 l8d2&dr g2&gr f#2&f#r l4gb>e q12s20f#2.&f#2. r1v0f#
+;
+
+#Y=o4l4 d2<ad2. g2>dg2. d2<ad2. g2.a2.
+
+   o4l4 d2<d g2>g f#2<f# b2<b> e2. a2. d2l8gg#a2<a4
+   o4l4 d2<d g2>g f#2<f# b2<b> e2. a2. l4gf#ed2.
+
+   o3l4 g2>dg2<g f#2>c#f#2<f# e2l8gg#l4a2<a> d2a>dl8f#ed<d
+   o3l4 g2>dg2<g f#2l8aa#l4bf#<b> e2l8>dd#e2<l4e a2e<ab>c#
+
+   o3l4 d.a8>dc#<ac# c.f#8>c<bg<b b-.>g8b-ag-<a a->eg# l8a<ab>bc#>c#
+   o3l4 d.a8>dc#<ac# c.g8>c<b-fb- a.>f#8ag#e<g# g.>d8gf#d<f#
+   o3l4 g.>d8gf#<ad e.b8>e<a.>l8egg# l2.a< a
+
+   o4l4 d2<ad2. g2>dg2. d2<ad2. g2>dg2.
+   o4l4 e2<be2f# g2>d<b-ag >d2<dg2>g d2. <
+;
+
+//VRC-SAW
+#C=x128 %4 @6 v16 @v50 q12 @q0 na4 _na5 s0
+   Y q12s16d2. r1v0d
+;
+
+//FC-1
+#D=x128 %4 @3 @v30 v12 na14 _na7 s0 @q0 q15 @p-20
+   @lfo11,2 mp0,15,610,60 s19 @k5
+   o6l4 c#2.&c#r<af#2.&f#2r4 l8a2&ar f#2l4 c#< b2.&br q16 a
+q16
+   r6 v7o5f#gl8re l4f#ed eal8re f#4.rl4g
+   f#dl8r<b> l4d.r8e f#a2&l4ar<a
+   o5f#gl8re l4f#ed eal8re f#4.rl4g
+   f#dl8r<b> l4d.r8e d2.&d2r4
+
+   o5l8 f#4g4rf#a2&ar f#4g4rf#a2&ar
+   f#4g4rf#e4d4re l4f#ab l8a2&ar
+   f#4g4rf#a2&ar f#4g4rf#l4ab>d#
+   l4f#.r8e l4d<bl8r>d< a2&ar l4c#de
+na4 _na5 @@11
+   o5l8 f#2&f#r l4ef#l8ra l4bal8rb d2&dr
+   l4gf#l8ed ff#rd<l4a b>df# er8l16cc#dd#ef 
+   l8f#2&f#r l4ef#l8ra b4rab>d fed4.r<
+   l4def# bl8rf#ed< b4l8r>c#de l4f#ga
+   b>c#d l8f#erd<ba gab>c#de f#2&f#r s12l8q8 g*a&a2&a2r12
+na14 _na7 s0
+   o6l4c#2.&c#r<af#2.&f#2r4 l8a2&ar s23 f#2l4 s19 c#< l2b.&br4
+   l2b.&br4 l4g.r8a b-.r8>c l8d2&dr l4egb> q12s20c#12&c#2&c#2.  r1v0c#
+;
+
+//FC-2
+#E=x128 %4 @4 @v40 v12 na15 s0 @q0 q16 @k4 @p20
+   o5l4da>ef#2.<< b>dab2. da>ef#2.<< t110b>t100dt90at80g&t70gt100r<t120
+
+   o5l8da>c#f#c#<a gb>df#d<b c#a>c#f#c#<a< b>b>d#f#d#<b 
+   dgb>d<bg dgb>d<bg da>c#f#c#<a gb>dgd<b
+   da>c#f#c#<a gb>df#d<b c#a>c#f#c#<a <b>b>d#f#d#<b
+   dgb>d<bg dgb>d<bg bdac#g<b> f#a>cef#a<<
+
+   o4l8 b>df#b>df# af#d<bf#d ef#a>c#ef# af#ec#<af#
+   egb>dgb a#f#d<a#f#c#< a>c#ef#a>c# f#c<af#c<a
+   b>df#b>df# af#d<bf#d <f#a>c#f#a>c# f#d#c<af#d#
+   <g#b>df#g#b> f#ed<bg#e c#gf#>c#fc#
+   
+@1na4_na7@@11@k8
+   l4c#de
+
+   o6l8 f#2&f#r l4ef#l8ra l4bal8rb d2&dr
+   l4gf#l8ed ff#rd<l4a b>df# er8l16cc#dd#ef 
+   l8f#2&f#r l4ef#l8ra b4rab>d fed4.r<
+   l4def# bl8rf#ed< b4l8r>c#de l4f#ga
+   b>c#d l8f#erd<ba gab>c#de f#2&f#r @lfo13,2 mp0,32,600,60 na16 q16g*a&a2&a2.
+                                     
+@4na15 @@ _na mp0
+   o5l4 da>ef#2.<< b>dab2. da>ef#2.<< b>dab2.<
+   b>gb> f#2g d2. a2g f#2.<
+   b>dg <l8dt115c#t110dt104at96bt86>e t100s20f#2. r1v0f#
+;
+
+//FC-TRI
+#F=x128 %1 @8,60,0,0,56 v16 @v100 q12 @q0 
+  Y d2. r1v0d
+;
+
+//DPCM風
+#G=x128 v16 @v128 %4 @20 na20 o0
+[r2.]8
+l4
+[drr]15 dr.d8
+[drr]15 dr.d8
+[drr]15 dr.d8
+[drr]6
+;
+
+//ノイズ
+#H=
+   v7 x128 @v88 %1 @9 na3 o0
+[r2.]8
+l4
+[rrcrrr:]8
+[rrcrrr:]8
+[rrcrrr:]8
+[rrcrrr:]3
+;
+
+t120
+A;
+B;
+C;
+D;
+E;
+F;
+G;
+H;
+
+#END;

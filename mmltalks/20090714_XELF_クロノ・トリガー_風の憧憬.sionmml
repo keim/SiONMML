@@ -1,0 +1,38 @@
+#TITLE{クロノ・トリガー / 風の憧憬};
+#EFFECT1{ws35,95lf12000chorus70,40,5delay130,22,1reverb200,100,40};
+t100;
+@v,64 $ @q1o5l8d4e4 [fec>a<d4rd c>afga4g4
+|efa<ce4f4 c4r2e4> ]efa<cedcd d4r4d4e4
+
+[fec>a<d4.d c>afga4g4
+|efa<ce4f4 c2.e4> ]efa<cedcd d2.rq7a
+a2g4f4 e2f4g4 e2.c4 >a2.<c4
+>b-2<c4d4 e2f4g4 e1 c1
+a2g4f4 e2f4g4 a2g4f4 e4d4e4f4
+a2g4f4 e4d4c+4d4 e1 ^2
+;
+@v,64 l8r2 $ [r1r1r1r1][r1r1r1r1]x51q7f2e4d4 c2d4e4 c2.>a4 f4e4f4a4
+g2 a4b-4 <c2d4e4 c4>a4g4a4 e-4f4gab-<c
+f2e4d4 c2f4e4 f2e4d4 >a2aga<c
+a1 b-1 ^1 <c+1
+;
+@v,64 l8r2 $ x51o3 [d4rd>b-4rb- a4<c4f4e4 
+|d4rd>g4rg <c4r>g<c4r4 ]d4rd>g4a4 <d2r2
+![o4d2>b-2 a4<c4f4e4 !|d2>g2< c1!]o4d2>g4a4 <d1
+x42o3@q4[b-b-rb-b-b-rb-]aaraaara <ddrdddrd> ggrgggrg
+<ccrcccrc >[ffrfffrf][b-b-rb-b-b-rb-][bbrbbbrb]ggrgggrg
+g+g+rg+g+g+rg+
+aaraaara a1
+;
+@v,64 l8r2 $ x38q1[da<e4>b-<f<c4>> >a<ec<cr>fre
+|>rae4>g<drg cg<cfe4r4]r>>a<e4>g<g>a<a >da<dga4r4
+o5x34q8[c1 e4d4 c4c+4 |c1 f2e2]o5c1 g2f+2
+x42o5@q4 ddrdddrd ccrcccrc ccrcccrc >aaraaara
+b-b-rb-b-b-rb- ggrgggrg [aaraaara]o5ddrdddrd ccrcccrc
+[5ddrdddrd]c+1
+;
+@v,64 l8r2 $ x38q1o5 [r1 r1 |r1 r2c4r4]r1 r2f+4r4
+x34q8![c2d2 >g4b-4a2 !|a1 g1!]a1 a1
+r1 r1 r1 r1 r1 r1 r1 r1
+r1 r1 r1 r1
+r1 r1 r1 r1

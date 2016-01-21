@@ -1,0 +1,136 @@
+#TITLE{Ys2 - Ice ridge of Nortia / (C)Nihon Falcom};
+#REV{octave};
+#REV{volume};
+#OPN@0{ // Synth Leed
+4, 4,
+// AR DR SR RR SL TL KS ML DT // AMS
+31, 5, 5, 10, 2, 20, 0, 1, 1, 0
+20, 5, 5, 9, 0, 5, 0, 2, 3, 0
+31, 5, 5, 10, 0, 18, 0, 2, 3, 0
+25, 5, 5, 9, 2, 10, 0, 2, 7, 0
+};
+
+#OPN@1{ // Bell Piano
+4, 0,
+// AR DR SR RR SL TL KS ML DT // AMS
+31, 10, 8,10, 3, 35, 1, 7, 2, 0
+25, 10, 8, 9, 2, 8, 1, 4, 2, 0
+25, 10, 5,10, 2, 40, 1, 3, 5, 0
+25, 10, 5, 9, 2, 5, 1, 4, 7, 0
+};
+#OPN@2{ // Guitar
+3, 0,
+// AR DR SR RR SL TL KS ML DT // AMS
+31, 8, 5, 9, 2, 40, 0, 1, 3, 0
+31, 8, 5, 7, 2, 10, 0, 1, 3, 0
+31, 8, 3, 9, 1, 12, 0, 3, 5, 0
+20, 8, 3, 7, 1, 5, 0, 2, 5, 0
+};
+
+#OPN@3{ // Bass
+2, 0,
+// AR DR SR RR SL TL KS ML DT // AMS
+31, 10, 10, 10, 1, 40, 0, 1, 0, 0
+31, 10, 10, 9, 1, 15, 0, 1, 0, 0
+31, 10, 6, 10, 1, 25, 0, 2, 0, 0
+20, 10, 6, 9, 1, 5, 0, 1, 0, 0
+};
+
+#OPN@4{ // Synth Guitar
+2, 2,
+// AR DR SR RR SL TL KS ML DT // AMS
+31, 5,10, 10, 2, 25, 0, 1, 1, 0,
+31, 5,10,  9, 2, 15, 0, 1, 3, 0,
+31, 5, 5, 10, 0, 20, 0, 2, 5, 0,
+25, 5, 5,  9, 2,  5, 0, 2, 5, 0,
+};
+
+#OPN@5{ // Synth Leed
+4, 7,
+// AR DR SR RR SL TL KS ML DT // AMS
+25, 10, 5,  8, 2, 25, 0, 4, 3, 0,
+25, 10, 5, 10, 0,  5, 0, 4, 3, 0,
+25, 10, 5,  8, 2, 16, 2, 2, 7, 0,
+25, 10, 5, 10, 0,  3, 0, 4, 7, 0,
+};
+
+
+t145;
+
+A =
+$ l16 %6@3 o3 q8 @q5 @v35
+[crcc]4 < [b-rb-b-]4 [a-ra-a-]4 [grgg]3 gga-b->
+[crcc]8 < [a-ra-a-]7 a->a-<a->g
+[frff]8 [grgg]4< [grgg]3 gggg>
+
+[crcc]4< [a-ra-a-]4 [b-rb-b-]4 [grgg]3 gga-b->
+[crcc]4< [a-ra-a-]4 [b-rb-b-]4> [crcc]3>c<ccc<
+
+[a-8.a->ce-a-2<a-a- b-8.b->dfb-2<gg> c8.ce->c<c2<gg> c8.ce->c<crfe-de-dc<b-8]3
+a-8.a->ce-a-2<a-a- b-8.b->dfb-2<gg> c8.ce->c<c8fe-de-fe-dc< g8.g8.g8g8.a8.b8
+;
+
+B =
+$ l16 %6@4 o5 q8 @q4 @v48 @lfo5,3 mp0,25,32,24
+c4ce-gb->d2& d4g4f4c4 d2.e-de-fd8<g>d8.gfg2
+d2c2 e-8.f8.grf8.e-8.<b-r> c2gfg4.& g2<a-b->cde-dc<b->
+c2<a-b->cde-4 cde-fg2&g8fe- f8.g8.&g4.<f8.g& g1
+
+l16 %6@1 o6 q8 @q4 @v74 @lfo0,0
+c4.<b->c<g2>c4.cde-8.d8.c8 d4.cd<b-4.b4.>c8d4f8e-8d8
+c4.<b->c<g2>c4.cde-8.f8.g8 f2b-2>c1
+
+l16 %6@2 o6 q8 @q3 @v64 @lfo5,3 mp0,15,48,24
+c2.cde-f d2.gfe-d e-2.<gfe-d e-1<
+a-2.a-8b->c d2e-4f4 f8.e-8.&e-8&e-4.de- f(4de-f(4de-f(3de-f(3de-f)14ga-b->
+c2.cde-fd2.gfe-d e-2.<gfe-d e-1<
+a-2.a-8b->cd2e-4f4 e-dc4.&c2<g8.a8.brb8.>c8.dr
+;
+
+C =
+$ l16 %6@4 o4 q8 @q4 @v30 k0 @lfo5,3 mp0,25,32,24
+g4gb->ce-g2& g4>c4<b-4f4 g2.a-ga-b-g8dg8.>dcd2<
+g4..rf4..r>c8.d8.e-rd8.c8.<fr g2.>e-de-8& e-2<fga-b->c<b-a-g
+a-2fga-b->c4 <a-b->cde-2&e-8c<b-> c8.d8.&d4.<c8.d& d1
+
+l16 %6@5 o4 q8 @q4 @v30 @lfo6,3 mp0,25,32,24
+g4.fgc2 g2>c4g4 f4.e-fd4.d4.e-8f4a-8g8f8<
+g4.fgc2 g2>c8.d8.e-8 d2f2 g1
+
+l16 %6@2 o6 q8 @q3 @v25 @lfo5,3 mp0,15,48,24 k3 // echo
+r4 c2.cde-fd2.gfe-d e-2.<gfe-d e-1<
+a-2.a-8b->c d2e-4f4 f8.e-8.&e-8&e-4.de- f(4de-f(4de-f(3de-f(3de-f)14ga-b->
+c2.cde-fd2.gfe-d e-2.<gfe-d e-1<
+a-2.a-8b->cd2e-4f4  e-dc4.&c4 <e-8.f8.grg8.a8.br> // echo fix
+;
+
+D =
+$ l16 %0 @0,40,20,10,40,3,5 o4 q8 @q4 @v20 k0
+g2..>ce- g4>c4<b-4f4 g2.a-ga-b-g8dg&g4.>dcd4<
+e-2f2g2>c2 e-2&e-8r8c<b->c8&c1<
+a-2fga-b->c4 <a-b->cde-2&e-8dc c8.d8.&d4.<c8.d& d1 // FIXME (don't remember)
+
+l16 %0 @0,63,20,20,40,5,5 o6 q8 @q4 @v20 k3 // echo
+r24c4.<b->c<g2>c4.cde-8.d8.c8 d4.cd<b-4.b4.>c8d4f8e-8d8
+c4.<b->c<g2>c4.cde-8.f8.g8 f2b-2>c2..&c12 // echo fix
+
+l16 %0 @0,63,20,20,60,5,5 o5 q8 @q4 @v25 k0
+[ a-8e-a->c8<a->ce-8ce-a-4< b-8fb->d8<b->df8dfb-4 c8e-g>c2<e-dc<b- g1 ]3
+a-8e-a->c8<a->ce-8ce-a-4< b-8fb->d8<b->df8dfb-4 r1 r1 // FIXME (last)
+
+;
+
+E =
+$ l16 %0 @0,40,20,10,40,3,5 o4 q8 @q4 @v20 k0
+g4g>ce-g>c2< b-2f4b-4  g2.a-ga-b-  g8dg&g4.>dcd4<
+e-2f2 g2>c2  e-2.c<b->c8&  c2<c4d4
+e-2f2 f2g2  a8.b&b2c8.d&  d1
+
+l16 %0 @0,31,15,20,40,5, 5 o5 q8 @q4 @v20 k3 // echo
+r24g4.fgc2 g2>c4g4 f4.e-fd4.d4.e-8f4a-8g8f8<
+g4.fgc2 g2>c8.d8.e-8 d2f2 g2..&g12
+
+l16 %0 @0,63,20,20,40,5,10 o5 q8 @q4 @v15 k3 // echo
+r24 [ a-8e-a->c8<a->ce-8ce-a-4< b-8fb->d8<b->df8dfb-4 c8e-g>c2<e-dc<b- g1 ]3
+a-8e-a->c8<a->ce-8ce-a-4< b-8fb->d8<b->df8dfb-4 r1 r2..r12 // FIXME (last) / echo fix
+; 

@@ -1,0 +1,56 @@
+t128;
+#TITLE{What a wonderful human life (TV size)};
+#EFFECT1{reverb};#EFFECT2{chorus};
+
+r1^1q8l32k4mp6@v32,12,16%5@ph255v8@f96@5o5
+f<cfa<ce-gbge-c>afc>f<cfa<ce-gbge-c>afc>f<v4cv2fr
+<v12q4l8o6bbbbbbageggag4r4bbbbbragarb4a4r4
+g4gabbag<ccccc4r4r>b4ga4a4g2r2
+[l4rgf+ef+d>b2<e2e8rg8f+der l8egggggeed16d>b16<ded4r4
+eeef+ggf+ef+4f+ef+ga4rbbbab4ag4gagf+e4 drbral16aagg8el8drerg4r4];
+
+#MA@33{3 6  // FngrBass
+0 10 02 01 03 01 28 1 2 01 0 2
+0 09 04 03 06 04 58 1 0 12 0 2
+0 11 03 02 03 02 22 1 2 01 0 2
+0 11 01 01 08 02 00 1 0 02 0 2};
+@v32%6@33l8q8o2[g]16f1q6l16[g8]7gg[c8]7cc[b8]4[e8]3ee[a8]4[d8]3dd
+[g8]7gg[c8]7cc[d8]7ddl8[g]4g4f+4
+[l8[e]8[b]8<[c]8>[b]4[e]4<[c]8>[g]5l16<deged>bl8[a]8[d]6ef+
+gggg16g16bbbb16b16<cccc16c16c+c+c+c+16c+16
+[dddd16d16]r2.|f+4]g;
+
+@v64v28%5s34,-128q0o3[c]8r1[cr]15cc[[crcr|c8c8rcr]6cc|c8l8v16<<g>gr>v28]c4c4;
+%2@3q0s40v6l8[g]16r1[l16[g8]7gg]8l8[[g]64l16[[g8]3gg]4l8[g]8r1];
+r1^1^2^8@v24,16,16%2@1@f88,2q0s28l8v16ccr
+l4[rv8>g<|rv16g]8v16gg[l4[rv8>g<rv16g]11rc|c8<l8v8ggr>]c4c4;
+
+#@101{ 05 00 00 // SuperBrightness by kash1wa
+ 00 40 20 14 24 04 32 00 03 07 00 00 00 00 00
+ 00 37 24 15 24 03 00 00 01 02 00 00 00 00 00
+ 02 40 25 18 24 04 00 00 01 01 00 05 00 00 00
+ 01 38 23 20 24 04 00 00 01 02 00 -5 00 00 00}@f94;
+#A=l8q8<rgerd>brarg4red4r;
+k-4p2@v24,16,32q6%6@101Ar1l4rdrdrererdrererdrdrdrere-rdrdl8rrrrl4gf+
+[l2ev12rdrerder1^1^1^1v16gf+eer1l4bag|f+]g;
+k4p6@v24,16,32q6%6@101A(-5)r1l4rgrgrgrgrgrgrarargrgrgrg rgral8gf+gal4b<e-
+[l2ev8rdr4l16r>b<drl2erd4.>b8<er1^1^1^1v16baggr1l4deg|d+]g;
+
+#MA@49{7 3  // Strings2
+ 9 06 10 00 05 00 00 0 0 01 3 0 
+ 2 12 06 00 05 01 23 0 0 01 0 1
+ 1 05 06 00 06 00 00 0 2 01 5 0
+27 05 05 00 06 01 07 0 0 01 7 0}@f80;
+@v16,12,12q8%6@49r1^1c2r2r1^1^1erf+rr1^1v10b2(2a2(2g2(2ba
+[g1f+1g1f+2g2g1g1e1f+2gab2<d+2e2e2>g2e2l8f+rf+rbr|<d+r]b;
+@v16,12,12q8%6@49r1^1>f2r2r1^1^1ararr1^1v10g2(2d2(2d2(2gf+
+[e1d1c1>b2<e2e1d1c+1d1d2>b2<c2c+2d2d2>l8drdrgr|f+r]g;
+
+#MA@13{5 2  // Xylophon
+0 15 09 06 06 13 24 0 2 05 0 0
+0 15 07 05 07 13 03 0 0 01 0 0
+0 15 06 06 06 10 29 1 2 05 0 0
+0 15 06 06 07 14 00 0 2 01 0 0}@f96,1;
+r1^1^1[r1]8@v32,16,32%6@13v8q1l8
+[re>b<d>br4.r<f+>b<df+r4.re>b<dgr4.rf+>b<dgr4.
+re>b<der4.rg>b<dgr4.re>a<c+er4.rf+>a<df+r4.[r1]4];

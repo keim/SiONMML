@@ -1,0 +1,30 @@
+#TITLE{ おやすみなさいのBGM };
+#EFFECT0{reverb10,5};
+#EFFECT1{autopan chorus,50};
+#EFFECT2{chorus,80};
+t216;
+
+%5@4l3q1 @v60,0,10 $>
+caacggcfffec
+caacggcffcee
+caacggcfffec
+caacggagefrr
+cgecgecgefaf
+cgecgeagefrr;
+
+%5@3l3q3 @v0,13,26 $
+ca1 cg1 cf1
+ca1 cg1 cfec
+ca1 cg1 cf1
+ca1 cg1 cf1
+cgrrrrrrcarr
+cgrrrrrrcfrr;
+
+%5@3l3q3@v0,0,20 $<
+[[r]12]6
+ccc ggg fec fec
+ccc ggg fec crr
+ccc ggg fec fec
+ccc ggg fec frr
+ggg ggg faf faf
+ggg ggg faf frr;

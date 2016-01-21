@@ -1,0 +1,165 @@
+/*-------------------------------------
+   [FC][VRC6]悪魔城伝説 - BOSS FIGHT
+   1989.12.22 コナミ
+   2011.05.18 Hautbois.
+-------------------------------------*/
+
+#TITLE{悪魔城伝説 - BOSS FIGHT};
+#REV;
+#FPS 600;
+#QUANT 8;
+//#EFFECT0{reverb70,40,80,30};
+
+//      00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff
+#WAVB01{7f7f7f7f80808080808080808080808080808080808080808080808080808080};
+#WAVB03{7f7f7f7f7f7f7f7f808080808080808080808080808080808080808080808080};
+#WAVB04{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f80808080808080808080808080808080};
+#WAVB05{7f7f7f7f7f7f7f7f7f7f7f7f7f7f808080808080808080808080808080808080};
+#WAVB06{fff7efe7dfd7cfc7bfb7afa79f978f877f776f675f574f473f372f271f170f07};
+
+#TABLE  0 { (128)| 128 };
+#TABLE  1 { (20,50)6(128,70)10(70,40)120(40,60)80(60,40)80(40,60)80(60,20)80 | (20,40,20)120};
+#TABLE  2 { (30,20)20    | 20 };
+#TABLE  3 { (20,50)6(128,60)10(60,30)120(30,50)80(50,30)80(30,50)80 | 50};
+#TABLE  4 { (128,100)10(100,60)240 | 60};
+#TABLE  5 { (60,20)20 | 20};
+#TABLE  6 { (128)10(118)10(108)10(98)10(88)10(78)10 | 30};
+#TABLE  7 { (1)10 | 3};
+#TABLE  8 { (128,10)87(90,10)87(70,10)87 | 10};
+
+#@0{
+//AL FB FDC
+   1  0   0
+//WS AR DR SR RR SL TL KR KL ML D1 D2 AM PH FIX
+  00 63 00 00 40 00 00  0  0  1  0  0  0  0 0
+  19 63 00 00 40 00 25  0  0  1  0  0  0  0 0
+};
+
+//VRC1
+#A=x128 %4 @3 v16 @v60 na4 _na5 s0 @q0 q8 @p10
+o6 l12 @lfo11,2 mp0,17,120,30
+   v10q7f4 q4e (4e (4e
+   v10q7g4 q4f#(4f#(4f#
+   v10q7a4 q4g#(4g#(4g#
+   v10q7b4 q4a#(4a#(4a#
+na6 _na0 @@7 l24 q8
+$
+   [v5 aa-gf#gg#)3 aa-gf#gg#)3 aa-gf#(3gg# aa-g(3f#gg# ]3
+    v5 aa-gf#gg#)3 aa-gf#gg#)3 aa-g(3g-fe e-dd-(3c<bb-<
+    v5 [b>dfg#b>d)3 fg#b>dfg#)3 bg#f(3d<bg# fd<b(3g#fd<]
+    v5 >ce-f#a>ce-)3 f#a>ce-f#a)3 >c<af#(3e-c<a f#e-c<(3af#e-
+    v5 f#a>ce-f#a)3 >ce-f#a>ce-)3 f#e-c<(3af#e- c<af#(3e-c<a >
+
+   [v5 b-aa-gg#a)3 b-aa-gg#a)3 b-aa-(3gg#a b-aa-(3gg#a ]3
+    v5 b-aa-gg#a)3 b-aa-gg#a)3 b-aa-(3g(3g-f ee-d(3d-c<b >>
+    v5 c<af#e-c<a)3 f#a>ce-f#a)3 >c<af#(3e-c<a f#a>c(3e-f#>c
+    v5 e-c<af#e-c)3 <a>ce-f#a>c)3 e-c<a(3f#e-c <a>ce-(3f#a>c
+    v5 c#<b-gec#<b-)4 gb->c#egb->)3 c#<b-g(3ec#<b- gb->c#(3eg>c#
+    v5 ec#<b-gec#)4 <b->c#egb->e)3 v5gec#<b-ge)3 >b-ge)3c#<b-g
+;
+
+//VRC2
+#B=x128 %4 @3 v16 @v60 na4 _na5 s0 @q0 q8 @p-10
+o6 l12 @lfo11,2 mp0,17,120,30
+   v10q7c4<q4b (4b (4b >
+   v10q7d4 q4c#(4c#(4c#
+   v10q7e4 q4d#(4d#(4d#
+   v10q7f4 q4e (4e (4e
+$
+@4 na0 @lfo11,2 mp0,40,20,20
+   v2l1q8c&c&c&c
+   v4l12<b6>f&f2.d6g#&g#2.c6f#&f#2.e-6a&a4&aa-gg-fe
+   v2l1q8c#&c#&c#&c#
+   v4l12c6f#&f#2.d#6a&a2.c#6g&g2.e6b-&b-4&b-6@1ab-ab-
+;
+
+//VRC-SAW
+#C=x128 %4 @6 v16 @v120 q8 @q0 na1 _na2 s0
+
+o3l8q4 t62f t64g t66a- t68a t70g t72a t74b- t76b t78a t80b> t82c t84d- <t86b> t88c t90c# t95d
+t100
+o4 @lfo13,2 
+$
+mp0,90,200,30
+  l2q8 c<f#a>l4na3po600e-6&mp0c4&c12 po na1_na2 mp0,90,210,30 l2c<f#ae->
+mp0,90,100,30
+  l12q8dc<baq6g#4q8ab>cde fedc<q6b4q8>cdefd e-dc<b-q6a4q8b->cde-f g-fe-d-q6c4q8c<bb-ag#>
+mp0,90,200,30
+  l2q8 c#<gb->l4na3po600e6&mp0c#4&c#12 po na1_na2 mp0,90,210,30 l2c#<gb-e>
+mp0,90,100,30
+  l12q8e-dc<b-q6a4q8b->cd-e-f g-fe-d-q6c4q8d-e-fg-e- ee-d-<bq6a#4q8b>d-e-ef g-fe-d-q6c4q8cd-cd-c
+;
+
+//FC-1
+#TABLE 10 { (0,-5)110 | -5};
+#TABLE 11 { (0,-5)140 | -5};
+#TABLE 12 { (0,-5)170 | -5};
+#TABLE 13 { (0,-5)200 | -5};
+
+#D=x128 %4 @3 v16 @v60 na0 s0 @q0 q8 @k4 @p20
+o6 l12
+   v6q7ntf4 nt10e (2e (3e
+   v6q7ntg4 nt11f#(2f#(3f#
+   v6q7nta4 nt12g#(2g#(3g#
+   v6q7ntb4 nt13a#(2a#(3a#
+$
+@4 nt @lfo12,2 mp0,30,20,20
+   v2l1q8c&c&c&c
+   v2l12<b6>f&f2.d6g#&g#2.c6f#&f#2.e-6a&a4&aa-gg-fe
+   v2l1q8c#&c#&c#&c#
+   v2l12c6f#&f#2.d#6a&a2.c#6g&g2.e6b-&b-4&b-6ab-ab-
+;
+
+//FC-2
+#E=x128 %4 @3 v16 @v60 na4 _na5 s0 @q0 q8 @k-4 @p-20
+o5 l12 @lfo11,2 mp0,17,120,30
+   v8q7a-4 q4g (4g (4g
+   v8q7b-4 q4a (4a (4a >
+   v8q7c4< q4b (4b (4b >
+   v8q7d4  q4c#(4c#(4c# <
+$
+v7 @1 @@7 na8 l6 q8 mp0
+   [g-fee-de-]4
+   [a-gg-fef]2 aa-gg-fg- aa-gg-fe
+   [gg-fed#e]4
+   [aa-gg-fg-]2 b-aa-gf#g b-aa-gl12f#gf#g
+;
+
+//FC-TRI
+#F=x128 %1 @8,60,0,0,56 v16 @v120 q8 @q0 
+;
+
+//DPCMもどき
+#G=%6 @0 q0 @q0 v28 @v128 x128 s,-128 o3 @f30
+l2cccc
+$
+l1[cc]3c c2l12rrrrcc
+;
+
+#TABLE 20 { (20,100)3(100,50)10(50,0)40 | 0};
+#H=x1 %1 @9 o0 na20 nt c#;
+#TABLE 21 { (128)10(110)10(90,0)80 | 0};
+#TABLE 22 { (14,13)10(5,0)60 | 0};
+#S=x1 %1 @9 o0 na21 nt22 c#;
+#TABLE 23 { (20,100)3(100,60)10(60,50)90(40,0)40 | 0};
+#O=x1 %1 @9 o0 na23 nt c#;
+
+//FC-Noise
+#I=%x3 x128 v16 @v108
+l8 OHSH OHSH OHSH Ol24HHHS12HHHH
+$
+[l4 OHSH OHl12SSrH4]3 l4 OHSH OHl12HHSSrr
+;
+
+t62
+A;
+B;
+C;
+D;
+E;
+F;
+G;
+I;
+
+#END;
+

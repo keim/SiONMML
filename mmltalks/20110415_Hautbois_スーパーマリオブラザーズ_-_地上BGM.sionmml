@@ -1,0 +1,155 @@
+/*
+   スーパーマリオブラザーズ - 地上BGM
+   1985 任天堂 - 近藤浩治
+   2011.4.15 MML - Hautbois.
+*/
+
+#TITLE{スーパーマリオブラザーズ - 地上BGM};
+#REV;
+#FPS  600;
+#QUANT  8;
+//#EFFECT0{reverb70,40,70,30};
+
+#TABLE 00 {(128,100)10|100};
+#TABLE 10 {(80)60|0};
+#TABLE 11 {(80)10|0};
+#TABLE 12 {(128)14|0};
+
+#A=
+x128 @v30 v15 q8 @q2 r384 %1 @4 na0 s46
+//intro
+o6 l16 eere rcer gr8. r4
+$
+//A
+o6 l16 [cr8<gr8er rarb rb-ar l12@q6g>eg l16@q2arfg rerc d<br8]
+//B
+o6 l16 [r8gg-fd#re r<g#a>c r<a>cd r8gg-fd#re >rcrc cr8.< r8gg-fd#re r<g#a>c r<a>cd r8e-r8dr8cr8.r4]
+//C
+o6 l16 ccrc rcdr ecr<a gr8.> ccrc rcde r2 ccrc rcdr ecr<a gr8.
+//intro
+o6 l16 eere rcer gr8. r4
+//A
+o6 l16 [cr8<gr8er rarb rb-ar l12@q6g>eg l16@q2arfg rerc d<br8]
+//D
+o6 l16 [ecr<g r8g#r a>frf< ar8. l12@q6b>aa agf l16@q2ecr<a gr8.>
+        ecr<g r8g#r a>frf< ar8. b>frf l12@q6fed l16@q2cr8.r4]
+//C
+o6 l16 ccrc rcdr ecr<a gr8.> ccrc rcde r2 ccrc rcdr ecr<a gr8.
+//intro
+o6 l16 eere rcer gr8. r4
+//D
+o6 l16 [ecr<g r8g#r a>frf< ar8. l12@q6b>aa agf l16@q2ecr<a gr8.>
+        ecr<g r8g#r a>frf< ar8. b>frf l12@q6fed l16@q2cr8.r4]
+;
+
+#B=
+x128 @v30 v15 q8 @q2 r384 %1 @4 na0 s46
+//intro
+o5 l16 f#f#rf# rf#f#r br8.gr8.
+$
+//A
+o5 l16 [er8cr8<gr >rcrd rd-cr l12@q6cg>c l16@q2cr<ab rare fdr8]
+//B
+o6 l16 [r8ee-d<b>rc r<efa rcef> r8ee-d<b>rc rfrf fr8. r8ee-d<b>rc r<efa rcef r8a-r8fr8er8.r4]
+//C
+o5 l16 a-a-ra- ra-b-r gere cr8.  a-a-ra- ra-b-g r2 a-a-ra- ra-b-r gere cr8.
+//intro
+o5 l16 f#f#rf# rf#f#r br8.gr8.
+//A
+o5 l16 [er8cr8<gr >rcrd rd-cr l12@q6cg>c l16@q2cr<ab rare fdr8]
+//D
+o6 l16 [c<gre r8er f>drd< fr8. l12@q6g>ff fed l16@q2c<arf er8.> 
+        c<gre r8er f>drd< fr8. g>drd l12@q6dc<b l16@q2gere cr8.]
+//C
+o5 l16 a-a-ra- ra-b-r gere cr8.  a-a-ra- ra-b-g r2 a-a-ra- ra-b-r gere cr8.
+//intro
+o5 l16 f#f#rf# rf#f#r br8.gr8.
+//D
+o6 l16 [c<gre r8er f>drd< fr8. l12@q6g>ff fed l16@q2c<arf er8.> 
+        c<gre r8er f>drd< fr8. g>drd l12@q6dc<b l16@q2gere cr8.]
+;
+
+#C=
+x128 @v100 v15 q8 %1 @8,63,0,0,60
+//intro
+o4 l16 @q2 ddrd rddr >gr8. < gr8.
+$
+//A
+o4 l16 @q2 [gr8er8cr rfrg rg-fr l12@q5e>ce l16@q2frde rcr<a bgr8]
+//B
+o4 l16 @q2 [cr8gr8>cr <fr8>ccr<fr cr8er8g>c r>grggr <<gr 
+            cr8gr8>cr <fr8>ccr<fr cra-r rb-r8> cr8<g grcr]
+//C
+o3 l16 @q2 [a-r8>e-r8a-r gr8cr8<gr]3
+//intro
+o4 l16 @q2 ddrd rddr >gr8. < gr8.
+//A
+o4 l16 @q2 [gr8er8cr rfrg rg-fr l12@q5e>ce l16@q2frde rcr<a bgr8]
+//D
+o4 l16 @q2 [crrf# gr>cr< frfr >cc<fr drrf grbr grgr >cc<gr
+            crrf# gr>cr< frfr >cc<fr grrg l12@q5gab l16@q2 >cr<gr cr8.]
+//C
+o3 l16 @q2 [a-r8>e-r8a-r gr8cr8<gr]3
+//intro
+o4 l16 @q2 ddrd rddr >gr8. < gr8.
+//D
+o4 l16 @q2 [crrf# gr>cr< frfr >cc<fr drrf grbr grgr >cc<gr
+            crrf# gr>cr< frfr >cc<fr grrg l12@q5gab l16@q2 >cr<gr cr8.]
+;
+
+#O=na10o0e-;
+#H=na11o0e-;
+#Z=na12o0b-;
+
+#D=
+x128 @v30 v15 q8 @q2 %1 @9
+//intro
+l16 O8HO8HO8O8.O8HHH
+$
+//A
+l24 [Z8H12HO8H12H]8
+//B
+l24 [Z8H12HO8H12H]16
+//C
+l16 [O8HO8HO8O8.O8HHH]3
+//intro
+l16 O8HO8HO8O8.O8HHH
+//A
+l24 [Z8H12HO8H12H]8
+//D
+l8  [H.H16OH]16
+//C
+l16 [O8HO8HO8O8.O8HHH]3
+//intro
+l16 O8HO8HO8O8.O8HHH
+//D
+l8  [H.H16OH]16
+;
+
+#TABLE 20 {(128,80)10(80,0)600|0};
+#TABLE 21 {(128,0)90|0};
+#TABLE 22 {(128,0)40|0};
+#TABLE 23 {(1,4)10|4};
+#TABLE 24 {(0,-8000)700|-8000};
+
+t100
+A;
+B;
+C;
+D;
+
+//以降削除？
+r2.
+x128 @v30 v15 q8 @q0 %1 @4 na20 @@ np o6 b23>e2
+r1
+x128 @v40 v15 q8 @q0 %1 @4 na np @@ s63 o5l74 c&cgg# d&dg#a d#&d#ab- e&eb-b
+r1
+x128 @v30 v15 q8 @q0 %1 @2 na np @@ s63 o6l74 c<g>ceg>c<g <a->ce-a-e-a->ce-a- <<b->dfb-fb->dfb-f
+r1
+x128 @v30 v15 q8 @q0 %1 @4 na21 np @@ s63 o7l18 eg>ecdg
+r1
+//x128 @v40 v15 q8 @q0 %1 @4 na22 @@23 np24 o5 l48 ab>c<a8 r1
+;
+
+#END;
+

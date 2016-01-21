@@ -1,0 +1,19 @@
+#TITLE{SCCをSCCでFM変調してみる実験};
+
+#WAVB0{36454d4b41362f303639332309efd9cc362f220df2d9c8c3c6cbccc6bab0aeb7}; //carrier   waveform
+#WAVB1{a2352d037392f802934a293d842938da2938f42938a423f84729d84729a8472f}; //modulator waveform
+
+;t80;
+#C=l2 >a<cfg;  //phrase
+#D=l2 rrrr;    //rest
+
+//FM変調後の音を演奏
+#FM{B3(A)};
+%4 q0s25 @0o3C @1o3C @0o3C @1o4C; //modulator
+%4 q8    @0o4C @1o4C @1o3C @0o4C; //carrier
+
+//原波形を演奏
+DDDD
+%4@0 o4 C  //carrier
+%4@1 o4 C; //modulator 
+

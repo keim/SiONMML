@@ -1,0 +1,184 @@
+/*
+   魍魎戦記MADARA ～ ENDING THEME
+   [FC][VRC6][KONAMI]
+   1990 コナミ
+*/
+
+#TITLE{魍魎戦記MADARA ～ ENDING THEME};
+#REV;
+#FPS 600;
+#QUANT 16;
+//#EFFECT0{reverb70,40,80,30};
+
+//     00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff
+#WAVB1{7f7f7f8080808080808080808080808080808080808080808080808080808080};
+#WAVB3{7f7f7f7f7f7f7f7f808080808080808080808080808080808080808080808080};
+#WAVB4{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f00808080808080808080808080808080};
+
+#TABLE  1 { (64,127),200| 127 };
+#TABLE  2 { (127,64),100,(117,64),100,(107,64),100,(97,64),100,|64};
+#TABLE  3 { (128,20)20(20,0)20   | 0 };
+
+#TABLE 11 { (4)40 | 3 };
+
+#@0{
+//AL FB FDC
+   1  0   0
+//WS AR DR SR RR SL TL KR KL ML D1 D2 AM PH FIX
+  00 63 00 00 40 00 00  0  0  1  0  0  0  0 0
+  19 63 00 00 40 00 25  0  0  1  0  0  0  0 0
+};
+
+#Z=
+   o6
+   l4c#2.&c#r<af#2.&f#2r4 l8a2&arf#2l4c#< b2.&bra
+
+   o5f#gl8re l4f#ed eal8re f#4.rl4g
+   f#dl8r<b> l4d.r8e f#a2&l4ar<a
+   o5f#gl8re l4f#ed eal8re f#4.rl4g
+   f#dl8r<b> l4d.r8e d2.&d2r4
+
+   o5l8 f#4g4rf#a2&ar f#4g4rf#a2&ar
+   f#4g4rf#e4d4re l4f#ab l8a2&ar
+   f#4g4rf#a2&ar f#4g4rf#l4ab>d#
+   l4f#.r8e l4d<bl8r>d< a2&ar l4c#de
+
+   o5l8 f#2&f#r l4ef#l8ra l4bal8rb d2&dr
+   l4gf#l8ed ff#rd<l4a b>df# er8l16cc#dd#ef 
+   l8f#2&f#r l4ef#l8ra b4rab>d fed4.r<
+   l4def# bl8rf#ed< b4l8r>c#de l4f#ga
+   b>c#d l8f#erd<ba gab>c#de f#2&f#r l8g*a&a2&a2&l8ar
+   
+   o6l4c#2.&c#r<af#2.&f#2r4 l8a2&arf#2l4c#< l2b.&br4
+   l2b.&br4 l4g.r8a b-.r8>c l8d2&dr l4egb> q16c#2.&c#2.
+;
+
+#A=
+   q12 @q0 v16 @v78 x128 %4 @3 na1 @@11
+   @lfo11,2 mp0,14,600,600 s19
+   Z
+;
+
+#B=
+   q12 @q0 v12 @v60 x128 %4 @3 na1
+   @lfo12,2 mp0,12,450,600 s19
+   o5
+   l4f#2.&f#rc#<b2.&b2r4 >l8c#2&c#r<a2l4eg2.&gr2
+
+   o4l2.ab>c#d# l4d<bl8rg b4.r>l4c# df#2< bl8>d<bg4>>
+   l4del8rc# l4dc#<b> c#el8rc# d#4.r<l4b> d<bl8rg b4.r>c#4 d2.&d2r4
+
+   o4l8b2&br >l4del8rd <a2&ar> l4c#dl8rc#<
+   g4.rb>d l4c#<bl8r>c# l4df#g l8f#2&f#r
+   l8b2&br >l4del8rd <a2&ar> l4c#d#f#
+   g#2l4g# l4g#dl8rg# c#2&c#r< l4ab>c#
+
+   na2
+   o6l8 d<adf#a>d c#<ac#f#a>c# c<acf#a>c <bg>gf#ed<
+   b-gdb->c<b-> c#d4<af#d g#ebg#>d<b> c#4.l16<g#aa#b>cc#
+   l8d<adf#a>d c#<ac#f#a>c# c<acf#a>c <b-f>gfed<
+   f#dgeaf# >dc#d<bg#f# dc#dgb>c# dc#<baed
+   gf#gab>c# dc#4<ag f#ef#gab> c#dc#<bgb>
+   dc#dedc# <ba4.gf#e
+
+   na1
+   o5l4f#2.&f#rc#<b2.&b2r4 >l8c#2&c#r<a2e4 l2g.&gr4
+   l2g.&gr4 l8d2&dr g2&gr f#2&f#r l4gb>e q16f#2.&f#2.
+;
+
+#Y=
+   o4
+   l4 d2<ad2r g2>dg2r d2<ad2r g2.a2.
+
+   o4l4q12 d2<d g2>g f#2<f# b2<b> e2. a2. d2l8gg#a2<a4
+   o4l4 d2<d g2>g f#2<f# b2<b> e2. a2. l4gf#ed2.
+
+   o3l4q12 g2>dg2<g f#2>c#f#2<f# e2l8gg#l4a2<a> d2a>dl8f#ed<d
+   o3l4 g2>dg2<g f#2l8aa#l4bf#<b> e2l8>dd#e2<l4e a2e<ab>c#
+
+   o3l4q12 d.a8>dc#<ac# c.f#8>c<bg<b b-.>g8b-ag-<a a->eg# l8a<ab>bc#>c#
+   o3l4 d.a8>dc#<ac# c.g8>c<b-fb- a.>f#8ag#e<g# g.>d8gf#d<f#
+   o3l4 g.>d8gf#<ad e.b8>e<a.>l8egg# l2.a< a
+
+   o4l4q12 d2<ad2r g2>dg2r d2<ad2r g2>dg2r
+   o4l4 e2<be2f# g2>d<b-ag >d2<dg2>g d2. <q16d2.
+;
+
+#C=
+   %5 @1 q12 @v60 @q0 v9 x128 s20
+   Y
+;
+
+#D=
+   q12 @q0 v6 @v90 x128 %4 @3 na1
+   @lfo11,2 mp0,14,600,600 s19 r8 k5
+   Z
+;
+
+#E=
+   q16 @q0 v8 @v60 x128 %4 @4 na2
+   @lfo12,2 mp0,24,300,400 s20
+   o6
+   l4da>ef#2.<< b>dab2. da>ef#2.<< t110b>t100dt90at80g&t70gt100r<t120
+
+   o5l8da>c#f#c#<a gb>df#d<b c#a>c#f#c#<a< b>b>d#f#d#<b 
+   dgb>d<bg dgb>d<bg da>c#f#c#<a gb>dgd<b
+   da>c#f#c#<a gb>df#d<b c#a>c#f#c#<a <b>b>d#f#d#<b
+   dgb>d<bg dgb>d<bg bdac#g<b> f#a>cef#a<<
+
+   o4l8 b>df#b>df# af#d<bf#d ef#a>c#ef# af#ec#<af#
+   egb>dgb a#f#d<a#f#c#< a>c#ef#a>c# f#c<af#c<a
+   b>df#b>df# af#d<bf#d <f#a>c#f#a>c# f#d#c<af#d#
+   <g#b>df#g#b> f#ed<bg#e c#gf#>c#fc#
+   r12
+   @1na1
+   l4c#de
+
+   o6l8 f#2&f#r l4ef#l8ra l4bal8rb d2&dr
+   l4gf#l8ed ff#rd<l4a b>df# er8l16cc#dd#ef 
+   l8f#2&f#r l4ef#l8ra b4rab>d fed4.r<
+   l4def# bl8rf#ed< b4l8r>c#de l4f#ga
+   b>c#d l8f#erd<ba gab>c#de f#2&f#r l8g*a&a2&a2&l8a&a24
+                                     
+   @4na2
+   o5l4 da>ef#2.<< b>dab2. da>ef#2.<< b>dab2.<
+   b>gb> f#2g d2. a2g f#2.<
+   b>dg <l8dt115c#t110dt104at96bt86>e t100f#2.
+;
+
+#F=
+   q12 @q0 v16 @v60 x128 %1 @8 s30
+  Y
+;
+
+#G=
+   %6 @0 q0 @q0 v28 @v128 x128 s,-128 o3
+[r2.]8
+l4
+[crr]15 cr.c8
+[crr]15 cr.c8
+[crr]15 cr.c8
+[crr]6
+;
+
+#H=
+   v7 x128 @v88 %1 @9 na3 o0
+[r2.]8
+l4
+[rrcrrr:]8
+[rrcrrr:]8
+[rrcrrr:]8
+[rrcrrr:]3
+;
+
+t120
+A;
+B;
+C;
+D;
+E;
+F;
+G;
+H;
+
+#END;

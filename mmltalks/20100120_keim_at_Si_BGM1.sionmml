@@ -1,0 +1,8 @@
+#TITLE{BGM1};t100;
+#EFFECT1{delay450,30};
+#EFFECT2{delay450,50autopan};
+%5@0q0s36,-128v28o4$[c8.]4c;
+%2@1q0s32@f64,2$rc;
+%2@3q0s38v4l32$cc[c16]15;
+@v64,16%5@1q4s63o3@f48$[ccrr8|g8]r8;
+@v0,0,64%5@7q0o6l16v5p0$cgfb-r<c>gfe-d>b-fr;

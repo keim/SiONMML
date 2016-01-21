@@ -1,0 +1,328 @@
+/*
+   [AC] MAPPY - MAIN BGM - (C)namco 1983 by LinearDrive
+   date:2011-04-17
+   JASRAC:099-8506-9
+*/
+
+
+#TITLE{[AC] MAPPY - MAIN BGM - (C)namco 1983};
+#REV;
+#TMODE{unit=100};
+#FPS   60;
+#QUANT 16;
+
+
+/* MAPPY 波形データ */
+#WAVB  0 {6060606060606060606060606060606080808080808080808080808080808080};
+#WAVB  1 {80809090A0A0B0B0C0C0D0D0E0E0F0F000001010202030304040505060607070};
+#WAVB  2 {80A0B0C0E0E0C0D01020200020F02010F0F010E000E0D0E02040202040506070};
+#WAVB  3 {30506050402000000020405060503000C0A090A0B0D0F0F0F0D0B0A090A0C0F0};
+#WAVB  4 {F020405060504020F0C0A0908090A0C0F03050605030F0B0908090B0F060F080};
+#WAVB  5 {20404020F0F0003050605020E0D0D0F0101000C0908090B0E0F0F0C0A0A0C0F0};
+#WAVB  6 {F0604010406020F0407050002030F0A0005010C0D0F0A080B000D090B0E0B090};
+#WAVB  7 {6060F0F06060F0F06060F0F06060F0F08080F0F08080F0F08080F0F08080F0F0};
+
+
+/* テーブルエンベロープ */
+#TABLE  0 {                                 | 0 }*8;
+#TABLE  1 { (12)2,11,10,9,8,7,6,5,4,3,2,1   | 1 }*8;
+#TABLE  2 { (12)2,11,10,9,8,7,6,5,4,3       | 3 }*8;
+#TABLE  3 { (12)2,11,10,9,8,7,6             | 6 }*8;
+#TABLE  8 {                        | (12)2,(3)2 }*8;
+
+#TABLE 11 { (12)2,11,10,9,8,7,6,5,4         | 4 }*8;
+#TABLE 12 { (12)2,11,10,9,8,7,6,5,4,3,2,1   | 1 }*8;
+#TABLE 13 { (12)2,11,10,9,8,7,6,5,4,3,2,1,0 | 0 }*8;
+
+#TABLE 21 { (12)4,11,10,9,8,7,6,5,4,3,2,1,0 | 0 }*8;
+#TABLE 22 {    12,11,10,9,8,7,6,5,4,3,2,1,0 | 0 }*8;
+#TABLE 23 {    12,3,2,1,0                   | 0 }*8;
+#TABLE 24 { (12)2,11,10,9,8,7,6,5,4         | 4 }*8;
+#TABLE 25 {    12,7,6,5,4,3,2,1,0           | 0 }*8;
+#TABLE 26 { (12)2,11,10,9,8,7,6,5,4,3,2,1,0 | 0 }*8;
+
+
+/* シーケンサ初期化（位相非同期モード） */
+#M=
+   %4 @0,63,0,0,63,0 %v0,4 %x0
+   @ph255
+   v0 x128 q16 @q0 o5 kt0 k0 s0 na1 _na0 v16
+;
+
+
+/* WSG ch.1 (iv12) */
+#A=
+   M l16 @4 o5 k-32
+   $
+   [
+     na1 d+4 b4 a+4 b4>  na8  c4..< b&b2
+     na1 a4 b4 a8. g e8. na8  a&a1
+     na1 r4  a4 g+4 a4   na8  b4..  a&a2
+     na1 g4  a4 g8. e4   na8  d&d1
+     na1 <b8.>d g8.<b> d8.g <b8.>g  c8.e g8.c+ e8.g c+8.g
+         r4 b8.a+ a8r8 d8.g& g8r8 g8r8 f+8r8 e8r8
+   ]2
+
+   <b8.>f+ d+8.<b> f+8.d+ <b8.>f+  d+8.<b> f+8.d+ <b8.>f+ d+8.<b>
+   f+8.d+ <b8.>f+ d+8.<b> f+8.d+   <b8.>f+ d+8.<b> f+8.d+ <b8.>f+
+   <a8.>e c+8.<a> e8.c+ <a8.>e     c+8.<a> e8.c+ <a8.>e c+8.<a>
+   e8.c+ <a8.>e c+8.<a> e8.c+      <a8.>e c+8.<a> e8.c+ <a4>
+
+   <g8.a b8.g a8.b >c8.<a  b8.>c d8.<b> c8.d e8.c
+   d8.e f+8.d e8.f+ g8.a   b8.r a+8.b a+8.b a+8.b
+
+     na1 d+4 b4 a+4 b4>  na8  c4..< b&b2
+     na1 a4 b4 a8. g e8. na8  a&a1
+     na1 r4  a4 g+4 a4   na8  b4..  a&a2
+     na1 g4  a4 g8. e4   na8  d&d1
+     na1 <b8.>d g8.<b> d8.g <b8.>g  c8.e g8.c+ e8.g c+8.g
+         r4 b8.a+ a8r8 d8.g& g8r8 g8r8 f+8r8 e8r8
+
+   na2
+   r4 b4 a+4 b4    >c4< b4 a+4 b4
+   e4 >f+4 e4 <b4  g2.r4
+   r4 a4 g+4 a4    b4 a4 b4 >c+4<
+   d4 >d4 c4< b4   a4 r4 a+2
+   r4 b4 a+4 b4    >c4< b4 a+4 b4
+   r4 g4 b4 >d4    f+8.e f+8.e& e8.e d+8.e
+   r4 g2 e8.<b>    d8.e <b8.>d e8.<a+ b8.g& g4 f+4 e4 d4
+   g4 r8 g8 r2
+      
+     na1 d+4 b4 a+4 b4>  na8  c4..< b&b2
+     na1 a4 b4 a8. g e8. na8  a&a1
+     na1 r4  a4 g+4 a4   na8  b4..  a&a2
+     na1 g4  a4 g8. e4   na8  d&d1
+     na1 <b8.>d g8.<b> d8.g <b8.>g  c8.e g8.c+ e8.g c+8.g
+         g8.a b8.g e8r8 d8r8  r4 f+8r8 g8r8 r4
+
+   <g8.a b8.g a8.b >c8.<a  b8.>c d8.<b> c8.d e8.c
+   d8.e f+8.d e8.f+ g8.a   b8.r a+8.b a+8.b a+8.b
+;
+
+
+/* WSG ch.2 (iv12) */
+#B=
+   M l16 @4 o5 k-26
+   $
+   [
+     na1 d+4 b4 a+4 b4>  na8  c4..< b&b2
+     na1 a4 b4 a8. g e8. na8  a&a1
+     na1 r4  a4 g+4 a4   na8  b4..  a&a2
+     na1 g4  a4 g8. e4   na8  d&d1
+     na1 <b8.>d g8.<b> d8.g <b8.>g  c8.e g8.c+ e8.g c+8.g
+         r4 b8.a+ a8r8 d8.g& g8r8 g8r8 f+8r8 e8r8
+   ]2
+
+   @1 na3 k-32
+   <
+   <b2>d+4.f+8  g+4 b2 g+4  f+2 g+2  d+4 f+2.
+   <a2>c+4.e8   f+4 a2 f+4  e2 f+2   c+4 e2.
+   >
+   @4 na1 k-26
+
+   <g8.a b8.g a8.b >c8.<a  b8.>c d8.<b> c8.d e8.c
+   d8.e f+8.d e8.f+ g8.a   b8.r a+8.b a+8.b a+8.b
+
+     na1 d+4 b4 a+4 b4>  na8  c4..< b&b2
+     na1 a4 b4 a8. g e8. na8  a&a1
+     na1 r4  a4 g+4 a4   na8  b4..  a&a2
+     na1 g4  a4 g8. e4   na8  d&d1
+     na1 <b8.>d g8.<b> d8.g <b8.>g  c8.e g8.c+ e8.g c+8.g
+         r4 b8.a+ a8r8 d8.g& g8r8 g8r8 f+8r8 e8r8
+
+   na2
+   r4 b4 a+4 b4    >c4< b4 a+4 b4
+   e4 >f+4 e4 <b4  g2.r4
+   r4 a4 g+4 a4    b4 a4 b4 >c+4<
+   d4 >d4 c4< b4   a4 r4 a+2
+   r4 b4 a+4 b4    >c4< b4 a+4 b4
+   r4 g4 b4 >d4    f+8.e f+8.e& e8.e d+8.e
+   r4 g2 e8.<b>    d8.e <b8.>d e8.<a+ b8.g& g4 f+4 e4 d4
+   g4 r8 g8 r2
+      
+     na1 d+4 b4 a+4 b4>  na8  c4..< b&b2
+     na1 a4 b4 a8. g e8. na8  a&a1
+     na1 r4  a4 g+4 a4   na8  b4..  a&a2
+     na1 g4  a4 g8. e4   na8  d&d1
+     na1 <b8.>d g8.<b> d8.g <b8.>g  c8.e g8.c+ e8.g c+8.g
+         g8.a b8.g e8r8 d8r8  r4 f+8r8 g8r8 r4
+
+   <g8.a b8.g a8.b >c8.<a  b8.>c d8.<b> c8.d e8.c
+   d8.e f+8.d e8.f+ g8.a   b8.r a+8.b a+8.b a+8.b
+;
+
+
+/* WSG ch.3 (iv12) */
+#C=
+   M l16 @5 o5 k-32
+   $
+   [
+     na11  b2 g+4 e4      b4& b8.>c d4 c4<
+     b4& b8.>c< b4 a4     g4& g8.f+ e4 d+4
+     d8r8 a8.b a8.g e8r8  a8.b a8.g e8r8 d8.e
+     g4 a4 b4 >c4         d4 c4 <b4 a4
+     d8.<b> g8.d <b8.>g d8.g  e8.c g8.e c+8.g e8.c+
+     r1  r4 d8.g c+8.g c8.g
+   ]2
+
+   @1 na3 k-26
+   <
+   <b2>d+4.f+8  g+4 b2 g+4  f+2 g+2  d+4 f+2.
+   <a2>c+4.e8   f+4 a2 f+4  e2 f+2   c+4 e2.
+   >
+   @5 k-32
+
+   na12
+   <b8.>c d8.<b> c8.d e8.c  d8.e f+8.d e8.f+ g8.e
+   f+8.g a8.f+ g8.a b8.>c+  d+8.r d8.d+ d8.d+ d8.d+<
+   
+     na11  b2 g+4 e4      b4& b8.>c d4 c4<
+     b4& b8.>c< b4 a4     g4& g8.f+ e4 d+4
+     d8r8 a8.b a8.g e8r8  a8.b a8.g e8r8 d8.e
+     g4 a4 b4 >c4         d4 c4 <b4 a4
+     d8.<b> g8.d <b8.>g d8.g  e8.c g8.e c+8.g e8.c+
+     r1  r4 d8.g c+8.g c8.g
+
+   @6 na13
+   r4 f+4 r8 f+4 r8   f+4 r8 f+4 r8 f+4
+   r4 e4  r8 e4  r8   e4  r8 e4  r8 e4
+   r4 e4  r8 e4  r8   e4  r8 e4  r8 e4
+   r4 f+4 r8 f+4 r8   f+4 r4 f+4 r4
+   r4 f+4 r8 f+4 r8   f+4 r8 f+4 r8 f+4
+   r4 g4  r8 g4  r8   r4 g+4 r8 g+4 r8
+   r4 e4  r4 e4       r4 d4  r4 d4
+   r4 d4  r8 d4  r8   e4  r8 e8  r4 r4
+   @5
+
+     na11  b2 g+4 e4      b4& b8.>c d4 c4<
+     b4& b8.>c< b4 a4     g4& g8.f+ e4 d+4
+     d8r8 a8.b a8.g e8r8  a8.b a8.g e8r8 d8.e
+     g4 a4 b4 >c4         d4 c4 <b4 a4
+     d8.<b> g8.d <b8.>g d8.g  e8.c g8.e c+8.g e8.c+
+     r1  r4 a8r8 g8r8 r4
+
+   na12
+   <b8.>c d8.<b> c8.d e8.c  d8.e f+8.d e8.f+ g8.e
+   f+8.g a8.f+ g8.a b8.>c+  d+8.r d8.d+ d8.d+ d8.d+<
+;
+
+
+/* WSG ch.4 (iv12) */
+#D=
+   M l16 @5 o5 k-26
+   $
+   [
+     na11  b2 g+4 e4      b4& b8.>c d4 c4<
+     b4& b8.>c< b4 a4     g4& g8.f+ e4 d+4
+     d8r8 a8.b a8.g e8r8  a8.b a8.g e8r8 d8.e
+     g4 a4 b4 >c4         d4 c4 <b4 a4
+     d8.<b> g8.d <b8.>g d8.g  e8.c g8.e c+8.g e8.c+
+     r1  r4 d8.g c+8.g c8.g
+   ]2
+
+   @2 k-32
+   <
+   na21 b4 r4 f+4 r8 r na22 b& b8.na23 b na22 a+4 g+4 f+4
+   na25 b4 >c+4 d+4 f+4   na22 b8.na23 b na22 a+4 g+4 f+4<
+   na21 a4 r4 e4  r8 r na22 a& a8.na23 a na22 g+4 f+4 e4
+   na25 a4 b4>  c+4 e4    na22 a8.na23 a na22 g+4 f+4 e4<
+   >
+   @5 k-26
+
+   na12
+   <b8.>c d8.<b> c8.d e8.c  d8.e f+8.d e8.f+ g8.e
+   f+8.g a8.f+ g8.a b8.>c+  d+8.r d8.d+ d8.d+ d8.d+<
+   
+     na11  b2 g+4 e4      b4& b8.>c d4 c4<
+     b4& b8.>c< b4 a4     g4& g8.f+ e4 d+4
+     d8r8 a8.b a8.g e8r8  a8.b a8.g e8r8 d8.e
+     g4 a4 b4 >c4         d4 c4 <b4 a4
+     d8.<b> g8.d <b8.>g d8.g  e8.c g8.e c+8.g e8.c+
+     r1  r4 d8.g c+8.g c8.g
+
+   @6 na13
+   r4 d+4 r8 d+4 r8   d+4 r8 d+4 r8 d+4 <
+   r4 b4  r8 b4  r8   b4  r8 b4  r8 b4
+   r4 a4  r8 a4  r8   a4  r8 a4  r8 a4  >
+   r4 d4  r8 d4  r8   d4  r4 d4  r4
+   r4 d+4 r8 d+4 r8   d+4 r8 d+4 r8 d+4
+   r4 d4  r8 d4  r8   r4 d4 r8 d4 r8
+   r4 c4  r4 c4       <r4 a4 r4 a4
+   r4 b4  r8 b4  r8   b4  r8 b8  r4 r4  >
+   @5
+
+     na11  b2 g+4 e4      b4& b8.>c d4 c4<
+     b4& b8.>c< b4 a4     g4& g8.f+ e4 d+4
+     d8r8 a8.b a8.g e8r8  a8.b a8.g e8r8 d8.e
+     g4 a4 b4 >c4         d4 c4 <b4 a4
+     d8.<b> g8.d <b8.>g d8.g  e8.c g8.e c+8.g e8.c+
+     r1  r4 a8r8 g8r8 r4
+
+   na12
+   <b8.>c d8.<b> c8.d e8.c  d8.e f+8.d e8.f+ g8.e
+   f+8.g a8.f+ g8.a b8.>c+  d+8.r d8.d+ d8.d+ d8.d+<
+;
+
+
+/* WSG ch.5 (iv12) */
+#E=
+   M l16 @2 o4 k-26
+   $
+   [
+     na21 e4 r4 <b4> r8 r na22 e& e8.na23 e na22 <b4> e8. na23 f+ na22 g+4
+     na21 a4 r4  e4  r8 r na22 a& a8.na23 a na22 g4 f+4 e4
+     na21 d4 r4 <a4> r8 r na22 d& d8.na23 d na22 <a4> d8. na23 e  na22 f+4
+     na21 g4 r4  d4  r8 r na22 g& g8.na23 g na22 d4 c+4 c4<
+     na21 g4>g4<g4>g4    <a4>a4<a+4>a+4<
+     na24 b4 r4 r4>d8.g& g8r8 g8r8 a8r8 a+8r8
+   ]2
+
+   na21 b4 r4 f+4 r8 r na22 b& b8.na23 b na22 a+4 g+4 f+4
+   na25 b4 >c+4 d+4 f+4   na22 b8.na23 b na22 a+4 g+4 f+4<
+   na21 a4 r4 e4  r8 r na22 a& a8.na23 a na22 g+4 f+4 e4
+   na25 a4 b4>  c+4 e4    na22 a8.na23 a na22 g+4 f+4 e4<
+
+   na21 <g4>g4<a4>a4   <b4>b4 c4>c4
+   <d4>d4<e4>e4<       na25 f+4 f+4 d+4 <b4>
+
+     na21 e4 r4 <b4> r8 r na22 e& e8.na23 e na22 <b4> e8. na23 f+ na22 g+4
+     na21 a4 r4  e4  r8 r na22 a& a8.na23 a na22 g4 f+4 e4
+     na21 d4 r4 <a4> r8 r na22 d& d8.na23 d na22 <a4> d8. na23 e  na22 f+4
+     na21 g4 r4  d4  r8 r na22 g& g8.na23 g na22 d4 c+4 c4<
+     na21 g4>g4<g4>g4    <a4>a4<a+4>a+4<
+     na24 b4 r4 r4>d8.g& g8r8 g8r8 a8r8 a+8r8
+
+   na26
+   b4 r4 f+4  r8 r b& b8. b f+4 b8.>c+ d+4
+   e4 r4 <b4> r8 r e& e8. e d4  c+8.c+ <b4
+   a4 r4  e4  r8 r a& a8. a e4  a8. b  >c+4
+   d4 r4  r2  r2 d2 <
+   b4 r4 f+4  r8 r b& b8. b >c4 <b8.b  a4
+   g4 r4 b4 >d4    e4 g+2 e4
+   c2 c2   d2 d2 <
+   g4 f+4 e4 d4  g4 r8 g8 r2
+
+     na21 e4 r4 <b4> r8 r na22 e& e8.na23 e na22 <b4> e8. na23 f+ na22 g+4
+     na21 a4 r4  e4  r8 r na22 a& a8.na23 a na22 g4 f+4 e4
+     na21 d4 r4 <a4> r8 r na22 d& d8.na23 d na22 <a4> d8. na23 e  na22 f+4
+     na21 g4 r4  d4  r8 r na22 g& g8.na23 g na22 d4 c+4 c4<
+     na21 g4>g4<g4>g4    <a4>a4<a+4>a+4
+     na22 g8. na23 a na22 b8. na23 g na25 e4 d4
+     na22 d8. na23 e na25 f+4 g4 r4
+
+   na21 <g4>g4<a4>a4   <b4>b4 c4>c4
+   <d4>d4<e4>e4<       na25 f+4 f+4 d+4 <b4>
+;
+
+
+/* 再生 */
+t22500
+A;
+B;
+C;
+D;
+E;
+
+
+#END;
+

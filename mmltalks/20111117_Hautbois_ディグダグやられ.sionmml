@@ -1,0 +1,29 @@
+#TITLE{ディグダグやられ};
+#REV;
+#FPS 600;
+#QUANT 8;
+
+#WAVB00{7F80};
+
+#TABLE0{(128,0)600|128};
+
+#M=%t0 x128 v16 @v60 %4 @0 q8 @q0 s60na0 @ph255;
+#A=M 
+o6l32 gg-fe fee-d e-dd-c d-c<bb- a>fc#a r1
+;
+
+#B=M
+o6l32 d-c<bb- bb-aa- aa-gg- gg-fe e-bg#>e- r1
+;
+
+#C=M
+o5l32 b-aa-g a-gg-f g-fee- ee-dd- cg#e->c r1
+;
+
+t125
+A;
+B;
+C;
+
+#END;
+

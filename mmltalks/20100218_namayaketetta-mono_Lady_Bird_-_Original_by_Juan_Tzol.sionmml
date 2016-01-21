@@ -1,0 +1,108 @@
+/* Arranged by Grifter Feb.210 */
+#TITLE{Lady Bird - Original by Juan Tzol};
+
+
+t208;
+
+/* Assigning chords to macros */
+#A=o5cegb;         /* CM7     */
+#B=ce-fa;          /* F7/C    */
+#C=>b-<dfa;        /* BbM7    */
+#D=ce-fa-;         /* Fm7/C   */
+#E=>b-<dfa-;       /* Bb7     */
+#F=o5ce-ga-;       /* AbM7/C  */
+#G=cega;           /* Am7/C   */
+#H=cdf+a;          /* D7/C    */
+#I=cdfa;           /* Dm7/C   */
+#J=>b<dfg;         /* G7/B    */
+#K=de-gb-;         /* EbM7/Bb */
+#L=o5d-fa-o6c;     /* DbM7    */
+
+
+/* Main Melody: Start */
+l4 o6 v7 @lfo10
+
+[r8 mp0,16,9 f16*g16^4 mp0,0,0 f16*g8. f16*g8.
+mp0,16,9 f16*g^16 mp0,0,0 f16*g16^8 f8& g
+mp0,16,9 a-16*b-4^8^16 mp0,0,0 a-6& e-6& f6
+mp0,16,9 f16*g16^8^2. mp0,0,0
+
+r8 mp0,16,9 f16*g16^4 mp0,0,0 f16*g8. f16*g8.
+mp0,16,9 f16*g^16 mp0,0,0 f16*g16^8 f8& g
+mp0,16,9 a-16*b-4^8^16 mp0,0,0 a-6& e-6& f6
+mp0,16,9 b-16*o7c16^8^2. mp0.0.0
+
+r8 mp0,16,9 o6a16*b16^4 mp0.0.0 b-& a
+mp0,16,9 a16*b16^8 mp0.0.0 b-8& a8 r2
+r8 mp0,16,9 b-16*o7c16^4 mp0.0.0 o6b& b-
+mp0,16,9 b-16*o7c16^8 mp0.0.0 o6b8& b-8 r2
+
+r8 mp0,16,9 b-16*o7c16^4 mp0.0.0 o6a& f
+d16*e16^8 mp0,16,9 d.& mp0.0.0 d-8& d8 mp0,16,9 f16*g16
+^1
+^1]2;
+/* Main Melody: End */
+
+/* Chords: Start */
+l64 v13 %8
+
+[@1 A @2 x85 A @3 x42 A r16^8 @7 x128 A @8 x42 A r2
+@3 x128 A @4 x85 A @5 x42 A r16^8 @7 x128 A @6 x42 A r2
+@5 x128 B @6 x85 B @7 x42 B r16^8 @5 x128 B @4 x42 B r2
+@7 x128 C @8 x85 C @7 x42 C r16^8 @3 x128 C @2 x42 C r2
+
+@5 x128 A @4 x85 A @3 x42 A r16^8 @3 x128 A @4 x42 A r2
+@3 x128 A @2 x85 A @1 x42 A r16^8 @5 x128 A @6 x42 A r2
+@1 x128 D @2 x85 D @3 x42 D r16^8 @7 x128 D @8 x42 D r2
+@3 x128 E @4 x85 E @5 x42 E r16^8 @7 x128 E @6 x42 E r2
+
+@5 x128 F @6 x85 F @7 x42 F r16^8 @5 x128 F @4 x42 F r2
+@7 x128 F @8 x85 F @7 x42 F r16^8 @3 x128 F @2 x42 F r2
+@5 x128 G @4 x85 G @3 x42 G r16^8 @3 x128 G @4 x42 G r2
+@3 x128 H @2 x85 H @1 x42 H r16^8 @5 x128 H @6 x42 H r2
+
+@1 x128 I @2 x85 I @3 x42 I r16^8 @7 x128 I @8 x42 I r2
+@3 x128 J @4 x85 J @5 x42 J r16^8 @7 x128 J @6 x42 J r2
+@5 x128 A @6 x85 A @7 x42 A r16 @7 x128 A @6 x85 A @5 x42 A r16 @3 x128 K @2 x85 K @1 x42 K r16 @3 x128 K @4 x85 K @5 x42 K r16
+@7 x128 F @8 x85 F @7 x42 F r16 @5 x128 F @4 x85 F @3 x42 F r16 @1 x128 L @2 x85 L @3 x42 L r16 @5 x128 L @6 x42 L @7 x128 A @8 x42 A]2;
+/* Chords: End */
+
+
+/* Bassline: Start */
+l4 o3 v10 %5 @1
+
+[c d e f
+g e d c
+f g a o4c
+o3b- o4c d f
+
+o3c d e f
+g e d c
+f g a- o4c
+o3b- o4c d f 
+
+o3a- b- o4c d-
+e- c o3b- a-
+a b o4c e
+o3d e f+ a
+
+d e f a
+o3g a b o4d
+o3c c e- e-
+a- a- d- c]2;
+/* Bassline: End */
+
+
+/* Drums: Start */
+/* Closed Hi-Hat: Start */
+%10 o4 v20
+
+[c c6 c12]64; 
+/* Closed Hi-Hat: End */
+
+/* Bell & Cymbal: Start */
+%10 v16
+
+[r o4g r c]32
+/* Bell & Cymbal: End */
+/* Drum: End */

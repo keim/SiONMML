@@ -1,0 +1,215 @@
+/*
+    ドラゴンクエスト１～４ - ファンファーレ - タイトル
+    発売：エニックス　開発：チュンソフト
+    作曲：すぎやまこういち
+      I.1986.05.27 
+     II.1987.01.26 
+    III.1988.02.10 
+     IV.1990.02.11 
+        2011.05.12 MML Hautbois.
+*/
+
+#TITLE{ドラゴンクエスト１～４ - ファンファーレ - タイトル};
+#REV;
+#FPS  600;
+#QUANT  8;
+//#EFFECT0{reverb70,40,80,10};
+
+//SCC-WAVES
+#WAVB00{7f7f808080808080808080808080808080808080808080808080808080808080};
+#WAVB01{7f7f7f7f80808080808080808080808080808080808080808080808080808080};
+#WAVB02{7f7f7f7f7f7f7f7f808080808080808080808080808080808080808080808080};
+#WAVB03{7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f80808080808080808080808080808080};
+
+#TABLE  0 { (128,0)280 | 0 };
+#TABLE  1 { 120 | 120 };
+#TABLE  2 { (128,0)700 | 0 };
+
+#TABLE  3 { (128)100 | (128,100,128)80 };
+#TABLE  4 { 2 | 0 };
+#TABLE  5 { 0 | 20 };
+
+#TABLE  6 { (100,128)30(128,100)160 | (100,80,100)90 };
+#TABLE  7 { 2 | 2 };
+#TABLE  8 { 0 | 12 };
+
+#TABLE  9 { (128,100)160(100,120)300 | 120 };
+#TABLE 10 { 2 | 2 };
+#TABLE 11 { (120,30)20 | (30,20,30)90 };
+#TABLE 12 { (80,128)60(128,70)240 | 70 };
+#TABLE 13 { (70,20)20 | (20,10,20)90 };
+#TABLE 14 { (128,90)240 | 90 };
+#TABLE 15 { (90,30)20 | (30,20,30)90 };
+
+#A=x128 @v58 %4 q8 s38 @q0 v16
+//①
+t126
+@1 na0 o5 l8 @q0
+   a^12a24a ggg fga b-ag ab->c dfd c<b-a g^12g24g a^12a24a afa na1 g2..r2
+//9
+t120
+@2 na2 o6 s38
+   c8.c16
+   l4fgab- na1>cf2 na2e8.d16 d.l8cr<bb>d c4<a2<a8.a16
+//18
+   l4aab>c# na1d2l8r na2def na1g2r na2ddf l4fedc
+//26
+   l8na1a2&a b-ag f2 d4f4 g2&g na2agf na1 f2 e4c4
+//34
+   >c2&c<na2ab->c na1d2&d<na2def na1l2b-a f&s26f8r8 r2.
+//②
+//42
+t136
+@2 na3 _@@4 _na5 o5 l8 @q8 s10
+   @q0a16.r8r96a48@q1a @q14ggg @q8f@q12ga @q0b-@q10ag ab->c dfd c<b-a
+   t132 @q0g16.r8r96@q0g48@q1g t128 @q0a16.r8r96a48@q1a @q0 t122 a t118 f t114 a t110 g2..r4v0g4v16
+//53
+t125
+o6 @q0
+   c8r12c24
+   l4@q4 fgab- >cf2 @q0e8r16@q1d16 d.@q18c4< @q4l8bb>d c4<a2<@q8a8.@q1a16
+//61
+   l4@q5 aab>c# @q0d2l8r @q5def @q0g2r @q5ddf @q5l4fedc96&c
+//68
+   l8@q0 a2&a b-ag @q5f2 d4f4 @q0g2&g agf @q5f2 e4c4
+//75
+   >@q5c2&c<ab->c d48&d8..&d4&d<def l2b-a @q22f. r4v0f4 r2.
+//③
+//85
+t136
+v16 @1 na6 _@@7 _na8 o5 l8 @q8 s10
+   @q0a16.r8r96a48@q1a @q12ggg @q8f@q12ga @q0b-@q10ag ab->c dfd c<b-a
+   t132 @q0g16.r8r96@q0g48@q1g t128 @q0a16.r8r96a48@q1a @q0 t122 a t118 f t114 a t110 g2..r4v0g4
+//95
+t125
+v16 @2 o6 @q0
+   c8r12c24
+   l4@q4 fgab- >cf2 @q0e8r16@q1d16 d.@q18c4< @q4l8bb>d c4<a2<@q8a8.@q1a16
+//103
+   l4@q5 aab>c# @q0d2l8r @q5def @q0g2r @q5ddf @q5l4fedc
+//111
+   l8@q2 a2&a b-ag @q5f2 d4f4 @q2g2&g agf @q5f2 e4c4
+//119
+   >@q5c2&c<ab->c d2&d<def l2b-a @q22f. r4v0f4 r2.
+//④
+//128
+t96
+v16 @2 na9 _@@10 _na11 o6 s10
+   [l24@q0g2r8@q4gggl8@q12gg@q16g1] [l24@q14g4.@q4ggg]4 l24@q0g2r8@q4gggl8@q12gg@q0g2&g8r8
+//148
+t122
+[
+v16 @1 na14 _@@ _na15 o5
+   @q6 g8.g16>
+   l4cdefg>c2<b8.a16a.l8grf#f#ag4e2<e8.e16
+//156
+   l4eef#g#l8@q8a2&aab>cd2&d<aa>cl4c<bag>
+//164
+   l8e2&efed c2l4<a>c l8d2&dedc c2l4<bg>
+//172
+   l8g2&gefg a2&a<ab>c l2fe l8c2&cr]
+//211
+@3 na12 _@@ _na13 o5 l8 @q0
+   v10g4> gc#defefga1r4
+@2 na9 _@@10 _na11
+   v16l4@q4ab>c f1e2e2c1&c2&c8r2 v0c
+;
+
+#B=x128 @v52 %4 q8 s38 @q0 v16
+//①
+@1 na0 o5 l8 @q0
+   c^12f24f ccc <a>cf gfc fga b->d<b- agf c^12c24c f^12f24f f<a>f na1 c2..r2
+@2 na2 o5 s38
+   b-8.b-16
+   l4a>cff na1 f2f2 b-4.l8arg#g#b a4f2<<na2a8.a16
+   >l4c#c#de na1f2l8r na2fga> na1d2r na2<bb>d l4dc<b-b-
+   l8na1>c#2&c# c#c#c# d2 <a4a4> d2&d<na2 bbb na1 b-2b-4b-4
+   >f#2&f#na2f#ga na1b-2&b-<na2b->cd na1l2de <a&s26a8r8 r2.
+//②
+@2 na3 _@@4 _na5 o5 l8 @q8 s10
+   @q0f16.r8r96f48@q1f @q14ccc @q8<a>@q12cf @q0g@q10fc  fga b->d<b- agf
+   @q0c16.r8r96c48@q1c @q0f16.r8r96f48@q1f @q0 f<a>f c2..r4v0c4v16
+o5 @q0
+   b-8r12b-24
+   l4@q4 a>cff f2f2 b-.@q18a4 @q4l8g#g#b a4f2r4<
+   l4@q5 c#c#de @q0f2l8r @q5fga> @q0d2r @q5<bb>d @q5l4dc<b-b->
+   l8@q0 c#2&c# c#c#c# @q5d2 <a4a4 >@q0d2&d <bbb @q5b-2 b-4b-4
+   >@q5f#2&f#f#ga b-2&b-<b->cd l2de <@q22a. r4v0a4 r2.
+//③
+v16 @1 na6 _@@7 _na8 o5 l8 @q8 s10
+   @q0f16.r8r96f48@q1f @q12ccc @q8<a>@q12cf @q0g@q10fc  fga b->d<b- agf
+   @q0c16.r8r96c48@q1c @q0f16.r8r96f48@q1f @q0 f<a>f c2..r4v0c4
+v16 @2 o5 @q0
+   b-8r12b-24
+   l4@q4 a>cff f2f2 b-.@q18a4 @q4l8g#g#b a4f2r4<
+   l4@q5 c#c#de @q0f2l8r @q5fga> @q0d2r @q5<bb>d @q5l4dc<b-b->
+   l8@q2 c#2&c# c#c#c# @q5d2 <a4a4 >@q2d2&d <bbb @q5b-2 b-4b-4
+   >@q5f#2&f#f#ga b-2&b-<b->cd l2de <@q22a. r4v0a4 r2.
+//④
+v16 @2 na9 _@@10 _na11 o5 s10
+   @k3 l24@q0g2r8@q4gggl8@q12gg@q24g4 
+   @k0 @3na12 _@@ _na13 l32@q0e<gab>cdef gcdefgab >c<efgab>cd <b-2r8
+   @2 na9 _@@10 _na11 @k3 l24@q4gggl8@q12gg@q24g4
+   @k0 @3na12 _@@ _na13 l32@q0e-<ga-b->cde-f g<b->cde-fga- b-e-fga-b->cd<
+   l2@q20 efedel4fed l24@q0defl32gab>cd8r8 
+v16 @2 na14 _@@ _na15 o5
+[   @q8 f8.f16
+   l4egg>cce<a>c<fed#2e>c2 <@k4e8.e16<
+   l4g#g#ab>l8c2&ccdel4df#l8af#f#al4agff
+   l8g#2&g#g#g#g#a2l4eadf#af#f2ff
+   >c#<al8e>c#def2&f<fgal2abe2&e8r8] r4
+@3 na12 _@@ _na13 o6 l8 @q0
+   v10c#<efga2>f1r4
+@2 na9 _@@10 _na11
+   v16l4cdg l8a<ffaa>ccf <fggbb>ddf e<eegg>cce< @3 na12 _@@ _na13 e4 l24efgl32ab>cde8r2 v0e
+;
+
+#C=x128 @v128 %1 @8,60,0,0,58 q8 @q0 v16
+//①
+o4 f4r8 l4.[r]9 r2..r2
+o4 l4 r @q10
+   fee-d<l2@q20ab- l4@q10>fc<f>ff<a>cf
+   l2@q20<aa l4@q10>d<a>fd <b>dg<g @q20>c2 l4@q10ce
+   <a>c#e<a >defd <b>dg<g >ccgb-
+   af#d<a gab-g >gcb-c fcf r2.
+//②
+o4 l4.[r]10 r2..r2
+o4 l4 r @q8
+   fee-d<l2ab- l4>fc<f>ff<a>cf
+   l2<aa l4>d<a>fd <b>dg<g >c2 l4ce
+   <a>c#e<a >defd <b>dg<g >ccgb-
+   af#d<a gab-g >gcb-c fcf r2.
+//③
+o4 l4.[r]10 r2..r1
+o4 l4 r @q8
+   fee-d<l2ab- l4>fc<f>ff<a>cf
+   l2<aa l4>d<a>fd <b>dg<g >c2 l4ce
+   <a>c#e<a >defd <b>dg<g >ccgb-
+   af#d<a gab-g >gcb-c fcf r2.r2
+//④
+l32@q0o5
+   r1r4 c&<e&f&g&a&b&>c&d& e&<e&f&g&a&b&>c&d& e&c&d&e&f&g&a&b&> e-2<<
+   r2r4 g&e-&f&g&a-&b-&>c&d& e-&<g&a&b-&>c&d&e-&f& g&<g&a-&b-&>c&d&e-&f
+   l2@q8 cdc<g>cl4dc<g l24@q0b&>c&d&l32e&f&g&a&b8r8
+o5l12@q2
+   r4
+[
+   c<b>c<b>c<bb->c<b-ag#a ec#egegfgfefe c<b>c<b>c<b>c<b>c<b>c<b> cdd#eff#gab>c<ge
+   edededededed ag#aed#ec<b>c<a>ce f#f#gaa>cd<af#dcd gf#agf#agfd<b>cd
+   ed#eg#eg#bg#bed#e ag#aba#b>c<b>c<aec f#df#af#a>dc#dc<ad gf#gab>cdc#d<bag>
+   ed#ec#ec#<age<ab>c# dc#ded#efefdc#d l4>d<g>f<g> | l12c<b>c<gf#ged#egdg
+]
+   cc<g>ceg>c8r8 
+t96
+   r4
+   <a2&>l4d&c&<b1 rf2&e
+   l8d>ddffaa<d gbb>ffbb<g c>cceegg<c c4l24c&d&e&l32f&g&a&b&>c8
+;
+
+t120
+A;
+B;
+C;
+
+#END;
+

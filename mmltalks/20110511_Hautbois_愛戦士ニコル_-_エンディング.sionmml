@@ -1,0 +1,129 @@
+/*
+    愛戦士ニコル - エンディング
+    1987 KONAMI
+    2011.04.07 初版 Hautbois.
+    2011.05.12 SCCで再挑戦 Hautbois.
+    2011.05.21 波形修正
+*/
+
+#TITLE{愛戦士ニコル - エンディング};
+#REV;
+#FPS  600;
+#QUANT  8;
+//#EFFECT0{reverb70,40,80,10};
+
+//波形テーブル
+#WAVB00{7f80};
+#WAVB01{7f808080};
+#WAVB02{0018263C5250442A1C141C2634382E221C20344C626458402E262E3A4C4E443830344662747A684C383038404C4C4032282C365260605036221C202C38382C1E};
+#WAVB03{007E7E7E7E7E7E7E7A00020404040402006E6E6E6E6E6E686400020404040402005E5E5E5E5E5E585400020404040402004A4A4A4A4A4A464400020404040402};
+#WAVB04{0020585C4E525654504A525E5A58544448687E625A74764E24143E584E4650443C4450464E583E14244E76745A627E68484454585A5E524A505456524E5C5820};
+#WAVB05{00382C205E6244767E4A5E60262436140C382C225E5644767E48565C2C2436140A382A20545C446C7E4852682C223A160A382A20585A3E707E4A58622C243616};
+
+#TABLE  0 { 128 | 128 };
+#TABLE  1 { (128,30)200 | 30 };
+#TABLE  2 { (100,128)6(128,0)220 | 0 };
+#TABLE  3 { (100,128)6(128,60)30 | 60 };
+#TABLE  4 { (70,80)6 | 80 };
+#TABLE  5 { (100,128)6(128,60)60 | 60 };
+
+#A=x128 @v128 %4 q8 s32 @q0 v16
+@2 na0 o4 l12 @q8
+   ggg >c6rc<g>c d6rd<g>d f6rfed @q4c6r<b6r @q8ab>cagf@q0er@q8c<g>c<b>c1 r2
+t100
+@3 na1 o6 l16 @q0
+   c<b>c8<g8 @q12 a4 @q0 gfegfd @q12 c8. @q0ed32e32d8c@q0c2 r4
+@4 o6 l4 @q1 [c<g>]4
+@5 na1 o5
+$
+   @q12e4.@q0l16efl8gfed& 
+   @q12d@q0<g>g<g>fl16ede8c<g
+   a8b>c<g8b>c<f8b>cfedc 
+   @q12c4.@q0dcc8<@q12 b4.>
+   @q12a4l32@q0abl16aga @q12b4l32@q0b>c<l16bab>
+   l8c<gal16gfl8egl16fedc<
+   @q12a4>l16@q0fedcq6c4<q8b8ab>
+   l8c<gl16agf8 @q12e2
+   l4@q8dgg.l16@q0ab >@q12c2.l16@q0dc<ba
+   l4@q8dgg.l16@q0ab >@q12c1<
+   l4@q8ggb l16@q0>c<bab>
+   l4@q8cg>c<l16@q0defd
+   @q12c1<
+   b2..l16@q0ab>
+;
+
+#B=x128 @v30 %4 q8 s32 @q0 @er1 v16 @k4 @p10
+@0 na0 o5 l12 @q0
+   v5d4>[c<ge>][d<bg>][c<af>]<afcbgd @q8v10na5<fa>cfed>c<baf4[>c<gf]@q0e2 r2
+@0 na2 o7 l16 @q0 
+   c<b>c8<g8 c<b>c <cedc8f8 gcegl8fd na3 c2 r4
+na2 o5 l8 @q0
+   [<c>[c]7]
+$
+@0 na2 o5 l8 @q0 v16
+   <c>[c]7<
+   g>ggg< c>cc<g>
+   l16f8ga e8fg d8fg c8egl8gggga g4.>
+@1 @q0 v12
+   ffff gggg gefl16edc8e8dc<ba
+   <l8f>fff <g>ggg gl16>c<gfed8 na3c2
+   l8@q4 gggg gggg @0na4@q0 g4&>g4..&l16<g&>f&e&d&c<
+   @1na1 l8 gggg ffff eeee eeee 
+   @0na4 l16 [gd<b>d]4
+   g4>c4..l16<cfgaf
+   g8&>c&<b&>c8& <g&f&g8& e&d&l8e&c&<
+   g&>>l16g&f&g8& d&c#&d8& <b&a#&l8b&g
+;
+
+#C=x128 @v30 %4 q8 s32 @q0 @er1 v16 @k-4 @p-10
+@0 na0 o5 l12 @q0
+   v5d4>[c<ge>][d<bg>][c<af>]<afcbgd @q8v10na5<fa>cfed>c<baf4[>c<gf]@q0e2 r2
+@0 na2 o7 l16 @q0 
+   c<b>l8c<ga4 l16 gfegfdc8.ed32e32d8c c2 r4
+o5 l8 
+   [<c>[c]7]
+$
+@0 na2 o6 @q0 v16
+   l16 e4.ef l8gfe d4<g>g<g> fl16ede8c<g 
+   a8b>c<g8b>c<f8b>cfedcc4.dcc8<b4.
+@1 o6 l8 @q0 v12
+   ffff gggg gefl16edc8e8dc<ba
+   <l8f>fff <g>ggg gl16>c<gfed8 na3c2
+   l8@q4 gggg gggg @0na4@q0 g4&>g4..&l16<g&>f&e&d&c<
+   @1na1 l8 gggg ffff eeee eeee 
+   @0na4 l16 [gd<b>d]4
+   g4>c4..l16<cfgaf
+   g8&>c&<b&>c8& <g&f&g8& e&d&l8e&c&<
+   g&>>l16g&f&g8& d&c#&d8& <b&a#&l8b&g
+;
+
+#D=x128 @v90 %1 @8,60,0,0,58 @er1 q8 @q0 v16
+o4 l12
+   r4 @q20c4 @q8ccc @q20g4 @q8ggg l4f&a&g&<g> l12@q8fff >c4& <@q8ggg >d4& @q0<c1 r2
+o6 l16 @q0 
+   c&<b&>l8c&<c&fr l16 e&d&l8@q2efgr @q0gl16rf& @q0e2 r4
+l1 @q0
+   c&c&
+$
+   c1&l2<g&>c&l4f&e&d&c& <f2& l8@q12g g4.& l8@q6ffffgggg>
+   l4@q0c&<b&a&g& @q1ff&g@q0g&>c& <l16f&e&d8&@q6c2
+   l8@q15 gggg ffff eeee ccff gggg ffff cccc ccl16@q1cdef
+   l8@q15 gggg ffff cccc ffff
+   @q12g>>l16@q1ederc<b>cr <gfgr l8@q12c< g>>l16@q1dcdr<babrgf#gr <@q12d8>
+;
+
+#E=x128 @v90 %0 @1,63,0,0,45 @ph255 q8 @q0 v6
+o0 l12 @k64
+    @q15ccc>@q13brr< @q15ccc>@q13brr< @q15ccc>@q13br6 br6br6 bbb< 
+    @q15ccc>@q13br6< @q15ccc>@q13br6< @q15cr6cr6cr6
+;
+
+t150
+A;
+B;
+C;
+D;
+E;
+
+#END;
+

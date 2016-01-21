@@ -1,0 +1,25 @@
+#TITLE{Runner's song};
+//license : MIT License
+
+t180;
+//track1
+#A=l8c[e0g]7;
+#B=l8d[d0f]7;
+#C=l16afgefdec;
+#D=l16bgafgefd;
+#E=l4c[e0g]3;
+#F=l4d[d0f]3;
+#G=l8<c0>aa0fb0gg0ea0ff0dg0ee0c;
+#H=l8<d0>bb0g<c0>aa0fb0gg0ea0ff0d;
+%5@0q0v20 $ABABc1d1e1f1[AB]2AA(2)CCDD[EF]2EE(2)GH;
+
+//track2
+#X=c4^8dd8e8f16e16d1e2f8e8d8e8fgabc1>b2<d2c2d2e2f2g1c1cef8e8f16e16d16c16dfg8f8e8d8c1d1e1f2d2c2d4c16e16d16c16d1c2d2e2f2g1&g1c1r1;
+%5@4q4l4v24 [r1]4$X;
+
+//ベース
+#I=cccc;
+#J=c8ccc8c8c8;
+#K=r8c8c8c8c8c8c8c8;
+%3@1q2v24 [r1]7K>$II(-1)IJ(-1)II(2)I(4)K(5);
+
